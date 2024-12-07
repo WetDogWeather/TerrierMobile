@@ -1,0 +1,11 @@
+framework module Terrier {
+  umbrella header "Terrier.h"
+  export *
+
+  module * { export * }
+}
+
+module Terrier.Swift {
+  header "Terrier-Swift.h"
+  requires objc
+}

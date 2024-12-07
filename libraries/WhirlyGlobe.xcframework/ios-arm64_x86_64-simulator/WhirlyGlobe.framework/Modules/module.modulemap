@@ -1,0 +1,6 @@
+framework module WhirlyGlobe {
+  umbrella header "WhirlyGlobe.h"
+  export *
+
+  module * { export * }
+}

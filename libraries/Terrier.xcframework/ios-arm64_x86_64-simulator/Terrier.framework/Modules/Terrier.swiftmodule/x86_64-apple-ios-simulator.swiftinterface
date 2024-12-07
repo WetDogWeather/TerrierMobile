@@ -1,0 +1,960 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Terrier
+import CommonCrypto
+import Foundation
+import MapboxMaps
+import MetalKit
+import Swift
+@_exported import Terrier
+import UIKit
+import WhirlyGlobe
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc public protocol TrrServiceDelegate : ObjectiveC.NSObjectProtocol {
+  @objc func serviceReady(service: Terrier.TrrService)
+  @objc func serviceFailed()
+}
+@objc open class TrrService : ObjectiveC.NSObject {
+  @objc open var stackName: Swift.String
+  @objc open var baseURL: Swift.String {
+    @objc get
+  }
+  @objc open var manifestURL: Swift.String {
+    @objc get
+  }
+  @objc open var tileURL: Swift.String {
+    @objc get
+  }
+  @objc open var vectorURL: Swift.String {
+    @objc get
+  }
+  @objc open var mapURL: Swift.String {
+    @objc get
+  }
+  @objc open var apiVersion: Swift.Int {
+    @objc get
+  }
+  @objc open var delegate: (any Terrier.TrrServiceDelegate)?
+  @objc public init(stackName: Swift.String)
+  @objc public func start()
+  @objc deinit
+}
+@objc public protocol TrrITemperatureController : Terrier.TrrISingleChannelController {
+}
+@_hasMissingDesignatedInitializers @objc public class TrrTemperatureController : Terrier.TrrSingleChannelController, Terrier.TrrITemperatureController {
+  public static func create(level: Swift.String?, service: Terrier.TrrService, tracker: Terrier.TrrTimeTracker, viewC: any WhirlyGlobe.MaplyRenderControllerProtocol) -> any Terrier.TrrITemperatureController
+  override public var defaultColorMap: Terrier.TrrColorMap? {
+    get
+  }
+  @objc deinit
+}
+@objc public class TrrLoaderProgress : ObjectiveC.NSObject {
+  public var imageView: UIKit.UIImageView
+  public init(_ viewC: any WhirlyGlobe.MaplyRenderControllerProtocol, fetcher: Swift.String, parent: UIKit.UIView, _ sibling: UIKit.UIView? = nil, _ fetcherName: Swift.String? = nil)
+  @objc public func start()
+  @objc public func stop()
+  @objc deinit
+}
+@objc public protocol TrrIWindController : Terrier.TrrIController, Terrier.TrrTimeTrackerDelegate {
+  @objc var enableTrails: Swift.Bool { get set }
+  @objc var trailPoints: Swift.Int { get set }
+  @objc var maxMaxTrailCount: Swift.Int { get }
+  @objc var maxTrailCount: Swift.Int { get set }
+  @objc var trailLifetimeMin: Foundation.TimeInterval { get set }
+  @objc var trailLifetimeMax: Foundation.TimeInterval { get set }
+  @objc var maxTrailSize: Swift.Int { get }
+  @objc var minTrailSize: Swift.Int { get set }
+  @objc var trailWidth: Swift.Float { get set }
+  @objc var trailAdvanceRate: Swift.Float { get set }
+  @objc var turnAngleLimit: Swift.Float { get set }
+  @objc var turnErrorLimit: Swift.Float { get set }
+  @objc var texPeriod: Swift.Float { get set }
+  @objc var texInterval: Swift.Int { get set }
+  @objc var texRate: Swift.Float { get set }
+  @objc var texVelRate: Swift.Float { get set }
+  @objc var texVelExp: Swift.Float { get set }
+  @objc var texOffsetX: Swift.Float { get set }
+  @objc var texOffsetY: Swift.Float { get set }
+  @objc var minVelocity: Swift.Float { get set }
+  @objc var fadeIn: Foundation.TimeInterval { get set }
+  @objc var fadeOut: Foundation.TimeInterval { get set }
+  @objc var scaleResetFactor: Swift.Float { get set }
+  @objc var shapeParamB: Swift.Float { get set }
+  @objc var shapeParamP: Swift.Float { get set }
+  @objc var shapeParamS: Swift.Float { get set }
+  @objc var trailColor: UIKit.UIColor { get set }
+  @objc var trailColorMap: Terrier.TrrColorMap? { get set }
+  @objc var scaleTrailColorMap: Swift.Bool { get set }
+  @objc func setTrailColorMap(_: Terrier.TrrColorMap?, scaleToRange: Swift.Bool)
+  @objc var trailTexture: WhirlyGlobe.MaplyTexture? { get set }
+  @objc func resetTrails(overTime: Foundation.TimeInterval)
+  @objc var animationSnap: Swift.Bool { get set }
+  @objc var isAnimatingTime: Swift.Bool { get set }
+  @objc func resetAnimatingTime()
+  @objc var animationArrows: Swift.Bool { get set }
+  @objc var arrowTexture: WhirlyGlobe.MaplyTexture? { get set }
+  @objc var arrowShowFrac: Swift.Float { get set }
+  @objc var arrowLength: Swift.Float { get set }
+  @objc var arrowWidth: Swift.Float { get set }
+  @objc var enableVelocity: Swift.Bool { get set }
+  @objc var velocityColorMap: Terrier.TrrColorMap? { get set }
+  @objc var scaleVelocityColorMap: Swift.Bool { get set }
+  @objc func setVelocityColorMap(_: Terrier.TrrColorMap?, scaleToRange: Swift.Bool)
+  @objc var visualInterpMode: Terrier.TrrInterpolationMode { get set }
+  @objc var visualInterpCustom: Swift.Bool { get set }
+  @objc var varInterpMode: Terrier.TrrInterpolationMode { get set }
+  @objc var opacity: Swift.Float { get set }
+  @objc var centerSampling: Swift.Bool { get set }
+  @objc func getCenterSample() -> [Swift.Float]
+  @objc var offlineMode: Swift.Bool { get set }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TrrWindController : Terrier.TrrBaseController, Terrier.TrrIWindController {
+  @objc override public var label: Swift.String {
+    @objc get
+  }
+  @objc public var enableTrails: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var enableVelocity: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var isAnimatingTime: Swift.Bool {
+    @objc get
+    @objc set(value)
+  }
+  @objc public func resetAnimatingTime()
+  @objc override public var varInterpMode: Terrier.TrrInterpolationMode {
+    @objc get
+    @objc set
+  }
+  @objc public var animationSnap: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc override public var visualInterpMode: Terrier.TrrInterpolationMode {
+    @objc get
+    @objc set
+  }
+  @objc override public var visualInterpCustom: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var trailPoints: Swift.Int {
+    @objc get
+    @objc set(v)
+  }
+  @objc public var trailWidth: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var trailAdvanceRate: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var turnAngleLimit: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var turnErrorLimit: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var trailLifetimeMin: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc public var trailLifetimeMax: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc public var texPeriod: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var texRate: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var texVelRate: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var texVelExp: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var texOffsetX: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var texOffsetY: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var texInterval: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc public var minTrailSize: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc public var maxTrailSize: Swift.Int {
+    @objc get
+  }
+  @objc public var maxMaxTrailCount: Swift.Int {
+    @objc get
+  }
+  @objc public var maxTrailCount: Swift.Int {
+    @objc get
+    @objc set(v)
+  }
+  @objc public var minVelocity: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var fadeIn: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc public var fadeOut: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc public var scaleResetFactor: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var shapeParamB: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var shapeParamP: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var shapeParamS: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var trailColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var trailColorMap: Terrier.TrrColorMap? {
+    @objc get
+    @objc set
+  }
+  @objc public var scaleTrailColorMap: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public func setTrailColorMap(_ map: Terrier.TrrColorMap?, scaleToRange: Swift.Bool)
+  @objc public var trailTexture: WhirlyGlobe.MaplyTexture? {
+    @objc get
+    @objc set
+  }
+  @objc public var arrowTexture: WhirlyGlobe.MaplyTexture? {
+    @objc get
+    @objc set
+  }
+  @objc public var animationArrows: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var arrowShowFrac: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var arrowLength: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var arrowWidth: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var offlineMode: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var velocityColorMap: Terrier.TrrColorMap? {
+    @objc get
+    @objc set
+  }
+  @objc public var scaleVelocityColorMap: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public func setVelocityColorMap(_ map: Terrier.TrrColorMap?, scaleToRange: Swift.Bool)
+  @objc public var opacity: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public func resetTrails(overTime: Foundation.TimeInterval)
+  @objc public static func create(level: Swift.String?, service: Terrier.TrrService, tracker: any Terrier.TrrITimeTracker, viewC: any WhirlyGlobe.MaplyRenderControllerProtocol) -> any Terrier.TrrIWindController
+  override open func getManifests() -> [Terrier.TrrVarManifest]
+  override open func makeControl() -> Terrier.TrrVarController?
+  override open func setupSource(source: Terrier.TrrVarSource, index: Swift.Int)
+  @objc override public func start() -> Swift.Bool
+  @objc override public func stop()
+  override open func setup(manifest: Terrier.TrrVarManifest) -> Swift.Bool
+  @objc public var centerSampling: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public func getCenterSample() -> [Swift.Float]
+  @objc public func trackerUpdate(tracker: any Terrier.TrrITimeTracker, epoch: Foundation.TimeInterval)
+  final public let defaultVelocityColorMap: Terrier.TrrColorMap?
+  final public let defaultTrailColorMap: Terrier.TrrColorMap?
+  public enum TrrWindControllerError : Swift.Error {
+    case parameterError(_: Swift.String)
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class TrrBaseController : ObjectiveC.NSObject, Terrier.TrrIController, Terrier.TrrVarManifestDelegate {
+  @objc public var service: Terrier.TrrService {
+    get
+  }
+  public var controlPriority: Swift.Int32 {
+    get
+  }
+  @objc public var label: Swift.String {
+    @objc get
+  }
+  @objc public var enable: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var started: Swift.Bool {
+    @objc get
+  }
+  @objc public var manifests: [Terrier.TrrVarManifest] {
+    get
+  }
+  @objc public var level: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var availableLevels: [Swift.String] {
+    @objc get
+  }
+  @objc public var drawPriority: Swift.Int32 {
+    @objc get
+    @objc set
+  }
+  @objc public var drawPriorityPerSource: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc public var renderScale: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var varInterpMode: Terrier.TrrInterpolationMode {
+    @objc get
+    @objc set
+  }
+  @objc public var visualInterpMode: Terrier.TrrInterpolationMode {
+    @objc get
+    @objc set
+  }
+  @objc public var visualInterpCustom: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var importanceFactor: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var sourceCadence: Terrier.TrrSourceCadence {
+    @objc get
+    @objc set
+  }
+  @objc public var snapToFrame: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var loadAllFrames: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var baseColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var debugMode: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  open func getManifests() throws -> [Terrier.TrrVarManifest]
+  @objc public func start() -> Swift.Bool
+  open func setupSource(source: Terrier.TrrVarSource, index: Swift.Int)
+  open func makeControl() -> Terrier.TrrVarController?
+  @objc public func stop()
+  @objc public func addLoadedDelegate(_ delegate: @escaping Terrier.TrrBaseController.LoadedDelegate) -> Swift.Int
+  @objc public func removeLoadedDelegate(_ key: Swift.Int)
+  @objc public func areAllSourcesLoaded() -> Swift.Bool
+  @objc public func areAnySourcesLoaded() -> Swift.Bool
+  @objc public func areAllSourcesValid() -> Swift.Bool
+  @objc public func areAnySourcesValid() -> Swift.Bool
+  @discardableResult
+  @objc public func addAllLoadedDelegate(timeout: Foundation.TimeInterval = 0, _ delegate: @escaping Terrier.TrrBaseController.AllLoadedDelegate) -> Swift.Int
+  @objc public func removeAllLoadedDelegate(_ key: Swift.Int) -> Swift.Bool
+  @objc public func anyCoverageSpan() -> Terrier.TrrMinMax?
+  @objc public func allCoverageSpan() -> Terrier.TrrMinMax?
+  @objc public class TimeSliceInfo : ObjectiveC.NSObject {
+    final public let manifest: Terrier.TrrVarManifest
+    final public let slices: [Terrier.TrrVarManifest.TimeSlice]
+    final public let interpolation: Swift.Double
+    final public let drawPriority: Swift.Int
+    public init(manifest: Terrier.TrrVarManifest, slices: [Terrier.TrrVarManifest.TimeSlice], interpolation: Swift.Double, drawPriority: Swift.Int)
+    @objc deinit
+  }
+  @objc public func getCurrentSlices() -> [Terrier.TrrBaseController.TimeSliceInfo]
+  @objc public func reload()
+  @objc final public let manifestDelegatePriority: Swift.Int
+  @objc public func manifestDidLoad(manifest: Terrier.TrrVarManifest, success: Swift.Bool)
+  open func setup(manifest: Terrier.TrrVarManifest) -> Swift.Bool
+  public static func linearGreyscaleColorMap() -> Terrier.TrrColorMap?
+  public static func greyscaleColorMap(_ base: Swift.Float, inv: Swift.Bool = false) -> Terrier.TrrColorMap?
+  public enum TrrControllerError : Swift.Error {
+    case missingManifests
+    public static func == (a: Terrier.TrrBaseController.TrrControllerError, b: Terrier.TrrBaseController.TrrControllerError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class TrrConstants {
+  public static let ManifestRefreshPeriod: Swift.Double
+  public static let DefaultMinImportance: Swift.Float
+  public static let FetchConnections: Swift.Int32
+  public static let RemoteFetcherName: Swift.String
+  @objc deinit
+}
+@objc public enum TrrInterpolationMode : Swift.Int {
+  case Nearest
+  case Bilinear
+  case Bicubic
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers public class TrrError : Foundation.NSError {
+  @objc deinit
+}
+@objc public protocol TrrTimeTrackerDelegate : ObjectiveC.NSObjectProtocol {
+  @objc func trackerUpdate(tracker: any Terrier.TrrITimeTracker, epoch: Foundation.TimeInterval)
+}
+@objc public protocol TrrITimeTracker {
+  @objc var curEpoch: Foundation.TimeInterval { get }
+  @objc func isPlaying() -> Swift.Bool
+  @objc func play()
+  @objc func poke()
+  @objc func addDelegate(delegate: ObjectiveC.NSObject)
+  @objc func interpolateSimple(epoch: Foundation.TimeInterval) -> Swift.Double
+  @objc func removeDelegate(delegate: ObjectiveC.NSObject)
+  @objc func shutdown()
+}
+@objc public class TrrTimeTracker : WhirlyGlobe.MaplyActiveObject, Terrier.TrrITimeTracker {
+  public var minEpoch: Foundation.TimeInterval {
+    get
+  }
+  public var minTime: Foundation.Date {
+    get
+  }
+  public var maxEpoch: Foundation.TimeInterval {
+    get
+  }
+  public var maxTime: Foundation.Date {
+    get
+  }
+  @objc public var curEpoch: Foundation.TimeInterval {
+    @objc get
+    @objc set(newEpoch)
+  }
+  public var curDateTime: Foundation.Date {
+    get
+    set(newValue)
+  }
+  public init(viewC: any WhirlyGlobe.MaplyRenderControllerProtocol)
+  @objc public func isPlaying() -> Swift.Bool
+  @objc public func play()
+  public func pause()
+  @objc public func poke()
+  public func setAnimPeriod(period: Foundation.TimeInterval, pauseTime: Foundation.TimeInterval, sendUpdates: Swift.Bool)
+  public func setEpochRange(min: Foundation.TimeInterval, max: Foundation.TimeInterval, sendUpdates: Swift.Bool = true)
+  public func setEpochRange(newTime: Foundation.TimeInterval, min: Foundation.TimeInterval, max: Foundation.TimeInterval, sendUpdates: Swift.Bool = true)
+  @objc public func interpolateSimple(epoch: Foundation.TimeInterval) -> Swift.Double
+  public func interpolateEpoch(pos: Swift.Double) -> Foundation.TimeInterval
+  @objc public func addDelegate(delegate: ObjectiveC.NSObject)
+  @objc public func removeDelegate(delegate: ObjectiveC.NSObject)
+  @objc public func shutdown()
+  @objc override dynamic public func hasUpdate() -> Swift.Bool
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class TrrVarSource : WhirlyGlobe.MaplyActiveObject, Terrier.TrrTimeTrackerDelegate, Terrier.TrrVarManifestDelegate {
+  @objc final public let manifestDelegatePriority: Swift.Int
+  public var enable: Swift.Bool {
+    get
+    set
+  }
+  public var enableForRange: Swift.Bool
+  public var interpMode: Terrier.TrrInterpolationMode {
+    get
+    set
+  }
+  public var snapToFrame: Swift.Bool
+  public var drawPriority: Swift.Int32
+  public var channels: Swift.Int
+  public enum SourceDataType : Swift.String {
+    case Float
+    case Unsigned
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public var dataType: Terrier.TrrVarSource.SourceDataType
+  public var importanceFactor: Swift.Float
+  public var loadFrameMode: WhirlyGlobe.MaplyLoadFrameMode {
+    get
+    set
+  }
+  public var loadAllFrames: Swift.Bool {
+    get
+    set
+  }
+  final public let fetcherName: Swift.String
+  public var debugMode: Swift.Bool {
+    get
+    set
+  }
+  @objc public func trackerUpdate(tracker: any Terrier.TrrITimeTracker, epoch: Foundation.TimeInterval)
+  @objc public func manifestDidLoad(manifest: Terrier.TrrVarManifest, success: Swift.Bool)
+  @objc deinit
+}
+@objc public protocol TrrISingleChannelController : Terrier.TrrIController {
+  @objc var colorMap: Terrier.TrrColorMap? { get set }
+}
+@_hasMissingDesignatedInitializers @objc public class TrrSingleChannelController : Terrier.TrrBaseController, Terrier.TrrISingleChannelController, Terrier.TrrTimeTrackerDelegate {
+  @objc public var colorMap: Terrier.TrrColorMap? {
+    @objc get
+    @objc set
+  }
+  @objc override public var varInterpMode: Terrier.TrrInterpolationMode {
+    @objc get
+    @objc set
+  }
+  @objc override public var visualInterpMode: Terrier.TrrInterpolationMode {
+    @objc get
+    @objc set
+  }
+  @objc override public var visualInterpCustom: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc override public var label: Swift.String {
+    @objc get
+  }
+  public static func create(type: Terrier.TrrSourceDataTypes, depth: Swift.Int, level: Swift.String?, service: Terrier.TrrService, tracker: Terrier.TrrTimeTracker, viewC: WhirlyGlobe.MaplyBaseViewController) -> any Terrier.TrrISingleChannelController
+  @objc override public func start() -> Swift.Bool
+  @objc override public func stop()
+  override open func getManifests() -> [Terrier.TrrVarManifest]
+  override open func setupSource(source: Terrier.TrrVarSource, index: Swift.Int)
+  override open func makeControl() -> Terrier.TrrVarController?
+  override open func setup(manifest: Terrier.TrrVarManifest) -> Swift.Bool
+  @objc public func trackerUpdate(tracker: any Terrier.TrrITimeTracker, epoch: Foundation.TimeInterval)
+  public var defaultColorMap: Terrier.TrrColorMap? {
+    get
+  }
+  @objc deinit
+}
+public func trrLog(_ level: Terrier.TrrLogLevel, _ format: Swift.String, _ args: any Swift.CVarArg...)
+public func trrDebug(_ format: Swift.String, _ args: any Swift.CVarArg...)
+public func trrInfo(_ format: Swift.String, _ args: any Swift.CVarArg...)
+public func trrWarn(_ format: Swift.String, _ args: any Swift.CVarArg...)
+public func trrError(_ format: Swift.String, _ args: any Swift.CVarArg...)
+extension Foundation.Data {
+  public init<T>(copyOf value: T)
+  public func toCGImage(width: Swift.Int, height: Swift.Int, depth: Swift.Int, channels: Swift.Int, bigEnd: Swift.Bool, preMult: Swift.Bool) -> CoreGraphics.CGImage?
+  @available(iOS, deprecated: 13.0, message: "Not cryptographically strong")
+  public func md5() -> Foundation.Data?
+  public func sha1() -> Foundation.Data?
+  public func sha256() -> Foundation.Data?
+  public func sha512() -> Foundation.Data?
+  public func toHexString() -> Swift.String
+}
+extension Swift.String {
+  @available(iOS, deprecated: 13.0, message: "Not cryptographically strong")
+  public func md5() -> Foundation.Data?
+  public func sha1() -> Foundation.Data?
+  public func sha256() -> Foundation.Data?
+  public func sha512() -> Foundation.Data?
+}
+extension Foundation.Date {
+  public func getFormattedDate(_ format: Swift.String, local: Swift.Bool) -> Swift.String
+}
+extension Foundation.DateFormatter {
+  public static func forDateFormat(_ format: Swift.String, local: Swift.Bool = true) -> Foundation.DateFormatter
+}
+extension Swift.Float {
+  public func clamp(_ lo: Swift.Float, _ hi: Swift.Float) -> Swift.Float
+  public func fract() -> Swift.Float
+  public func trunc() -> Swift.Float
+  public func lerpFast(_ a: Swift.Float, _ b: Swift.Float) -> Swift.Float
+  public func lerpPrecise(_ a: Swift.Float, _ b: Swift.Float) -> Swift.Float
+}
+extension Swift.Double {
+  public func clamp(_ lo: Swift.Double, _ hi: Swift.Double) -> Swift.Double
+  public func fract() -> Swift.Double
+  public func trunc() -> Swift.Double
+  public func lerpFast(_ a: Swift.Double, _ b: Swift.Double) -> Swift.Double
+  public func lerpPrecise(_ a: Swift.Double, _ b: Swift.Double) -> Swift.Double
+}
+extension Swift.Sequence where Self.Element : Swift.Hashable {
+  public func uniqued() -> [Self.Element]
+}
+extension WhirlyGlobe.MaplyBoundingBox {
+  public func degToRad() -> WhirlyGlobe.MaplyBoundingBox
+  public func toD() -> WhirlyGlobe.MaplyBoundingBoxD
+}
+extension WhirlyGlobe.MaplyBoundingBoxD {
+  public func degToRad() -> WhirlyGlobe.MaplyBoundingBoxD
+  public func toF() -> WhirlyGlobe.MaplyBoundingBox
+}
+extension Swift.Sequence {
+  public func everyNth(n: Swift.Int, offset: Swift.Int = 0) -> [Self.Element]
+  public func pairwise() -> Swift.Zip2Sequence<[Self.Element], Swift.DropFirstSequence<Self>>
+}
+extension Swift.Sequence where Self.Element : Swift.AdditiveArithmetic {
+  public func sum() -> Self.Element
+}
+@_hasMissingDesignatedInitializers @objc public class TrrMinMax : ObjectiveC.NSObject {
+  public var min: Foundation.TimeInterval {
+    get
+  }
+  public var max: Foundation.TimeInterval {
+    get
+  }
+  @objc deinit
+}
+@objc public protocol TrrIController : ObjectiveC.NSObjectProtocol {
+  @objc var service: Terrier.TrrService { get }
+  @objc var enable: Swift.Bool { get set }
+  @objc var started: Swift.Bool { get }
+  @objc var label: Swift.String { get }
+  @objc var level: Swift.String? { get set }
+  @objc var availableLevels: [Swift.String] { get }
+  @objc var drawPriority: Swift.Int32 { get set }
+  @objc var drawPriorityPerSource: Swift.Int { get set }
+  @objc var importanceFactor: Swift.Float { get set }
+  @objc var renderScale: Swift.Float { get set }
+  @objc var varInterpMode: Terrier.TrrInterpolationMode { get set }
+  @objc var visualInterpMode: Terrier.TrrInterpolationMode { get set }
+  @objc var visualInterpCustom: Swift.Bool { get set }
+  @objc var sourceCadence: Terrier.TrrSourceCadence { get set }
+  @objc var snapToFrame: Swift.Bool { get set }
+  @objc var loadAllFrames: Swift.Bool { get set }
+  @objc var baseColor: UIKit.UIColor { get set }
+  @objc var debugMode: Swift.Bool { get set }
+  @objc var manifests: [Terrier.TrrVarManifest] { get }
+  typealias LoadedDelegate = (any Terrier.TrrIController, Terrier.TrrVarManifest, Swift.Bool) -> Swift.Void
+  typealias AllLoadedDelegate = (any Terrier.TrrIController) -> Swift.Void
+  @objc func addLoadedDelegate(_ delegate: @escaping Self.LoadedDelegate) -> Swift.Int
+  @objc func removeLoadedDelegate(_ key: Swift.Int)
+  @objc @discardableResult
+  func addAllLoadedDelegate(timeout: Foundation.TimeInterval, _ delegate: @escaping Self.AllLoadedDelegate) -> Swift.Int
+  @objc func removeAllLoadedDelegate(_ index: Swift.Int) -> Swift.Bool
+  @objc func areAllSourcesLoaded() -> Swift.Bool
+  @objc func areAnySourcesLoaded() -> Swift.Bool
+  @objc func areAllSourcesValid() -> Swift.Bool
+  @objc func areAnySourcesValid() -> Swift.Bool
+  @objc func anyCoverageSpan() -> Terrier.TrrMinMax?
+  @objc func allCoverageSpan() -> Terrier.TrrMinMax?
+  @objc func getCurrentSlices() -> [Terrier.TrrBaseController.TimeSliceInfo]
+  @objc func start() -> Swift.Bool
+  @objc func reload()
+  @objc func stop()
+}
+@_hasMissingDesignatedInitializers @objc public class TrrVarController : ObjectiveC.NSObject, WhirlyGlobe.MaplySnapshotDelegate {
+  public var centerSampling: Swift.Bool
+  @objc public func needSnapshot(_ now: Foundation.TimeInterval, viewC: WhirlyGlobe.MaplyBaseViewController) -> Swift.Bool
+  @objc public func snapshot(_ snapshotData: Foundation.Data)
+  @objc public func renderTarget() -> WhirlyGlobe.MaplyRenderTarget?
+  @objc public func snapshotRect() -> CoreFoundation.CGRect
+  @objc deinit
+}
+@objc public protocol TrrIPrecipController : Terrier.TrrIController {
+  @objc var colorMap: Terrier.TrrColorMap? { get set }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TrrPrecipController : Terrier.TrrBaseController, Terrier.TrrIPrecipController, Terrier.TrrTimeTrackerDelegate {
+  @objc override public var label: Swift.String {
+    @objc get
+  }
+  @objc public var colorMap: Terrier.TrrColorMap? {
+    @objc get
+    @objc set
+  }
+  @objc override public var varInterpMode: Terrier.TrrInterpolationMode {
+    @objc get
+    @objc set
+  }
+  @objc override public var visualInterpMode: Terrier.TrrInterpolationMode {
+    @objc get
+    @objc set
+  }
+  @objc override public var visualInterpCustom: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  public static func create(level: Swift.String?, service: Terrier.TrrService, tracker: Terrier.TrrTimeTracker, viewC: WhirlyGlobe.MaplyBaseViewController) -> any Terrier.TrrIPrecipController
+  @objc override public func start() -> Swift.Bool
+  @objc override public func stop()
+  override open func getManifests() -> [Terrier.TrrVarManifest]
+  override open func setupSource(source: Terrier.TrrVarSource, index: Swift.Int)
+  override open func makeControl() -> Terrier.TrrVarController?
+  override open func setup(manifest: Terrier.TrrVarManifest) -> Swift.Bool
+  @objc public func trackerUpdate(tracker: any Terrier.TrrITimeTracker, epoch: Foundation.TimeInterval)
+  final public let defaultColorMap: Terrier.TrrColorMap?
+  @objc deinit
+}
+@objc public protocol TrrIRadarController : Terrier.TrrIController {
+  @objc var colorMap: Terrier.TrrColorMap? { get set }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TrrRadarController : Terrier.TrrBaseController, Terrier.TrrIRadarController, Terrier.TrrTimeTrackerDelegate {
+  @objc override public var label: Swift.String {
+    @objc get
+  }
+  @objc public var colorMap: Terrier.TrrColorMap? {
+    @objc get
+    @objc set
+  }
+  @objc override public var varInterpMode: Terrier.TrrInterpolationMode {
+    @objc get
+    @objc set
+  }
+  @objc override public var visualInterpMode: Terrier.TrrInterpolationMode {
+    @objc get
+    @objc set
+  }
+  @objc override public var visualInterpCustom: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  public static func create(level: Swift.String?, service: Terrier.TrrService, tracker: Terrier.TrrTimeTracker, viewC: any WhirlyGlobe.MaplyRenderControllerProtocol) -> any Terrier.TrrIRadarController
+  @objc override public func start() -> Swift.Bool
+  @objc override public func stop()
+  override open func getManifests() -> [Terrier.TrrVarManifest]
+  override open func setupSource(source: Terrier.TrrVarSource, index: Swift.Int)
+  override open func makeControl() -> Terrier.TrrVarController?
+  override open func setup(manifest: Terrier.TrrVarManifest) -> Swift.Bool
+  @objc public func trackerUpdate(tracker: any Terrier.TrrITimeTracker, epoch: Foundation.TimeInterval)
+  final public let defaultColorMap: Terrier.TrrColorMap?
+  @objc deinit
+}
+@objc public protocol TrrVarManifestDelegate : ObjectiveC.NSObjectProtocol {
+  @objc var manifestDelegatePriority: Swift.Int { get }
+  @objc func manifestDidLoad(manifest: Terrier.TrrVarManifest, success: Swift.Bool)
+}
+@_hasMissingDesignatedInitializers @objc public class TrrVarManifest : ObjectiveC.NSObject {
+  @_hasMissingDesignatedInitializers @objc public class TimeSlice : ObjectiveC.NSObject {
+    final public let urlPath: Swift.String
+    final public let forecastTime: Foundation.Date
+    @objc final public let forecastEpoch: Foundation.TimeInterval
+    final public let forecastDelta: Foundation.TimeInterval
+    final public let runTime: Foundation.Date
+    @objc final public let runEpoch: Foundation.TimeInterval
+    final public let product: Swift.String?
+    @objc deinit
+  }
+  public var valid: Swift.Bool {
+    get
+  }
+  public var varKey: Swift.String? {
+    get
+  }
+  public var sourceCadence: Terrier.TrrSourceCadence?
+  public var clipCadence: Terrier.TrrSourceCadence?
+  public var service: Terrier.TrrService
+  public func addDelegate(delegate: ObjectiveC.NSObject)
+  public func removeDelegate(delegate: ObjectiveC.NSObject)
+  public var source: Swift.String? {
+    get
+  }
+  public var variableName: Swift.String? {
+    get
+  }
+  public var region: Swift.String? {
+    get
+  }
+  public var level: Swift.String? {
+    get
+  }
+  public var globalCoverage: Swift.Bool {
+    get
+  }
+  public var products: [Swift.String] {
+    get
+  }
+  public var tileSize: Swift.Int32 {
+    get
+  }
+  public var tileEdge: Swift.Int32 {
+    get
+  }
+  public var zoomLevels: (min: Swift.Int32, max: Swift.Int32) {
+    get
+  }
+  public var dataVals: (min: Swift.Double, max: Swift.Double) {
+    get
+  }
+  public var noDataVals: [Swift.Int32] {
+    get
+  }
+  public var cellBits: Swift.Int32 {
+    get
+  }
+  public var tileBounds: WhirlyGlobe.MaplyBoundingBoxD {
+    get
+  }
+  public var validBounds: WhirlyGlobe.MaplyBoundingBoxD {
+    get
+  }
+  public var boundUnit: Swift.String {
+    get
+  }
+  public var proj: Swift.String {
+    get
+  }
+  public var timeSlices: [Terrier.TrrVarManifest.TimeSlice] {
+    get
+  }
+  public var sliceInterval: Foundation.TimeInterval? {
+    get
+  }
+  public var updateInterval: Foundation.TimeInterval? {
+    get
+  }
+  public var lastHash: Swift.Int?
+  public var fastDelay: Swift.Double
+  public var slowDelay: Swift.Double
+  public var EpochRounding: Swift.Double {
+    get
+  }
+  public var debugMode: Swift.Bool
+  public var started: Swift.Bool {
+    get
+  }
+  public func start()
+  public func stop()
+  public func forceUpdate()
+  public func genCoordSystem() -> WhirlyGlobe.MaplyCoordinateSystem?
+  public func asTileRemoteTileInfo(cacheDir: Swift.String?) -> [WhirlyGlobe.MaplyRemoteTileInfoNew]
+  public static func AnyCoverageSpan(_ manifests: [Terrier.TrrVarManifest]) -> Terrier.TrrMinMax?
+  public static func AllCoverageSpan(_ manifests: [Terrier.TrrVarManifest]) -> Terrier.TrrMinMax?
+  public func slicesAtTime(_ time: Foundation.TimeInterval) -> [Terrier.TrrVarManifest.TimeSlice]
+  public static func SlicesAtTime(_ time: Foundation.TimeInterval, manifests: [Terrier.TrrVarManifest]) -> [Terrier.TrrVarManifest.TimeSlice]
+  @objc deinit
+}
+@objc public class TrrCacheCleaner : ObjectiveC.NSObject {
+  final public let mainDir: Swift.String
+  final public let recentDelta: Foundation.TimeInterval
+  public var StartTimeOffset: Swift.Double
+  public var RepeatTimeOffset: Swift.Double
+  public var active: Swift.Bool
+  public init(dir: Swift.String, recentDelta: Foundation.TimeInterval = 2*24*3600.0, manifest: Terrier.TrrVarManifest)
+  @objc public func start()
+  @objc public func stop()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TrrSourceCadence : ObjectiveC.NSObject {
+  @objc final public let minTimeOffset: Foundation.TimeInterval
+  @objc final public let maxTimeOffset: Foundation.TimeInterval
+  @objc final public let maxTimeSlices: Swift.Int
+  final public let minTime: Foundation.TimeInterval?
+  final public let maxTime: Foundation.TimeInterval?
+  @objc final public let now: Foundation.TimeInterval
+  @objc public func resolve() -> Terrier.TrrSourceCadence
+  @objc public func clip(_ clip: Terrier.TrrSourceCadence?) -> Terrier.TrrSourceCadence
+  @objc convenience public init(minTimeOffset: Foundation.TimeInterval, maxTimeOffset: Foundation.TimeInterval, maxTimeSlices: Swift.Int)
+  convenience public init(_ src: Terrier.TrrSourceCadence)
+  @objc override convenience dynamic public init()
+  @objc deinit
+}
+public enum TrrDataTemporalType : Swift.Int32 {
+  case observed
+  case forecast
+  case both
+  public init?(rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+  public var rawValue: Swift.Int32 {
+    get
+  }
+}
+public struct TrrSourceDataTypes : Swift.OptionSet {
+  public let rawValue: Swift.Int
+  public init(rawValue: Swift.Int)
+  public static let wind_uv: Terrier.TrrSourceDataTypes
+  public static let wind_speed: Terrier.TrrSourceDataTypes
+  public static let wind_speed_gust: Terrier.TrrSourceDataTypes
+  public static let temperature: Terrier.TrrSourceDataTypes
+  public static let radar: Terrier.TrrSourceDataTypes
+  public static let precip_rate: Terrier.TrrSourceDataTypes
+  public static let precip_type: Terrier.TrrSourceDataTypes
+  public static let cloud_cover: Terrier.TrrSourceDataTypes
+  public static let cloud_ceiling: Terrier.TrrSourceDataTypes
+  public static let pressure: Terrier.TrrSourceDataTypes
+  public static let visibility: Terrier.TrrSourceDataTypes
+  public static let observations: Terrier.TrrSourceDataTypes
+  public typealias ArrayLiteralElement = Terrier.TrrSourceDataTypes
+  public typealias Element = Terrier.TrrSourceDataTypes
+  public typealias RawValue = Swift.Int
+}
+@objc public class TrrDataSource : ObjectiveC.NSObject {
+  final public let source: Swift.String
+  final public let region: Swift.String
+  final public let products: [Swift.String]
+  final public let levels: [Swift.String]
+  final public let temporalType: Terrier.TrrDataTemporalType
+  final public let dataTypes: Terrier.TrrSourceDataTypes
+  final public let depth: Swift.Int
+  final public let global: Swift.Bool
+  convenience public init(_ source: Swift.String, _ region: Swift.String, _ products: [Swift.String], _ level: Swift.String, _ sourceType: Terrier.TrrDataTemporalType, _ dataTypes: Terrier.TrrSourceDataTypes, _ depth: Swift.Int, _ global: Swift.Bool)
+  public init(_ source: Swift.String, _ region: Swift.String, _ products: [Swift.String], _ levels: [Swift.String], _ sourceType: Terrier.TrrDataTemporalType, _ dataTypes: Terrier.TrrSourceDataTypes, _ depth: Swift.Int, _ global: Swift.Bool)
+  public func getManifests(service: Terrier.TrrService, varName: Swift.String, depth: Swift.Int, sourceCadence: Terrier.TrrSourceCadence, viewC: (any WhirlyGlobe.MaplyRenderControllerProtocol)?) -> [Terrier.TrrVarManifest]
+  public static func getVariablesForStack(service: Terrier.TrrService) -> [Swift.String]
+  public static func getSourcesForStack(service: Terrier.TrrService) -> [Swift.String]
+  public static func getSourcesForVariable(service: Terrier.TrrService, variableMatch: Any, sourceMatch: Any?, regionMatch: Any?, productMatch: Any?) -> [Terrier.TrrDataSource]
+  public static func getStandardSources(service: Terrier.TrrService, varName: Swift.String, source: Any?, region: Any?, product: Any?, sourceCadence: Terrier.TrrSourceCadence, viewC: (any WhirlyGlobe.MaplyRenderControllerProtocol)?) -> [Terrier.TrrVarManifest]
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers final public class TerrierMapboxAdapter : WhirlyGlobe.MaplyRenderControllerOverlay, MapboxCoreMaps.CustomLayerHost {
+  public init?(service: Terrier.TrrService, mapView: MapboxMaps.MapView)
+  final public func setTracker(tracker: Terrier.TrrTimeTracker?)
+  @objc final public func renderingWillStart(_ metalDevice: any Metal.MTLDevice, colorPixelFormat: Swift.UInt, depthStencilPixelFormat: Swift.UInt)
+  @objc final public func render(_ parameters: MapboxCoreMaps.CustomLayerRenderParameters, mtlCommandBuffer: any Metal.MTLCommandBuffer, mtlRenderPassDescriptor: Metal.MTLRenderPassDescriptor)
+  @objc final public func renderingWillEnd()
+  @objc deinit
+}
+extension Terrier.TrrBaseController.TrrControllerError : Swift.Equatable {}
+extension Terrier.TrrBaseController.TrrControllerError : Swift.Hashable {}
+extension Terrier.TrrInterpolationMode : Swift.Equatable {}
+extension Terrier.TrrInterpolationMode : Swift.Hashable {}
+extension Terrier.TrrInterpolationMode : Swift.RawRepresentable {}
+extension Terrier.TrrVarSource.SourceDataType : Swift.Equatable {}
+extension Terrier.TrrVarSource.SourceDataType : Swift.Hashable {}
+extension Terrier.TrrVarSource.SourceDataType : Swift.RawRepresentable {}
+extension Terrier.TrrDataTemporalType : Swift.Equatable {}
+extension Terrier.TrrDataTemporalType : Swift.Hashable {}
+extension Terrier.TrrDataTemporalType : Swift.RawRepresentable {}
