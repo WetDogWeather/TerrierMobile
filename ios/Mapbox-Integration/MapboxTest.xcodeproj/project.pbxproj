@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B767CEE2D03DFA000679DFD /* Terrier.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B767CD92D03D18900679DFD /* Terrier.xcframework */; };
-		2B767CEF2D03DFA000679DFD /* Terrier.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B767CD92D03D18900679DFD /* Terrier.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2B767CF12D03DFA100679DFD /* WhirlyGlobe.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B767CE42D03D9FB00679DFD /* WhirlyGlobe.xcframework */; };
-		2B767CF22D03DFA100679DFD /* WhirlyGlobe.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B767CE42D03D9FB00679DFD /* WhirlyGlobe.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B7055282D069B8C001A1F6D /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 2B7055272D069B8C001A1F6D /* MapboxMaps */; };
+		2B70552D2D069BFC001A1F6D /* Terrier.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B7055292D069BC6001A1F6D /* Terrier.xcframework */; };
+		2B70552E2D069BFC001A1F6D /* Terrier.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B7055292D069BC6001A1F6D /* Terrier.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B70552F2D069BFE001A1F6D /* WhirlyGlobe.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B70552A2D069BC6001A1F6D /* WhirlyGlobe.xcframework */; };
+		2B7055302D069BFE001A1F6D /* WhirlyGlobe.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B70552A2D069BC6001A1F6D /* WhirlyGlobe.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2BA62B4D2CFFCFDC00EE7FBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA62B4C2CFFCFDC00EE7FBB /* AppDelegate.swift */; };
 		2BA62B4F2CFFCFDC00EE7FBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA62B4E2CFFCFDC00EE7FBB /* SceneDelegate.swift */; };
 		2BA62B512CFFCFDC00EE7FBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA62B502CFFCFDC00EE7FBB /* ViewController.swift */; };
 		2BA62B542CFFCFDC00EE7FBB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2BA62B532CFFCFDC00EE7FBB /* Base */; };
 		2BA62B562CFFCFDD00EE7FBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA62B552CFFCFDD00EE7FBB /* Assets.xcassets */; };
 		2BA62B592CFFCFDD00EE7FBB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2BA62B582CFFCFDD00EE7FBB /* Base */; };
-		2BA62B622CFFD1B800EE7FBB /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 2BA62B612CFFD1B800EE7FBB /* MapboxMaps */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,8 +27,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2B767CF22D03DFA100679DFD /* WhirlyGlobe.xcframework in Embed Frameworks */,
-				2B767CEF2D03DFA000679DFD /* Terrier.xcframework in Embed Frameworks */,
+				2B7055302D069BFE001A1F6D /* WhirlyGlobe.xcframework in Embed Frameworks */,
+				2B70552E2D069BFC001A1F6D /* Terrier.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -36,8 +36,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2B767CD92D03D18900679DFD /* Terrier.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Terrier.xcframework; path = ../libraries/Terrier.xcframework; sourceTree = "<group>"; };
-		2B767CE42D03D9FB00679DFD /* WhirlyGlobe.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WhirlyGlobe.xcframework; path = ../libraries/WhirlyGlobe.xcframework; sourceTree = "<group>"; };
+		2B7055292D069BC6001A1F6D /* Terrier.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Terrier.xcframework; path = ../Terrier/libraries/Terrier.xcframework; sourceTree = "<group>"; };
+		2B70552A2D069BC6001A1F6D /* WhirlyGlobe.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WhirlyGlobe.xcframework; path = ../Terrier/libraries/WhirlyGlobe.xcframework; sourceTree = "<group>"; };
 		2BA62B492CFFCFDC00EE7FBB /* MapboxTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapboxTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BA62B4C2CFFCFDC00EE7FBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BA62B4E2CFFCFDC00EE7FBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,9 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B767CEE2D03DFA000679DFD /* Terrier.xcframework in Frameworks */,
-				2BA62B622CFFD1B800EE7FBB /* MapboxMaps in Frameworks */,
-				2B767CF12D03DFA100679DFD /* WhirlyGlobe.xcframework in Frameworks */,
+				2B70552D2D069BFC001A1F6D /* Terrier.xcframework in Frameworks */,
+				2B7055282D069B8C001A1F6D /* MapboxMaps in Frameworks */,
+				2B70552F2D069BFE001A1F6D /* WhirlyGlobe.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,8 +65,8 @@
 		2B767CD62D03D0A700679DFD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2B767CE42D03D9FB00679DFD /* WhirlyGlobe.xcframework */,
-				2B767CD92D03D18900679DFD /* Terrier.xcframework */,
+				2B7055292D069BC6001A1F6D /* Terrier.xcframework */,
+				2B70552A2D069BC6001A1F6D /* WhirlyGlobe.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -120,7 +120,7 @@
 			);
 			name = MapboxTest;
 			packageProductDependencies = (
-				2BA62B612CFFD1B800EE7FBB /* MapboxMaps */,
+				2B7055272D069B8C001A1F6D /* MapboxMaps */,
 			);
 			productName = MapboxTest;
 			productReference = 2BA62B492CFFCFDC00EE7FBB /* MapboxTest.app */;
@@ -426,7 +426,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2BA62B612CFFD1B800EE7FBB /* MapboxMaps */ = {
+		2B7055272D069B8C001A1F6D /* MapboxMaps */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2BA62B602CFFD1B800EE7FBB /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
 			productName = MapboxMaps;
