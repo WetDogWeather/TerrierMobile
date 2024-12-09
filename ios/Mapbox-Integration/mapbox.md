@@ -1,7 +1,9 @@
 # Mapbox Mobile iOS  Integration with Terrier
 Mapbox's iOS toolkit is based on Metal.  So is Terrier and as a result, they can work together quite well.  The integration is taken care of in Terrier and is quite easy to use.
 
-The first step is to create a Mapbox example project like this.  I'd recommend just creating their standard example, including their library and getting it running.  Your viewDidLoad will look something like this.
+<img width="451" alt="Screenshot 2024-12-08 at 10 33 07 PM" src="https://github.com/user-attachments/assets/b229f424-3b40-43e8-b50e-dbe93a2194d3">
+
+The first step is to create a Mapbox example project like the one your looking at.  I'd recommend just creating their standard example, including their library and getting it running.  Your viewDidLoad will look something like this.
 
         // Set up a simple map
         mapView = MapView(frame: view.bounds)
@@ -17,7 +19,7 @@ The first step is to create a Mapbox example project like this.  I'd recommend j
 
 That gets you a map, in spherical mercator, suitable to add Terrier.  I'm afraid we can only do spherical mercator.  Well, *we* can do all sorts of map projections, but they only allow custom layers for spherical mercator, so that's what we'll use.
 
-Once you've got the basic map going, you'll want to [add the Terrier](../../Readme.md) library to your project.  Go do that and come back.  We'll wait.
+Once you've got the basic map going, you'll want to [add the Terrier](../../README.md) library to your project.  Go do that and come back.  We'll wait.
 
 Now add the import to the top of your View Controller, where you're creating the Mapbox Map.
 
@@ -36,7 +38,9 @@ Substitute your own stack name for "dev" there.  We gave you one when you signed
     // This keeps track of the visible time for the weather
     var tracker: TrrTimeTracker? = nil
 
-This is a Time Tracker, which is used to manage and distribute the current displayed time for all our layers.  You can have time animate, set it to a particular real time, get updates when the user changes the time, all that good stuff.  Terrier is very concerned with time, propagating it all the way down to our shaders.  It's one of the big differences between the way Terrier works and most everything else.
+This is a Time Tracker, which is used to manage and distribute the current displayed time for all our layers.  You can have time animate, set it to a particular real time, get updates when the user changes the time, all that good stuff.  
+
+Terrier is very concerned with time, propagating it all the way down to our shaders.  It's one of the big differences between the way Terrier works and most everything else.
 
 Next up is the Adapter, which will hook Terrier into Mapbox.  Declare that like so.
 
@@ -72,7 +76,11 @@ After this, Terrier is ready to render in the middle of a Mapbox map.  But Mapbo
 
 Once the map style is loaded, Mapbox will call the code we're passing in there.  It's pretty normal to put your own logic in here for when the map is ready, so you can just tack our CustomLayer setup to your own.  Or if you have another way of knowing the map is loaded, that's fine too.
 
-CustomLayer is a Mapbox construct that lets us wire in a renderer, our terrierAdapter, way down deep at the Metal level.  It's quite nifty.
+CustomLayer is a Mapbox construct that lets us wire in a renderer, our terrierAdapter, way down deep at the Metal level.  It's quite nifty, but it seems to be marked experimental.  Thus we had to modify our import call for Mapbox up top.
+
+        @_spi(Experimental) import MapboxMaps
+
+Not super clean on why, but that's what their documentation said and it does seem to work.
 
 Now we're ready to render, but what are we rendering?  That's where the serviceReady() delegate method comes in and ours looks a little like this.
 
@@ -106,17 +114,22 @@ There's a lot going on here, most of it as an example.  The main point is that T
 Weather layers need a few things to work:
 - Terrier, logically enough.  We need that infrastructure to render anything.
 - The variable, that is *what* they're displaying
+- A trrColorMap to turn values into colors.  Temperature provides its own by default, but you can override it.
 - The cadence, which is the time period over which they're displaying and how much of it to display.
 
-We start here with a temperature layer with an opacity of 0.5.  TrrTemperatureController is really just a convenience wrapper over a Single Variable layer that filters out variables named "temperature" over the continental US.  By default you'll get GFS, RTMA, and HRRR (soon to be RRFS).
+We start here with a temperature layer with an opacity of 0.5.  TrrTemperatureController is really just a convenience wrapper over a Single Variable layer that filters out variables named "temperature" over the continental US.  
+
+By default you'll get GFS, RTMA, and HRRR (soon to be RRFS).  GFS covers the whole world, but we're filtering out everything that doesn't overlap CONUS by default.  That's all configurable.
 
 All the layers need to be started, hence the start() call.  To turn them off, as you might have guessed, call stop().
 
-After creating the layer, we want to setup time information, the TrrSourceCadence, to control how much of this the user sees.  We set it up with minus 24 hours and plus 24 hours.  Then we resolve it into real times and pass that into the TrrTimeTracker.  You can change the TrrTimeTracker whenever you like, setting it to a new time or changing the range.  It will update anything watching it.
+After creating the layer, we want to set up time information, the TrrSourceCadence, to control how much of this the user sees.  We set it up with minus 24 hours and plus 24 hours.  Then we resolve it into real times and pass that into the TrrTimeTracker.  You can change the TrrTimeTracker whenever you like, setting it to a new time or changing the range.  It will update anything watching it.
+
+As an aside, the TrrSourceCadence makes more sense with the lower level controllers.  The TrrTemperatureController is hiding a lot by default.  We'll flesh that out more later.
 
 The last thing we do here is call play() so the tracker animates over the 2 day period.
 
 ## Up Next
-The Temperature example should be enough to get you going.  We have a fairly elaborate test app for Terrier and I'll be bringing more pieces of that over for things like radar, hooking up the TrrTimeTracker to a slider, and tweaking some of the settings.
+The Temperature example should be enough to get you going.  The code is all here in the directory, so feel free to peruse our example.
 
-
+We have a fairly elaborate test app for Terrier and I'll be bringing more pieces of that over for things like radar, hooking up the TrrTimeTracker to a slider, and tweaking some of the settings.
