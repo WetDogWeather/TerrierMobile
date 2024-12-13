@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B7055282D069B8C001A1F6D /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 2B7055272D069B8C001A1F6D /* MapboxMaps */; };
-		2B70552D2D069BFC001A1F6D /* Terrier.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B7055292D069BC6001A1F6D /* Terrier.xcframework */; };
 		2B70552E2D069BFC001A1F6D /* Terrier.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B7055292D069BC6001A1F6D /* Terrier.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2B70552F2D069BFE001A1F6D /* WhirlyGlobe.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B70552A2D069BC6001A1F6D /* WhirlyGlobe.xcframework */; };
 		2B7055302D069BFE001A1F6D /* WhirlyGlobe.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B70552A2D069BC6001A1F6D /* WhirlyGlobe.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2BA62B4D2CFFCFDC00EE7FBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA62B4C2CFFCFDC00EE7FBB /* AppDelegate.swift */; };
 		2BA62B4F2CFFCFDC00EE7FBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA62B4E2CFFCFDC00EE7FBB /* SceneDelegate.swift */; };
@@ -53,9 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B70552D2D069BFC001A1F6D /* Terrier.xcframework in Frameworks */,
 				2B7055282D069B8C001A1F6D /* MapboxMaps in Frameworks */,
-				2B70552F2D069BFE001A1F6D /* WhirlyGlobe.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

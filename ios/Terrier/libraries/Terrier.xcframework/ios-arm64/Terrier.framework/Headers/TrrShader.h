@@ -22,7 +22,7 @@
 
 //typedef uint16_t float16_t;
 typedef simd_float16 half;
-typedef struct simd_half3_t { simd_float16 _[3]; } __attribute__((aligned(8))) simd_half3;
+//typedef struct simd_half3_t { simd_float16 _[3]; } __attribute__((aligned(8))) simd_half3;
 #endif
 
 
