@@ -1,24 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapboxTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lAU-gd-Ttn" userLabel="ButtonStack">
+                                <rect key="frame" x="16" y="91" width="361" height="34.333333333333343"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3n-7p-Mam" userLabel="Temp">
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Temp"/>
+                                        <connections>
+                                            <action selector="tempButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aad-R9-X3S"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pva-Rt-3EC" userLabel="Wind">
+                                        <rect key="frame" x="123" y="0.0" width="115" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Wind"/>
+                                        <connections>
+                                            <action selector="windButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PPw-eJ-yoP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="565-e0-t9z" userLabel="Precip">
+                                        <rect key="frame" x="246" y="0.0" width="115" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Precip"/>
+                                        <connections>
+                                            <action selector="precipButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tqs-hz-SJM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="9zR-tp-K1Q" userLabel="TimeStack">
+                                <rect key="frame" x="16" y="751.66666666666663" width="361" height="34.333333333333371"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hL-vy-hVo" userLabel="Play">
+                                        <rect key="frame" x="0.0" y="0.0" width="43" height="34.333333333333336"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="43" id="dc1-wp-zA2"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="play" catalog="system"/>
+                                        <connections>
+                                            <action selector="playAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bLG-NY-ok9"/>
+                                        </connections>
+                                    </button>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kS3-Yg-iKl">
+                                        <rect key="frame" x="43" y="0.0" width="320" height="35.333333333333336"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Vbz-EO-e8X"/>
+                                            <action selector="sliderDrag:" destination="BYZ-38-t0r" eventType="touchDragInside" id="T9O-iZ-h2x"/>
+                                            <action selector="sliderDrag:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="gvM-Gf-tLb"/>
+                                            <action selector="sliderDragEnd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9uM-Jv-q6w"/>
+                                            <action selector="sliderDragEnd:" destination="BYZ-38-t0r" eventType="touchCancel" id="V86-O8-RKk"/>
+                                            <action selector="sliderDragEnd:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="rmo-Cx-7DF"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0I-TN-p1l" userLabel="TimeLabel">
+                                <rect key="frame" x="152" y="722" width="88" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="yWJ-pR-UPF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="9zR-tp-K1Q" secondAttribute="leading" constant="-16" id="2Tn-8j-ucg"/>
+                            <constraint firstItem="9zR-tp-K1Q" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-16" id="MMB-8Y-97e"/>
+                            <constraint firstItem="lAU-gd-Ttn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Vc1-7N-JQr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="V0I-TN-p1l" secondAttribute="bottom" constant="75" id="cbo-Oa-6zL"/>
+                            <constraint firstItem="V0I-TN-p1l" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dQK-5m-hsb"/>
+                            <constraint firstItem="lAU-gd-Ttn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="gJK-cL-qBq"/>
+                            <constraint firstItem="9zR-tp-K1Q" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hEE-Gd-xTG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9zR-tp-K1Q" secondAttribute="bottom" constant="32" id="lcg-t6-E9F"/>
+                            <constraint firstItem="lAU-gd-Ttn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-16" id="nlW-q6-7Hp"/>
+                            <constraint firstItem="lAU-gd-Ttn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sVx-0H-MoW"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="playButton" destination="7hL-vy-hVo" id="Qb7-cI-hCb"/>
+                        <outlet property="slider" destination="kS3-Yg-iKl" id="MOj-6X-b2d"/>
+                        <outlet property="timeLabel" destination="V0I-TN-p1l" id="3mM-wq-M6a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="61.832061068702288" y="-28.169014084507044"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="play" catalog="system" width="120" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

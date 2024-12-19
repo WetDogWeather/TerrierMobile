@@ -78,11 +78,11 @@
 		</data>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		4Ac+ehIZ9w7FY17bA2Y4O/sH96I=
+		hgp9azWKvk/VIxCGdSI/bS64HbY=
 		</data>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		okG5JdiLQyVaIREdCl+X+O9oj6Y=
+		vfP80mKENUIXi4f/EIHHQoo271o=
 		</data>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -90,19 +90,19 @@
 		</data>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		okG5JdiLQyVaIREdCl+X+O9oj6Y=
+		vfP80mKENUIXi4f/EIHHQoo271o=
 		</data>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		fCMHAhu2SIZDhawum3RRDuLJHE8=
+		zSAlvcukuRbfXP4FtYEPSa0RqoI=
 		</data>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		4Ac+ehIZ9w7FY17bA2Y4O/sH96I=
+		hgp9azWKvk/VIxCGdSI/bS64HbY=
 		</data>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		XGZubk7JeaSdMY1wLpblpokEGQs=
+		ovafmOXTXKiqK+VH8Caf3UsVM7Y=
 		</data>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -110,11 +110,11 @@
 		</data>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		XGZubk7JeaSdMY1wLpblpokEGQs=
+		ovafmOXTXKiqK+VH8Caf3UsVM7Y=
 		</data>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jbYoxttPS9PRItMNxCzCjqmOqdk=
+		PGsEgLxibuGatJD6B+2ak8o2ulw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -142,7 +142,7 @@
 		</data>
 		<key>default.metallib</key>
 		<data>
-		Cv9ea9RUAtyRmAM7wYxy3co76+8=
+		b3GjbOCdeIGYQXFzuTZxsEC3uv4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -270,14 +270,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			D8V9jYvms3KTuA1AvIDxZQPUwYS+SOLnoD7UVxMPKfs=
+			83mFlotTeb2Q1n8LknEGu0ybBASsi9ytYoUT2Qjpb2A=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PZmdGKY5sIG/sVSxKmcP2rQF+b9xtYSdEAV0t7JK5lQ=
+			J7YDNautyd4GwCxrFkAM5z39rFwkT5teisZlK7K2NuI=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -291,28 +291,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PZmdGKY5sIG/sVSxKmcP2rQF+b9xtYSdEAV0t7JK5lQ=
+			J7YDNautyd4GwCxrFkAM5z39rFwkT5teisZlK7K2NuI=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/Tm4m2b3ey+6B2ojQCYvPEujTGXk8owlFtAyS/bcdyE=
+			FAt1RGpcLU1U9VWCteER69ZgMuCUnRN5dcuwxLbHJdU=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D8V9jYvms3KTuA1AvIDxZQPUwYS+SOLnoD7UVxMPKfs=
+			83mFlotTeb2Q1n8LknEGu0ybBASsi9ytYoUT2Qjpb2A=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CULiUVTVhGaG3HP11q7fFpx4zUx0njlvxonjHI9ZChQ=
+			O3IGM02LScgbawN5SlFN4nTKoGxzlh1TWNEPp+l8sBs=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -326,14 +326,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CULiUVTVhGaG3HP11q7fFpx4zUx0njlvxonjHI9ZChQ=
+			O3IGM02LScgbawN5SlFN4nTKoGxzlh1TWNEPp+l8sBs=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8KbWS8SxZE39N+1Il2wYclCNFlgxBM+NqLNKE5E42wU=
+			VyXBq6ynrdp6bTH4B0QM1iCtdm05V/5vEFPETw2n18c=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -382,7 +382,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GVBUt/oNnFFOr0mdSMoTkqOO0zBP7nzPTb+p+h723Is=
+			6QlIOUCLdd9SKb8VhaxmPTHk4oD0enL/avg54hvkm54=
 			</data>
 		</dict>
 	</dict>

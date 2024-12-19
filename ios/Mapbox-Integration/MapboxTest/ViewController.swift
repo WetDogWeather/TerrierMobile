@@ -9,7 +9,8 @@ import UIKit
 @_spi(Experimental) import MapboxMaps
 import Terrier
 
-class ViewController: UIViewController, TrrServiceDelegate {
+class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelegate {
+    
     var mapView: MapView?
     
     // Sets up the service and kicks off the request for contents
@@ -41,13 +42,14 @@ class ViewController: UIViewController, TrrServiceDelegate {
         mapView.mapboxMap.setCamera(to: cameraOptions)
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 
-        view.addSubview(mapView)
+        view.insertSubview(mapView, at: 0)
 
         // The Mapbox Adapter interfaces to Mapbox for rendering
         terrierAdapter = TerrierMapboxAdapter(service: service, mapView: mapView)
         guard let terrierAdapter = terrierAdapter else { return }
         tracker = TrrTimeTracker(viewC: terrierAdapter)
         terrierAdapter.setTracker(tracker: tracker)
+        tracker?.addDelegate(delegate: self)
 
         // Set the projection to flat and wire in our adapter as a layer
         mapView.mapboxMap.setMapStyleContent {
@@ -55,32 +57,228 @@ class ViewController: UIViewController, TrrServiceDelegate {
             CustomLayer(id: "terrier-layer", renderer: terrierAdapter)
         }
     }
+
+    // This section handles the play button interaction and updates from the time
+    //  tracker to the label displaying the time
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var playButton: UIButton!
+    func playUpdate() {
+        guard let tracker = tracker else { return }
+        if tracker.isPlaying() {
+            playButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
+        } else {
+            playButton.setImage(UIImage(systemName: "play"), for: .normal)
+        }
+    }
+
+    // Called by the play button.  We'll treat it as a toggle.
+    @IBAction func playAction(_ sender: Any) {
+        guard let tracker = tracker else { return }
+        if tracker.isPlaying() {
+            tracker.pause()
+            windLayer?.trailTexture = dotTexture
+        } else {
+            tracker.play()
+            windLayer?.trailTexture = arrowTexture
+        }
+        playUpdate()
+    }
+    
+    // Update the time label
+    func updateTime() {
+        guard let tracker = tracker else { return }
+
+        let format = DateFormatter.forDateFormat("E HH:mm", local: false)
+        format.timeZone = TimeZone.current
+        
+        timeLabel.text = format.string(from: Date(timeIntervalSince1970: tracker.curEpoch))
+    }
+    
+    // Delegate for tracker update.  This means the time changed
+    @IBOutlet weak var slider: UISlider!
+    var sliderUpdateScheduled = false
+    var inTrackerUpdate = false
+    func trackerUpdate(tracker: any Terrier.TrrITimeTracker, epoch: TimeInterval) {
+        guard !sliderUpdateScheduled else { return }
+        sliderUpdateScheduled = true
+        // We delay the update so that we're not updating the slider at 60hz.
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.1) {
+            self.sliderUpdateScheduled = false
+            self.inTrackerUpdate = true
+            self.slider.setValue(Float(tracker.interpolateSimple(epoch: tracker.curEpoch)), animated: false)
+            self.inTrackerUpdate = false
+            self.updateTime()
+        }
+    }
+    
+    // When dragging the slider we switch how the wind particles look
+    @IBAction func sliderDrag(_ sender: Any) {
+        windLayer?.isAnimatingTime = true
+        windLayer?.trailTexture = arrowTexture
+    }
+    
+    // Done dragging, so put the wind back to normal
+    @IBAction func sliderDragEnd(_ sender: Any) {
+        windLayer?.resetAnimatingTime()
+        windLayer?.trailTexture = dotTexture
+    }
+    
+    
+    // User changed the time, or we did
+    // If we did, we don't want to propagate the change further
+    @IBAction func sliderChanged(_ sender: Any) {
+        guard !inTrackerUpdate else { return }
+        guard let tracker = tracker else { return }
+        tracker.curEpoch = tracker.interpolateEpoch(pos: Double(slider.value))
+        tracker.pause()
+        playUpdate()
+        updateTime()
+    }
+    
+    func stopLayers() {
+        if let temperatureLayer = temperatureLayer {
+            temperatureLayer.stop()
+            self.temperatureLayer = nil
+        }
+        if let windLayer = windLayer {
+            windLayer.stop()
+            self.windLayer = nil
+        }
+        if let precipLayer = precipLayer {
+            precipLayer.stop()
+            self.precipLayer = nil
+        }
+    }
     
     var temperatureLayer: TrrITemperatureController? = nil
-    
-    // Called when we have the contents for the Boxer Stack
-    // Now we can construct weather layers
-    func serviceReady(service: Terrier.TrrService) {
+    func startTemperature() {
+        guard temperatureLayer == nil else { return }
         guard let tracker = tracker else { return }
         guard let adapter = terrierAdapter else { return }
         
+        stopLayers()
+
+        // Plus and minus one day
+        let srcCadence = TrrSourceCadence(minTimeOffset: -24 * 3600,
+                                      maxTimeOffset: 24 * 3600,
+                                      maxTimeSlices: 96+2)
+        let resCadence = srcCadence.resolve()
+
         // Start temperature display
         temperatureLayer = TrrTemperatureController.create(level: nil,
                                                         service: service,
                                                         tracker: tracker,
                                                         viewC: adapter)
-        temperatureLayer?.baseColor = UIColor(white: 1.0, alpha: 0.5)
-        temperatureLayer?.start()
+        if let temperatureLayer = temperatureLayer {
+            temperatureLayer.baseColor = UIColor(white: 1.0, alpha: 0.5)
+            temperatureLayer.importanceFactor = 8.0
+            temperatureLayer.sourceCadence = resCadence
+            _ = temperatureLayer.start()
+        }
+        
+        tracker.setEpochRange(newTime: resCadence.now, min: resCadence.minTime!, max: resCadence.maxTime!)
+    }
+
+    var windLayer: TrrIWindController? = nil
+    var arrowTexture: MaplyTexture? = nil
+    var dotTexture: MaplyTexture? = nil
+    func startWind() {
+        guard windLayer == nil else { return }
+        guard let tracker = tracker else { return }
+        guard let adapter = terrierAdapter else { return }
+
+        stopLayers()
         
         // Plus and minus one day
         let srcCadence = TrrSourceCadence(minTimeOffset: -24 * 3600,
                                       maxTimeOffset: 24 * 3600,
                                       maxTimeSlices: 96+2)
         let resCadence = srcCadence.resolve()
+
+        // Start wind controller
+        windLayer = TrrWindController.create(level: nil,
+                                             service: service,
+                                             tracker: tracker,
+                                             viewC: adapter)
+        if let windLayer = windLayer {
+            windLayer.baseColor = UIColor(white: 1.0, alpha: 0.5)
+            windLayer.enable = false
+            windLayer.enableVelocity = true
+            windLayer.enableTrails = true
+            windLayer.trailTexture = dotTexture
+            windLayer.addAllLoadedDelegate(timeout: 10) { ctrl in
+                let srcValid = ctrl.areAnySourcesValid()
+                ctrl.enable = ctrl.enable || srcValid
+            }
+            _ = windLayer.start()
+        }
+
         tracker.setEpochRange(newTime: resCadence.now, min: resCadence.minTime!, max: resCadence.maxTime!)
+    }
+
+    var precipLayer: TrrIRadarController? = nil
+    func startPrecip() {
+        guard precipLayer == nil else { return }
+        guard let tracker = tracker else { return }
+        guard let adapter = terrierAdapter else { return }
         
-        // This will animate over the range
-        tracker.play()
+        stopLayers()
+
+        // Minus 4 hours
+        let srcCadence = TrrSourceCadence(minTimeOffset: -4 * 3600,
+                                          maxTimeOffset: 0.0,
+                                          maxTimeSlices: 96+2)
+        let resCadence = srcCadence.resolve()
+
+        precipLayer = TrrRadarController.create(level: nil,
+                                                service: service,
+                                                tracker: tracker,
+                                                viewC: adapter)
+        if let precipLayer = precipLayer {
+            precipLayer.sourceCadence = resCadence
+            precipLayer.importanceFactor = 16.0
+            precipLayer.snapToFrame = true
+            // Right here we wait for all the manifests to load (but not yet data)
+            //  and then we look for the first and last time slice and set the
+            //  tracker to match it exactly.
+            precipLayer.addAllLoadedDelegate(timeout: 10.0) { ctrl in
+                if let manifest = ctrl.manifests.first {
+                    if let firstSlice = manifest.timeSlices.first,
+                       let lastSlice = manifest.timeSlices.last {
+                        tracker.setEpochRange(newTime: tracker.curEpoch, min: firstSlice.forecastEpoch, max: lastSlice.forecastEpoch)
+                    }
+                }
+            }
+            _ = precipLayer.start()
+        }
+
+        tracker.setEpochRange(newTime: resCadence.now, min: resCadence.minTime!, max: resCadence.maxTime!)
+    }
+    
+    @IBAction func tempButtonAction(_ sender: Any) {
+        startTemperature()
+    }
+    
+    @IBAction func windButtonAction(_ sender: Any) {
+        startWind()
+    }
+    
+    @IBAction func precipButtonAction(_ sender: Any) {
+        startPrecip()
+    }
+    
+    
+    // Called when we have the contents for the Boxer Stack
+    // Now we can construct weather layers
+    func serviceReady(service: Terrier.TrrService) {
+        guard let adapter = terrierAdapter else { return }
+
+        // Set up the wind textures for later use
+        // These textures are in the Assets and can be modified
+        arrowTexture = adapter.addTexture(UIImage(named: "arrow")!, desc: nil, mode: .current)
+        dotTexture = adapter.addTexture(UIImage(named: "dot")!, desc: nil, mode: .current)
+
+        startTemperature()
     }
     
     func serviceFailed() {

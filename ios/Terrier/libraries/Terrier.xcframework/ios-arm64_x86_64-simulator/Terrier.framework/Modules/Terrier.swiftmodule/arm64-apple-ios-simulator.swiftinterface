@@ -719,7 +719,7 @@ extension Swift.Sequence where Self.Element : Swift.AdditiveArithmetic {
     @objc get
     @objc set
   }
-  public static func create(level: Swift.String?, service: Terrier.TrrService, tracker: Terrier.TrrTimeTracker, viewC: WhirlyGlobe.MaplyBaseViewController) -> any Terrier.TrrIPrecipController
+  public static func create(level: Swift.String?, service: Terrier.TrrService, tracker: Terrier.TrrTimeTracker, viewC: any WhirlyGlobe.MaplyRenderControllerProtocol) -> any Terrier.TrrIPrecipController
   @objc override public func start() -> Swift.Bool
   @objc override public func stop()
   override open func getManifests() -> [Terrier.TrrVarManifest]
