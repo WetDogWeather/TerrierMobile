@@ -13,6 +13,7 @@
  */
 @interface TrrColorMap : NSObject
 
+/** Initialize an empty colormap.  This is not what you want. */
 - (instancetype __nonnull)init;
 
 - (instancetype __nullable)initWithValues:(NSArray<NSNumber *> * __nonnull)values

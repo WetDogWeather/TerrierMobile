@@ -173,6 +173,24 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
             temperatureLayer.baseColor = UIColor(white: 1.0, alpha: 0.5)
             temperatureLayer.importanceFactor = 8.0
             temperatureLayer.sourceCadence = resCadence
+            // Temperature color map in Kelvin
+            temperatureLayer.colorMap = TrrColorMap(
+                values: [ 255.372, 260.928, 266.483, 272.039, 277.594, 283.15, 288.706, 294.261, 299.817, 305.372, 310.928, 316.483],
+                colors: [
+                    UIColor.fromHexRGB(0xFFBFFF),
+                    UIColor.fromHexRGB(0xD873DB),
+                    UIColor.fromHexRGB(0x913ABB),
+                    UIColor.fromHexRGB(0x372398),
+                    UIColor.fromHexRGB(0x00B6DC),
+                    UIColor.fromHexRGB(0x02D786),
+                    UIColor.fromHexRGB(0x40C604),
+                    UIColor.fromHexRGB(0xFFFF00),
+                    UIColor.fromHexRGB(0xFB7700),
+                    UIColor.fromHexRGB(0xD22402),
+                    UIColor.fromHexRGB(0xA20902),
+                    UIColor.fromHexRGB(0xEED9D8)
+                ])
+
             _ = temperatureLayer.start()
         }
         
@@ -238,6 +256,33 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
             precipLayer.sourceCadence = resCadence
             precipLayer.importanceFactor = 16.0
             precipLayer.snapToFrame = true
+            precipLayer.colorMap = TrrColorMap(
+                values: [ -30, -25, -20, -15, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75],
+                colors: [
+                    UIColor.fromHexARGB(0x00CBFCFD),
+                    UIColor.fromHexARGB(0x00D09CCB),
+                    UIColor.fromHexARGB(0x00976797),
+                    UIColor.fromHexARGB(0x00643363),
+                    UIColor.fromHexARGB(0x00CDCC9A),
+                    UIColor.fromHexARGB(0x009C9A6B),
+                    UIColor.fromHexARGB(0x80676467),  // 0.0
+                    UIColor.fromHexARGB(0xFF10E6E7),
+                    UIColor.fromHexARGB(0xFF069FF3),
+                    UIColor.fromHexARGB(0xFF0400F0),
+                    UIColor.fromHexARGB(0xFF01FC08),
+                    UIColor.fromHexARGB(0xFF02C701),
+                    UIColor.fromHexARGB(0xFF068D01),
+                    UIColor.fromHexARGB(0xFFF6F602),
+                    UIColor.fromHexARGB(0xFFE6BA03),
+                    UIColor.fromHexARGB(0xFFF79505),
+                    UIColor.fromHexARGB(0xFFFE0002),
+                    UIColor.fromHexARGB(0xFFD60401),
+                    UIColor.fromHexARGB(0xFFBB0200),
+                    UIColor.fromHexARGB(0xFFF807F6),
+                    UIColor.fromHexARGB(0xFF9A52C8),
+                    UIColor.fromHexARGB(0xFFFCFBFA)
+                ])
+
             // Right here we wait for all the manifests to load (but not yet data)
             //  and then we look for the first and last time slice and set the
             //  tracker to match it exactly.

@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/TrrColorMap.h</key>
 		<data>
-		fBN6mFrsXEmjaiEA1q8XOwJdszk=
+		/Rt5yKPCnJpoMhKFShaHRnbfSMY=
 		</data>
 		<key>Headers/TrrFloatUniShader.h</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		hgp9azWKvk/VIxCGdSI/bS64HbY=
+		NVZKc21/spBVBdZuzhBESosk3vM=
 		</data>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		hgp9azWKvk/VIxCGdSI/bS64HbY=
+		NVZKc21/spBVBdZuzhBESosk3vM=
 		</data>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -172,7 +172,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xuGGrSQg6H+nwrO8iaWsDn5qsekWcZp040nhSYA2NZQ=
+			uR70v+6SUPpLFJrFqvm/7e/sDVdlvRGta7lly8clv08=
 			</data>
 		</dict>
 		<key>Headers/TrrFloatUniShader.h</key>
@@ -270,7 +270,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			83mFlotTeb2Q1n8LknEGu0ybBASsi9ytYoUT2Qjpb2A=
+			ISb1xbCTmvLsYQ9hMKvGs4u0UPSXfvDcjUSj23jUBvA=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -305,7 +305,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			83mFlotTeb2Q1n8LknEGu0ybBASsi9ytYoUT2Qjpb2A=
+			ISb1xbCTmvLsYQ9hMKvGs4u0UPSXfvDcjUSj23jUBvA=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
