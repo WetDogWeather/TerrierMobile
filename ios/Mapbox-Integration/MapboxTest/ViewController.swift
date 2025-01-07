@@ -173,6 +173,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
             temperatureLayer.baseColor = UIColor(white: 1.0, alpha: 0.5)
             temperatureLayer.importanceFactor = 8.0
             temperatureLayer.sourceCadence = resCadence
+            temperatureLayer.varInterpMode = .Bilinear
             // Temperature color map in Kelvin
             temperatureLayer.colorMap = TrrColorMap(
                 values: [ 255.372, 260.928, 266.483, 272.039, 277.594, 283.15, 288.706, 294.261, 299.817, 305.372, 310.928, 316.483],
@@ -254,8 +255,10 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
                                                 viewC: adapter)
         if let precipLayer = precipLayer {
             precipLayer.sourceCadence = resCadence
+            precipLayer.renderScale = 1.0
             precipLayer.importanceFactor = 16.0
             precipLayer.snapToFrame = true
+            precipLayer.varInterpMode = .Bicubic
             precipLayer.colorMap = TrrColorMap(
                 values: [ -30, -25, -20, -15, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75],
                 colors: [

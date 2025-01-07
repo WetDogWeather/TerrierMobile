@@ -380,6 +380,7 @@ SWIFT_PROTOCOL("_TtP7Terrier14TrrIController_")
 @property (nonatomic, readonly, copy) NSArray<TrrVarManifest *> * _Nonnull manifests;
 /// Add a delegate to be called (only once) when each source is loaded
 - (NSInteger)addLoadedDelegate:(void (^ _Nonnull)(id <TrrIController> _Nonnull, TrrVarManifest * _Nonnull, BOOL))delegate SWIFT_WARN_UNUSED_RESULT;
+/// Remove a previously-added delegate
 - (void)removeLoadedDelegate:(NSInteger)key;
 /// Add a delegate to be called when all sources have loaded
 - (NSInteger)addAllLoadedDelegateWithTimeout:(NSTimeInterval)timeout :(void (^ _Nonnull)(id <TrrIController> _Nonnull))delegate;
@@ -400,6 +401,7 @@ SWIFT_PROTOCOL("_TtP7Terrier14TrrIController_")
 - (NSArray<TimeSliceInfo *> * _Nonnull)getCurrentSlices SWIFT_WARN_UNUSED_RESULT;
 /// Start loading and rendering
 - (BOOL)start SWIFT_WARN_UNUSED_RESULT;
+/// Force a reload of the entire layer
 - (void)reload;
 - (void)stop;
 @end
@@ -450,6 +452,7 @@ SWIFT_CLASS("_TtC7Terrier17TrrBaseController")
 - (BOOL)removeAllLoadedDelegate:(NSInteger)key SWIFT_WARN_UNUSED_RESULT;
 - (TrrMinMax * _Nullable)anyCoverageSpan SWIFT_WARN_UNUSED_RESULT;
 - (TrrMinMax * _Nullable)allCoverageSpan SWIFT_WARN_UNUSED_RESULT;
+/// Return the time slices currently being used by the control.
 - (NSArray<TimeSliceInfo *> * _Nonnull)getCurrentSlices SWIFT_WARN_UNUSED_RESULT;
 /// Force a reload of the entire layer
 - (void)reload;
@@ -461,6 +464,8 @@ SWIFT_CLASS("_TtC7Terrier17TrrBaseController")
 @end
 
 
+/// This is used to represent the time slices being displayed by a given control.
+/// It’s a class used in getCurrentSlices()
 SWIFT_CLASS("_TtCC7Terrier17TrrBaseController13TimeSliceInfo")
 @interface TimeSliceInfo : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -469,6 +474,7 @@ SWIFT_CLASS("_TtCC7Terrier17TrrBaseController13TimeSliceInfo")
 
 
 /// Cache cleaner is invoked per source to clean up unused  data.
+/// This isn’t typically an object you need to interact with.
 SWIFT_CLASS("_TtC7Terrier15TrrCacheCleaner")
 @interface TrrCacheCleaner : NSObject
 /// Start removing old files
@@ -696,10 +702,11 @@ SWIFT_CLASS("_TtC7Terrier9TrrMinMax")
 @end
 
 
-/// Precip overlay
+/// Precipitation controller displays precipitation type data.
 SWIFT_CLASS("_TtC7Terrier19TrrPrecipController")
 @interface TrrPrecipController : TrrBaseController <TrrIPrecipController, TrrTimeTrackerDelegate>
 @property (nonatomic, readonly, copy) NSString * _Nonnull label;
+/// Set the color map used for display.  This will map from precipitation types to colors.
 @property (nonatomic, strong) TrrColorMap * _Nullable colorMap;
 @property (nonatomic) enum TrrInterpolationMode varInterpMode;
 @property (nonatomic) enum TrrInterpolationMode visualInterpMode;
@@ -798,25 +805,32 @@ SWIFT_CLASS("_TtC7Terrier24TrrTemperatureController")
 @protocol MaplyRenderControllerProtocol;
 
 /// Time Tracker is used to set and update the displayed time amongst a group
-/// of clients.
+/// of delegates.  You can add or remove delegates to the list that get notified interactively.
+/// In general, when the time changes, the delegates are notified.
 SWIFT_CLASS("_TtC7Terrier14TrrTimeTracker")
 @interface TrrTimeTracker : MaplyActiveObject <TrrITimeTracker>
-/// Current time for display.
+/// Current time for display.  This is what the Tracker is telling all the delegates is the current time.
+/// This may be updated externally, or it may be updated as part of an ongoing play.
+/// Time is in seconds since 1970.
 @property (nonatomic) NSTimeInterval curEpoch;
 /// Return true if we’re animating.
 - (BOOL)isPlaying SWIFT_WARN_UNUSED_RESULT;
 /// Start animating if we’re not already.
 - (void)play;
 /// Send a new round of updates to watchers.
+/// You may want to do this if you’ve added a new one, though the Tracker will handle that for you.
 - (void)poke;
 /// Pass in an epoch and return the value interpolated along our range.
-/// This is useful for a slider.
+/// This is useful for a slider, where the returned value will be in the range 0 to 1.
 - (double)interpolateSimpleWithEpoch:(NSTimeInterval)epoch SWIFT_WARN_UNUSED_RESULT;
 /// Add a delegate watcher for changes to the values.
+/// The delegate will get called with every change to the value, including during an active play().
+/// As such, you might want to throttle updates on your side if they’re expensive.
 - (void)addDelegateWithDelegate:(NSObject * _Nonnull)delegate;
 /// Remove a delegate watcher.
+/// Delegate will no longer be called for Tracker events.
 - (void)removeDelegateWithDelegate:(NSObject * _Nonnull)delegate;
-/// Stop sending updates to delegates
+/// Stop sending updates to delegates.
 - (void)shutdown;
 - (BOOL)hasUpdate SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithViewController:(id <MaplyRenderControllerProtocol> _Nonnull)viewC SWIFT_UNAVAILABLE;
