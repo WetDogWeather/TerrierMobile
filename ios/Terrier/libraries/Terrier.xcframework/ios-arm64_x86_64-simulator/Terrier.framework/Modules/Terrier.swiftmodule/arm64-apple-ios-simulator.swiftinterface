@@ -44,8 +44,8 @@ import _SwiftConcurrencyShims
 }
 @objc public protocol TrrITemperatureController : Terrier.TrrISingleChannelController {
 }
-@_hasMissingDesignatedInitializers @objc public class TrrTemperatureController : Terrier.TrrSingleChannelController, Terrier.TrrITemperatureController {
-  public static func create(level: Swift.String?, service: Terrier.TrrService, tracker: Terrier.TrrTimeTracker, viewC: any WhirlyGlobe.MaplyRenderControllerProtocol) -> any Terrier.TrrITemperatureController
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TrrTemperatureController : Terrier.TrrSingleChannelController, Terrier.TrrITemperatureController {
+  public static func create(region: [Swift.String], level: Swift.String, cadence: Terrier.TrrSourceCadence, service: Terrier.TrrService, tracker: Terrier.TrrTimeTracker, viewC: any WhirlyGlobe.MaplyRenderControllerProtocol) -> (any Terrier.TrrITemperatureController)?
   override public var defaultColorMap: Terrier.TrrColorMap? {
     get
   }
@@ -111,7 +111,7 @@ import _SwiftConcurrencyShims
   @objc func getCenterSample() -> [Swift.Float]
   @objc var offlineMode: Swift.Bool { get set }
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TrrWindController : Terrier.TrrBaseController, Terrier.TrrIWindController {
+@_hasMissingDesignatedInitializers @objc public class TrrWindController : Terrier.TrrBaseController, Terrier.TrrIWindController {
   @objc override public var label: Swift.String {
     @objc get
   }
@@ -297,7 +297,7 @@ import _SwiftConcurrencyShims
     @objc set
   }
   @objc public func resetTrails(overTime: Foundation.TimeInterval)
-  @objc public static func create(level: Swift.String?, service: Terrier.TrrService, tracker: any Terrier.TrrITimeTracker, viewC: any WhirlyGlobe.MaplyRenderControllerProtocol) -> any Terrier.TrrIWindController
+  @objc public static func create(region: [Swift.String], level: Swift.String, cadence: Terrier.TrrSourceCadence, service: Terrier.TrrService, tracker: any Terrier.TrrITimeTracker, viewC: any WhirlyGlobe.MaplyRenderControllerProtocol) -> (any Terrier.TrrIWindController)?
   override open func getManifests() -> [Terrier.TrrVarManifest]
   override open func makeControl() -> Terrier.TrrVarController?
   override open func setupSource(source: Terrier.TrrVarSource, index: Swift.Int)
@@ -337,13 +337,6 @@ import _SwiftConcurrencyShims
   @objc public var manifests: [Terrier.TrrVarManifest] {
     get
   }
-  @objc public var level: Swift.String? {
-    @objc get
-    @objc set
-  }
-  @objc public var availableLevels: [Swift.String] {
-    @objc get
-  }
   @objc public var drawPriority: Swift.Int32 {
     @objc get
     @objc set
@@ -372,10 +365,7 @@ import _SwiftConcurrencyShims
     @objc get
     @objc set
   }
-  @objc public var sourceCadence: Terrier.TrrSourceCadence {
-    @objc get
-    @objc set
-  }
+  @objc public var sourceCadence: Terrier.TrrSourceCadence
   @objc public var snapToFrame: Swift.Bool {
     @objc get
     @objc set
@@ -568,7 +558,7 @@ import _SwiftConcurrencyShims
   @objc override public var label: Swift.String {
     @objc get
   }
-  public static func create(type: Terrier.TrrSourceDataTypes, depth: Swift.Int, level: Swift.String?, service: Terrier.TrrService, tracker: Terrier.TrrTimeTracker, viewC: WhirlyGlobe.MaplyBaseViewController) -> any Terrier.TrrISingleChannelController
+  public static func create(cadence: Terrier.TrrSourceCadence, dataSources: [Terrier.TrrDataSource], service: Terrier.TrrService, tracker: Terrier.TrrTimeTracker, viewC: WhirlyGlobe.MaplyBaseViewController) -> (any Terrier.TrrISingleChannelController)?
   @objc override public func start() -> Swift.Bool
   @objc override public func stop()
   override open func getManifests() -> [Terrier.TrrVarManifest]
@@ -655,8 +645,6 @@ extension Swift.Sequence where Self.Element : Swift.AdditiveArithmetic {
   @objc var enable: Swift.Bool { get set }
   @objc var started: Swift.Bool { get }
   @objc var label: Swift.String { get }
-  @objc var level: Swift.String? { get set }
-  @objc var availableLevels: [Swift.String] { get }
   @objc var drawPriority: Swift.Int32 { get set }
   @objc var drawPriorityPerSource: Swift.Int { get set }
   @objc var importanceFactor: Swift.Float { get set }
@@ -699,7 +687,7 @@ extension Swift.Sequence where Self.Element : Swift.AdditiveArithmetic {
 @objc public protocol TrrIPrecipController : Terrier.TrrIController {
   @objc var colorMap: Terrier.TrrColorMap? { get set }
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TrrPrecipController : Terrier.TrrBaseController, Terrier.TrrIPrecipController, Terrier.TrrTimeTrackerDelegate {
+@_hasMissingDesignatedInitializers @objc public class TrrPrecipController : Terrier.TrrBaseController, Terrier.TrrIPrecipController, Terrier.TrrTimeTrackerDelegate {
   @objc override public var label: Swift.String {
     @objc get
   }
@@ -719,7 +707,7 @@ extension Swift.Sequence where Self.Element : Swift.AdditiveArithmetic {
     @objc get
     @objc set
   }
-  public static func create(level: Swift.String?, service: Terrier.TrrService, tracker: Terrier.TrrTimeTracker, viewC: any WhirlyGlobe.MaplyRenderControllerProtocol) -> any Terrier.TrrIPrecipController
+  public static func create(region: [Swift.String], cadence: Terrier.TrrSourceCadence, service: Terrier.TrrService, tracker: Terrier.TrrTimeTracker, viewC: any WhirlyGlobe.MaplyRenderControllerProtocol) -> (any Terrier.TrrIPrecipController)?
   @objc override public func start() -> Swift.Bool
   @objc override public func stop()
   override open func getManifests() -> [Terrier.TrrVarManifest]
@@ -733,7 +721,7 @@ extension Swift.Sequence where Self.Element : Swift.AdditiveArithmetic {
 @objc public protocol TrrIRadarController : Terrier.TrrIController {
   @objc var colorMap: Terrier.TrrColorMap? { get set }
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TrrRadarController : Terrier.TrrBaseController, Terrier.TrrIRadarController, Terrier.TrrTimeTrackerDelegate {
+@_hasMissingDesignatedInitializers @objc public class TrrRadarController : Terrier.TrrBaseController, Terrier.TrrIRadarController, Terrier.TrrTimeTrackerDelegate {
   @objc override public var label: Swift.String {
     @objc get
   }
@@ -753,10 +741,10 @@ extension Swift.Sequence where Self.Element : Swift.AdditiveArithmetic {
     @objc get
     @objc set
   }
-  public static func create(level: Swift.String?, service: Terrier.TrrService, tracker: Terrier.TrrTimeTracker, viewC: any WhirlyGlobe.MaplyRenderControllerProtocol) -> any Terrier.TrrIRadarController
+  public static func create(region: [Swift.String], cadence: Terrier.TrrSourceCadence, service: Terrier.TrrService, tracker: Terrier.TrrTimeTracker, viewC: any WhirlyGlobe.MaplyRenderControllerProtocol) -> (any Terrier.TrrIRadarController)?
+  override open func getManifests() -> [Terrier.TrrVarManifest]
   @objc override public func start() -> Swift.Bool
   @objc override public func stop()
-  override open func getManifests() -> [Terrier.TrrVarManifest]
   override open func setupSource(source: Terrier.TrrVarSource, index: Swift.Int)
   override open func makeControl() -> Terrier.TrrVarController?
   override open func setup(manifest: Terrier.TrrVarManifest) -> Swift.Bool
@@ -925,19 +913,21 @@ public struct TrrSourceDataTypes : Swift.OptionSet {
 @objc public class TrrDataSource : ObjectiveC.NSObject {
   final public let source: Swift.String
   final public let region: Swift.String
-  final public let products: [Swift.String]
-  final public let levels: [Swift.String]
+  final public let variable: Swift.String
+  final public let product: Swift.String
+  final public let level: Swift.String?
+  final public let interval: Swift.String?
   final public let temporalType: Terrier.TrrDataTemporalType
   final public let dataTypes: Terrier.TrrSourceDataTypes
-  final public let depth: Swift.Int
+  final public let bits: Swift.Int
+  final public let hasEmptyVals: Swift.Bool
   final public let global: Swift.Bool
-  convenience public init(_ source: Swift.String, _ region: Swift.String, _ products: [Swift.String], _ level: Swift.String, _ sourceType: Terrier.TrrDataTemporalType, _ dataTypes: Terrier.TrrSourceDataTypes, _ depth: Swift.Int, _ global: Swift.Bool)
-  public init(_ source: Swift.String, _ region: Swift.String, _ products: [Swift.String], _ levels: [Swift.String], _ sourceType: Terrier.TrrDataTemporalType, _ dataTypes: Terrier.TrrSourceDataTypes, _ depth: Swift.Int, _ global: Swift.Bool)
-  public func getManifests(service: Terrier.TrrService, varName: Swift.String, depth: Swift.Int, sourceCadence: Terrier.TrrSourceCadence, viewC: (any WhirlyGlobe.MaplyRenderControllerProtocol)?) -> [Terrier.TrrVarManifest]
+  public init(_ source: Swift.String, _ region: Swift.String, _ product: Swift.String, _ variable: Swift.String, _ level: Swift.String?, _ interval: Swift.String?, _ sourceType: Terrier.TrrDataTemporalType, _ dataTypes: Terrier.TrrSourceDataTypes, _ bits: Swift.Int, _ global: Swift.Bool, _ hasEmptyVals: Swift.Bool)
+  public func getManifest(service: Terrier.TrrService, sourceCadence: Terrier.TrrSourceCadence, viewC: (any WhirlyGlobe.MaplyRenderControllerProtocol)?) -> Terrier.TrrVarManifest
   public static func getVariablesForStack(service: Terrier.TrrService) -> [Swift.String]
   public static func getSourcesForStack(service: Terrier.TrrService) -> [Swift.String]
-  public static func getSourcesForVariable(service: Terrier.TrrService, variableMatch: Any, sourceMatch: Any?, regionMatch: Any?, productMatch: Any?) -> [Terrier.TrrDataSource]
-  public static func getStandardSources(service: Terrier.TrrService, varName: Swift.String, source: Any?, region: Any?, product: Any?, sourceCadence: Terrier.TrrSourceCadence, viewC: (any WhirlyGlobe.MaplyRenderControllerProtocol)?) -> [Terrier.TrrVarManifest]
+  public static func getSourcesForVariable(service: Terrier.TrrService, variableMatch: Any, sourceMatch: Any?, regionMatch: Any?, productMatch: Any?, levelMatch: Swift.String?, intervalMatch: Swift.String?) -> [Terrier.TrrDataSource]
+  public static func getStandardSources(service: Terrier.TrrService, varName: Swift.String, source: Any?, region: Any?, product: Any?, level: Swift.String?, interval: Swift.String?, sourceCadence: Terrier.TrrSourceCadence, viewC: (any WhirlyGlobe.MaplyRenderControllerProtocol)?) -> [Terrier.TrrDataSource]
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers final public class TerrierMapboxAdapter : WhirlyGlobe.MaplyRenderControllerOverlay, MapboxCoreMaps.CustomLayerHost {

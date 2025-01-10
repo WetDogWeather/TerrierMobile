@@ -839,18 +839,26 @@
           {
             "kind": "Function",
             "name": "create",
-            "printedName": "create(level:service:tracker:viewC:)",
+            "printedName": "create(region:level:cadence:service:tracker:viewC:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "TrrITemperatureController",
-                "printedName": "any Terrier.TrrITemperatureController",
-                "usr": "c:@M@Terrier@objc(pl)TrrITemperatureController"
+                "name": "Optional",
+                "printedName": "(any Terrier.TrrITemperatureController)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrrITemperatureController",
+                    "printedName": "any Terrier.TrrITemperatureController",
+                    "usr": "c:@M@Terrier@objc(pl)TrrITemperatureController"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
+                "name": "Array",
+                "printedName": "[Swift.String]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -859,7 +867,19 @@
                     "usr": "s:SS"
                   }
                 ],
-                "usr": "s:Sq"
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TrrSourceCadence",
+                "printedName": "Terrier.TrrSourceCadence",
+                "usr": "c:@M@Terrier@objc(cs)TrrSourceCadence"
               },
               {
                 "kind": "TypeNominal",
@@ -881,8 +901,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7Terrier24TrrTemperatureControllerC6create5level7service7tracker5viewCAA0b12ITemperatureD0_pSSSg_AA0B7ServiceCAA0B11TimeTrackerCSo011MaplyRenderD8Protocol_ptFZ",
-            "mangledName": "$s7Terrier24TrrTemperatureControllerC6create5level7service7tracker5viewCAA0b12ITemperatureD0_pSSSg_AA0B7ServiceCAA0B11TimeTrackerCSo011MaplyRenderD8Protocol_ptFZ",
+            "usr": "s:7Terrier24TrrTemperatureControllerC6create6region5level7cadence7service7tracker5viewCAA0b12ITemperatureD0_pSgSaySSG_SSAA0B13SourceCadenceCAA0B7ServiceCAA0B11TimeTrackerCSo011MaplyRenderD8Protocol_ptFZ",
+            "mangledName": "$s7Terrier24TrrTemperatureControllerC6create6region5level7cadence7service7tracker5viewCAA0b12ITemperatureD0_pSgSaySSG_SSAA0B13SourceCadenceCAA0B7ServiceCAA0B11TimeTrackerCSo011MaplyRenderD8Protocol_ptFZ",
             "moduleName": "Terrier",
             "static": true,
             "declAttributes": [
@@ -962,6 +982,7 @@
         ],
         "superclassUsr": "c:@M@Terrier@objc(cs)TrrSingleChannelController",
         "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "Terrier.TrrSingleChannelController",
           "Terrier.TrrBaseController",
@@ -9841,18 +9862,26 @@
           {
             "kind": "Function",
             "name": "create",
-            "printedName": "create(level:service:tracker:viewC:)",
+            "printedName": "create(region:level:cadence:service:tracker:viewC:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "TrrIWindController",
-                "printedName": "any Terrier.TrrIWindController",
-                "usr": "c:@M@Terrier@objc(pl)TrrIWindController"
+                "name": "Optional",
+                "printedName": "(any Terrier.TrrIWindController)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrrIWindController",
+                    "printedName": "any Terrier.TrrIWindController",
+                    "usr": "c:@M@Terrier@objc(pl)TrrIWindController"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
+                "name": "Array",
+                "printedName": "[Swift.String]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -9861,7 +9890,19 @@
                     "usr": "s:SS"
                   }
                 ],
-                "usr": "s:Sq"
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TrrSourceCadence",
+                "printedName": "Terrier.TrrSourceCadence",
+                "usr": "c:@M@Terrier@objc(cs)TrrSourceCadence"
               },
               {
                 "kind": "TypeNominal",
@@ -9883,11 +9924,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@Terrier@objc(cs)TrrWindController(cm)createWithLevel:service:tracker:viewC:",
-            "mangledName": "$s7Terrier17TrrWindControllerC6create5level7service7tracker5viewCAA0b5IWindD0_pSSSg_AA0B7ServiceCAA0B12ITimeTracker_pSo011MaplyRenderD8Protocol_ptFZ",
+            "usr": "c:@M@Terrier@objc(cs)TrrWindController(cm)createWithRegion:level:cadence:service:tracker:viewC:",
+            "mangledName": "$s7Terrier17TrrWindControllerC6create6region5level7cadence7service7tracker5viewCAA0b5IWindD0_pSgSaySSG_SSAA0B13SourceCadenceCAA0B7ServiceCAA0B12ITimeTracker_pSo011MaplyRenderD8Protocol_ptFZ",
             "moduleName": "Terrier",
             "static": true,
-            "objc_name": "createWithLevel:service:tracker:viewC:",
+            "objc_name": "createWithRegion:level:cadence:service:tracker:viewC:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -10470,7 +10511,6 @@
         ],
         "superclassUsr": "c:@M@Terrier@objc(cs)TrrBaseController",
         "hasMissingDesignatedInitializers": true,
-        "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "Terrier.TrrBaseController",
           "ObjectiveC.NSObject"
@@ -10934,189 +10974,6 @@
                 "moduleName": "Terrier",
                 "implicit": true,
                 "objc_name": "manifests",
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "level",
-            "printedName": "level",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Terrier@objc(cs)TrrBaseController(py)level",
-            "mangledName": "$s7Terrier17TrrBaseControllerC5levelSSSgvp",
-            "moduleName": "Terrier",
-            "objc_name": "level",
-            "declAttributes": [
-              "HasInitialValue",
-              "ObjC",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Terrier@objc(cs)TrrBaseController(im)level",
-                "mangledName": "$s7Terrier17TrrBaseControllerC5levelSSSgvg",
-                "moduleName": "Terrier",
-                "implicit": true,
-                "objc_name": "level",
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Terrier@objc(cs)TrrBaseController(im)setLevel:",
-                "mangledName": "$s7Terrier17TrrBaseControllerC5levelSSSgvs",
-                "moduleName": "Terrier",
-                "implicit": true,
-                "objc_name": "setLevel:",
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Terrier17TrrBaseControllerC5levelSSSgvM",
-                "mangledName": "$s7Terrier17TrrBaseControllerC5levelSSSgvM",
-                "moduleName": "Terrier",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "availableLevels",
-            "printedName": "availableLevels",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Terrier@objc(cs)TrrBaseController(py)availableLevels",
-            "mangledName": "$s7Terrier17TrrBaseControllerC15availableLevelsSaySSGvp",
-            "moduleName": "Terrier",
-            "objc_name": "availableLevels",
-            "declAttributes": [
-              "ObjC",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.String]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Terrier@objc(cs)TrrBaseController(im)availableLevels",
-                "mangledName": "$s7Terrier17TrrBaseControllerC15availableLevelsSaySSGvg",
-                "moduleName": "Terrier",
-                "objc_name": "availableLevels",
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -11821,7 +11678,6 @@
             "moduleName": "Terrier",
             "objc_name": "sourceCadence",
             "declAttributes": [
-              "HasInitialValue",
               "ObjC",
               "HasStorage",
               "AccessControl",
@@ -17798,39 +17654,41 @@
           {
             "kind": "Function",
             "name": "create",
-            "printedName": "create(type:depth:level:service:tracker:viewC:)",
+            "printedName": "create(cadence:dataSources:service:tracker:viewC:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "TrrISingleChannelController",
-                "printedName": "any Terrier.TrrISingleChannelController",
-                "usr": "c:@M@Terrier@objc(pl)TrrISingleChannelController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "TrrSourceDataTypes",
-                "printedName": "Terrier.TrrSourceDataTypes",
-                "usr": "s:7Terrier18TrrSourceDataTypesV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "(any Terrier.TrrISingleChannelController)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "TrrISingleChannelController",
+                    "printedName": "any Terrier.TrrISingleChannelController",
+                    "usr": "c:@M@Terrier@objc(pl)TrrISingleChannelController"
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TrrSourceCadence",
+                "printedName": "Terrier.TrrSourceCadence",
+                "usr": "c:@M@Terrier@objc(cs)TrrSourceCadence"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Terrier.TrrDataSource]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrrDataSource",
+                    "printedName": "Terrier.TrrDataSource",
+                    "usr": "c:@M@Terrier@objc(cs)TrrDataSource"
+                  }
+                ],
+                "usr": "s:Sa"
               },
               {
                 "kind": "TypeNominal",
@@ -17852,8 +17710,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7Terrier26TrrSingleChannelControllerC6create4type5depth5level7service7tracker5viewCAA0b7ISingledE0_pAA0B15SourceDataTypesV_SiSSSgAA0B7ServiceCAA0B11TimeTrackerCSo013MaplyBaseViewE0CtFZ",
-            "mangledName": "$s7Terrier26TrrSingleChannelControllerC6create4type5depth5level7service7tracker5viewCAA0b7ISingledE0_pAA0B15SourceDataTypesV_SiSSSgAA0B7ServiceCAA0B11TimeTrackerCSo013MaplyBaseViewE0CtFZ",
+            "usr": "s:7Terrier26TrrSingleChannelControllerC6create7cadence11dataSources7service7tracker5viewCAA0b7ISingledE0_pSgAA0B13SourceCadenceC_SayAA0b4DataN0CGAA0B7ServiceCAA0B11TimeTrackerCSo013MaplyBaseViewE0CtFZ",
+            "mangledName": "$s7Terrier26TrrSingleChannelControllerC6create7cadence11dataSources7service7tracker5viewCAA0b7ISingledE0_pSgAA0B13SourceCadenceC_SayAA0b4DataN0CGAA0B7ServiceCAA0B11TimeTrackerCSo013MaplyBaseViewE0CtFZ",
             "moduleName": "Terrier",
             "static": true,
             "declAttributes": [
@@ -18905,174 +18763,6 @@
                 "declKind": "Accessor",
                 "usr": "c:@M@Terrier@objc(pl)TrrIController(im)label",
                 "mangledName": "$s7Terrier14TrrIControllerP5labelSSvg",
-                "moduleName": "Terrier",
-                "genericSig": "<τ_0_0 where τ_0_0 : Terrier.TrrIController>",
-                "sugared_genericSig": "<Self where Self : Terrier.TrrIController>",
-                "protocolReq": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "level",
-            "printedName": "level",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Terrier@objc(pl)TrrIController(py)level",
-            "mangledName": "$s7Terrier14TrrIControllerP5levelSSSgvp",
-            "moduleName": "Terrier",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment",
-              "ObjC"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Terrier@objc(pl)TrrIController(im)level",
-                "mangledName": "$s7Terrier14TrrIControllerP5levelSSSgvg",
-                "moduleName": "Terrier",
-                "genericSig": "<τ_0_0 where τ_0_0 : Terrier.TrrIController>",
-                "sugared_genericSig": "<Self where Self : Terrier.TrrIController>",
-                "protocolReq": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Terrier@objc(pl)TrrIController(im)setLevel:",
-                "mangledName": "$s7Terrier14TrrIControllerP5levelSSSgvs",
-                "moduleName": "Terrier",
-                "genericSig": "<τ_0_0 where τ_0_0 : Terrier.TrrIController>",
-                "sugared_genericSig": "<Self where Self : Terrier.TrrIController>",
-                "protocolReq": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "set"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "availableLevels",
-            "printedName": "availableLevels",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Terrier@objc(pl)TrrIController(py)availableLevels",
-            "mangledName": "$s7Terrier14TrrIControllerP15availableLevelsSaySSGvp",
-            "moduleName": "Terrier",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment",
-              "ObjC"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.String]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Terrier@objc(pl)TrrIController(im)availableLevels",
-                "mangledName": "$s7Terrier14TrrIControllerP15availableLevelsSaySSGvg",
                 "moduleName": "Terrier",
                 "genericSig": "<τ_0_0 where τ_0_0 : Terrier.TrrIController>",
                 "sugared_genericSig": "<Self where Self : Terrier.TrrIController>",
@@ -21550,18 +21240,26 @@
           {
             "kind": "Function",
             "name": "create",
-            "printedName": "create(level:service:tracker:viewC:)",
+            "printedName": "create(region:cadence:service:tracker:viewC:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "TrrIPrecipController",
-                "printedName": "any Terrier.TrrIPrecipController",
-                "usr": "c:@M@Terrier@objc(pl)TrrIPrecipController"
+                "name": "Optional",
+                "printedName": "(any Terrier.TrrIPrecipController)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrrIPrecipController",
+                    "printedName": "any Terrier.TrrIPrecipController",
+                    "usr": "c:@M@Terrier@objc(pl)TrrIPrecipController"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
+                "name": "Array",
+                "printedName": "[Swift.String]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -21570,7 +21268,13 @@
                     "usr": "s:SS"
                   }
                 ],
-                "usr": "s:Sq"
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TrrSourceCadence",
+                "printedName": "Terrier.TrrSourceCadence",
+                "usr": "c:@M@Terrier@objc(cs)TrrSourceCadence"
               },
               {
                 "kind": "TypeNominal",
@@ -21592,8 +21296,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7Terrier19TrrPrecipControllerC6create5level7service7tracker5viewCAA0b7IPrecipD0_pSSSg_AA0B7ServiceCAA0B11TimeTrackerCSo011MaplyRenderD8Protocol_ptFZ",
-            "mangledName": "$s7Terrier19TrrPrecipControllerC6create5level7service7tracker5viewCAA0b7IPrecipD0_pSSSg_AA0B7ServiceCAA0B11TimeTrackerCSo011MaplyRenderD8Protocol_ptFZ",
+            "usr": "s:7Terrier19TrrPrecipControllerC6create6region7cadence7service7tracker5viewCAA0b7IPrecipD0_pSgSaySSG_AA0B13SourceCadenceCAA0B7ServiceCAA0B11TimeTrackerCSo011MaplyRenderD8Protocol_ptFZ",
+            "mangledName": "$s7Terrier19TrrPrecipControllerC6create6region7cadence7service7tracker5viewCAA0b7IPrecipD0_pSgSaySSG_AA0B13SourceCadenceCAA0B7ServiceCAA0B11TimeTrackerCSo011MaplyRenderD8Protocol_ptFZ",
             "moduleName": "Terrier",
             "static": true,
             "declAttributes": [
@@ -21889,7 +21593,6 @@
         ],
         "superclassUsr": "c:@M@Terrier@objc(cs)TrrBaseController",
         "hasMissingDesignatedInitializers": true,
-        "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "Terrier.TrrBaseController",
           "ObjectiveC.NSObject"
@@ -22618,18 +22321,26 @@
           {
             "kind": "Function",
             "name": "create",
-            "printedName": "create(level:service:tracker:viewC:)",
+            "printedName": "create(region:cadence:service:tracker:viewC:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "TrrIRadarController",
-                "printedName": "any Terrier.TrrIRadarController",
-                "usr": "c:@M@Terrier@objc(pl)TrrIRadarController"
+                "name": "Optional",
+                "printedName": "(any Terrier.TrrIRadarController)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrrIRadarController",
+                    "printedName": "any Terrier.TrrIRadarController",
+                    "usr": "c:@M@Terrier@objc(pl)TrrIRadarController"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
+                "name": "Array",
+                "printedName": "[Swift.String]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -22638,7 +22349,13 @@
                     "usr": "s:SS"
                   }
                 ],
-                "usr": "s:Sq"
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TrrSourceCadence",
+                "printedName": "Terrier.TrrSourceCadence",
+                "usr": "c:@M@Terrier@objc(cs)TrrSourceCadence"
               },
               {
                 "kind": "TypeNominal",
@@ -22660,13 +22377,44 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7Terrier18TrrRadarControllerC6create5level7service7tracker5viewCAA0b6IRadarD0_pSSSg_AA0B7ServiceCAA0B11TimeTrackerCSo011MaplyRenderD8Protocol_ptFZ",
-            "mangledName": "$s7Terrier18TrrRadarControllerC6create5level7service7tracker5viewCAA0b6IRadarD0_pSSSg_AA0B7ServiceCAA0B11TimeTrackerCSo011MaplyRenderD8Protocol_ptFZ",
+            "usr": "s:7Terrier18TrrRadarControllerC6create6region7cadence7service7tracker5viewCAA0b6IRadarD0_pSgSaySSG_AA0B13SourceCadenceCAA0B7ServiceCAA0B11TimeTrackerCSo011MaplyRenderD8Protocol_ptFZ",
+            "mangledName": "$s7Terrier18TrrRadarControllerC6create6region7cadence7service7tracker5viewCAA0b6IRadarD0_pSgSaySSG_AA0B13SourceCadenceCAA0B7ServiceCAA0B11TimeTrackerCSo011MaplyRenderD8Protocol_ptFZ",
             "moduleName": "Terrier",
             "static": true,
             "declAttributes": [
               "Final",
               "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getManifests",
+            "printedName": "getManifests()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Terrier.TrrVarManifest]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrrVarManifest",
+                    "printedName": "Terrier.TrrVarManifest",
+                    "usr": "c:@M@Terrier@objc(cs)TrrVarManifest"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Terrier18TrrRadarControllerC12getManifestsSayAA0B11VarManifestCGyF",
+            "mangledName": "$s7Terrier18TrrRadarControllerC12getManifestsSayAA0B11VarManifestCGyF",
+            "moduleName": "Terrier",
+            "overriding": true,
+            "declAttributes": [
+              "AccessControl",
+              "Override"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -22714,37 +22462,6 @@
             "objc_name": "stop",
             "declAttributes": [
               "ObjC",
-              "AccessControl",
-              "Override"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getManifests",
-            "printedName": "getManifests()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Terrier.TrrVarManifest]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TrrVarManifest",
-                    "printedName": "Terrier.TrrVarManifest",
-                    "usr": "c:@M@Terrier@objc(cs)TrrVarManifest"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7Terrier18TrrRadarControllerC12getManifestsSayAA0B11VarManifestCGyF",
-            "mangledName": "$s7Terrier18TrrRadarControllerC12getManifestsSayAA0B11VarManifestCGyF",
-            "moduleName": "Terrier",
-            "overriding": true,
-            "declAttributes": [
               "AccessControl",
               "Override"
             ],
@@ -22957,7 +22674,6 @@
         ],
         "superclassUsr": "c:@M@Terrier@objc(cs)TrrBaseController",
         "hasMissingDesignatedInitializers": true,
-        "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "Terrier.TrrBaseController",
           "ObjectiveC.NSObject"
@@ -28359,27 +28075,19 @@
           },
           {
             "kind": "Var",
-            "name": "products",
-            "printedName": "products",
+            "name": "variable",
+            "printedName": "variable",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sa"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Var",
-            "usr": "s:7Terrier13TrrDataSourceC8productsSaySSGvp",
-            "mangledName": "$s7Terrier13TrrDataSourceC8productsSaySSGvp",
+            "usr": "s:7Terrier13TrrDataSourceC8variableSSvp",
+            "mangledName": "$s7Terrier13TrrDataSourceC8variableSSvp",
             "moduleName": "Terrier",
             "declAttributes": [
               "Final",
@@ -28397,22 +28105,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.String]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sa"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7Terrier13TrrDataSourceC8productsSaySSGvg",
-                "mangledName": "$s7Terrier13TrrDataSourceC8productsSaySSGvg",
+                "usr": "s:7Terrier13TrrDataSourceC8variableSSvg",
+                "mangledName": "$s7Terrier13TrrDataSourceC8variableSSvg",
                 "moduleName": "Terrier",
                 "implicit": true,
                 "declAttributes": [
@@ -28424,27 +28124,19 @@
           },
           {
             "kind": "Var",
-            "name": "levels",
-            "printedName": "levels",
+            "name": "product",
+            "printedName": "product",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sa"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Var",
-            "usr": "s:7Terrier13TrrDataSourceC6levelsSaySSGvp",
-            "mangledName": "$s7Terrier13TrrDataSourceC6levelsSaySSGvp",
+            "usr": "s:7Terrier13TrrDataSourceC7productSSvp",
+            "mangledName": "$s7Terrier13TrrDataSourceC7productSSvp",
             "moduleName": "Terrier",
             "declAttributes": [
               "Final",
@@ -28462,8 +28154,65 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.String]",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier13TrrDataSourceC7productSSvg",
+                "mangledName": "$s7Terrier13TrrDataSourceC7productSSvg",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "level",
+            "printedName": "level",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Terrier13TrrDataSourceC5levelSSSgvp",
+            "mangledName": "$s7Terrier13TrrDataSourceC5levelSSSgvp",
+            "moduleName": "Terrier",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -28472,12 +28221,77 @@
                         "usr": "s:SS"
                       }
                     ],
-                    "usr": "s:Sa"
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7Terrier13TrrDataSourceC6levelsSaySSGvg",
-                "mangledName": "$s7Terrier13TrrDataSourceC6levelsSaySSGvg",
+                "usr": "s:7Terrier13TrrDataSourceC5levelSSSgvg",
+                "mangledName": "$s7Terrier13TrrDataSourceC5levelSSSgvg",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "interval",
+            "printedName": "interval",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Terrier13TrrDataSourceC8intervalSSSgvp",
+            "mangledName": "$s7Terrier13TrrDataSourceC8intervalSSSgvp",
+            "moduleName": "Terrier",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier13TrrDataSourceC8intervalSSSgvg",
+                "mangledName": "$s7Terrier13TrrDataSourceC8intervalSSSgvg",
                 "moduleName": "Terrier",
                 "implicit": true,
                 "declAttributes": [
@@ -28587,8 +28401,8 @@
           },
           {
             "kind": "Var",
-            "name": "depth",
-            "printedName": "depth",
+            "name": "bits",
+            "printedName": "bits",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -28598,8 +28412,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:7Terrier13TrrDataSourceC5depthSivp",
-            "mangledName": "$s7Terrier13TrrDataSourceC5depthSivp",
+            "usr": "s:7Terrier13TrrDataSourceC4bitsSivp",
+            "mangledName": "$s7Terrier13TrrDataSourceC4bitsSivp",
             "moduleName": "Terrier",
             "declAttributes": [
               "Final",
@@ -28623,8 +28437,57 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7Terrier13TrrDataSourceC5depthSivg",
-                "mangledName": "$s7Terrier13TrrDataSourceC5depthSivg",
+                "usr": "s:7Terrier13TrrDataSourceC4bitsSivg",
+                "mangledName": "$s7Terrier13TrrDataSourceC4bitsSivg",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hasEmptyVals",
+            "printedName": "hasEmptyVals",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Terrier13TrrDataSourceC12hasEmptyValsSbvp",
+            "mangledName": "$s7Terrier13TrrDataSourceC12hasEmptyValsSbvp",
+            "moduleName": "Terrier",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier13TrrDataSourceC12hasEmptyValsSbvg",
+                "mangledName": "$s7Terrier13TrrDataSourceC12hasEmptyValsSbvg",
                 "moduleName": "Terrier",
                 "implicit": true,
                 "declAttributes": [
@@ -28686,7 +28549,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(_:_:_:_:_:_:_:_:)",
+            "printedName": "init(_:_:_:_:_:_:_:_:_:_:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -28708,8 +28571,20 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.String]",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -28718,13 +28593,21 @@
                     "usr": "s:SS"
                   }
                 ],
-                "usr": "s:Sa"
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -28749,86 +28632,6 @@
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:7Terrier13TrrDataSourceCyACSS_SSSaySSGSSAA0bC12TemporalTypeOAA0bdC5TypesVSiSbtcfc",
-            "mangledName": "$s7Terrier13TrrDataSourceCyACSS_SSSaySSGSSAA0bC12TemporalTypeOAA0bdC5TypesVSiSbtcfc",
-            "moduleName": "Terrier",
-            "declAttributes": [
-              "Convenience",
-              "AccessControl"
-            ],
-            "init_kind": "Convenience"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(_:_:_:_:_:_:_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TrrDataSource",
-                "printedName": "Terrier.TrrDataSource",
-                "usr": "c:@M@Terrier@objc(cs)TrrDataSource"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "TrrDataTemporalType",
-                "printedName": "Terrier.TrrDataTemporalType",
-                "usr": "s:7Terrier19TrrDataTemporalTypeO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "TrrSourceDataTypes",
-                "printedName": "Terrier.TrrSourceDataTypes",
-                "usr": "s:7Terrier18TrrSourceDataTypesV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
               },
               {
                 "kind": "TypeNominal",
@@ -28838,8 +28641,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:7Terrier13TrrDataSourceCyACSS_SSSaySSGAdA0bC12TemporalTypeOAA0bdC5TypesVSiSbtcfc",
-            "mangledName": "$s7Terrier13TrrDataSourceCyACSS_SSSaySSGAdA0bC12TemporalTypeOAA0bdC5TypesVSiSbtcfc",
+            "usr": "s:7Terrier13TrrDataSourceCyACSS_S4SSgAdA0bC12TemporalTypeOAA0bdC5TypesVSiS2btcfc",
+            "mangledName": "$s7Terrier13TrrDataSourceCyACSS_S4SSgAdA0bC12TemporalTypeOAA0bdC5TypesVSiS2btcfc",
             "moduleName": "Terrier",
             "declAttributes": [
               "AccessControl"
@@ -28848,40 +28651,20 @@
           },
           {
             "kind": "Function",
-            "name": "getManifests",
-            "printedName": "getManifests(service:varName:depth:sourceCadence:viewC:)",
+            "name": "getManifest",
+            "printedName": "getManifest(service:sourceCadence:viewC:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Terrier.TrrVarManifest]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TrrVarManifest",
-                    "printedName": "Terrier.TrrVarManifest",
-                    "usr": "c:@M@Terrier@objc(cs)TrrVarManifest"
-                  }
-                ],
-                "usr": "s:Sa"
+                "name": "TrrVarManifest",
+                "printedName": "Terrier.TrrVarManifest",
+                "usr": "c:@M@Terrier@objc(cs)TrrVarManifest"
               },
               {
                 "kind": "TypeNominal",
                 "name": "TrrService",
                 "printedName": "Terrier.TrrService",
                 "usr": "c:@M@Terrier@objc(cs)TrrService"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
               },
               {
                 "kind": "TypeNominal",
@@ -28905,8 +28688,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7Terrier13TrrDataSourceC12getManifests7service7varName5depth13sourceCadence5viewCSayAA0B11VarManifestCGAA0B7ServiceC_SSSiAA0bdL0CSo29MaplyRenderControllerProtocol_pSgtF",
-            "mangledName": "$s7Terrier13TrrDataSourceC12getManifests7service7varName5depth13sourceCadence5viewCSayAA0B11VarManifestCGAA0B7ServiceC_SSSiAA0bdL0CSo29MaplyRenderControllerProtocol_pSgtF",
+            "usr": "s:7Terrier13TrrDataSourceC11getManifest7service13sourceCadence5viewCAA0b3VarF0CAA0B7ServiceC_AA0bdI0CSo29MaplyRenderControllerProtocol_pSgtF",
+            "mangledName": "$s7Terrier13TrrDataSourceC11getManifest7service13sourceCadence5viewCAA0b3VarF0CAA0B7ServiceC_AA0bdI0CSo29MaplyRenderControllerProtocol_pSgtF",
             "moduleName": "Terrier",
             "declAttributes": [
               "AccessControl",
@@ -28993,7 +28776,7 @@
           {
             "kind": "Function",
             "name": "getSourcesForVariable",
-            "printedName": "getSourcesForVariable(service:variableMatch:sourceMatch:regionMatch:productMatch:)",
+            "printedName": "getSourcesForVariable(service:variableMatch:sourceMatch:regionMatch:productMatch:levelMatch:intervalMatch:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -29058,11 +28841,39 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7Terrier13TrrDataSourceC21getSourcesForVariable7service13variableMatch06sourceK006regionK007productK0SayACGAA0B7ServiceC_ypypSgA2MtFZ",
-            "mangledName": "$s7Terrier13TrrDataSourceC21getSourcesForVariable7service13variableMatch06sourceK006regionK007productK0SayACGAA0B7ServiceC_ypypSgA2MtFZ",
+            "usr": "s:7Terrier13TrrDataSourceC21getSourcesForVariable7service13variableMatch06sourceK006regionK007productK005levelK008intervalK0SayACGAA0B7ServiceC_ypypSgA2OSSSgAPtFZ",
+            "mangledName": "$s7Terrier13TrrDataSourceC21getSourcesForVariable7service13variableMatch06sourceK006regionK007productK005levelK008intervalK0SayACGAA0B7ServiceC_ypypSgA2OSSSgAPtFZ",
             "moduleName": "Terrier",
             "static": true,
             "declAttributes": [
@@ -29075,18 +28886,18 @@
           {
             "kind": "Function",
             "name": "getStandardSources",
-            "printedName": "getStandardSources(service:varName:source:region:product:sourceCadence:viewC:)",
+            "printedName": "getStandardSources(service:varName:source:region:product:level:interval:sourceCadence:viewC:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[Terrier.TrrVarManifest]",
+                "printedName": "[Terrier.TrrDataSource]",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "TrrVarManifest",
-                    "printedName": "Terrier.TrrVarManifest",
-                    "usr": "c:@M@Terrier@objc(cs)TrrVarManifest"
+                    "name": "TrrDataSource",
+                    "printedName": "Terrier.TrrDataSource",
+                    "usr": "c:@M@Terrier@objc(cs)TrrDataSource"
                   }
                 ],
                 "usr": "s:Sa"
@@ -29144,6 +28955,34 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "TrrSourceCadence",
                 "printedName": "Terrier.TrrSourceCadence",
                 "usr": "c:@M@Terrier@objc(cs)TrrSourceCadence"
@@ -29164,8 +29003,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7Terrier13TrrDataSourceC18getStandardSources7service7varName6source6region7product0K7Cadence5viewCSayAA0B11VarManifestCGAA0B7ServiceC_SSypSgA2qA0bdN0CSo29MaplyRenderControllerProtocol_pSgtFZ",
-            "mangledName": "$s7Terrier13TrrDataSourceC18getStandardSources7service7varName6source6region7product0K7Cadence5viewCSayAA0B11VarManifestCGAA0B7ServiceC_SSypSgA2qA0bdN0CSo29MaplyRenderControllerProtocol_pSgtFZ",
+            "usr": "s:7Terrier13TrrDataSourceC18getStandardSources7service7varName6source6region7product5level8interval0K7Cadence5viewCSayACGAA0B7ServiceC_SSypSgA2QSSSgArA0bdP0CSo29MaplyRenderControllerProtocol_pSgtFZ",
+            "mangledName": "$s7Terrier13TrrDataSourceC18getStandardSources7service7varName6source6region7product5level8interval0K7Cadence5viewCSayACGAA0B7ServiceC_SSypSgA2QSSSgArA0bdP0CSo29MaplyRenderControllerProtocol_pSgtFZ",
             "moduleName": "Terrier",
             "static": true,
             "declAttributes": [
@@ -33522,147 +33361,147 @@
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "BooleanLiteral",
-      "offset": 25011,
+      "offset": 25691,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26003,
+      "offset": 26683,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 26013,
+      "offset": 26693,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 26028,
+      "offset": 26708,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 26040,
+      "offset": 26720,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "Array",
-      "offset": 26061,
+      "offset": 26741,
       "length": 38,
       "value": "[0.0, 5, 10, 15, 20, 25, 30, 35, 40]"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26150,
+      "offset": 26830,
       "length": 8,
       "value": "0xAED5FF"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26192,
+      "offset": 26872,
       "length": 8,
       "value": "0x86B4E6"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26234,
+      "offset": 26914,
       "length": 8,
       "value": "0x66E2D6"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26276,
+      "offset": 26956,
       "length": 8,
       "value": "0x00CC05"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26318,
+      "offset": 26998,
       "length": 8,
       "value": "0xECF006"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26360,
+      "offset": 27040,
       "length": 8,
       "value": "0xFF6B00"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26402,
+      "offset": 27082,
       "length": 8,
       "value": "0xE11511"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26444,
+      "offset": 27124,
       "length": 8,
       "value": "0xE111C1"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26486,
+      "offset": 27166,
       "length": 8,
       "value": "0xFFCEF7"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26563,
+      "offset": 27243,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "Array",
-      "offset": 26574,
+      "offset": 27254,
       "length": 3,
       "value": "[0]"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 26601,
+      "offset": 27281,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 26613,
+      "offset": 27293,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 26624,
+      "offset": 27304,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 26636,
+      "offset": 27316,
       "length": 3,
       "value": "1.0"
     },
@@ -33675,162 +33514,106 @@
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
-      "kind": "Array",
-      "offset": 1277,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1914,
+      "offset": 1563,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "FloatLiteral",
-      "offset": 2126,
+      "offset": 1775,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2910,
+      "offset": 2559,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "FloatLiteral",
-      "offset": 3123,
+      "offset": 2772,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3435,
-      "length": 3,
-      "value": "-24"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3441,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3446,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3465,
-      "length": 2,
-      "value": "24"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3470,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3475,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3494,
-      "length": 2,
-      "value": "24"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3738,
+      "offset": 3185,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3948,
+      "offset": 3395,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "FloatLiteral",
-      "offset": 4202,
+      "offset": 3649,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "FloatLiteral",
-      "offset": 4214,
+      "offset": 3661,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4382,
+      "offset": 3829,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8936,
+      "offset": 7233,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10386,
+      "offset": 8683,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "BooleanLiteral",
-      "offset": 13216,
+      "offset": 11513,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "IntegerLiteral",
-      "offset": 14224,
+      "offset": 12521,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "BooleanLiteral",
-      "offset": 16166,
+      "offset": 14463,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "BooleanLiteral",
-      "offset": 16738,
+      "offset": 15035,
       "length": 5,
       "value": "false"
     },
@@ -34059,6 +33842,13 @@
       "value": "0.0"
     },
     {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrSingleChannelController.swift",
+      "kind": "Array",
+      "offset": 5311,
+      "length": 2,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrExt.swift",
       "kind": "IntegerLiteral",
       "offset": 727,
@@ -34201,287 +33991,287 @@
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrPrecipController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4931,
+      "offset": 5613,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrPrecipController.swift",
       "kind": "FloatLiteral",
-      "offset": 4941,
+      "offset": 5623,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrPrecipController.swift",
       "kind": "FloatLiteral",
-      "offset": 4956,
+      "offset": 5638,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrPrecipController.swift",
       "kind": "FloatLiteral",
-      "offset": 4968,
+      "offset": 5650,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrPrecipController.swift",
       "kind": "Array",
-      "offset": 4989,
+      "offset": 5671,
       "length": 17,
       "value": "[0, 1, 2, 3, 4, 5, 6, 7]"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrPrecipController.swift",
       "kind": "FloatLiteral",
-      "offset": 5032,
+      "offset": 5714,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrPrecipController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5091,
+      "offset": 5773,
       "length": 10,
       "value": "0x00000000"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrPrecipController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5152,
+      "offset": 5834,
       "length": 10,
       "value": "0xFF018200"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrPrecipController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5209,
+      "offset": 5891,
       "length": 10,
       "value": "0xFF13a4ac"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrPrecipController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5266,
+      "offset": 5948,
       "length": 10,
       "value": "0xFF761f90"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrPrecipController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5326,
+      "offset": 6008,
       "length": 10,
       "value": "0xFF7d36a6"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrPrecipController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5392,
+      "offset": 6074,
       "length": 10,
       "value": "0xFF8752bc"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrPrecipController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5458,
+      "offset": 6140,
       "length": 10,
       "value": "0xFF9673d2"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrPrecipController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5528,
+      "offset": 6210,
       "length": 10,
       "value": "0xFFab98e8"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4901,
+      "offset": 5583,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "FloatLiteral",
-      "offset": 4911,
+      "offset": 5593,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "FloatLiteral",
-      "offset": 4926,
+      "offset": 5608,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "FloatLiteral",
-      "offset": 4938,
+      "offset": 5620,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "Array",
-      "offset": 4959,
+      "offset": 5641,
       "length": 92,
       "value": "[-30, -25, -20, -15, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75]"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5103,
+      "offset": 5785,
       "length": 10,
       "value": "0x00CBFCFD"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5148,
+      "offset": 5830,
       "length": 10,
       "value": "0x00D09CCB"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5193,
+      "offset": 5875,
       "length": 10,
       "value": "0x00976797"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5238,
+      "offset": 5920,
       "length": 10,
       "value": "0x00643363"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5283,
+      "offset": 5965,
       "length": 10,
       "value": "0x00CDCC9A"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5328,
+      "offset": 6010,
       "length": 10,
       "value": "0x009C9A6B"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5373,
+      "offset": 6055,
       "length": 10,
       "value": "0x80676467"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5426,
+      "offset": 6108,
       "length": 10,
       "value": "0xFF10E6E7"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5471,
+      "offset": 6153,
       "length": 10,
       "value": "0xFF069FF3"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5516,
+      "offset": 6198,
       "length": 10,
       "value": "0xFF0400F0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5561,
+      "offset": 6243,
       "length": 10,
       "value": "0xFF01FC08"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5606,
+      "offset": 6288,
       "length": 10,
       "value": "0xFF02C701"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5651,
+      "offset": 6333,
       "length": 10,
       "value": "0xFF068D01"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5696,
+      "offset": 6378,
       "length": 10,
       "value": "0xFFF6F602"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5741,
+      "offset": 6423,
       "length": 10,
       "value": "0xFFE6BA03"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5786,
+      "offset": 6468,
       "length": 10,
       "value": "0xFFF79505"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5831,
+      "offset": 6513,
       "length": 10,
       "value": "0xFFFE0002"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5876,
+      "offset": 6558,
       "length": 10,
       "value": "0xFFD60401"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5921,
+      "offset": 6603,
       "length": 10,
       "value": "0xFFBB0200"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5966,
+      "offset": 6648,
       "length": 10,
       "value": "0xFFF807F6"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6011,
+      "offset": 6693,
       "length": 10,
       "value": "0xFF9A52C8"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6056,
+      "offset": 6738,
       "length": 10,
       "value": "0xFFFCFBFA"
     },
@@ -34810,7 +34600,7 @@
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "Array",
-      "offset": 10095,
+      "offset": 9587,
       "length": 2,
       "value": "[]"
     }

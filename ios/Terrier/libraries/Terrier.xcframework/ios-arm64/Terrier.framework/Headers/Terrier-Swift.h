@@ -350,10 +350,6 @@ SWIFT_PROTOCOL("_TtP7Terrier14TrrIController_")
 @property (nonatomic) BOOL enable;
 @property (nonatomic, readonly) BOOL started;
 @property (nonatomic, readonly, copy) NSString * _Nonnull label;
-/// The currently-displayed level (altitude/elevation/pressure/etc.)
-@property (nonatomic, copy) NSString * _Nullable level;
-/// The set of available levels
-@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull availableLevels;
 /// The priority determines where the sources are drawn on a map controller
 @property (nonatomic) int32_t drawPriority;
 /// The priority added for each additional source
@@ -415,8 +411,6 @@ SWIFT_CLASS("_TtC7Terrier17TrrBaseController")
 @property (nonatomic) BOOL enable;
 @property (nonatomic, readonly) BOOL started;
 @property (nonatomic, readonly, copy) NSArray<TrrVarManifest *> * _Nonnull manifests;
-@property (nonatomic, copy) NSString * _Nullable level;
-@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull availableLevels;
 @property (nonatomic) int32_t drawPriority;
 @property (nonatomic) NSInteger drawPriorityPerSource;
 /// Scaling factor for the raw data target
@@ -967,7 +961,7 @@ SWIFT_CLASS("_TtC7Terrier17TrrWindController")
 - (void)setVelocityColorMap:(TrrColorMap * _Nullable)map scaleToRange:(BOOL)scaleToRange;
 @property (nonatomic) float opacity;
 - (void)resetTrailsWithOverTime:(NSTimeInterval)overTime;
-+ (id <TrrIWindController> _Nonnull)createWithLevel:(NSString * _Nullable)level service:(TrrService * _Nonnull)service tracker:(id <TrrITimeTracker> _Nonnull)tracker viewC:(id <MaplyRenderControllerProtocol> _Nonnull)viewC SWIFT_WARN_UNUSED_RESULT;
++ (id <TrrIWindController> _Nullable)createWithRegion:(NSArray<NSString *> * _Nonnull)region level:(NSString * _Nonnull)level cadence:(TrrSourceCadence * _Nonnull)cadence service:(TrrService * _Nonnull)service tracker:(id <TrrITimeTracker> _Nonnull)tracker viewC:(id <MaplyRenderControllerProtocol> _Nonnull)viewC SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)start SWIFT_WARN_UNUSED_RESULT;
 - (void)stop;
 /// Set if you want an up to date center value sample.

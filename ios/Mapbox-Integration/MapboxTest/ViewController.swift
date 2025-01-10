@@ -165,10 +165,12 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         let resCadence = srcCadence.resolve()
 
         // Start temperature display
-        temperatureLayer = TrrTemperatureController.create(level: nil,
-                                                        service: service,
-                                                        tracker: tracker,
-                                                        viewC: adapter)
+        temperatureLayer = TrrTemperatureController.create(region: ["conus","global"],
+                                                           level: "2m",
+                                                           cadence: resCadence,
+                                                            service: service,
+                                                            tracker: tracker,
+                                                            viewC: adapter)
         if let temperatureLayer = temperatureLayer {
             temperatureLayer.baseColor = UIColor(white: 1.0, alpha: 0.5)
             temperatureLayer.importanceFactor = 8.0
@@ -215,7 +217,9 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         let resCadence = srcCadence.resolve()
 
         // Start wind controller
-        windLayer = TrrWindController.create(level: nil,
+        windLayer = TrrWindController.create(region: ["conus"],
+                                             level: "10m",
+                                             cadence: resCadence,
                                              service: service,
                                              tracker: tracker,
                                              viewC: adapter)
@@ -249,7 +253,8 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
                                           maxTimeSlices: 96+2)
         let resCadence = srcCadence.resolve()
 
-        precipLayer = TrrRadarController.create(level: nil,
+        precipLayer = TrrRadarController.create(region: ["conus"],
+                                                cadence: resCadence,
                                                 service: service,
                                                 tracker: tracker,
                                                 viewC: adapter)
