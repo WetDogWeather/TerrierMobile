@@ -174,7 +174,6 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         if let temperatureLayer = temperatureLayer {
             temperatureLayer.baseColor = UIColor(white: 1.0, alpha: 0.5)
             temperatureLayer.importanceFactor = 8.0
-            temperatureLayer.sourceCadence = resCadence
             temperatureLayer.varInterpMode = .Bilinear
             // Temperature color map in Kelvin
             temperatureLayer.colorMap = TrrColorMap(
@@ -217,7 +216,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         let resCadence = srcCadence.resolve()
 
         // Start wind controller
-        windLayer = TrrWindController.create(region: ["conus"],
+        windLayer = TrrWindController.create(region: ["global","conus"],
                                              level: "10m",
                                              cadence: resCadence,
                                              service: service,
@@ -247,10 +246,10 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         
         stopLayers()
 
-        // Minus 4 hours
+        // Minus 4 hours to plus 24 hours
         let srcCadence = TrrSourceCadence(minTimeOffset: -4 * 3600,
-                                          maxTimeOffset: 0.0,
-                                          maxTimeSlices: 96+2)
+                                          maxTimeOffset: 1 * 24 * 3600,
+                                          maxTimeSlices: 48+2)
         let resCadence = srcCadence.resolve()
 
         precipLayer = TrrRadarController.create(region: ["conus"],
@@ -291,17 +290,6 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
                     UIColor.fromHexARGB(0xFFFCFBFA)
                 ])
 
-            // Right here we wait for all the manifests to load (but not yet data)
-            //  and then we look for the first and last time slice and set the
-            //  tracker to match it exactly.
-            precipLayer.addAllLoadedDelegate(timeout: 10.0) { ctrl in
-                if let manifest = ctrl.manifests.first {
-                    if let firstSlice = manifest.timeSlices.first,
-                       let lastSlice = manifest.timeSlices.last {
-                        tracker.setEpochRange(newTime: tracker.curEpoch, min: firstSlice.forecastEpoch, max: lastSlice.forecastEpoch)
-                    }
-                }
-            }
             _ = precipLayer.start()
         }
 
