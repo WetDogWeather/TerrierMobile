@@ -8,14 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		2B7055282D069B8C001A1F6D /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 2B7055272D069B8C001A1F6D /* MapboxMaps */; };
-		2B70552E2D069BFC001A1F6D /* Terrier.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B7055292D069BC6001A1F6D /* Terrier.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2B7055302D069BFE001A1F6D /* WhirlyGlobe.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B70552A2D069BC6001A1F6D /* WhirlyGlobe.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2BA62B4D2CFFCFDC00EE7FBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA62B4C2CFFCFDC00EE7FBB /* AppDelegate.swift */; };
 		2BA62B4F2CFFCFDC00EE7FBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA62B4E2CFFCFDC00EE7FBB /* SceneDelegate.swift */; };
 		2BA62B512CFFCFDC00EE7FBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA62B502CFFCFDC00EE7FBB /* ViewController.swift */; };
 		2BA62B542CFFCFDC00EE7FBB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2BA62B532CFFCFDC00EE7FBB /* Base */; };
 		2BA62B562CFFCFDD00EE7FBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA62B552CFFCFDD00EE7FBB /* Assets.xcassets */; };
 		2BA62B592CFFCFDD00EE7FBB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2BA62B582CFFCFDD00EE7FBB /* Base */; };
+		2BC4CF502D3779C7003CB832 /* Terrier.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC4CF4F2D3779C7003CB832 /* Terrier.xcframework */; };
+		2BC4CF512D3779D1003CB832 /* Terrier.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC4CF4F2D3779C7003CB832 /* Terrier.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2BC4CF532D3779F1003CB832 /* WhirlyGlobe.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC4CF522D3779F1003CB832 /* WhirlyGlobe.xcframework */; };
+		2BC4CF542D3779F6003CB832 /* WhirlyGlobe.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC4CF522D3779F1003CB832 /* WhirlyGlobe.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,8 +27,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2B7055302D069BFE001A1F6D /* WhirlyGlobe.xcframework in Embed Frameworks */,
-				2B70552E2D069BFC001A1F6D /* Terrier.xcframework in Embed Frameworks */,
+				2BC4CF542D3779F6003CB832 /* WhirlyGlobe.xcframework in Embed Frameworks */,
+				2BC4CF512D3779D1003CB832 /* Terrier.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -34,8 +36,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2B7055292D069BC6001A1F6D /* Terrier.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Terrier.xcframework; path = ../Terrier/libraries/Terrier.xcframework; sourceTree = "<group>"; };
-		2B70552A2D069BC6001A1F6D /* WhirlyGlobe.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WhirlyGlobe.xcframework; path = ../Terrier/libraries/WhirlyGlobe.xcframework; sourceTree = "<group>"; };
 		2BA62B492CFFCFDC00EE7FBB /* MapboxTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapboxTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BA62B4C2CFFCFDC00EE7FBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BA62B4E2CFFCFDC00EE7FBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +44,8 @@
 		2BA62B552CFFCFDD00EE7FBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BA62B582CFFCFDD00EE7FBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BA62B5A2CFFCFDD00EE7FBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BC4CF4F2D3779C7003CB832 /* Terrier.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Terrier.xcframework; path = ../Terrier/libraries/Terrier.xcframework; sourceTree = "<group>"; };
+		2BC4CF522D3779F1003CB832 /* WhirlyGlobe.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WhirlyGlobe.xcframework; path = ../Terrier/libraries/WhirlyGlobe.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BC4CF532D3779F1003CB832 /* WhirlyGlobe.xcframework in Frameworks */,
+				2BC4CF502D3779C7003CB832 /* Terrier.xcframework in Frameworks */,
 				2B7055282D069B8C001A1F6D /* MapboxMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,8 +65,8 @@
 		2B767CD62D03D0A700679DFD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2B7055292D069BC6001A1F6D /* Terrier.xcframework */,
-				2B70552A2D069BC6001A1F6D /* WhirlyGlobe.xcframework */,
+				2BC4CF522D3779F1003CB832 /* WhirlyGlobe.xcframework */,
+				2BC4CF4F2D3779C7003CB832 /* Terrier.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -341,6 +345,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -373,6 +378,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
