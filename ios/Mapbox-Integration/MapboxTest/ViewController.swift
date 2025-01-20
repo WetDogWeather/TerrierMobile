@@ -225,9 +225,27 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         if let windLayer = windLayer {
             windLayer.baseColor = UIColor(white: 1.0, alpha: 0.5)
             windLayer.enable = false
-            windLayer.enableVelocity = true
             windLayer.enableTrails = true
             windLayer.trailTexture = dotTexture
+            // Note: Set this to false to remove the velocity intensity display
+            windLayer.enableVelocity = true
+            
+            // Example trail color map, matches the default colors
+            // Keep in mind we mix in another alpha so the intensity layer is fainter
+            windLayer.trailColorMap = TrrColorMap(
+                values: [ 0.0, 5, 10, 15, 20, 25, 30, 35, 40 ],
+                colors: [
+                    UIColor.fromHexRGB(0xAED5FF),
+                    UIColor.fromHexRGB(0x86B4E6),
+                    UIColor.fromHexRGB(0x66E2D6),
+                    UIColor.fromHexRGB(0x00CC05),
+                    UIColor.fromHexRGB(0xECF006),
+                    UIColor.fromHexRGB(0xFF6B00),
+                    UIColor.fromHexRGB(0xE11511),
+                    UIColor.fromHexRGB(0xE111C1),
+                    UIColor.fromHexRGB(0xFFCEF7)
+                ])
+            
             windLayer.addAllLoadedDelegate(timeout: 10) { ctrl in
                 let srcValid = ctrl.areAnySourcesValid()
                 ctrl.enable = ctrl.enable || srcValid
