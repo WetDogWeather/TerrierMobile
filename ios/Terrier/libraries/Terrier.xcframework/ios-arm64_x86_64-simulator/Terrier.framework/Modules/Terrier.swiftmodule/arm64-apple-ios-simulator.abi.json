@@ -896,7 +896,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyRenderControllerProtocol",
-                "printedName": "any WhirlyGlobe.MaplyRenderControllerProtocol",
+                "printedName": "any Terrier.MaplyRenderControllerProtocol",
                 "usr": "c:objc(pl)MaplyRenderControllerProtocol"
               }
             ],
@@ -1211,7 +1211,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyRenderControllerProtocol",
-                "printedName": "any WhirlyGlobe.MaplyRenderControllerProtocol",
+                "printedName": "any Terrier.MaplyRenderControllerProtocol",
                 "usr": "c:objc(pl)MaplyRenderControllerProtocol"
               },
               {
@@ -3747,12 +3747,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "WhirlyGlobe.MaplyTexture?",
+                "printedName": "Terrier.MaplyTexture?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MaplyTexture",
-                    "printedName": "WhirlyGlobe.MaplyTexture",
+                    "printedName": "Terrier.MaplyTexture",
                     "usr": "c:objc(cs)MaplyTexture"
                   }
                 ],
@@ -3777,12 +3777,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "WhirlyGlobe.MaplyTexture?",
+                    "printedName": "Terrier.MaplyTexture?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MaplyTexture",
-                        "printedName": "WhirlyGlobe.MaplyTexture",
+                        "printedName": "Terrier.MaplyTexture",
                         "usr": "c:objc(cs)MaplyTexture"
                       }
                     ],
@@ -3815,12 +3815,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "WhirlyGlobe.MaplyTexture?",
+                    "printedName": "Terrier.MaplyTexture?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MaplyTexture",
-                        "printedName": "WhirlyGlobe.MaplyTexture",
+                        "printedName": "Terrier.MaplyTexture",
                         "usr": "c:objc(cs)MaplyTexture"
                       }
                     ],
@@ -4143,12 +4143,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "WhirlyGlobe.MaplyTexture?",
+                "printedName": "Terrier.MaplyTexture?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MaplyTexture",
-                    "printedName": "WhirlyGlobe.MaplyTexture",
+                    "printedName": "Terrier.MaplyTexture",
                     "usr": "c:objc(cs)MaplyTexture"
                   }
                 ],
@@ -4173,12 +4173,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "WhirlyGlobe.MaplyTexture?",
+                    "printedName": "Terrier.MaplyTexture?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MaplyTexture",
-                        "printedName": "WhirlyGlobe.MaplyTexture",
+                        "printedName": "Terrier.MaplyTexture",
                         "usr": "c:objc(cs)MaplyTexture"
                       }
                     ],
@@ -4211,12 +4211,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "WhirlyGlobe.MaplyTexture?",
+                    "printedName": "Terrier.MaplyTexture?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MaplyTexture",
-                        "printedName": "WhirlyGlobe.MaplyTexture",
+                        "printedName": "Terrier.MaplyTexture",
                         "usr": "c:objc(cs)MaplyTexture"
                       }
                     ],
@@ -8738,6 +8738,7 @@
                 "kind": "TypeNominal",
                 "name": "Bool",
                 "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
                 "usr": "s:Sb"
               }
             ],
@@ -8760,12 +8761,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "WhirlyGlobe.MaplyTexture?",
+                "printedName": "Terrier.MaplyTexture?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MaplyTexture",
-                    "printedName": "WhirlyGlobe.MaplyTexture",
+                    "printedName": "Terrier.MaplyTexture",
                     "usr": "c:objc(cs)MaplyTexture"
                   }
                 ],
@@ -8793,12 +8794,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "WhirlyGlobe.MaplyTexture?",
+                    "printedName": "Terrier.MaplyTexture?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MaplyTexture",
-                        "printedName": "WhirlyGlobe.MaplyTexture",
+                        "printedName": "Terrier.MaplyTexture",
                         "usr": "c:objc(cs)MaplyTexture"
                       }
                     ],
@@ -8829,12 +8830,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "WhirlyGlobe.MaplyTexture?",
+                    "printedName": "Terrier.MaplyTexture?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MaplyTexture",
-                        "printedName": "WhirlyGlobe.MaplyTexture",
+                        "printedName": "Terrier.MaplyTexture",
                         "usr": "c:objc(cs)MaplyTexture"
                       }
                     ],
@@ -8880,12 +8881,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "WhirlyGlobe.MaplyTexture?",
+                "printedName": "Terrier.MaplyTexture?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MaplyTexture",
-                    "printedName": "WhirlyGlobe.MaplyTexture",
+                    "printedName": "Terrier.MaplyTexture",
                     "usr": "c:objc(cs)MaplyTexture"
                   }
                 ],
@@ -8913,12 +8914,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "WhirlyGlobe.MaplyTexture?",
+                    "printedName": "Terrier.MaplyTexture?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MaplyTexture",
-                        "printedName": "WhirlyGlobe.MaplyTexture",
+                        "printedName": "Terrier.MaplyTexture",
                         "usr": "c:objc(cs)MaplyTexture"
                       }
                     ],
@@ -8949,12 +8950,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "WhirlyGlobe.MaplyTexture?",
+                    "printedName": "Terrier.MaplyTexture?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MaplyTexture",
-                        "printedName": "WhirlyGlobe.MaplyTexture",
+                        "printedName": "Terrier.MaplyTexture",
                         "usr": "c:objc(cs)MaplyTexture"
                       }
                     ],
@@ -9919,7 +9920,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyRenderControllerProtocol",
-                "printedName": "any WhirlyGlobe.MaplyRenderControllerProtocol",
+                "printedName": "any Terrier.MaplyRenderControllerProtocol",
                 "usr": "c:objc(pl)MaplyRenderControllerProtocol"
               }
             ],
@@ -14958,7 +14959,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyRenderControllerProtocol",
-                "printedName": "any WhirlyGlobe.MaplyRenderControllerProtocol",
+                "printedName": "any Terrier.MaplyRenderControllerProtocol",
                 "usr": "c:objc(pl)MaplyRenderControllerProtocol"
               }
             ],
@@ -15368,7 +15369,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyRenderControllerProtocol",
-                "printedName": "any WhirlyGlobe.MaplyRenderControllerProtocol",
+                "printedName": "any Terrier.MaplyRenderControllerProtocol",
                 "usr": "c:objc(pl)MaplyRenderControllerProtocol"
               }
             ],
@@ -16492,7 +16493,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyLoadFrameMode",
-                "printedName": "WhirlyGlobe.MaplyLoadFrameMode",
+                "printedName": "Terrier.MaplyLoadFrameMode",
                 "usr": "c:@E@MaplyLoadFrameMode"
               }
             ],
@@ -16515,7 +16516,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "MaplyLoadFrameMode",
-                    "printedName": "WhirlyGlobe.MaplyLoadFrameMode",
+                    "printedName": "Terrier.MaplyLoadFrameMode",
                     "usr": "c:@E@MaplyLoadFrameMode"
                   }
                 ],
@@ -16539,7 +16540,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "MaplyLoadFrameMode",
-                    "printedName": "WhirlyGlobe.MaplyLoadFrameMode",
+                    "printedName": "Terrier.MaplyLoadFrameMode",
                     "usr": "c:@E@MaplyLoadFrameMode"
                   }
                 ],
@@ -16874,7 +16875,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyRenderControllerProtocol",
-                "printedName": "any WhirlyGlobe.MaplyRenderControllerProtocol",
+                "printedName": "any Terrier.MaplyRenderControllerProtocol",
                 "usr": "c:objc(pl)MaplyRenderControllerProtocol"
               }
             ],
@@ -20455,12 +20456,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "WhirlyGlobe.MaplyRenderTarget?",
+                "printedName": "Terrier.MaplyRenderTarget?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MaplyRenderTarget",
-                    "printedName": "WhirlyGlobe.MaplyRenderTarget",
+                    "printedName": "Terrier.MaplyRenderTarget",
                     "usr": "c:objc(cs)MaplyRenderTarget"
                   }
                 ],
@@ -21291,7 +21292,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyRenderControllerProtocol",
-                "printedName": "any WhirlyGlobe.MaplyRenderControllerProtocol",
+                "printedName": "any Terrier.MaplyRenderControllerProtocol",
                 "usr": "c:objc(pl)MaplyRenderControllerProtocol"
               }
             ],
@@ -22372,7 +22373,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyRenderControllerProtocol",
-                "printedName": "any WhirlyGlobe.MaplyRenderControllerProtocol",
+                "printedName": "any Terrier.MaplyRenderControllerProtocol",
                 "usr": "c:objc(pl)MaplyRenderControllerProtocol"
               }
             ],
@@ -24610,7 +24611,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyBoundingBoxD",
-                "printedName": "WhirlyGlobe.MaplyBoundingBoxD",
+                "printedName": "Terrier.MaplyBoundingBoxD",
                 "usr": "c:@SA@MaplyBoundingBoxD"
               }
             ],
@@ -24635,7 +24636,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "MaplyBoundingBoxD",
-                    "printedName": "WhirlyGlobe.MaplyBoundingBoxD",
+                    "printedName": "Terrier.MaplyBoundingBoxD",
                     "usr": "c:@SA@MaplyBoundingBoxD"
                   }
                 ],
@@ -24656,7 +24657,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyBoundingBoxD",
-                "printedName": "WhirlyGlobe.MaplyBoundingBoxD",
+                "printedName": "Terrier.MaplyBoundingBoxD",
                 "usr": "c:@SA@MaplyBoundingBoxD"
               }
             ],
@@ -24681,7 +24682,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "MaplyBoundingBoxD",
-                    "printedName": "WhirlyGlobe.MaplyBoundingBoxD",
+                    "printedName": "Terrier.MaplyBoundingBoxD",
                     "usr": "c:@SA@MaplyBoundingBoxD"
                   }
                 ],
@@ -25503,12 +25504,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "WhirlyGlobe.MaplyCoordinateSystem?",
+                "printedName": "Terrier.MaplyCoordinateSystem?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MaplyCoordinateSystem",
-                    "printedName": "WhirlyGlobe.MaplyCoordinateSystem",
+                    "printedName": "Terrier.MaplyCoordinateSystem",
                     "usr": "c:objc(cs)MaplyCoordinateSystem"
                   }
                 ],
@@ -25533,12 +25534,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[WhirlyGlobe.MaplyRemoteTileInfoNew]",
+                "printedName": "[Terrier.MaplyRemoteTileInfoNew]",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MaplyRemoteTileInfoNew",
-                    "printedName": "WhirlyGlobe.MaplyRemoteTileInfoNew",
+                    "printedName": "Terrier.MaplyRemoteTileInfoNew",
                     "usr": "c:objc(cs)MaplyRemoteTileInfoNew"
                   }
                 ],
@@ -28785,12 +28786,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any WhirlyGlobe.MaplyRenderControllerProtocol)?",
+                "printedName": "(any Terrier.MaplyRenderControllerProtocol)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MaplyRenderControllerProtocol",
-                    "printedName": "any WhirlyGlobe.MaplyRenderControllerProtocol",
+                    "printedName": "any Terrier.MaplyRenderControllerProtocol",
                     "usr": "c:objc(pl)MaplyRenderControllerProtocol"
                   }
                 ],
@@ -29100,12 +29101,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any WhirlyGlobe.MaplyRenderControllerProtocol)?",
+                "printedName": "(any Terrier.MaplyRenderControllerProtocol)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MaplyRenderControllerProtocol",
-                    "printedName": "any WhirlyGlobe.MaplyRenderControllerProtocol",
+                    "printedName": "any Terrier.MaplyRenderControllerProtocol",
                     "usr": "c:objc(pl)MaplyRenderControllerProtocol"
                   }
                 ],
@@ -29658,7 +29659,7 @@
         "hasMissingDesignatedInitializers": true,
         "superclassNames": [
           "WhirlyGlobe.MaplyRenderControllerOverlay",
-          "WhirlyGlobe.MaplyRenderController",
+          "Terrier.MaplyRenderController",
           "ObjectiveC.NSObject"
         ],
         "conformances": [
@@ -33090,7 +33091,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyBoundingBox",
-                "printedName": "WhirlyGlobe.MaplyBoundingBox",
+                "printedName": "Terrier.MaplyBoundingBox",
                 "usr": "c:@SA@MaplyBoundingBox"
               }
             ],
@@ -33112,7 +33113,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyBoundingBoxD",
-                "printedName": "WhirlyGlobe.MaplyBoundingBoxD",
+                "printedName": "Terrier.MaplyBoundingBoxD",
                 "usr": "c:@SA@MaplyBoundingBoxD"
               }
             ],
@@ -33129,7 +33130,7 @@
         ],
         "declKind": "Struct",
         "usr": "c:@SA@MaplyBoundingBox",
-        "moduleName": "WhirlyGlobe",
+        "moduleName": "Terrier",
         "isExternal": true,
         "conformances": [
           {
@@ -33161,7 +33162,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyBoundingBoxD",
-                "printedName": "WhirlyGlobe.MaplyBoundingBoxD",
+                "printedName": "Terrier.MaplyBoundingBoxD",
                 "usr": "c:@SA@MaplyBoundingBoxD"
               }
             ],
@@ -33183,7 +33184,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyBoundingBox",
-                "printedName": "WhirlyGlobe.MaplyBoundingBox",
+                "printedName": "Terrier.MaplyBoundingBox",
                 "usr": "c:@SA@MaplyBoundingBox"
               }
             ],
@@ -33200,7 +33201,7 @@
         ],
         "declKind": "Struct",
         "usr": "c:@SA@MaplyBoundingBoxD",
-        "moduleName": "WhirlyGlobe",
+        "moduleName": "Terrier",
         "isExternal": true,
         "conformances": [
           {
@@ -33422,196 +33423,203 @@
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15054,
+      "offset": 14651,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15062,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 15291,
+      "offset": 15299,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15425,
+      "offset": 15433,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15552,
+      "offset": 15560,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15702,
+      "offset": 15710,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15932,
+      "offset": 15940,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 16198,
+      "offset": 16206,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "BooleanLiteral",
-      "offset": 25691,
+      "offset": 25699,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26683,
+      "offset": 26691,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 26693,
+      "offset": 26701,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 26708,
+      "offset": 26716,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 26720,
+      "offset": 26728,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "Array",
-      "offset": 26741,
+      "offset": 26749,
       "length": 38,
       "value": "[0.0, 5, 10, 15, 20, 25, 30, 35, 40]"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26830,
+      "offset": 26838,
       "length": 8,
       "value": "0xAED5FF"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26872,
+      "offset": 26880,
       "length": 8,
       "value": "0x86B4E6"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26914,
+      "offset": 26922,
       "length": 8,
       "value": "0x66E2D6"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26956,
+      "offset": 26964,
       "length": 8,
       "value": "0x00CC05"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26998,
+      "offset": 27006,
       "length": 8,
       "value": "0xECF006"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 27040,
+      "offset": 27048,
       "length": 8,
       "value": "0xFF6B00"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 27082,
+      "offset": 27090,
       "length": 8,
       "value": "0xE11511"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 27124,
+      "offset": 27132,
       "length": 8,
       "value": "0xE111C1"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 27166,
+      "offset": 27174,
       "length": 8,
       "value": "0xFFCEF7"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 27243,
+      "offset": 27251,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "Array",
-      "offset": 27254,
+      "offset": 27262,
       "length": 3,
       "value": "[0]"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 27281,
+      "offset": 27289,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 27293,
+      "offset": 27301,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 27304,
+      "offset": 27312,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 27316,
+      "offset": 27324,
       "length": 3,
       "value": "1.0"
     },
