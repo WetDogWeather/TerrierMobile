@@ -227,6 +227,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
             windLayer.enable = false
             windLayer.enableTrails = true
             windLayer.trailTexture = dotTexture
+            windLayer.scaleResetFactor = 2
             // Note: Set this to false to remove the velocity intensity display
             windLayer.enableVelocity = true
             

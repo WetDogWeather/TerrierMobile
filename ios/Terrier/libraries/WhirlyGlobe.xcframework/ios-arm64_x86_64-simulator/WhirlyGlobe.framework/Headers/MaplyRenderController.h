@@ -1114,7 +1114,19 @@ typedef NS_ENUM(NSInteger, MaplyRenderType) {
  If we've set up the map as an overlay, we need to pass in the matrix that's controlling it and the scale.
  This will work for Mapbox
  */
-- (void)assignViewMatrixFromMapbox:(NSArray<NSNumber *> *)matrixValues scale:(double)scale tileSize:(int)tileSize isMoving:(bool)isMoving;
+- (void)assignViewMatrixFromMapbox:(NSArray<NSNumber *> *)matrixValues
+                             scale:(double)scale
+                          tileSize:(int)tileSize
+                          isMoving: (bool)isMoving
+                          hasMoved: (bool)hasMoved
+                          isZooming: (bool)isZooming
+                          hasZoomed: (bool)hasZoomed
+                          isPanning: (bool)isPanning
+                          hasPanned: (bool)hasPanned
+                          isRotating: (bool)isRotating
+                          hasRotated: (bool)hasRotated
+                          isTilting: (bool)isTilting
+                         hasTilted: (bool)hasTilted;
 
 /// Draw our contents into the command buffer given the render pass descriptor
 - (void)renderToBuffer:(id<MTLCommandBuffer> __nonnull)cmdBuffer renderPass:(MTLRenderPassDescriptor * __nonnull)renderPassDesc size:(CGSize)size;

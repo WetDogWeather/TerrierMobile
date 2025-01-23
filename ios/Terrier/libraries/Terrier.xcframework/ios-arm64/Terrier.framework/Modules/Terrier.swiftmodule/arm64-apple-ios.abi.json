@@ -34725,9 +34725,72 @@
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Mapbox\/TerrierLayerAdapter.swift",
       "kind": "Array",
-      "offset": 580,
+      "offset": 639,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Mapbox\/TerrierLayerAdapter.swift",
+      "kind": "FloatLiteral",
+      "offset": 669,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Mapbox\/TerrierLayerAdapter.swift",
+      "kind": "FloatLiteral",
+      "offset": 744,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Mapbox\/TerrierLayerAdapter.swift",
+      "kind": "FloatLiteral",
+      "offset": 775,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Mapbox\/TerrierLayerAdapter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1404,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Mapbox\/TerrierLayerAdapter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1443,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Mapbox\/TerrierLayerAdapter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1481,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Mapbox\/TerrierLayerAdapter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1522,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Mapbox\/TerrierLayerAdapter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1561,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Mapbox\/TerrierLayerAdapter.swift",
+      "kind": "FloatLiteral",
+      "offset": 1602,
+      "length": 3,
+      "value": "0.5"
     }
   ]
 }
