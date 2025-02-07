@@ -558,7 +558,7 @@ import _SwiftConcurrencyShims
   @objc override public var label: Swift.String {
     @objc get
   }
-  public static func create(cadence: Terrier.TrrSourceCadence, dataSources: [Terrier.TrrDataSource], service: Terrier.TrrService, tracker: Terrier.TrrTimeTracker, viewC: WhirlyGlobe.MaplyBaseViewController) -> (any Terrier.TrrISingleChannelController)?
+  public static func create(cadence: Terrier.TrrSourceCadence, dataSources: [Terrier.TrrDataSource], service: Terrier.TrrService, tracker: Terrier.TrrTimeTracker, viewC: any Terrier.MaplyRenderControllerProtocol) -> (any Terrier.TrrISingleChannelController)?
   @objc override public func start() -> Swift.Bool
   @objc override public func stop()
   override open func getManifests() -> [Terrier.TrrVarManifest]

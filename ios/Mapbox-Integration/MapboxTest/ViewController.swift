@@ -148,6 +148,14 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
             precipLayer.stop()
             self.precipLayer = nil
         }
+        if let humidLayer = humidLayer {
+            humidLayer.stop()
+            self.humidLayer = nil
+        }
+        if let dewPointLayer = dewPointLayer {
+            dewPointLayer.stop()
+            self.dewPointLayer = nil
+        }
     }
     
     var temperatureLayer: TrrITemperatureController? = nil
@@ -228,6 +236,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
             windLayer.enableTrails = true
             windLayer.trailTexture = dotTexture
             windLayer.scaleResetFactor = 2
+            windLayer.trailPoints = 1000
             // Note: Set this to false to remove the velocity intensity display
             windLayer.enableVelocity = true
             
@@ -315,6 +324,107 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         tracker.setEpochRange(newTime: resCadence.now, min: resCadence.minTime!, max: resCadence.maxTime!)
     }
     
+    var humidLayer: TrrISingleChannelController? = nil
+    func startHumidity() {
+        guard humidLayer == nil else { return }
+        guard let tracker = tracker else { return }
+        guard let adapter = terrierAdapter else { return }
+        
+        stopLayers()
+
+        // Plus and minus one day
+        let srcCadence = TrrSourceCadence(minTimeOffset: -24 * 3600,
+                                      maxTimeOffset: 24 * 3600,
+                                      maxTimeSlices: 96+2)
+        let resCadence = srcCadence.resolve()
+        
+        // Relative humidity doesn't have a convenience class, so we'll do the pieces ourselves
+        let sources = TrrDataSource.getStandardSources(service: service,
+                                                       varName: "relative_humidity",
+                                                       source: ["gfs","hrrr"],
+                                                       region: ["conus","global"],
+                                                       product: nil,
+                                                       level: nil,
+                                                       interval: nil,
+                                                       sourceCadence: resCadence,
+                                                       viewC: adapter)
+
+        humidLayer = TrrSingleChannelController.create(cadence: resCadence,
+                                                       dataSources: sources,
+                                                       service: service,
+                                                       tracker: tracker,
+                                                       viewC: adapter)
+        if let humidLayer = humidLayer {
+            humidLayer.sourceCadence = resCadence
+            humidLayer.baseColor = .init(white: 1.0, alpha: 0.5)
+            humidLayer.colorMap = TrrColorMap(
+                values: [ -1.0, 100.0],
+                colors: [
+                    UIColor.fromHexRGB(0xFF0000).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0x00FF00).withAlphaComponent(1.0),
+                ])
+
+            _ = humidLayer.start()
+        }
+
+        tracker.setEpochRange(newTime: resCadence.now, min: resCadence.minTime!, max: resCadence.maxTime!)
+    }
+
+    var dewPointLayer: TrrISingleChannelController? = nil
+    func startDewPoint() {
+        guard dewPointLayer == nil else { return }
+        guard let tracker = tracker else { return }
+        guard let adapter = terrierAdapter else { return }
+        
+        stopLayers()
+
+        // Plus and minus one day
+        let srcCadence = TrrSourceCadence(minTimeOffset: -24 * 3600,
+                                      maxTimeOffset: 24 * 3600,
+                                      maxTimeSlices: 96+2)
+        let resCadence = srcCadence.resolve()
+        
+        // Relative humidity doesn't have a convenience class, so we'll do the pieces ourselves
+        let sources = TrrDataSource.getStandardSources(service: service,
+                                                       varName: "dew_point",
+                                                       source: ["gfs","hrrr"],
+                                                       region: ["conus","global"],
+                                                       product: nil,
+                                                       level: "2m",
+                                                       interval: nil,
+                                                       sourceCadence: resCadence,
+                                                       viewC: adapter)
+
+        dewPointLayer = TrrSingleChannelController.create(cadence: resCadence,
+                                                       dataSources: sources,
+                                                       service: service,
+                                                       tracker: tracker,
+                                                       viewC: adapter)
+        if let dewPointLayer = dewPointLayer {
+            dewPointLayer.sourceCadence = resCadence
+            dewPointLayer.baseColor = .init(white: 1.0, alpha: 0.5)
+            dewPointLayer.colorMap = TrrColorMap(
+                values: [ 255.372, 260.928, 266.483, 272.039, 277.594, 283.15, 288.706, 294.261, 299.817, 305.372, 310.928, 316.483],
+                colors: [
+                    UIColor.fromHexRGB(0xFFBFFF),
+                    UIColor.fromHexRGB(0xD873DB),
+                    UIColor.fromHexRGB(0x913ABB),
+                    UIColor.fromHexRGB(0x372398),
+                    UIColor.fromHexRGB(0x00B6DC),
+                    UIColor.fromHexRGB(0x02D786),
+                    UIColor.fromHexRGB(0x40C604),
+                    UIColor.fromHexRGB(0xFFFF00),
+                    UIColor.fromHexRGB(0xFB7700),
+                    UIColor.fromHexRGB(0xD22402),
+                    UIColor.fromHexRGB(0xA20902),
+                    UIColor.fromHexRGB(0xEED9D8)
+                ])
+
+            _ = dewPointLayer.start()
+        }
+
+        tracker.setEpochRange(newTime: resCadence.now, min: resCadence.minTime!, max: resCadence.maxTime!)
+    }
     @IBAction func tempButtonAction(_ sender: Any) {
         startTemperature()
     }
@@ -326,8 +436,15 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
     @IBAction func precipButtonAction(_ sender: Any) {
         startPrecip()
     }
-    
-    
+
+    @IBAction func humidButtonAction(_ sender: Any) {
+        startHumidity()
+    }
+
+    @IBAction func dewPointButtonAction(_ sender: Any) {
+        startDewPoint()
+    }
+
     // Called when we have the contents for the Boxer Stack
     // Now we can construct weather layers
     func serviceReady(service: Terrier.TrrService) {

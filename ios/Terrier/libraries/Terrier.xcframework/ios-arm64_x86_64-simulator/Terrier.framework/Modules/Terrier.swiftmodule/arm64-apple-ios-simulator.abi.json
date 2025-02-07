@@ -17705,14 +17705,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "MaplyBaseViewController",
-                "printedName": "WhirlyGlobe.MaplyBaseViewController",
-                "usr": "c:objc(cs)MaplyBaseViewController"
+                "name": "MaplyRenderControllerProtocol",
+                "printedName": "any Terrier.MaplyRenderControllerProtocol",
+                "usr": "c:objc(pl)MaplyRenderControllerProtocol"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7Terrier26TrrSingleChannelControllerC6create7cadence11dataSources7service7tracker5viewCAA0b7ISingledE0_pSgAA0B13SourceCadenceC_SayAA0b4DataN0CGAA0B7ServiceCAA0B11TimeTrackerCSo013MaplyBaseViewE0CtFZ",
-            "mangledName": "$s7Terrier26TrrSingleChannelControllerC6create7cadence11dataSources7service7tracker5viewCAA0b7ISingledE0_pSgAA0B13SourceCadenceC_SayAA0b4DataN0CGAA0B7ServiceCAA0B11TimeTrackerCSo013MaplyBaseViewE0CtFZ",
+            "usr": "s:7Terrier26TrrSingleChannelControllerC6create7cadence11dataSources7service7tracker5viewCAA0b7ISingledE0_pSgAA0B13SourceCadenceC_SayAA0b4DataN0CGAA0B7ServiceCAA0B11TimeTrackerCSo011MaplyRenderE8Protocol_ptFZ",
+            "mangledName": "$s7Terrier26TrrSingleChannelControllerC6create7cadence11dataSources7service7tracker5viewCAA0b7ISingledE0_pSgAA0B13SourceCadenceC_SayAA0b4DataN0CGAA0B7ServiceCAA0B11TimeTrackerCSo011MaplyRenderE8Protocol_ptFZ",
             "moduleName": "Terrier",
             "static": true,
             "declAttributes": [
@@ -33962,7 +33962,7 @@
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrSingleChannelController.swift",
       "kind": "Array",
-      "offset": 5350,
+      "offset": 5356,
       "length": 2,
       "value": "[]"
     },
