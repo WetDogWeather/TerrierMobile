@@ -357,6 +357,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         if let humidLayer = humidLayer {
             humidLayer.sourceCadence = resCadence
             humidLayer.baseColor = .init(white: 1.0, alpha: 0.5)
+            humidLayer.varInterpMode = .Bilinear
             humidLayer.colorMap = TrrColorMap(
                 values: [ -1.0, 100.0],
                 colors: [
