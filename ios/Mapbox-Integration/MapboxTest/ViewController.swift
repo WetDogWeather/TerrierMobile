@@ -156,6 +156,10 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
             dewPointLayer.stop()
             self.dewPointLayer = nil
         }
+        if let precipTypeLayer = precipTypeLayer {
+            precipTypeLayer.stop()
+            self.precipTypeLayer = nil
+        }
     }
     
     var temperatureLayer: TrrITemperatureController? = nil
@@ -266,7 +270,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         tracker.setEpochRange(newTime: resCadence.now, min: resCadence.minTime!, max: resCadence.maxTime!)
     }
 
-    var precipLayer: TrrIRadarController? = nil
+    var precipLayer: TrrRadarController? = nil
     func startPrecip() {
         guard precipLayer == nil else { return }
         guard let tracker = tracker else { return }
@@ -291,7 +295,31 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
             precipLayer.importanceFactor = 16.0
             precipLayer.snapToFrame = true
             precipLayer.varInterpMode = .Bicubic
-            precipLayer.colorMap = TrrColorMap(
+            let emptyColorMap = TrrColorMap(
+                values: [ -30, 75],
+                colors: [
+                    UIColor.fromHexARGB(0x00000000),
+                    UIColor.fromHexARGB(0x00000000)
+                ])!
+            let snowColorMap = TrrColorMap(
+                values: [ -30, 75],
+                colors: [
+                    UIColor.fromHexARGB(0xffffffff),
+                    UIColor.fromHexARGB(0xffffffff)
+                ])!
+            let hailColorMap = TrrColorMap(
+                values: [ -30, 75],
+                colors: [
+                    UIColor.fromHexARGB(0xffa020f0),
+                    UIColor.fromHexARGB(0xffa020f0)
+                ])!
+            let warnColorMap = TrrColorMap(
+                values: [ -30, 75],
+                colors: [
+                    UIColor.fromHexARGB(0xffff0000),
+                    UIColor.fromHexARGB(0xffff0000)
+                ])!
+            let rainColorMap = TrrColorMap(
                 values: [ -30, -25, -20, -15, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75],
                 colors: [
                     UIColor.fromHexARGB(0x00CBFCFD),
@@ -316,8 +344,25 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
                     UIColor.fromHexARGB(0xFFF807F6),
                     UIColor.fromHexARGB(0xFF9A52C8),
                     UIColor.fromHexARGB(0xFFFCFBFA)
-                ])
+                ])!
+            precipLayer.setColorMap(emptyColorMap,
+                                    precipType: TrrRadarController.PrecipType.None)
+            precipLayer.setColorMap(snowColorMap,
+                                    precipType: TrrRadarController.PrecipType.Snow)
+            precipLayer.setColorMap(hailColorMap,
+                                    precipType: TrrRadarController.PrecipType.Hail)
+            precipLayer.setColorMap(warnColorMap,
+                                    precipType: TrrRadarController.PrecipType.Convect)
+            precipLayer.setColorMap(rainColorMap,
+                                    precipType: TrrRadarController.PrecipType.WarmStratRain)
+            precipLayer.setColorMap(rainColorMap,
+                                    precipType: TrrRadarController.PrecipType.CoolStratRain)
+            precipLayer.setColorMap(rainColorMap,
+                                    precipType: TrrRadarController.PrecipType.TropicalStratRain)
+            precipLayer.setColorMap(warnColorMap,
+                                    precipType: TrrRadarController.PrecipType.TropicalConvectRain)
 
+            precipLayer.baseColor = .init(white: 1.0, alpha: 0.5)
             _ = precipLayer.start()
         }
 
@@ -371,6 +416,58 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         tracker.setEpochRange(newTime: resCadence.now, min: resCadence.minTime!, max: resCadence.maxTime!)
     }
 
+    var precipTypeLayer: TrrISingleChannelController? = nil
+    func startPrecipType() {
+        guard precipTypeLayer == nil else { return }
+        guard let tracker = tracker else { return }
+        guard let adapter = terrierAdapter else { return }
+        
+        stopLayers()
+
+        // Plus and minus one day
+        let srcCadence = TrrSourceCadence(minTimeOffset: -24 * 3600,
+                                          maxTimeOffset: 0.0,
+                                      maxTimeSlices: 96+2)
+        let resCadence = srcCadence.resolve()
+        
+        let sources = TrrDataSource.getStandardSources(service: service,
+                                                       varName: "precipitation_type",
+                                                       source: ["mrms"],
+                                                       region: ["conus","global"],
+                                                       product: nil,
+                                                       level: nil,
+                                                       interval: nil,
+                                                       sourceCadence: resCadence,
+                                                       viewC: adapter)
+
+        precipTypeLayer = TrrSingleChannelController.create(cadence: resCadence,
+                                                       dataSources: sources,
+                                                       service: service,
+                                                       tracker: tracker,
+                                                       viewC: adapter)
+        if let precipTypeLayer = precipTypeLayer {
+            precipTypeLayer.sourceCadence = resCadence
+            precipTypeLayer.baseColor = .init(white: 1.0, alpha: 0.5)
+            precipTypeLayer.varInterpMode = .Nearest
+            precipTypeLayer.colorMap = TrrColorMap(
+                values: [0, 1, 2, 3, 4, 5, 6, 7],
+                colors: [
+                    UIColor.fromHexRGB(0x000000).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0xffffff).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0x960096).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0xff3332).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0x0350a5).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0x6effff).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0x00ff00).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0x00ff00).withAlphaComponent(1.0),
+                ])
+
+            _ = precipTypeLayer.start()
+        }
+
+        tracker.setEpochRange(newTime: resCadence.now, min: resCadence.minTime!, max: resCadence.maxTime!)
+    }
+
     var dewPointLayer: TrrISingleChannelController? = nil
     func startDewPoint() {
         guard dewPointLayer == nil else { return }
@@ -385,7 +482,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
                                       maxTimeSlices: 96+2)
         let resCadence = srcCadence.resolve()
         
-        // Relative humidity doesn't have a convenience class, so we'll do the pieces ourselves
+        // Relative dew point doesn't have a convenience class, so we'll do the pieces ourselves
         let sources = TrrDataSource.getStandardSources(service: service,
                                                        varName: "dew_point",
                                                        source: ["gfs","hrrr"],
@@ -456,7 +553,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         arrowTexture = adapter.addTexture(UIImage(named: "arrow")!, desc: nil, mode: .current)
         dotTexture = adapter.addTexture(UIImage(named: "dot")!, desc: nil, mode: .current)
 
-        startTemperature()
+        startPrecip()
     }
     
     func serviceFailed() {
