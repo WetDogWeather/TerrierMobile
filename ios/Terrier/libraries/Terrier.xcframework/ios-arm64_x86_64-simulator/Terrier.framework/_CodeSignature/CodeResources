@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Terrier-Swift.h</key>
 		<data>
-		nzZb5n+LHJzHYk/7xmBDM5umzDo=
+		nG5K9a2yKPBId8+J96HskFVYCUI=
 		</data>
 		<key>Headers/Terrier.h</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Headers/TrrShader.h</key>
 		<data>
-		K4sJXDyMM8uut2DtULZFOSwCHy4=
+		IX09mKmYCQfxxWX8MQ2+2Ox6uJc=
 		</data>
 		<key>Headers/TrrVarFloatColorMapShader.h</key>
 		<data>
-		CzH83E4wZvD9xU0Os9qP6RTt04k=
+		OmyFkSXrfxDeaxfH4iuDV9hZut0=
 		</data>
 		<key>Headers/TrrVarFloatShader.h</key>
 		<data>
@@ -74,47 +74,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Xn/6sQwPYarXj9XwAHVMJpXbmmQ=
+		1fEG1uDPCgD7mbZ9n1TcHy9D0Lo=
 		</data>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		fmGl3A4FBsQBLxNufIgaHOR7MJg=
+		BM+r2IfKPa6pkHQabgJE4P7lpco=
 		</data>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		lOkRuWRwgUmugOJHuVVGqrBahj0=
+		/64UcBN9PgcVFK//4SM29KvJVjE=
 		</data>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		4N3hRP6auZdB7PRk3A/E2U8X4FU=
+		DSlNxfKwYb0VJe1T/vkjKdGXrHA=
 		</data>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		lOkRuWRwgUmugOJHuVVGqrBahj0=
+		/64UcBN9PgcVFK//4SM29KvJVjE=
 		</data>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Yq+Uw/tNe7y2zyq45rFVvXNlwt4=
+		XvcFWUSTGkX4XaTMPdowESMmXqM=
 		</data>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		fmGl3A4FBsQBLxNufIgaHOR7MJg=
+		BM+r2IfKPa6pkHQabgJE4P7lpco=
 		</data>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		WK6vNc//4pOfjqjYywMqG06PFYs=
+		F7CQCdIK1vfMe6OEUQsFaN+S+mc=
 		</data>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		QFl+vOAGieZqSWIbkLkrw6I2JdE=
+		2oMmSxN40GJ3MT1eZ8MBfEpU6y0=
 		</data>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		WK6vNc//4pOfjqjYywMqG06PFYs=
+		F7CQCdIK1vfMe6OEUQsFaN+S+mc=
 		</data>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		hPcGXZmo9FhmmvSkc+56+OB+Rlg=
+		UOW4r83/M5ynwg8M38TbI5bUGPw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>PrivateHeaders/TrrFloatUniShader_private.h</key>
 		<data>
-		DPqqjnP1SugGZ4KIwYyDkrNy4Hk=
+		IGVReYwZr9oK8PSV580vcCfNjf8=
 		</data>
 		<key>PrivateHeaders/TrrLog.hh</key>
 		<data>
@@ -142,7 +142,7 @@
 		</data>
 		<key>default.metallib</key>
 		<data>
-		0s1Ko/U7UjpsonA8E/rVZVcLOdA=
+		2txg7s39EQmVRLxA3hrzWGqMGtg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -151,7 +151,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yh0S2NJ2MADQhyX/HLfwNe4/KU5hbGQLIUNuz57+n0Y=
+			FyOU7DmAL9gUxqLogn991utvuHyBM3uU8mtX9uvxnIQ=
 			</data>
 		</dict>
 		<key>Headers/Terrier.h</key>
@@ -200,14 +200,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Nna+L/x5ssoLoYqqQTOHR74p6be/O5dAdtfvfQeA8To=
+			G6faGPcZPde/ocBzB9pxQJ81gKhXm42yAUv1DUVpAbY=
 			</data>
 		</dict>
 		<key>Headers/TrrVarFloatColorMapShader.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HzTdtv7gDgIbHFzLEONgW3WV79hw2pzLHjvVdWz3Ekw=
+			tdhpZBraKNTIfq+SvFZyOKcEo3u2ZefoYGPfqRrCqKE=
 			</data>
 		</dict>
 		<key>Headers/TrrVarFloatShader.h</key>
@@ -270,70 +270,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Yj5yBi6wX3KElSShV59AwRUtlQZiD/vMfnD7J0euZpE=
+			7OMv1OcTuptoFI22zeQhgc9E/TD/6K0l13zl8kGkIH4=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rbAxaog32DqdweS20BgxsFIF9knyUYE4yKXjhpkkOPQ=
+			PzPncVQqTiF10uCXQsjShJpflLBOVXyzLOuPHXwo4f0=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X38GlJdqhXwAZmesdJa2ArVKXS/GE9eogp7vNqls/K0=
+			w29Mb12LPL2O0+L8XgSRysfhrAzl8TMLv+Gd4kV3FF0=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rbAxaog32DqdweS20BgxsFIF9knyUYE4yKXjhpkkOPQ=
+			PzPncVQqTiF10uCXQsjShJpflLBOVXyzLOuPHXwo4f0=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5M5+k3jtpXxuvmbdLQwPS/YhyNUgmnQjRoiwkRJp71E=
+			UWnhLmKYLe6oEqz5yFa5VoDAOnQyz37Q3q1W1xoKATY=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Yj5yBi6wX3KElSShV59AwRUtlQZiD/vMfnD7J0euZpE=
+			7OMv1OcTuptoFI22zeQhgc9E/TD/6K0l13zl8kGkIH4=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AS6aRHqxv6hcwARt1MyCnzlUmkOQvS6c2qdbHL9iA6o=
+			fDH+m6HSRAUFn7TYeAK9ygzB4dh4Oh/ddh7izqQUWE0=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0xLXERshu6PFHnXuJh4jNyW/ziFqGhF6qswPkxUBDTQ=
+			w4RP6TAd0xC2spgIUne4IadjJtKYL5nGZfMTklKVK/I=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AS6aRHqxv6hcwARt1MyCnzlUmkOQvS6c2qdbHL9iA6o=
+			fDH+m6HSRAUFn7TYeAK9ygzB4dh4Oh/ddh7izqQUWE0=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TZr6t5wIQaxUFuZnNL3f2iYEOU90M9Wkh67MwqSvx8I=
+			18BWWMI9uaVzExcQAPj2Nikz5zPqrP9RBmCu6c2L6Uk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -354,7 +354,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Yz9SnaYSmR8M243hINopQPREfe7Com83BIXk5sgEr2s=
+			03RAsnEvTYXSWwV/420o+B/UrXn3cPsUuxkiqUNUtwE=
 			</data>
 		</dict>
 		<key>PrivateHeaders/TrrLog.hh</key>
@@ -382,7 +382,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wKcShLlUmg+ojnrte9mgt7JacEfnkwtGtCial9DguH8=
+			4ZhqobNT1ynqWBNzMB+SS/o0PYo3+cMxQYG3lx249MQ=
 			</data>
 		</dict>
 	</dict>

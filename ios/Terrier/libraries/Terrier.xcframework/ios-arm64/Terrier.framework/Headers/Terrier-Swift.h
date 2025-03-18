@@ -467,6 +467,12 @@ SWIFT_CLASS("_TtCC7Terrier17TrrBaseController13TimeSliceInfo")
 @end
 
 
+SWIFT_PROTOCOL("_TtP7Terrier25TrrBaseControllerDelegate_")
+@protocol TrrBaseControllerDelegate <NSObject>
+- (void)baseControllerDidStart;
+@end
+
+
 /// Cache cleaner is invoked per source to clean up unused  data.
 /// This isn’t typically an object you need to interact with.
 SWIFT_CLASS("_TtC7Terrier15TrrCacheCleaner")
@@ -500,12 +506,6 @@ SWIFT_CLASS("_TtC7Terrier8TrrError")
 
 SWIFT_PROTOCOL("_TtP7Terrier20TrrIPrecipController_")
 @protocol TrrIPrecipController <TrrIController>
-@property (nonatomic, strong) TrrColorMap * _Nullable colorMap;
-@end
-
-
-SWIFT_PROTOCOL("_TtP7Terrier19TrrIRadarController_")
-@protocol TrrIRadarController <TrrIController>
 @property (nonatomic, strong) TrrColorMap * _Nullable colorMap;
 @end
 
@@ -712,18 +712,43 @@ SWIFT_CLASS("_TtC7Terrier19TrrPrecipController")
 @end
 
 
-/// Radar overlay
+/// Radar and precipitation overlay.
 SWIFT_CLASS("_TtC7Terrier18TrrRadarController")
-@interface TrrRadarController : TrrBaseController <TrrIRadarController, TrrTimeTrackerDelegate>
+@interface TrrRadarController : NSObject <TrrBaseControllerDelegate, TrrIController>
+@property (nonatomic, strong) TrrService * _Nonnull service;
+@property (nonatomic) BOOL enable;
+@property (nonatomic, readonly) BOOL started;
+@property (nonatomic) int32_t drawPriority;
+@property (nonatomic) NSInteger drawPriorityPerSource;
+@property (nonatomic) float importanceFactor;
+@property (nonatomic) float renderScale;
+@property (nonatomic, strong) TrrSourceCadence * _Nonnull sourceCadence;
+@property (nonatomic) BOOL snapToFrame;
+@property (nonatomic) BOOL loadAllFrames;
+@property (nonatomic, strong) UIColor * _Nonnull baseColor;
+@property (nonatomic) BOOL debugMode;
+@property (nonatomic, readonly, copy) NSArray<TrrVarManifest *> * _Nonnull manifests;
+- (NSInteger)addLoadedDelegate:(void (^ _Nonnull)(id <TrrIController> _Nonnull, TrrVarManifest * _Nonnull, BOOL))delegate SWIFT_WARN_UNUSED_RESULT;
+- (void)removeLoadedDelegate:(NSInteger)key;
+- (NSInteger)addAllLoadedDelegateWithTimeout:(NSTimeInterval)timeout :(void (^ _Nonnull)(id <TrrIController> _Nonnull))delegate SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)removeAllLoadedDelegate:(NSInteger)index SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)areAllSourcesLoaded SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)areAnySourcesLoaded SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)areAllSourcesValid SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)areAnySourcesValid SWIFT_WARN_UNUSED_RESULT;
+- (TrrMinMax * _Nullable)anyCoverageSpan SWIFT_WARN_UNUSED_RESULT;
+- (TrrMinMax * _Nullable)allCoverageSpan SWIFT_WARN_UNUSED_RESULT;
+- (NSArray<TimeSliceInfo *> * _Nonnull)getCurrentSlices SWIFT_WARN_UNUSED_RESULT;
+- (void)reload;
 @property (nonatomic, readonly, copy) NSString * _Nonnull label;
-@property (nonatomic, strong) TrrColorMap * _Nullable colorMap;
 @property (nonatomic) enum TrrInterpolationMode varInterpMode;
 @property (nonatomic) enum TrrInterpolationMode visualInterpMode;
 @property (nonatomic) BOOL visualInterpCustom;
 - (BOOL)start SWIFT_WARN_UNUSED_RESULT;
+- (void)baseControllerDidStart;
 - (void)stop;
-/// TrrTimeTrackerDelegate implementation
-- (void)trackerUpdateWithTracker:(id <TrrITimeTracker> _Nonnull)tracker epoch:(NSTimeInterval)epoch;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @protocol TrrServiceDelegate;

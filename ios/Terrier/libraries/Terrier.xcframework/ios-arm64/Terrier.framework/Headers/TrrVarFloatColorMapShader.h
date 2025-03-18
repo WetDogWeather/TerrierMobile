@@ -51,4 +51,8 @@
  */
 @property (nonatomic, nullable) TrrColorMap *colorMap;
 
+// Set a particular color map if we want to use more than one
+- (void) setColorMap:(TrrColorMap *_Nonnull)colorMap forIdx:(int)idx;
+
+
 @end

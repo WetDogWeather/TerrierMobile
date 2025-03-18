@@ -896,7 +896,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyRenderControllerProtocol",
-                "printedName": "any Terrier.MaplyRenderControllerProtocol",
+                "printedName": "any WhirlyGlobe.MaplyRenderControllerProtocol",
                 "usr": "c:objc(pl)MaplyRenderControllerProtocol"
               }
             ],
@@ -1211,7 +1211,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyRenderControllerProtocol",
-                "printedName": "any Terrier.MaplyRenderControllerProtocol",
+                "printedName": "any WhirlyGlobe.MaplyRenderControllerProtocol",
                 "usr": "c:objc(pl)MaplyRenderControllerProtocol"
               },
               {
@@ -3747,12 +3747,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Terrier.MaplyTexture?",
+                "printedName": "WhirlyGlobe.MaplyTexture?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MaplyTexture",
-                    "printedName": "Terrier.MaplyTexture",
+                    "printedName": "WhirlyGlobe.MaplyTexture",
                     "usr": "c:objc(cs)MaplyTexture"
                   }
                 ],
@@ -3777,12 +3777,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Terrier.MaplyTexture?",
+                    "printedName": "WhirlyGlobe.MaplyTexture?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MaplyTexture",
-                        "printedName": "Terrier.MaplyTexture",
+                        "printedName": "WhirlyGlobe.MaplyTexture",
                         "usr": "c:objc(cs)MaplyTexture"
                       }
                     ],
@@ -3815,12 +3815,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Terrier.MaplyTexture?",
+                    "printedName": "WhirlyGlobe.MaplyTexture?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MaplyTexture",
-                        "printedName": "Terrier.MaplyTexture",
+                        "printedName": "WhirlyGlobe.MaplyTexture",
                         "usr": "c:objc(cs)MaplyTexture"
                       }
                     ],
@@ -4143,12 +4143,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Terrier.MaplyTexture?",
+                "printedName": "WhirlyGlobe.MaplyTexture?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MaplyTexture",
-                    "printedName": "Terrier.MaplyTexture",
+                    "printedName": "WhirlyGlobe.MaplyTexture",
                     "usr": "c:objc(cs)MaplyTexture"
                   }
                 ],
@@ -4173,12 +4173,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Terrier.MaplyTexture?",
+                    "printedName": "WhirlyGlobe.MaplyTexture?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MaplyTexture",
-                        "printedName": "Terrier.MaplyTexture",
+                        "printedName": "WhirlyGlobe.MaplyTexture",
                         "usr": "c:objc(cs)MaplyTexture"
                       }
                     ],
@@ -4211,12 +4211,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Terrier.MaplyTexture?",
+                    "printedName": "WhirlyGlobe.MaplyTexture?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MaplyTexture",
-                        "printedName": "Terrier.MaplyTexture",
+                        "printedName": "WhirlyGlobe.MaplyTexture",
                         "usr": "c:objc(cs)MaplyTexture"
                       }
                     ],
@@ -8761,12 +8761,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Terrier.MaplyTexture?",
+                "printedName": "WhirlyGlobe.MaplyTexture?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MaplyTexture",
-                    "printedName": "Terrier.MaplyTexture",
+                    "printedName": "WhirlyGlobe.MaplyTexture",
                     "usr": "c:objc(cs)MaplyTexture"
                   }
                 ],
@@ -8794,12 +8794,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Terrier.MaplyTexture?",
+                    "printedName": "WhirlyGlobe.MaplyTexture?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MaplyTexture",
-                        "printedName": "Terrier.MaplyTexture",
+                        "printedName": "WhirlyGlobe.MaplyTexture",
                         "usr": "c:objc(cs)MaplyTexture"
                       }
                     ],
@@ -8830,12 +8830,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Terrier.MaplyTexture?",
+                    "printedName": "WhirlyGlobe.MaplyTexture?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MaplyTexture",
-                        "printedName": "Terrier.MaplyTexture",
+                        "printedName": "WhirlyGlobe.MaplyTexture",
                         "usr": "c:objc(cs)MaplyTexture"
                       }
                     ],
@@ -8881,12 +8881,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Terrier.MaplyTexture?",
+                "printedName": "WhirlyGlobe.MaplyTexture?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MaplyTexture",
-                    "printedName": "Terrier.MaplyTexture",
+                    "printedName": "WhirlyGlobe.MaplyTexture",
                     "usr": "c:objc(cs)MaplyTexture"
                   }
                 ],
@@ -8914,12 +8914,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Terrier.MaplyTexture?",
+                    "printedName": "WhirlyGlobe.MaplyTexture?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MaplyTexture",
-                        "printedName": "Terrier.MaplyTexture",
+                        "printedName": "WhirlyGlobe.MaplyTexture",
                         "usr": "c:objc(cs)MaplyTexture"
                       }
                     ],
@@ -8950,12 +8950,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Terrier.MaplyTexture?",
+                    "printedName": "WhirlyGlobe.MaplyTexture?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MaplyTexture",
-                        "printedName": "Terrier.MaplyTexture",
+                        "printedName": "WhirlyGlobe.MaplyTexture",
                         "usr": "c:objc(cs)MaplyTexture"
                       }
                     ],
@@ -9920,7 +9920,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyRenderControllerProtocol",
-                "printedName": "any Terrier.MaplyRenderControllerProtocol",
+                "printedName": "any WhirlyGlobe.MaplyRenderControllerProtocol",
                 "usr": "c:objc(pl)MaplyRenderControllerProtocol"
               }
             ],
@@ -10626,6 +10626,64 @@
         "printedName": "WhirlyGlobe",
         "declKind": "Import",
         "moduleName": "Terrier"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TrrBaseControllerDelegate",
+        "printedName": "TrrBaseControllerDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "baseControllerDidStart",
+            "printedName": "baseControllerDidStart()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Terrier@objc(pl)TrrBaseControllerDelegate(im)baseControllerDidStart",
+            "mangledName": "$s7Terrier25TrrBaseControllerDelegateP04baseD8DidStartyyF",
+            "moduleName": "Terrier",
+            "genericSig": "<τ_0_0 where τ_0_0 : Terrier.TrrBaseControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : Terrier.TrrBaseControllerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@Terrier@objc(pl)TrrBaseControllerDelegate",
+        "mangledName": "$s7Terrier25TrrBaseControllerDelegateP",
+        "moduleName": "Terrier",
+        "genericSig": "<τ_0_0 : ObjectiveC.NSObjectProtocol>",
+        "sugared_genericSig": "<Self : ObjectiveC.NSObjectProtocol>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -13137,6 +13195,116 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Var",
+            "name": "startDelegate",
+            "printedName": "startDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Terrier.TrrBaseControllerDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrrBaseControllerDelegate",
+                    "printedName": "any Terrier.TrrBaseControllerDelegate",
+                    "usr": "c:@M@Terrier@objc(pl)TrrBaseControllerDelegate"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Terrier17TrrBaseControllerC13startDelegateAA0bcdF0_pSgvp",
+            "mangledName": "$s7Terrier17TrrBaseControllerC13startDelegateAA0bcdF0_pSgvp",
+            "moduleName": "Terrier",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any Terrier.TrrBaseControllerDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrrBaseControllerDelegate",
+                        "printedName": "any Terrier.TrrBaseControllerDelegate",
+                        "usr": "c:@M@Terrier@objc(pl)TrrBaseControllerDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier17TrrBaseControllerC13startDelegateAA0bcdF0_pSgvg",
+                "mangledName": "$s7Terrier17TrrBaseControllerC13startDelegateAA0bcdF0_pSgvg",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any Terrier.TrrBaseControllerDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrrBaseControllerDelegate",
+                        "printedName": "any Terrier.TrrBaseControllerDelegate",
+                        "usr": "c:@M@Terrier@objc(pl)TrrBaseControllerDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier17TrrBaseControllerC13startDelegateAA0bcdF0_pSgvs",
+                "mangledName": "$s7Terrier17TrrBaseControllerC13startDelegateAA0bcdF0_pSgvs",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier17TrrBaseControllerC13startDelegateAA0bcdF0_pSgvM",
+                "mangledName": "$s7Terrier17TrrBaseControllerC13startDelegateAA0bcdF0_pSgvM",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "setup",
             "printedName": "setup(manifest:)",
@@ -14959,7 +15127,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyRenderControllerProtocol",
-                "printedName": "any Terrier.MaplyRenderControllerProtocol",
+                "printedName": "any WhirlyGlobe.MaplyRenderControllerProtocol",
                 "usr": "c:objc(pl)MaplyRenderControllerProtocol"
               }
             ],
@@ -15369,7 +15537,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyRenderControllerProtocol",
-                "printedName": "any Terrier.MaplyRenderControllerProtocol",
+                "printedName": "any WhirlyGlobe.MaplyRenderControllerProtocol",
                 "usr": "c:objc(pl)MaplyRenderControllerProtocol"
               }
             ],
@@ -16493,7 +16661,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyLoadFrameMode",
-                "printedName": "Terrier.MaplyLoadFrameMode",
+                "printedName": "WhirlyGlobe.MaplyLoadFrameMode",
                 "usr": "c:@E@MaplyLoadFrameMode"
               }
             ],
@@ -16516,7 +16684,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "MaplyLoadFrameMode",
-                    "printedName": "Terrier.MaplyLoadFrameMode",
+                    "printedName": "WhirlyGlobe.MaplyLoadFrameMode",
                     "usr": "c:@E@MaplyLoadFrameMode"
                   }
                 ],
@@ -16540,7 +16708,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "MaplyLoadFrameMode",
-                    "printedName": "Terrier.MaplyLoadFrameMode",
+                    "printedName": "WhirlyGlobe.MaplyLoadFrameMode",
                     "usr": "c:@E@MaplyLoadFrameMode"
                   }
                 ],
@@ -16875,7 +17043,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyRenderControllerProtocol",
-                "printedName": "any Terrier.MaplyRenderControllerProtocol",
+                "printedName": "any WhirlyGlobe.MaplyRenderControllerProtocol",
                 "usr": "c:objc(pl)MaplyRenderControllerProtocol"
               }
             ],
@@ -17706,7 +17874,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyRenderControllerProtocol",
-                "printedName": "any Terrier.MaplyRenderControllerProtocol",
+                "printedName": "any WhirlyGlobe.MaplyRenderControllerProtocol",
                 "usr": "c:objc(pl)MaplyRenderControllerProtocol"
               }
             ],
@@ -17983,6 +18151,116 @@
                 "mangledName": "$s7Terrier26TrrSingleChannelControllerC15defaultColorMapSo0bgH0CSgvg",
                 "moduleName": "Terrier",
                 "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "renderShader",
+            "printedName": "renderShader",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Terrier.TrrVarFloatColorMapShader?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrrVarFloatColorMapShader",
+                    "printedName": "Terrier.TrrVarFloatColorMapShader",
+                    "usr": "c:objc(cs)TrrVarFloatColorMapShader"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Terrier26TrrSingleChannelControllerC12renderShaderSo0b16VarFloatColorMapG0CSgvp",
+            "mangledName": "$s7Terrier26TrrSingleChannelControllerC12renderShaderSo0b16VarFloatColorMapG0CSgvp",
+            "moduleName": "Terrier",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Terrier.TrrVarFloatColorMapShader?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrrVarFloatColorMapShader",
+                        "printedName": "Terrier.TrrVarFloatColorMapShader",
+                        "usr": "c:objc(cs)TrrVarFloatColorMapShader"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier26TrrSingleChannelControllerC12renderShaderSo0b16VarFloatColorMapG0CSgvg",
+                "mangledName": "$s7Terrier26TrrSingleChannelControllerC12renderShaderSo0b16VarFloatColorMapG0CSgvg",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Terrier.TrrVarFloatColorMapShader?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrrVarFloatColorMapShader",
+                        "printedName": "Terrier.TrrVarFloatColorMapShader",
+                        "usr": "c:objc(cs)TrrVarFloatColorMapShader"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier26TrrSingleChannelControllerC12renderShaderSo0b16VarFloatColorMapG0CSgvs",
+                "mangledName": "$s7Terrier26TrrSingleChannelControllerC12renderShaderSo0b16VarFloatColorMapG0CSgvs",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier26TrrSingleChannelControllerC12renderShaderSo0b16VarFloatColorMapG0CSgvM",
+                "mangledName": "$s7Terrier26TrrSingleChannelControllerC12renderShaderSo0b16VarFloatColorMapG0CSgvM",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           }
@@ -20456,12 +20734,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Terrier.MaplyRenderTarget?",
+                "printedName": "WhirlyGlobe.MaplyRenderTarget?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MaplyRenderTarget",
-                    "printedName": "Terrier.MaplyRenderTarget",
+                    "printedName": "WhirlyGlobe.MaplyRenderTarget",
                     "usr": "c:objc(cs)MaplyRenderTarget"
                   }
                 ],
@@ -21292,7 +21570,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyRenderControllerProtocol",
-                "printedName": "any Terrier.MaplyRenderControllerProtocol",
+                "printedName": "any WhirlyGlobe.MaplyRenderControllerProtocol",
                 "usr": "c:objc(pl)MaplyRenderControllerProtocol"
               }
             ],
@@ -21711,37 +21989,32 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "TrrIRadarController",
-        "printedName": "TrrIRadarController",
+        "name": "TrrRadarController",
+        "printedName": "TrrRadarController",
         "children": [
           {
             "kind": "Var",
-            "name": "colorMap",
-            "printedName": "colorMap",
+            "name": "service",
+            "printedName": "service",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Terrier.TrrColorMap?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TrrColorMap",
-                    "printedName": "Terrier.TrrColorMap",
-                    "usr": "c:objc(cs)TrrColorMap"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "TrrService",
+                "printedName": "Terrier.TrrService",
+                "usr": "c:@M@Terrier@objc(cs)TrrService"
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@Terrier@objc(pl)TrrIRadarController(py)colorMap",
-            "mangledName": "$s7Terrier19TrrIRadarControllerP8colorMapSo0b5ColorF0CSgvp",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(py)service",
+            "mangledName": "$s7Terrier18TrrRadarControllerC7serviceAA0B7ServiceCvp",
             "moduleName": "Terrier",
-            "protocolReq": true,
+            "objc_name": "service",
             "declAttributes": [
-              "ObjC"
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
             ],
+            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -21750,30 +22023,20 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Terrier.TrrColorMap?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TrrColorMap",
-                        "printedName": "Terrier.TrrColorMap",
-                        "usr": "c:objc(cs)TrrColorMap"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "TrrService",
+                    "printedName": "Terrier.TrrService",
+                    "usr": "c:@M@Terrier@objc(cs)TrrService"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@Terrier@objc(pl)TrrIRadarController(im)colorMap",
-                "mangledName": "$s7Terrier19TrrIRadarControllerP8colorMapSo0b5ColorF0CSgvg",
+                "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)service",
+                "mangledName": "$s7Terrier18TrrRadarControllerC7serviceAA0B7ServiceCvg",
                 "moduleName": "Terrier",
-                "genericSig": "<τ_0_0 where τ_0_0 : Terrier.TrrIRadarController>",
-                "sugared_genericSig": "<Self where Self : Terrier.TrrIRadarController>",
-                "protocolReq": true,
+                "implicit": true,
+                "objc_name": "service",
                 "declAttributes": [
                   "ObjC"
                 ],
-                "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
               },
               {
@@ -21788,74 +22051,1430 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Terrier.TrrColorMap?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TrrColorMap",
-                        "printedName": "Terrier.TrrColorMap",
-                        "usr": "c:objc(cs)TrrColorMap"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "TrrService",
+                    "printedName": "Terrier.TrrService",
+                    "usr": "c:@M@Terrier@objc(cs)TrrService"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@Terrier@objc(pl)TrrIRadarController(im)setColorMap:",
-                "mangledName": "$s7Terrier19TrrIRadarControllerP8colorMapSo0b5ColorF0CSgvs",
+                "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)setService:",
+                "mangledName": "$s7Terrier18TrrRadarControllerC7serviceAA0B7ServiceCvs",
                 "moduleName": "Terrier",
-                "genericSig": "<τ_0_0 where τ_0_0 : Terrier.TrrIRadarController>",
-                "sugared_genericSig": "<Self where Self : Terrier.TrrIRadarController>",
-                "protocolReq": true,
+                "implicit": true,
                 "declAttributes": [
                   "ObjC"
                 ],
-                "reqNewWitnessTableEntry": true,
                 "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier18TrrRadarControllerC7serviceAA0B7ServiceCvM",
+                "mangledName": "$s7Terrier18TrrRadarControllerC7serviceAA0B7ServiceCvM",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "c:@M@Terrier@objc(pl)TrrIRadarController",
-        "mangledName": "$s7Terrier19TrrIRadarControllerP",
-        "moduleName": "Terrier",
-        "genericSig": "<τ_0_0 : Terrier.TrrIController>",
-        "sugared_genericSig": "<Self : Terrier.TrrIController>",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
           },
           {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
+            "kind": "Var",
+            "name": "enable",
+            "printedName": "enable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(py)enable",
+            "mangledName": "$s7Terrier18TrrRadarControllerC6enableSbvp",
+            "moduleName": "Terrier",
+            "objc_name": "enable",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)enable",
+                "mangledName": "$s7Terrier18TrrRadarControllerC6enableSbvg",
+                "moduleName": "Terrier",
+                "objc_name": "enable",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)setEnable:",
+                "mangledName": "$s7Terrier18TrrRadarControllerC6enableSbvs",
+                "moduleName": "Terrier",
+                "objc_name": "setEnable:",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier18TrrRadarControllerC6enableSbvM",
+                "mangledName": "$s7Terrier18TrrRadarControllerC6enableSbvM",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
           },
           {
-            "kind": "Conformance",
-            "name": "TrrIController",
-            "printedName": "TrrIController",
-            "usr": "c:@M@Terrier@objc(pl)TrrIController",
-            "mangledName": "$s7Terrier14TrrIControllerP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TrrRadarController",
-        "printedName": "TrrRadarController",
-        "children": [
+            "kind": "Var",
+            "name": "started",
+            "printedName": "started",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(py)started",
+            "mangledName": "$s7Terrier18TrrRadarControllerC7startedSbvp",
+            "moduleName": "Terrier",
+            "objc_name": "started",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)started",
+                "mangledName": "$s7Terrier18TrrRadarControllerC7startedSbvg",
+                "moduleName": "Terrier",
+                "objc_name": "started",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "drawPriority",
+            "printedName": "drawPriority",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(py)drawPriority",
+            "mangledName": "$s7Terrier18TrrRadarControllerC12drawPrioritys5Int32Vvp",
+            "moduleName": "Terrier",
+            "objc_name": "drawPriority",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)drawPriority",
+                "mangledName": "$s7Terrier18TrrRadarControllerC12drawPrioritys5Int32Vvg",
+                "moduleName": "Terrier",
+                "objc_name": "drawPriority",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)setDrawPriority:",
+                "mangledName": "$s7Terrier18TrrRadarControllerC12drawPrioritys5Int32Vvs",
+                "moduleName": "Terrier",
+                "objc_name": "setDrawPriority:",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier18TrrRadarControllerC12drawPrioritys5Int32VvM",
+                "mangledName": "$s7Terrier18TrrRadarControllerC12drawPrioritys5Int32VvM",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "drawPriorityPerSource",
+            "printedName": "drawPriorityPerSource",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(py)drawPriorityPerSource",
+            "mangledName": "$s7Terrier18TrrRadarControllerC21drawPriorityPerSourceSivp",
+            "moduleName": "Terrier",
+            "objc_name": "drawPriorityPerSource",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)drawPriorityPerSource",
+                "mangledName": "$s7Terrier18TrrRadarControllerC21drawPriorityPerSourceSivg",
+                "moduleName": "Terrier",
+                "objc_name": "drawPriorityPerSource",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)setDrawPriorityPerSource:",
+                "mangledName": "$s7Terrier18TrrRadarControllerC21drawPriorityPerSourceSivs",
+                "moduleName": "Terrier",
+                "objc_name": "setDrawPriorityPerSource:",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier18TrrRadarControllerC21drawPriorityPerSourceSivM",
+                "mangledName": "$s7Terrier18TrrRadarControllerC21drawPriorityPerSourceSivM",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "importanceFactor",
+            "printedName": "importanceFactor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(py)importanceFactor",
+            "mangledName": "$s7Terrier18TrrRadarControllerC16importanceFactorSfvp",
+            "moduleName": "Terrier",
+            "objc_name": "importanceFactor",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)importanceFactor",
+                "mangledName": "$s7Terrier18TrrRadarControllerC16importanceFactorSfvg",
+                "moduleName": "Terrier",
+                "objc_name": "importanceFactor",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)setImportanceFactor:",
+                "mangledName": "$s7Terrier18TrrRadarControllerC16importanceFactorSfvs",
+                "moduleName": "Terrier",
+                "objc_name": "setImportanceFactor:",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier18TrrRadarControllerC16importanceFactorSfvM",
+                "mangledName": "$s7Terrier18TrrRadarControllerC16importanceFactorSfvM",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "renderScale",
+            "printedName": "renderScale",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(py)renderScale",
+            "mangledName": "$s7Terrier18TrrRadarControllerC11renderScaleSfvp",
+            "moduleName": "Terrier",
+            "objc_name": "renderScale",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)renderScale",
+                "mangledName": "$s7Terrier18TrrRadarControllerC11renderScaleSfvg",
+                "moduleName": "Terrier",
+                "objc_name": "renderScale",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)setRenderScale:",
+                "mangledName": "$s7Terrier18TrrRadarControllerC11renderScaleSfvs",
+                "moduleName": "Terrier",
+                "objc_name": "setRenderScale:",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier18TrrRadarControllerC11renderScaleSfvM",
+                "mangledName": "$s7Terrier18TrrRadarControllerC11renderScaleSfvM",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sourceCadence",
+            "printedName": "sourceCadence",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrrSourceCadence",
+                "printedName": "Terrier.TrrSourceCadence",
+                "usr": "c:@M@Terrier@objc(cs)TrrSourceCadence"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(py)sourceCadence",
+            "mangledName": "$s7Terrier18TrrRadarControllerC13sourceCadenceAA0b6SourceF0Cvp",
+            "moduleName": "Terrier",
+            "objc_name": "sourceCadence",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrrSourceCadence",
+                    "printedName": "Terrier.TrrSourceCadence",
+                    "usr": "c:@M@Terrier@objc(cs)TrrSourceCadence"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)sourceCadence",
+                "mangledName": "$s7Terrier18TrrRadarControllerC13sourceCadenceAA0b6SourceF0Cvg",
+                "moduleName": "Terrier",
+                "objc_name": "sourceCadence",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrrSourceCadence",
+                    "printedName": "Terrier.TrrSourceCadence",
+                    "usr": "c:@M@Terrier@objc(cs)TrrSourceCadence"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)setSourceCadence:",
+                "mangledName": "$s7Terrier18TrrRadarControllerC13sourceCadenceAA0b6SourceF0Cvs",
+                "moduleName": "Terrier",
+                "objc_name": "setSourceCadence:",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier18TrrRadarControllerC13sourceCadenceAA0b6SourceF0CvM",
+                "mangledName": "$s7Terrier18TrrRadarControllerC13sourceCadenceAA0b6SourceF0CvM",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "snapToFrame",
+            "printedName": "snapToFrame",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(py)snapToFrame",
+            "mangledName": "$s7Terrier18TrrRadarControllerC11snapToFrameSbvp",
+            "moduleName": "Terrier",
+            "objc_name": "snapToFrame",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)snapToFrame",
+                "mangledName": "$s7Terrier18TrrRadarControllerC11snapToFrameSbvg",
+                "moduleName": "Terrier",
+                "objc_name": "snapToFrame",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)setSnapToFrame:",
+                "mangledName": "$s7Terrier18TrrRadarControllerC11snapToFrameSbvs",
+                "moduleName": "Terrier",
+                "objc_name": "setSnapToFrame:",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier18TrrRadarControllerC11snapToFrameSbvM",
+                "mangledName": "$s7Terrier18TrrRadarControllerC11snapToFrameSbvM",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "loadAllFrames",
+            "printedName": "loadAllFrames",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(py)loadAllFrames",
+            "mangledName": "$s7Terrier18TrrRadarControllerC13loadAllFramesSbvp",
+            "moduleName": "Terrier",
+            "objc_name": "loadAllFrames",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)loadAllFrames",
+                "mangledName": "$s7Terrier18TrrRadarControllerC13loadAllFramesSbvg",
+                "moduleName": "Terrier",
+                "objc_name": "loadAllFrames",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)setLoadAllFrames:",
+                "mangledName": "$s7Terrier18TrrRadarControllerC13loadAllFramesSbvs",
+                "moduleName": "Terrier",
+                "objc_name": "setLoadAllFrames:",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier18TrrRadarControllerC13loadAllFramesSbvM",
+                "mangledName": "$s7Terrier18TrrRadarControllerC13loadAllFramesSbvM",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "baseColor",
+            "printedName": "baseColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(py)baseColor",
+            "mangledName": "$s7Terrier18TrrRadarControllerC9baseColorSo7UIColorCvp",
+            "moduleName": "Terrier",
+            "objc_name": "baseColor",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)baseColor",
+                "mangledName": "$s7Terrier18TrrRadarControllerC9baseColorSo7UIColorCvg",
+                "moduleName": "Terrier",
+                "objc_name": "baseColor",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)setBaseColor:",
+                "mangledName": "$s7Terrier18TrrRadarControllerC9baseColorSo7UIColorCvs",
+                "moduleName": "Terrier",
+                "objc_name": "setBaseColor:",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier18TrrRadarControllerC9baseColorSo7UIColorCvM",
+                "mangledName": "$s7Terrier18TrrRadarControllerC9baseColorSo7UIColorCvM",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "debugMode",
+            "printedName": "debugMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(py)debugMode",
+            "mangledName": "$s7Terrier18TrrRadarControllerC9debugModeSbvp",
+            "moduleName": "Terrier",
+            "objc_name": "debugMode",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)debugMode",
+                "mangledName": "$s7Terrier18TrrRadarControllerC9debugModeSbvg",
+                "moduleName": "Terrier",
+                "objc_name": "debugMode",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)setDebugMode:",
+                "mangledName": "$s7Terrier18TrrRadarControllerC9debugModeSbvs",
+                "moduleName": "Terrier",
+                "objc_name": "setDebugMode:",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier18TrrRadarControllerC9debugModeSbvM",
+                "mangledName": "$s7Terrier18TrrRadarControllerC9debugModeSbvM",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "manifests",
+            "printedName": "manifests",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Terrier.TrrVarManifest]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrrVarManifest",
+                    "printedName": "Terrier.TrrVarManifest",
+                    "usr": "c:@M@Terrier@objc(cs)TrrVarManifest"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(py)manifests",
+            "mangledName": "$s7Terrier18TrrRadarControllerC9manifestsSayAA0B11VarManifestCGvp",
+            "moduleName": "Terrier",
+            "objc_name": "manifests",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Terrier.TrrVarManifest]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrrVarManifest",
+                        "printedName": "Terrier.TrrVarManifest",
+                        "usr": "c:@M@Terrier@objc(cs)TrrVarManifest"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)manifests",
+                "mangledName": "$s7Terrier18TrrRadarControllerC9manifestsSayAA0B11VarManifestCGvg",
+                "moduleName": "Terrier",
+                "objc_name": "manifests",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "addLoadedDelegate",
+            "printedName": "addLoadedDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(any Terrier.TrrIController, Terrier.TrrVarManifest, Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(any Terrier.TrrIController, Terrier.TrrVarManifest, Swift.Bool)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrrIController",
+                        "printedName": "any Terrier.TrrIController",
+                        "usr": "c:@M@Terrier@objc(pl)TrrIController"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrrVarManifest",
+                        "printedName": "Terrier.TrrVarManifest",
+                        "usr": "c:@M@Terrier@objc(cs)TrrVarManifest"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)addLoadedDelegate:",
+            "mangledName": "$s7Terrier18TrrRadarControllerC17addLoadedDelegateySiyAA0B11IController_p_AA0B11VarManifestCSbtcF",
+            "moduleName": "Terrier",
+            "objc_name": "addLoadedDelegate:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeLoadedDelegate",
+            "printedName": "removeLoadedDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)removeLoadedDelegate:",
+            "mangledName": "$s7Terrier18TrrRadarControllerC20removeLoadedDelegateyySiF",
+            "moduleName": "Terrier",
+            "objc_name": "removeLoadedDelegate:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addAllLoadedDelegate",
+            "printedName": "addAllLoadedDelegate(timeout:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(any Terrier.TrrIController) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrrIController",
+                    "printedName": "any Terrier.TrrIController",
+                    "usr": "c:@M@Terrier@objc(pl)TrrIController"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)addAllLoadedDelegateWithTimeout::",
+            "mangledName": "$s7Terrier18TrrRadarControllerC20addAllLoadedDelegate7timeout_SiSd_yAA0B11IController_pctF",
+            "moduleName": "Terrier",
+            "objc_name": "addAllLoadedDelegateWithTimeout::",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeAllLoadedDelegate",
+            "printedName": "removeAllLoadedDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)removeAllLoadedDelegate:",
+            "mangledName": "$s7Terrier18TrrRadarControllerC23removeAllLoadedDelegateySbSiF",
+            "moduleName": "Terrier",
+            "objc_name": "removeAllLoadedDelegate:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "areAllSourcesLoaded",
+            "printedName": "areAllSourcesLoaded()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)areAllSourcesLoaded",
+            "mangledName": "$s7Terrier18TrrRadarControllerC19areAllSourcesLoadedSbyF",
+            "moduleName": "Terrier",
+            "objc_name": "areAllSourcesLoaded",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "areAnySourcesLoaded",
+            "printedName": "areAnySourcesLoaded()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)areAnySourcesLoaded",
+            "mangledName": "$s7Terrier18TrrRadarControllerC19areAnySourcesLoadedSbyF",
+            "moduleName": "Terrier",
+            "objc_name": "areAnySourcesLoaded",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "areAllSourcesValid",
+            "printedName": "areAllSourcesValid()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)areAllSourcesValid",
+            "mangledName": "$s7Terrier18TrrRadarControllerC18areAllSourcesValidSbyF",
+            "moduleName": "Terrier",
+            "objc_name": "areAllSourcesValid",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "areAnySourcesValid",
+            "printedName": "areAnySourcesValid()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)areAnySourcesValid",
+            "mangledName": "$s7Terrier18TrrRadarControllerC18areAnySourcesValidSbyF",
+            "moduleName": "Terrier",
+            "objc_name": "areAnySourcesValid",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "anyCoverageSpan",
+            "printedName": "anyCoverageSpan()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Terrier.TrrMinMax?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrrMinMax",
+                    "printedName": "Terrier.TrrMinMax",
+                    "usr": "c:@M@Terrier@objc(cs)TrrMinMax"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)anyCoverageSpan",
+            "mangledName": "$s7Terrier18TrrRadarControllerC15anyCoverageSpanAA0B6MinMaxCSgyF",
+            "moduleName": "Terrier",
+            "objc_name": "anyCoverageSpan",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "allCoverageSpan",
+            "printedName": "allCoverageSpan()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Terrier.TrrMinMax?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrrMinMax",
+                    "printedName": "Terrier.TrrMinMax",
+                    "usr": "c:@M@Terrier@objc(cs)TrrMinMax"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)allCoverageSpan",
+            "mangledName": "$s7Terrier18TrrRadarControllerC15allCoverageSpanAA0B6MinMaxCSgyF",
+            "moduleName": "Terrier",
+            "objc_name": "allCoverageSpan",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCurrentSlices",
+            "printedName": "getCurrentSlices()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Terrier.TrrBaseController.TimeSliceInfo]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TimeSliceInfo",
+                    "printedName": "Terrier.TrrBaseController.TimeSliceInfo",
+                    "usr": "s:7Terrier17TrrBaseControllerC13TimeSliceInfoC"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)getCurrentSlices",
+            "mangledName": "$s7Terrier18TrrRadarControllerC16getCurrentSlicesSayAA0b4BaseD0C13TimeSliceInfoCGyF",
+            "moduleName": "Terrier",
+            "objc_name": "getCurrentSlices",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reload",
+            "printedName": "reload()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)reload",
+            "mangledName": "$s7Terrier18TrrRadarControllerC6reloadyyF",
+            "moduleName": "Terrier",
+            "objc_name": "reload",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
           {
             "kind": "Var",
             "name": "label",
@@ -21872,11 +23491,9 @@
             "usr": "c:@M@Terrier@objc(cs)TrrRadarController(py)label",
             "mangledName": "$s7Terrier18TrrRadarControllerC5labelSSvp",
             "moduleName": "Terrier",
-            "overriding": true,
             "objc_name": "label",
             "declAttributes": [
               "ObjC",
-              "Override",
               "AccessControl"
             ],
             "accessors": [
@@ -21896,132 +23513,11 @@
                 "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)label",
                 "mangledName": "$s7Terrier18TrrRadarControllerC5labelSSvg",
                 "moduleName": "Terrier",
-                "overriding": true,
                 "objc_name": "label",
                 "declAttributes": [
                   "ObjC"
                 ],
                 "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "colorMap",
-            "printedName": "colorMap",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Terrier.TrrColorMap?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TrrColorMap",
-                    "printedName": "Terrier.TrrColorMap",
-                    "usr": "c:objc(cs)TrrColorMap"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(py)colorMap",
-            "mangledName": "$s7Terrier18TrrRadarControllerC8colorMapSo0b5ColorF0CSgvp",
-            "moduleName": "Terrier",
-            "objc_name": "colorMap",
-            "declAttributes": [
-              "HasInitialValue",
-              "ObjC",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Terrier.TrrColorMap?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TrrColorMap",
-                        "printedName": "Terrier.TrrColorMap",
-                        "usr": "c:objc(cs)TrrColorMap"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)colorMap",
-                "mangledName": "$s7Terrier18TrrRadarControllerC8colorMapSo0b5ColorF0CSgvg",
-                "moduleName": "Terrier",
-                "implicit": true,
-                "objc_name": "colorMap",
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Terrier.TrrColorMap?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TrrColorMap",
-                        "printedName": "Terrier.TrrColorMap",
-                        "usr": "c:objc(cs)TrrColorMap"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)setColorMap:",
-                "mangledName": "$s7Terrier18TrrRadarControllerC8colorMapSo0b5ColorF0CSgvs",
-                "moduleName": "Terrier",
-                "implicit": true,
-                "objc_name": "setColorMap:",
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Terrier18TrrRadarControllerC8colorMapSo0b5ColorF0CSgvM",
-                "mangledName": "$s7Terrier18TrrRadarControllerC8colorMapSo0b5ColorF0CSgvM",
-                "moduleName": "Terrier",
-                "implicit": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -22041,12 +23537,10 @@
             "usr": "c:@M@Terrier@objc(cs)TrrRadarController(py)varInterpMode",
             "mangledName": "$s7Terrier18TrrRadarControllerC13varInterpModeAA0b13InterpolationG0Ovp",
             "moduleName": "Terrier",
-            "overriding": true,
             "objc_name": "varInterpMode",
             "declAttributes": [
               "ObjC",
-              "AccessControl",
-              "Override"
+              "AccessControl"
             ],
             "accessors": [
               {
@@ -22065,8 +23559,6 @@
                 "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)varInterpMode",
                 "mangledName": "$s7Terrier18TrrRadarControllerC13varInterpModeAA0b13InterpolationG0Ovg",
                 "moduleName": "Terrier",
-                "overriding": true,
-                "implicit": true,
                 "objc_name": "varInterpMode",
                 "declAttributes": [
                   "ObjC"
@@ -22094,8 +23586,6 @@
                 "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)setVarInterpMode:",
                 "mangledName": "$s7Terrier18TrrRadarControllerC13varInterpModeAA0b13InterpolationG0Ovs",
                 "moduleName": "Terrier",
-                "overriding": true,
-                "implicit": true,
                 "objc_name": "setVarInterpMode:",
                 "declAttributes": [
                   "ObjC"
@@ -22117,7 +23607,6 @@
                 "usr": "s:7Terrier18TrrRadarControllerC13varInterpModeAA0b13InterpolationG0OvM",
                 "mangledName": "$s7Terrier18TrrRadarControllerC13varInterpModeAA0b13InterpolationG0OvM",
                 "moduleName": "Terrier",
-                "overriding": true,
                 "implicit": true,
                 "accessorKind": "_modify"
               }
@@ -22139,12 +23628,10 @@
             "usr": "c:@M@Terrier@objc(cs)TrrRadarController(py)visualInterpMode",
             "mangledName": "$s7Terrier18TrrRadarControllerC16visualInterpModeAA0b13InterpolationG0Ovp",
             "moduleName": "Terrier",
-            "overriding": true,
             "objc_name": "visualInterpMode",
             "declAttributes": [
               "ObjC",
-              "AccessControl",
-              "Override"
+              "AccessControl"
             ],
             "accessors": [
               {
@@ -22163,8 +23650,6 @@
                 "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)visualInterpMode",
                 "mangledName": "$s7Terrier18TrrRadarControllerC16visualInterpModeAA0b13InterpolationG0Ovg",
                 "moduleName": "Terrier",
-                "overriding": true,
-                "implicit": true,
                 "objc_name": "visualInterpMode",
                 "declAttributes": [
                   "ObjC"
@@ -22192,8 +23677,6 @@
                 "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)setVisualInterpMode:",
                 "mangledName": "$s7Terrier18TrrRadarControllerC16visualInterpModeAA0b13InterpolationG0Ovs",
                 "moduleName": "Terrier",
-                "overriding": true,
-                "implicit": true,
                 "objc_name": "setVisualInterpMode:",
                 "declAttributes": [
                   "ObjC"
@@ -22215,7 +23698,6 @@
                 "usr": "s:7Terrier18TrrRadarControllerC16visualInterpModeAA0b13InterpolationG0OvM",
                 "mangledName": "$s7Terrier18TrrRadarControllerC16visualInterpModeAA0b13InterpolationG0OvM",
                 "moduleName": "Terrier",
-                "overriding": true,
                 "implicit": true,
                 "accessorKind": "_modify"
               }
@@ -22237,12 +23719,10 @@
             "usr": "c:@M@Terrier@objc(cs)TrrRadarController(py)visualInterpCustom",
             "mangledName": "$s7Terrier18TrrRadarControllerC18visualInterpCustomSbvp",
             "moduleName": "Terrier",
-            "overriding": true,
             "objc_name": "visualInterpCustom",
             "declAttributes": [
               "ObjC",
-              "AccessControl",
-              "Override"
+              "AccessControl"
             ],
             "accessors": [
               {
@@ -22261,8 +23741,6 @@
                 "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)visualInterpCustom",
                 "mangledName": "$s7Terrier18TrrRadarControllerC18visualInterpCustomSbvg",
                 "moduleName": "Terrier",
-                "overriding": true,
-                "implicit": true,
                 "objc_name": "visualInterpCustom",
                 "declAttributes": [
                   "ObjC"
@@ -22290,8 +23768,6 @@
                 "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)setVisualInterpCustom:",
                 "mangledName": "$s7Terrier18TrrRadarControllerC18visualInterpCustomSbvs",
                 "moduleName": "Terrier",
-                "overriding": true,
-                "implicit": true,
                 "objc_name": "setVisualInterpCustom:",
                 "declAttributes": [
                   "ObjC"
@@ -22313,11 +23789,479 @@
                 "usr": "s:7Terrier18TrrRadarControllerC18visualInterpCustomSbvM",
                 "mangledName": "$s7Terrier18TrrRadarControllerC18visualInterpCustomSbvM",
                 "moduleName": "Terrier",
-                "overriding": true,
                 "implicit": true,
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "PrecipType",
+            "printedName": "PrecipType",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "None",
+                "printedName": "None",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Terrier.TrrRadarController.PrecipType.Type) -> Terrier.TrrRadarController.PrecipType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PrecipType",
+                        "printedName": "Terrier.TrrRadarController.PrecipType",
+                        "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Terrier.TrrRadarController.PrecipType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PrecipType",
+                            "printedName": "Terrier.TrrRadarController.PrecipType",
+                            "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO4NoneyA2EmF",
+                "mangledName": "$s7Terrier18TrrRadarControllerC10PrecipTypeO4NoneyA2EmF",
+                "moduleName": "Terrier"
+              },
+              {
+                "kind": "Var",
+                "name": "Snow",
+                "printedName": "Snow",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Terrier.TrrRadarController.PrecipType.Type) -> Terrier.TrrRadarController.PrecipType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PrecipType",
+                        "printedName": "Terrier.TrrRadarController.PrecipType",
+                        "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Terrier.TrrRadarController.PrecipType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PrecipType",
+                            "printedName": "Terrier.TrrRadarController.PrecipType",
+                            "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO4SnowyA2EmF",
+                "mangledName": "$s7Terrier18TrrRadarControllerC10PrecipTypeO4SnowyA2EmF",
+                "moduleName": "Terrier"
+              },
+              {
+                "kind": "Var",
+                "name": "Hail",
+                "printedName": "Hail",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Terrier.TrrRadarController.PrecipType.Type) -> Terrier.TrrRadarController.PrecipType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PrecipType",
+                        "printedName": "Terrier.TrrRadarController.PrecipType",
+                        "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Terrier.TrrRadarController.PrecipType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PrecipType",
+                            "printedName": "Terrier.TrrRadarController.PrecipType",
+                            "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO4HailyA2EmF",
+                "mangledName": "$s7Terrier18TrrRadarControllerC10PrecipTypeO4HailyA2EmF",
+                "moduleName": "Terrier"
+              },
+              {
+                "kind": "Var",
+                "name": "Convect",
+                "printedName": "Convect",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Terrier.TrrRadarController.PrecipType.Type) -> Terrier.TrrRadarController.PrecipType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PrecipType",
+                        "printedName": "Terrier.TrrRadarController.PrecipType",
+                        "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Terrier.TrrRadarController.PrecipType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PrecipType",
+                            "printedName": "Terrier.TrrRadarController.PrecipType",
+                            "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO7ConvectyA2EmF",
+                "mangledName": "$s7Terrier18TrrRadarControllerC10PrecipTypeO7ConvectyA2EmF",
+                "moduleName": "Terrier"
+              },
+              {
+                "kind": "Var",
+                "name": "WarmStratRain",
+                "printedName": "WarmStratRain",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Terrier.TrrRadarController.PrecipType.Type) -> Terrier.TrrRadarController.PrecipType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PrecipType",
+                        "printedName": "Terrier.TrrRadarController.PrecipType",
+                        "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Terrier.TrrRadarController.PrecipType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PrecipType",
+                            "printedName": "Terrier.TrrRadarController.PrecipType",
+                            "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO13WarmStratRainyA2EmF",
+                "mangledName": "$s7Terrier18TrrRadarControllerC10PrecipTypeO13WarmStratRainyA2EmF",
+                "moduleName": "Terrier"
+              },
+              {
+                "kind": "Var",
+                "name": "CoolStratRain",
+                "printedName": "CoolStratRain",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Terrier.TrrRadarController.PrecipType.Type) -> Terrier.TrrRadarController.PrecipType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PrecipType",
+                        "printedName": "Terrier.TrrRadarController.PrecipType",
+                        "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Terrier.TrrRadarController.PrecipType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PrecipType",
+                            "printedName": "Terrier.TrrRadarController.PrecipType",
+                            "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO13CoolStratRainyA2EmF",
+                "mangledName": "$s7Terrier18TrrRadarControllerC10PrecipTypeO13CoolStratRainyA2EmF",
+                "moduleName": "Terrier"
+              },
+              {
+                "kind": "Var",
+                "name": "TropicalStratRain",
+                "printedName": "TropicalStratRain",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Terrier.TrrRadarController.PrecipType.Type) -> Terrier.TrrRadarController.PrecipType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PrecipType",
+                        "printedName": "Terrier.TrrRadarController.PrecipType",
+                        "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Terrier.TrrRadarController.PrecipType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PrecipType",
+                            "printedName": "Terrier.TrrRadarController.PrecipType",
+                            "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO17TropicalStratRainyA2EmF",
+                "mangledName": "$s7Terrier18TrrRadarControllerC10PrecipTypeO17TropicalStratRainyA2EmF",
+                "moduleName": "Terrier"
+              },
+              {
+                "kind": "Var",
+                "name": "TropicalConvectRain",
+                "printedName": "TropicalConvectRain",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Terrier.TrrRadarController.PrecipType.Type) -> Terrier.TrrRadarController.PrecipType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PrecipType",
+                        "printedName": "Terrier.TrrRadarController.PrecipType",
+                        "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Terrier.TrrRadarController.PrecipType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PrecipType",
+                            "printedName": "Terrier.TrrRadarController.PrecipType",
+                            "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO19TropicalConvectRainyA2EmF",
+                "mangledName": "$s7Terrier18TrrRadarControllerC10PrecipTypeO19TropicalConvectRainyA2EmF",
+                "moduleName": "Terrier"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Terrier.TrrRadarController.PrecipType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PrecipType",
+                        "printedName": "Terrier.TrrRadarController.PrecipType",
+                        "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO8rawValueAESgs5Int32V_tcfc",
+                "mangledName": "$s7Terrier18TrrRadarControllerC10PrecipTypeO8rawValueAESgs5Int32V_tcfc",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO8rawValues5Int32Vvp",
+                "mangledName": "$s7Terrier18TrrRadarControllerC10PrecipTypeO8rawValues5Int32Vvp",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int32",
+                        "printedName": "Swift.Int32",
+                        "usr": "s:s5Int32V"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO8rawValues5Int32Vvg",
+                    "mangledName": "$s7Terrier18TrrRadarControllerC10PrecipTypeO8rawValues5Int32Vvg",
+                    "moduleName": "Terrier",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO",
+            "mangledName": "$s7Terrier18TrrRadarControllerC10PrecipTypeO",
+            "moduleName": "Terrier",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "enumRawTypeName": "Int32",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int32",
+                        "printedName": "Swift.Int32",
+                        "usr": "s:s5Int32V"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "setColorMap",
+            "printedName": "setColorMap(_:precipType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TrrColorMap",
+                "printedName": "Terrier.TrrColorMap",
+                "usr": "c:objc(cs)TrrColorMap"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PrecipType",
+                "printedName": "Terrier.TrrRadarController.PrecipType",
+                "usr": "s:7Terrier18TrrRadarControllerC10PrecipTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Terrier18TrrRadarControllerC11setColorMap_10precipTypeySo0bfG0C_AC06PrecipI0OtF",
+            "mangledName": "$s7Terrier18TrrRadarControllerC11setColorMap_10precipTypeySo0bfG0C_AC06PrecipI0OtF",
+            "moduleName": "Terrier",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -22327,13 +24271,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Terrier.TrrIRadarController)?",
+                "printedName": "Terrier.TrrRadarController?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "TrrIRadarController",
-                    "printedName": "any Terrier.TrrIRadarController",
-                    "usr": "c:@M@Terrier@objc(pl)TrrIRadarController"
+                    "name": "TrrRadarController",
+                    "printedName": "Terrier.TrrRadarController",
+                    "usr": "c:@M@Terrier@objc(cs)TrrRadarController"
                   }
                 ],
                 "usr": "s:Sq"
@@ -22373,49 +24317,18 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyRenderControllerProtocol",
-                "printedName": "any Terrier.MaplyRenderControllerProtocol",
+                "printedName": "any WhirlyGlobe.MaplyRenderControllerProtocol",
                 "usr": "c:objc(pl)MaplyRenderControllerProtocol"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7Terrier18TrrRadarControllerC6create6region7cadence7service7tracker5viewCAA0b6IRadarD0_pSgSaySSG_AA0B13SourceCadenceCAA0B7ServiceCAA0B11TimeTrackerCSo011MaplyRenderD8Protocol_ptFZ",
-            "mangledName": "$s7Terrier18TrrRadarControllerC6create6region7cadence7service7tracker5viewCAA0b6IRadarD0_pSgSaySSG_AA0B13SourceCadenceCAA0B7ServiceCAA0B11TimeTrackerCSo011MaplyRenderD8Protocol_ptFZ",
+            "usr": "s:7Terrier18TrrRadarControllerC6create6region7cadence7service7tracker5viewCACSgSaySSG_AA0B13SourceCadenceCAA0B7ServiceCAA0B11TimeTrackerCSo011MaplyRenderD8Protocol_ptFZ",
+            "mangledName": "$s7Terrier18TrrRadarControllerC6create6region7cadence7service7tracker5viewCACSgSaySSG_AA0B13SourceCadenceCAA0B7ServiceCAA0B11TimeTrackerCSo011MaplyRenderD8Protocol_ptFZ",
             "moduleName": "Terrier",
             "static": true,
             "declAttributes": [
               "Final",
               "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getManifests",
-            "printedName": "getManifests()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Terrier.TrrVarManifest]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TrrVarManifest",
-                    "printedName": "Terrier.TrrVarManifest",
-                    "usr": "c:@M@Terrier@objc(cs)TrrVarManifest"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7Terrier18TrrRadarControllerC12getManifestsSayAA0B11VarManifestCGyF",
-            "mangledName": "$s7Terrier18TrrRadarControllerC12getManifestsSayAA0B11VarManifestCGyF",
-            "moduleName": "Terrier",
-            "overriding": true,
-            "declAttributes": [
-              "AccessControl",
-              "Override"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -22435,12 +24348,53 @@
             "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)start",
             "mangledName": "$s7Terrier18TrrRadarControllerC5startSbyF",
             "moduleName": "Terrier",
-            "overriding": true,
             "objc_name": "start",
             "declAttributes": [
               "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "baseControllerDidStart",
+            "printedName": "baseControllerDidStart()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)baseControllerDidStart",
+            "mangledName": "$s7Terrier18TrrRadarControllerC04baseD8DidStartyyF",
+            "moduleName": "Terrier",
+            "objc_name": "baseControllerDidStart",
+            "declAttributes": [
+              "ObjC",
               "AccessControl",
-              "Override"
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setup",
+            "printedName": "setup()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Terrier18TrrRadarControllerC5setupyyF",
+            "mangledName": "$s7Terrier18TrrRadarControllerC5setupyyF",
+            "moduleName": "Terrier",
+            "declAttributes": [
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -22459,209 +24413,38 @@
             "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)stop",
             "mangledName": "$s7Terrier18TrrRadarControllerC4stopyyF",
             "moduleName": "Terrier",
-            "overriding": true,
             "objc_name": "stop",
             "declAttributes": [
               "ObjC",
-              "AccessControl",
-              "Override"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Function",
-            "name": "setupSource",
-            "printedName": "setupSource(source:index:)",
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "TrrVarSource",
-                "printedName": "Terrier.TrrVarSource",
-                "usr": "c:@M@Terrier@objc(cs)TrrVarSource"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
+                "name": "TrrRadarController",
+                "printedName": "Terrier.TrrRadarController",
+                "usr": "c:@M@Terrier@objc(cs)TrrRadarController"
               }
             ],
-            "declKind": "Func",
-            "usr": "s:7Terrier18TrrRadarControllerC11setupSource6source5indexyAA0b3VarF0C_SitF",
-            "mangledName": "$s7Terrier18TrrRadarControllerC11setupSource6source5indexyAA0b3VarF0C_SitF",
+            "declKind": "Constructor",
+            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)init",
+            "mangledName": "$s7Terrier18TrrRadarControllerCACycfc",
             "moduleName": "Terrier",
             "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
             "declAttributes": [
-              "AccessControl",
-              "Override"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "makeControl",
-            "printedName": "makeControl()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Terrier.TrrVarController?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TrrVarController",
-                    "printedName": "Terrier.TrrVarController",
-                    "usr": "c:@M@Terrier@objc(cs)TrrVarController"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7Terrier18TrrRadarControllerC11makeControlAA0b3VarD0CSgyF",
-            "mangledName": "$s7Terrier18TrrRadarControllerC11makeControlAA0b3VarD0CSgyF",
-            "moduleName": "Terrier",
-            "overriding": true,
-            "declAttributes": [
-              "AccessControl",
-              "Override"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setup",
-            "printedName": "setup(manifest:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "TrrVarManifest",
-                "printedName": "Terrier.TrrVarManifest",
-                "usr": "c:@M@Terrier@objc(cs)TrrVarManifest"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7Terrier18TrrRadarControllerC5setup8manifestSbAA0B11VarManifestC_tF",
-            "mangledName": "$s7Terrier18TrrRadarControllerC5setup8manifestSbAA0B11VarManifestC_tF",
-            "moduleName": "Terrier",
-            "overriding": true,
-            "declAttributes": [
-              "AccessControl",
-              "Override"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "trackerUpdate",
-            "printedName": "trackerUpdate(tracker:epoch:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "TrrITimeTracker",
-                "printedName": "any Terrier.TrrITimeTracker",
-                "usr": "c:@M@Terrier@objc(pl)TrrITimeTracker"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@Terrier@objc(cs)TrrRadarController(im)trackerUpdateWithTracker:epoch:",
-            "mangledName": "$s7Terrier18TrrRadarControllerC13trackerUpdate0E05epochyAA0B12ITimeTracker_p_SdtF",
-            "moduleName": "Terrier",
-            "objc_name": "trackerUpdateWithTracker:epoch:",
-            "declAttributes": [
+              "Dynamic",
               "ObjC",
-              "AccessControl",
-              "RawDocComment"
+              "Override"
             ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "defaultColorMap",
-            "printedName": "defaultColorMap",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Terrier.TrrColorMap?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TrrColorMap",
-                    "printedName": "Terrier.TrrColorMap",
-                    "usr": "c:objc(cs)TrrColorMap"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7Terrier18TrrRadarControllerC15defaultColorMapSo0bfG0CSgvp",
-            "mangledName": "$s7Terrier18TrrRadarControllerC15defaultColorMapSo0bfG0CSgvp",
-            "moduleName": "Terrier",
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Terrier.TrrColorMap?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TrrColorMap",
-                        "printedName": "Terrier.TrrColorMap",
-                        "usr": "c:objc(cs)TrrColorMap"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Terrier18TrrRadarControllerC15defaultColorMapSo0bfG0CSgvg",
-                "mangledName": "$s7Terrier18TrrRadarControllerC15defaultColorMapSo0bfG0CSgvg",
-                "moduleName": "Terrier",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
@@ -22673,27 +24456,12 @@
           "ObjC",
           "RawDocComment"
         ],
-        "superclassUsr": "c:@M@Terrier@objc(cs)TrrBaseController",
+        "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
         "superclassNames": [
-          "Terrier.TrrBaseController",
           "ObjectiveC.NSObject"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "TrrIRadarController",
-            "printedName": "TrrIRadarController",
-            "usr": "c:@M@Terrier@objc(pl)TrrIRadarController",
-            "mangledName": "$s7Terrier19TrrIRadarControllerP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "TrrTimeTrackerDelegate",
-            "printedName": "TrrTimeTrackerDelegate",
-            "usr": "c:@M@Terrier@objc(pl)TrrTimeTrackerDelegate",
-            "mangledName": "$s7Terrier22TrrTimeTrackerDelegateP"
-          },
           {
             "kind": "Conformance",
             "name": "TrrIController",
@@ -22703,10 +24471,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "TrrVarManifestDelegate",
-            "printedName": "TrrVarManifestDelegate",
-            "usr": "c:@M@Terrier@objc(pl)TrrVarManifestDelegate",
-            "mangledName": "$s7Terrier22TrrVarManifestDelegateP"
+            "name": "TrrBaseControllerDelegate",
+            "printedName": "TrrBaseControllerDelegate",
+            "usr": "c:@M@Terrier@objc(pl)TrrBaseControllerDelegate",
+            "mangledName": "$s7Terrier25TrrBaseControllerDelegateP"
           },
           {
             "kind": "Conformance",
@@ -24611,7 +26379,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyBoundingBoxD",
-                "printedName": "Terrier.MaplyBoundingBoxD",
+                "printedName": "WhirlyGlobe.MaplyBoundingBoxD",
                 "usr": "c:@SA@MaplyBoundingBoxD"
               }
             ],
@@ -24636,7 +26404,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "MaplyBoundingBoxD",
-                    "printedName": "Terrier.MaplyBoundingBoxD",
+                    "printedName": "WhirlyGlobe.MaplyBoundingBoxD",
                     "usr": "c:@SA@MaplyBoundingBoxD"
                   }
                 ],
@@ -24657,7 +26425,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyBoundingBoxD",
-                "printedName": "Terrier.MaplyBoundingBoxD",
+                "printedName": "WhirlyGlobe.MaplyBoundingBoxD",
                 "usr": "c:@SA@MaplyBoundingBoxD"
               }
             ],
@@ -24682,7 +26450,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "MaplyBoundingBoxD",
-                    "printedName": "Terrier.MaplyBoundingBoxD",
+                    "printedName": "WhirlyGlobe.MaplyBoundingBoxD",
                     "usr": "c:@SA@MaplyBoundingBoxD"
                   }
                 ],
@@ -25504,12 +27272,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Terrier.MaplyCoordinateSystem?",
+                "printedName": "WhirlyGlobe.MaplyCoordinateSystem?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MaplyCoordinateSystem",
-                    "printedName": "Terrier.MaplyCoordinateSystem",
+                    "printedName": "WhirlyGlobe.MaplyCoordinateSystem",
                     "usr": "c:objc(cs)MaplyCoordinateSystem"
                   }
                 ],
@@ -25534,12 +27302,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[Terrier.MaplyRemoteTileInfoNew]",
+                "printedName": "[WhirlyGlobe.MaplyRemoteTileInfoNew]",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MaplyRemoteTileInfoNew",
-                    "printedName": "Terrier.MaplyRemoteTileInfoNew",
+                    "printedName": "WhirlyGlobe.MaplyRemoteTileInfoNew",
                     "usr": "c:objc(cs)MaplyRemoteTileInfoNew"
                   }
                 ],
@@ -28786,12 +30554,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Terrier.MaplyRenderControllerProtocol)?",
+                "printedName": "(any WhirlyGlobe.MaplyRenderControllerProtocol)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MaplyRenderControllerProtocol",
-                    "printedName": "any Terrier.MaplyRenderControllerProtocol",
+                    "printedName": "any WhirlyGlobe.MaplyRenderControllerProtocol",
                     "usr": "c:objc(pl)MaplyRenderControllerProtocol"
                   }
                 ],
@@ -29101,12 +30869,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Terrier.MaplyRenderControllerProtocol)?",
+                "printedName": "(any WhirlyGlobe.MaplyRenderControllerProtocol)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MaplyRenderControllerProtocol",
-                    "printedName": "any Terrier.MaplyRenderControllerProtocol",
+                    "printedName": "any WhirlyGlobe.MaplyRenderControllerProtocol",
                     "usr": "c:objc(pl)MaplyRenderControllerProtocol"
                   }
                 ],
@@ -29659,7 +31427,7 @@
         "hasMissingDesignatedInitializers": true,
         "superclassNames": [
           "WhirlyGlobe.MaplyRenderControllerOverlay",
-          "Terrier.MaplyRenderController",
+          "WhirlyGlobe.MaplyRenderController",
           "ObjectiveC.NSObject"
         ],
         "conformances": [
@@ -33091,7 +34859,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyBoundingBox",
-                "printedName": "Terrier.MaplyBoundingBox",
+                "printedName": "WhirlyGlobe.MaplyBoundingBox",
                 "usr": "c:@SA@MaplyBoundingBox"
               }
             ],
@@ -33113,7 +34881,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyBoundingBoxD",
-                "printedName": "Terrier.MaplyBoundingBoxD",
+                "printedName": "WhirlyGlobe.MaplyBoundingBoxD",
                 "usr": "c:@SA@MaplyBoundingBoxD"
               }
             ],
@@ -33130,7 +34898,7 @@
         ],
         "declKind": "Struct",
         "usr": "c:@SA@MaplyBoundingBox",
-        "moduleName": "Terrier",
+        "moduleName": "WhirlyGlobe",
         "isExternal": true,
         "conformances": [
           {
@@ -33162,7 +34930,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyBoundingBoxD",
-                "printedName": "Terrier.MaplyBoundingBoxD",
+                "printedName": "WhirlyGlobe.MaplyBoundingBoxD",
                 "usr": "c:@SA@MaplyBoundingBoxD"
               }
             ],
@@ -33184,7 +34952,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MaplyBoundingBox",
-                "printedName": "Terrier.MaplyBoundingBox",
+                "printedName": "WhirlyGlobe.MaplyBoundingBox",
                 "usr": "c:@SA@MaplyBoundingBox"
               }
             ],
@@ -33201,7 +34969,7 @@
         ],
         "declKind": "Struct",
         "usr": "c:@SA@MaplyBoundingBoxD",
-        "moduleName": "Terrier",
+        "moduleName": "WhirlyGlobe",
         "isExternal": true,
         "conformances": [
           {
@@ -33626,112 +35394,112 @@
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "BooleanLiteral",
-      "offset": 721,
+      "offset": 861,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1563,
+      "offset": 1703,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "FloatLiteral",
-      "offset": 1775,
+      "offset": 1915,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2559,
+      "offset": 2699,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "FloatLiteral",
-      "offset": 2772,
+      "offset": 2912,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3185,
+      "offset": 3325,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3395,
+      "offset": 3535,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "FloatLiteral",
-      "offset": 3649,
+      "offset": 3789,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "FloatLiteral",
-      "offset": 3661,
+      "offset": 3801,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3829,
+      "offset": 3969,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "IntegerLiteral",
-      "offset": 7233,
+      "offset": 7373,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8683,
+      "offset": 8823,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11513,
+      "offset": 11653,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "IntegerLiteral",
-      "offset": 12521,
+      "offset": 12661,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14463,
+      "offset": 14728,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15035,
+      "offset": 15300,
       "length": 5,
       "value": "false"
     },
@@ -33941,21 +35709,21 @@
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrVarSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 16107,
+      "offset": 16115,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrVarSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 16355,
+      "offset": 16363,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrVarSource.swift",
       "kind": "FloatLiteral",
-      "offset": 16438,
+      "offset": 16446,
       "length": 3,
       "value": "0.0"
     },
@@ -34206,192 +35974,87 @@
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
+      "kind": "Array",
+      "offset": 2368,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6379,
+      "offset": 4644,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
-      "kind": "FloatLiteral",
-      "offset": 6389,
+      "kind": "IntegerLiteral",
+      "offset": 4666,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4688,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4713,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4744,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4775,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4810,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4847,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
+      "kind": "Dictionary",
+      "offset": 4902,
       "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
-      "kind": "FloatLiteral",
-      "offset": 6404,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
-      "kind": "FloatLiteral",
-      "offset": 6416,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
-      "kind": "Array",
-      "offset": 6437,
-      "length": 92,
-      "value": "[-30, -25, -20, -15, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75]"
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6581,
-      "length": 10,
-      "value": "0x00CBFCFD"
+      "offset": 9639,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6626,
-      "length": 10,
-      "value": "0x00D09CCB"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6671,
-      "length": 10,
-      "value": "0x00976797"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6716,
-      "length": 10,
-      "value": "0x00643363"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6761,
-      "length": 10,
-      "value": "0x00CDCC9A"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6806,
-      "length": 10,
-      "value": "0x009C9A6B"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6851,
-      "length": 10,
-      "value": "0x80676467"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6904,
-      "length": 10,
-      "value": "0xFF10E6E7"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6949,
-      "length": 10,
-      "value": "0xFF069FF3"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6994,
-      "length": 10,
-      "value": "0xFF0400F0"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7039,
-      "length": 10,
-      "value": "0xFF01FC08"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7084,
-      "length": 10,
-      "value": "0xFF02C701"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7129,
-      "length": 10,
-      "value": "0xFF068D01"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7174,
-      "length": 10,
-      "value": "0xFFF6F602"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7219,
-      "length": 10,
-      "value": "0xFFE6BA03"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7264,
-      "length": 10,
-      "value": "0xFFF79505"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7309,
-      "length": 10,
-      "value": "0xFFFE0002"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7354,
-      "length": 10,
-      "value": "0xFFD60401"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7399,
-      "length": 10,
-      "value": "0xFFBB0200"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7444,
-      "length": 10,
-      "value": "0xFFF807F6"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7489,
-      "length": 10,
-      "value": "0xFF9A52C8"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7534,
-      "length": 10,
-      "value": "0xFFFCFBFA"
+      "kind": "BooleanLiteral",
+      "offset": 9933,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrVarManifest.swift",

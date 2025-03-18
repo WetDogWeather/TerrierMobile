@@ -62,11 +62,12 @@ typedef struct TrrVarFloatShaderUniforms_t
     simd_float2 dataRange;    // Min/max data values
     float noDataVal;
     float opacity;
-    TrrShaderColorMap colorMap;
+    TrrShaderColorMap colorMap[8];
     float displayTime;          // The time currently being displayed
     bool animatingTime;         // if we're currently animating timeslices
     bool interpCustom;
     bool renderNoData;          // draw no-data to target
+    bool colorMapIndexMode;
 } TrrVarFloatShaderUniforms;
 
 
