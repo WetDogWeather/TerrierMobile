@@ -302,10 +302,30 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
                     UIColor.fromHexARGB(0x00000000)
                 ])!
             let snowColorMap = TrrColorMap(
-                values: [ -30, 75],
+                values: [ -30, -25, -20, -15, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75],
                 colors: [
-                    UIColor.fromHexARGB(0xffffffff),
-                    UIColor.fromHexARGB(0xffffffff)
+                    UIColor.fromHexARGB(0x009C9A6B),
+                    UIColor.fromHexARGB(0x009C9A6B),
+                    UIColor.fromHexARGB(0x009C9A6B),
+                    UIColor.fromHexARGB(0x009C9A6B),
+                    UIColor.fromHexARGB(0x009C9A6B),
+                    UIColor.fromHexARGB(0x009C9A6B),
+                    UIColor.fromHexARGB(0x80676767),  // 0.0
+                    UIColor.fromHexARGB(0xFFE7E7E7),
+                    UIColor.fromHexARGB(0xFFF3F3F3),
+                    UIColor.fromHexARGB(0xFFF0F0F0),
+                    UIColor.fromHexARGB(0xFFFCFCFC),
+                    UIColor.fromHexARGB(0xFFC7C7C7),
+                    UIColor.fromHexARGB(0xFF8D8D8D),
+                    UIColor.fromHexARGB(0xFFF6F6F6),
+                    UIColor.fromHexARGB(0xFFE6E6E6),
+                    UIColor.fromHexARGB(0xFFF7F7F7),
+                    UIColor.fromHexARGB(0xFFFEFEFE),
+                    UIColor.fromHexARGB(0xFFD6D6D6),
+                    UIColor.fromHexARGB(0xFFBBBBBB),
+                    UIColor.fromHexARGB(0xFFF8F8F8),
+                    UIColor.fromHexARGB(0xFF9A9A9A),
+                    UIColor.fromHexARGB(0xFFFCFCFC)
                 ])!
             let hailColorMap = TrrColorMap(
                 values: [ -30, 75],
@@ -345,7 +365,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
                     UIColor.fromHexARGB(0xFF9A52C8),
                     UIColor.fromHexARGB(0xFFFCFBFA)
                 ])!
-            precipLayer.setColorMap(emptyColorMap,
+            precipLayer.setColorMap(rainColorMap,
                                     precipType: TrrRadarController.PrecipType.None)
             precipLayer.setColorMap(snowColorMap,
                                     precipType: TrrRadarController.PrecipType.Snow)
