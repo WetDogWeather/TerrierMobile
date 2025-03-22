@@ -70,6 +70,22 @@ typedef struct TrrVarFloatShaderUniforms_t
     bool colorMapIndexMode;
 } TrrVarFloatShaderUniforms;
 
+typedef struct TrrTempPrecipEntry_t
+{
+    // Up to this temperature
+    float temperature;
+    // Is this precip type value
+    int precipValue;
+} TrrTempPrecipEntry;
+
+// Uniforms for temperature to precip type conversion
+typedef struct TrrVarTempPrecipTypeUniforms_t
+{
+    simd_float2 dataRange;    // Min/max data values
+    int numPrecipEntry;
+    TrrTempPrecipEntry entries[8];
+} TrrVarTempPrecipTypeUniforms;
+
 
 typedef struct TrrWindUniforms_t
 {

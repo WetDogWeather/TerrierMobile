@@ -17773,6 +17773,93 @@
           },
           {
             "kind": "Var",
+            "name": "precipTypeMode",
+            "printedName": "precipTypeMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Terrier26TrrSingleChannelControllerC14precipTypeModeSbvp",
+            "mangledName": "$s7Terrier26TrrSingleChannelControllerC14precipTypeModeSbvp",
+            "moduleName": "Terrier",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier26TrrSingleChannelControllerC14precipTypeModeSbvg",
+                "mangledName": "$s7Terrier26TrrSingleChannelControllerC14precipTypeModeSbvg",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier26TrrSingleChannelControllerC14precipTypeModeSbvs",
+                "mangledName": "$s7Terrier26TrrSingleChannelControllerC14precipTypeModeSbvs",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier26TrrSingleChannelControllerC14precipTypeModeSbvM",
+                "mangledName": "$s7Terrier26TrrSingleChannelControllerC14precipTypeModeSbvM",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "label",
             "printedName": "label",
             "children": [
@@ -18033,6 +18120,92 @@
               "Override"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "clearVal",
+            "printedName": "clearVal",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Terrier26TrrSingleChannelControllerC8clearValSfvp",
+            "mangledName": "$s7Terrier26TrrSingleChannelControllerC8clearValSfvp",
+            "moduleName": "Terrier",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier26TrrSingleChannelControllerC8clearValSfvg",
+                "mangledName": "$s7Terrier26TrrSingleChannelControllerC8clearValSfvg",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier26TrrSingleChannelControllerC8clearValSfvs",
+                "mangledName": "$s7Terrier26TrrSingleChannelControllerC8clearValSfvs",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier26TrrSingleChannelControllerC8clearValSfvM",
+                "mangledName": "$s7Terrier26TrrSingleChannelControllerC8clearValSfvM",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
           },
           {
             "kind": "Function",
@@ -35709,28 +35882,35 @@
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrVarSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 16115,
+      "offset": 17000,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrVarSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 16363,
+      "offset": 17248,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrVarSource.swift",
       "kind": "FloatLiteral",
-      "offset": 16446,
+      "offset": 17331,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrSingleChannelController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1216,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrSingleChannelController.swift",
       "kind": "Array",
-      "offset": 5356,
+      "offset": 5551,
       "length": 2,
       "value": "[]"
     },
@@ -35800,77 +35980,84 @@
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrVarController.swift",
       "kind": "BooleanLiteral",
-      "offset": 934,
+      "offset": 1081,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrVarController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1110,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrVarController.swift",
       "kind": "FloatLiteral",
-      "offset": 1000,
+      "offset": 1176,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrVarController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1685,
+      "offset": 1861,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrVarController.swift",
       "kind": "Array",
-      "offset": 1763,
+      "offset": 1939,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrVarController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1932,
+      "offset": 2108,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrVarController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1994,
+      "offset": 2170,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrVarController.swift",
       "kind": "FloatLiteral",
-      "offset": 2098,
+      "offset": 2274,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrVarController.swift",
       "kind": "FloatLiteral",
-      "offset": 2131,
+      "offset": 2307,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrVarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2143,
+      "offset": 2319,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrVarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2154,
+      "offset": 2330,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrVarController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2191,
+      "offset": 2367,
       "length": 4,
       "value": "true"
     },
@@ -36045,14 +36232,14 @@
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9639,
+      "offset": 10527,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9933,
+      "offset": 10821,
       "length": 5,
       "value": "false"
     },
@@ -36381,7 +36568,7 @@
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "Array",
-      "offset": 9756,
+      "offset": 9754,
       "length": 2,
       "value": "[]"
     },

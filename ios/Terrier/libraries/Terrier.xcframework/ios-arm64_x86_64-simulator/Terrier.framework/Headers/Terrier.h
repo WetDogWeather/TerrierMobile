@@ -9,6 +9,7 @@
 
 #import <Terrier/TrrShader.h>
 #import <Terrier/TrrVarFloatShader.h>
+#import <Terrier/TrrVarTempPrecipTypeShader.h>
 #import <Terrier/TrrVarFloatColorMapShader.h>
 #import <Terrier/TrrVarTwoFloatShader.h>
 #import <Terrier/TrrVarTwoFloatDebugVisShader.h>

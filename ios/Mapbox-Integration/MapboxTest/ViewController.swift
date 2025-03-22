@@ -284,7 +284,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
                                           maxTimeSlices: 48+2)
         let resCadence = srcCadence.resolve()
 
-        precipLayer = TrrRadarController.create(region: ["conus"],
+        precipLayer = TrrRadarController.create(region: ["conus","global"],
                                                 cadence: resCadence,
                                                 service: service,
                                                 tracker: tracker,
