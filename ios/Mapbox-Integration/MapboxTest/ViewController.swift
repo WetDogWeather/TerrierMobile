@@ -269,7 +269,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
 
         tracker.setEpochRange(newTime: resCadence.now, min: resCadence.minTime!, max: resCadence.maxTime!)
     }
-
+    
     var precipLayer: TrrRadarController? = nil
     func startPrecip() {
         guard precipLayer == nil else { return }
@@ -573,7 +573,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         arrowTexture = adapter.addTexture(UIImage(named: "arrow")!, desc: nil, mode: .current)
         dotTexture = adapter.addTexture(UIImage(named: "dot")!, desc: nil, mode: .current)
 
-        startPrecip()
+        startTemperature()
     }
     
     func serviceFailed() {
