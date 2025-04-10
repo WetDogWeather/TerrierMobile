@@ -50,11 +50,13 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         tracker = TrrTimeTracker(viewC: terrierAdapter)
         terrierAdapter.setTracker(tracker: tracker)
         tracker?.addDelegate(delegate: self)
+        
+        let terrierLayer = CustomLayer(id: "terrier-layer", renderer: terrierAdapter, slot: .middle)
 
         // Set the projection to flat and wire in our adapter as a layer
         mapView.mapboxMap.setMapStyleContent {
             StyleProjection(name: .mercator)
-            CustomLayer(id: "terrier-layer", renderer: terrierAdapter)
+            terrierLayer
         }
     }
 
