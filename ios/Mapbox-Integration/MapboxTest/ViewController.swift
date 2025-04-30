@@ -175,7 +175,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         // Plus and minus one day
         let srcCadence = TrrSourceCadence(minTimeOffset: -24 * 3600,
                                       maxTimeOffset: 24 * 3600,
-                                      maxTimeSlices: 96+2)
+                                      maxTimeSlices: 48+2)
         let resCadence = srcCadence.resolve()
 
         // Start temperature display
@@ -226,7 +226,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         // Plus and minus one day
         let srcCadence = TrrSourceCadence(minTimeOffset: -24 * 3600,
                                       maxTimeOffset: 24 * 3600,
-                                      maxTimeSlices: 96+2)
+                                      maxTimeSlices: 48+2)
         let resCadence = srcCadence.resolve()
 
         // Start wind controller
@@ -284,7 +284,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         // Minus 4 hours to plus 24 hours
         let srcCadence = TrrSourceCadence(minTimeOffset: -4 * 3600,
                                           maxTimeOffset: 1 * 24 * 3600,
-                                          maxTimeSlices: 48+2)
+                                          maxTimeSlices: 24+2)
         let resCadence = srcCadence.resolve()
 
         precipLayer = TrrRadarController.create(region: ["conus","global"],
@@ -403,7 +403,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         // Plus and minus one day
         let srcCadence = TrrSourceCadence(minTimeOffset: -24 * 3600,
                                       maxTimeOffset: 24 * 3600,
-                                      maxTimeSlices: 96+2)
+                                      maxTimeSlices: 48+2)
         let resCadence = srcCadence.resolve()
         
         // Relative humidity doesn't have a convenience class, so we'll do the pieces ourselves
@@ -450,7 +450,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         // Plus and minus one day
         let srcCadence = TrrSourceCadence(minTimeOffset: -24 * 3600,
                                           maxTimeOffset: 0.0,
-                                      maxTimeSlices: 96+2)
+                                      maxTimeSlices: 24+2)
         let resCadence = srcCadence.resolve()
         
         let sources = TrrDataSource.getStandardSources(service: service,
@@ -502,7 +502,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         // Plus and minus one day
         let srcCadence = TrrSourceCadence(minTimeOffset: -24 * 3600,
                                       maxTimeOffset: 24 * 3600,
-                                      maxTimeSlices: 96+2)
+                                      maxTimeSlices: 48+2)
         let resCadence = srcCadence.resolve()
         
         // Relative dew point doesn't have a convenience class, so we'll do the pieces ourselves
