@@ -187,7 +187,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
                                                             viewC: adapter)
         if let temperatureLayer = temperatureLayer {
             temperatureLayer.baseColor = UIColor(white: 1.0, alpha: 0.5)
-            temperatureLayer.importanceFactor = 8.0
+            temperatureLayer.importanceFactor = 4.0
             temperatureLayer.varInterpMode = .Bilinear
             // Temperature color map in Kelvin
             temperatureLayer.colorMap = TrrColorMap(
@@ -238,8 +238,8 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
                                              viewC: adapter)
         if let windLayer = windLayer {
             windLayer.baseColor = UIColor(white: 1.0, alpha: 0.5)
-            windLayer.enable = false
-            windLayer.enableTrails = true
+            windLayer.enable = true
+            windLayer.enableTrails = false
             windLayer.trailTexture = dotTexture
 //            windLayer.scaleResetFactor = 2
             windLayer.trailPoints = 10000
@@ -262,15 +262,67 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
 //                    UIColor.fromHexRGB(0xE111C1),
 //                    UIColor.fromHexRGB(0xFFCEF7)
 //                ])
-            
-            windLayer.addAllLoadedDelegate(timeout: 10) { ctrl in
-                let srcValid = ctrl.areAnySourcesValid()
-                ctrl.enable = ctrl.enable || srcValid
-            }
+
+            // Wind layer will start disabled, but we'll let it turn on in the monitor loading logic
+            startWindTrigger()
+//            windLayer.addAllLoadedDelegate(timeout: 10) { ctrl in
+//                let srcValid = ctrl.areAnySourcesValid()
+//                ctrl.enable = ctrl.enable || srcValid
+//            }
             _ = windLayer.start()
         }
 
         tracker.setEpochRange(newTime: resCadence.now, min: resCadence.minTime!, max: resCadence.maxTime!)
+    }
+    
+    // Used to watch loading for the wind layer
+    var monitorTimer: Timer? = nil
+    var windLoadStarted = false
+    
+    // Waits for data to start loading and then waits until it's sufficiently loaded
+    func startWindTrigger() {
+        windLoadStarted = false
+        // Start clean with the loading stats
+        if let adapter = terrierAdapter,
+           let fetcher = adapter.getTileFetcher(TrrConstants.RemoteFetcherName) {
+            fetcher.resetStats()
+        }
+
+        self.monitorTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { [weak self] _ in
+            guard let self = self else { return }
+            
+            guard let adapter = terrierAdapter,
+                  let fetcher = adapter.getTileFetcher(TrrConstants.RemoteFetcherName),
+                  let windLayer = windLayer
+            else {
+                monitorTimer?.invalidate()
+                return
+            }
+            guard let stats = fetcher.getStats(false) else { return }
+            
+            if windLoadStarted {
+                // Now we're monitoring how much loading
+                var frac = 1.0
+                if stats.maxActiveRequests > 0 {
+                    frac = 1.0-Double(stats.activeRequests)/Double(stats.maxActiveRequests)
+                }
+                // We'll arbitrarily say we want to trigger at 50% loaded
+                // If the wind layer isn't already on, then we'll turn it on
+                if frac > 0.5 {
+                    if !windLayer.enableTrails {
+                        windLayer.enableTrails = true
+                    }
+                    // In any case we're done with the monitor
+                    monitorTimer?.invalidate()
+                    monitorTimer = nil
+                }
+            } else {
+                // We're looking for our first indication of loading
+                if stats.totalRequests > 0 {
+                    windLoadStarted = true
+                }
+            }
+        }
     }
     
     var precipLayer: TrrRadarController? = nil
@@ -295,7 +347,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         if let precipLayer = precipLayer {
             precipLayer.sourceCadence = resCadence
             precipLayer.renderScale = 1.0
-            precipLayer.importanceFactor = 16.0
+            precipLayer.importanceFactor = 4.0
             precipLayer.snapToFrame = true
             precipLayer.varInterpMode = .Bicubic
             let emptyColorMap = TrrColorMap(
