@@ -162,6 +162,10 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
             precipTypeLayer.stop()
             self.precipTypeLayer = nil
         }
+        if let aqiLayer = aqiLayer {
+            aqiLayer.stop()
+            self.aqiLayer = nil
+        }
     }
     
     var temperatureLayer: TrrITemperatureController? = nil
@@ -598,6 +602,82 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
 
         tracker.setEpochRange(newTime: resCadence.now, min: resCadence.minTime!, max: resCadence.maxTime!)
     }
+    
+    var aqiLayer: TrrISingleChannelController? = nil
+    func startAQI() {
+        guard aqiLayer == nil else { return }
+        guard let tracker = tracker else { return }
+        guard let adapter = terrierAdapter else { return }
+        
+        stopLayers()
+
+        // 3 days in the past
+        let pastCadence = TrrSourceCadence(minTimeOffset: -72 * 3600,
+                                      maxTimeOffset: 0,
+                                      maxTimeSlices: 10)
+        let resPastCadence = pastCadence.resolve()
+
+        // 1 day in the future
+        let futureCadence = TrrSourceCadence(minTimeOffset: 0,
+                                      maxTimeOffset: 24*3600,
+                                      maxTimeSlices: 10)
+        let resFutureCadence = futureCadence.resolve()
+        
+        let resFullCadence = pastCadence.merge(futureCadence).resolve()
+
+        // In the past we have a larger region including hawaii
+        let pastSources = TrrDataSource.getStandardSources(service: service,
+                                                       varName: "air_quality_index",
+                                                       source: "airnow",
+                                                       region: "conus_hawaii_aqi_forecast",
+                                                       product: "aqi",
+                                                       level: nil,
+                                                       interval: nil,
+                                                       sourceCadence: resPastCadence,
+                                                       viewC: adapter)
+
+        // In the past we have a larger region including hawaii
+        let futureSources = TrrDataSource.getStandardSources(service: service,
+                                                       varName: "air_quality_index",
+                                                       source: "airnow",
+                                                       region: "conus_aqi_forecast",
+                                                       product: "aqi",
+                                                       level: nil,
+                                                       interval: nil,
+                                                       sourceCadence: resFutureCadence,
+                                                       viewC: adapter)
+
+        aqiLayer = TrrSingleChannelController.create(cadence: resFullCadence,
+                                                       dataSources: pastSources + futureSources,
+                                                       service: service,
+                                                       tracker: tracker,
+                                                       viewC: adapter)
+        if let aqiLayer = aqiLayer {
+            aqiLayer.sourceCadence = resFullCadence
+            aqiLayer.baseColor = .init(white: 1.0, alpha: 0.5)
+            aqiLayer.colorMap = TrrColorMap(
+                values: [ 0.0,50.0,
+                          50.0, 100.0,
+                          100.0, 150.0,
+                          150.0, 200.0,
+                          200.0, 300.0,
+                          300.0, 500.0],
+                colors: [
+                    UIColor.fromHexRGB(0x05e300), UIColor.fromHexRGB(0x05e300),
+                    UIColor.fromHexRGB(0xffff00), UIColor.fromHexRGB(0xffff00),
+                    UIColor.fromHexRGB(0xff7e00), UIColor.fromHexRGB(0xff7e00),
+                    UIColor.fromHexRGB(0xff0100), UIColor.fromHexRGB(0xff0100),
+                    UIColor.fromHexRGB(0x8f3f97), UIColor.fromHexRGB(0x8f3f97),
+                    UIColor.fromHexRGB(0x7e0123), UIColor.fromHexRGB(0x7e0123),
+                ])
+
+            _ = aqiLayer.start()
+        }
+
+        tracker.setEpochRange(newTime: resFullCadence.now, min: resFullCadence.minTime!, max: resFullCadence.maxTime!)
+    }
+
+    
     @IBAction func tempButtonAction(_ sender: Any) {
         startTemperature()
     }
@@ -616,6 +696,10 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
 
     @IBAction func dewPointButtonAction(_ sender: Any) {
         startDewPoint()
+    }
+
+    @IBAction func aqiButtonAction(_ sender: Any) {
+        startAQI()
     }
 
     // Called when we have the contents for the Boxer Stack

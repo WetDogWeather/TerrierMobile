@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lAU-gd-Ttn" userLabel="ButtonStack">
-                                <rect key="frame" x="16" y="91" width="361" height="45.333333333333343"/>
+                                <rect key="frame" x="16" y="150" width="361" height="29.666666666666657"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3n-7p-Mam" userLabel="Temp">
-                                        <rect key="frame" x="0.0" y="0.0" width="65.666666666666671" height="45.333333333333336"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3n-7p-Mam" userLabel="Temp">
+                                        <rect key="frame" x="0.0" y="0.0" width="65.666666666666671" height="29.666666666666668"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Temp">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
@@ -29,8 +29,8 @@
                                             <action selector="tempButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aad-R9-X3S"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pva-Rt-3EC" userLabel="Wind">
-                                        <rect key="frame" x="73.666666666666671" y="0.0" width="66.000000000000014" height="45.333333333333336"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pva-Rt-3EC" userLabel="Wind">
+                                        <rect key="frame" x="73.666666666666671" y="0.0" width="66.000000000000014" height="29.666666666666668"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Wind">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
@@ -39,8 +39,8 @@
                                             <action selector="windButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PPw-eJ-yoP"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="565-e0-t9z" userLabel="Precip">
-                                        <rect key="frame" x="147.66666666666666" y="0.0" width="65.666666666666657" height="45.333333333333336"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="565-e0-t9z" userLabel="Precip">
+                                        <rect key="frame" x="147.66666666666666" y="0.0" width="65.666666666666657" height="29.666666666666668"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Precip">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
@@ -49,8 +49,8 @@
                                             <action selector="precipButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tqs-hz-SJM"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SmX-7Y-Ld4" userLabel="Humidity">
-                                        <rect key="frame" x="221.33333333333334" y="0.0" width="66.000000000000028" height="45.333333333333336"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SmX-7Y-Ld4" userLabel="Humidity">
+                                        <rect key="frame" x="221.33333333333334" y="0.0" width="66.000000000000028" height="29.666666666666668"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Humid">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
@@ -59,20 +59,20 @@
                                             <action selector="humidButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dmf-ob-RRK"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MM8-Jz-cZG" userLabel="DewPoint">
-                                        <rect key="frame" x="295.33333333333331" y="0.0" width="65.666666666666686" height="45.333333333333336"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MM8-Jz-cZG">
+                                        <rect key="frame" x="295.33333333333331" y="0.0" width="65.666666666666686" height="29.666666666666668"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Dew Point">
+                                        <buttonConfiguration key="configuration" style="filled" title="AQI">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="dewPointButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rhb-Z7-sAQ"/>
+                                            <action selector="aqiButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hEb-uw-1dg"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="9zR-tp-K1Q" userLabel="TimeStack">
-                                <rect key="frame" x="16" y="751.66666666666663" width="361" height="34.333333333333371"/>
+                                <rect key="frame" x="16" y="717.66666666666663" width="361" height="34.333333333333371"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hL-vy-hVo" userLabel="Play">
                                         <rect key="frame" x="0.0" y="0.0" width="43" height="34.333333333333336"/>
@@ -100,7 +100,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0I-TN-p1l" userLabel="TimeLabel">
-                                <rect key="frame" x="152.66666666666666" y="722.66666666666663" width="88" height="20.333333333333371"/>
+                                <rect key="frame" x="152.66666666666666" y="688.66666666666663" width="88" height="20.333333333333371"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="88" id="yWJ-pR-UPF"/>
                                 </constraints>
