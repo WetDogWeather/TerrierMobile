@@ -78,7 +78,16 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         guard let tracker = tracker else { return }
         if tracker.isPlaying() {
             tracker.pause()
-            windLayer?.trailTexture = dotTexture
+            switch windLayerStyle {
+            case .WindyTribute:
+                windLayer?.trailTexture = dotTexture
+                break
+            case .WindArrows:
+                break
+            case .LongSlowTrails:
+                windLayer?.trailTexture = rectTexture
+                break
+            }
         } else {
             tracker.play()
             windLayer?.trailTexture = arrowTexture
@@ -121,6 +130,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
     
     // Done dragging, so put the wind back to normal
     @IBAction func sliderDragEnd(_ sender: Any) {
+        windLayer?.resetTrails(overTime: 0.5)
         windLayer?.resetAnimatingTime()
         windLayer?.trailTexture = dotTexture
     }
@@ -216,10 +226,55 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         
         tracker.setEpochRange(newTime: resCadence.now, min: resCadence.minTime!, max: resCadence.maxTime!)
     }
+    
+    enum WindLayerStyle {
+    case LongSlowTrails
+    case WindyTribute
+    case WindArrows
+    }
+    var windLayerStyle: WindLayerStyle = .LongSlowTrails
+    
+    // Change the wind layer to match the given style
+    func setWindLayerStyle(_ windLayer: TrrWindController, style: WindLayerStyle) {
+        windLayer.enableTrails = false
+        windLayer.enable = true
+        switch style {
+        case WindLayerStyle.LongSlowTrails:
+            windLayer.baseColor = UIColor(white: 1.0, alpha: 0.5)
+            windLayer.trailTexture = dotTexture
+//            windLayer.scaleResetFactor = 2
+            windLayer.trailPoints = 10000
+            windLayer.trailAdvanceRate = 9
+            break
+        case WindLayerStyle.WindyTribute:
+            windLayer.baseColor = UIColor(white: 1.0, alpha: 0.5)
+            windLayer.trailTexture = rectTexture
+            windLayer.scaleResetFactor = 4
+            windLayer.trailPoints = 50000
+            windLayer.trailAdvanceRate = 40
+            windLayer.trailVelExp = 1.0;
+            windLayer.trailWidth = 6
+            windLayer.texPeriod = 2
+            windLayer.trailLifetimeMin = 2
+            windLayer.trailLifetimeMax = 10
+            break
+        case WindLayerStyle.WindArrows:
+            windLayer.baseColor = UIColor(white: 1.0, alpha: 0.5)
+            windLayer.trailPoints = 15000
+            windLayer.trailTexture = arrowTexture
+            windLayer.arrowTexture = arrowTexture
+            windLayer.arrowWidth = 10
+            windLayer.arrowLength = 40
+            windLayer.arrowShowFrac = 1
+            windLayer.isAnimatingTime = true
+            break
+        }
+    }
 
     var windLayer: TrrIWindController? = nil
     var arrowTexture: MaplyTexture? = nil
     var dotTexture: MaplyTexture? = nil
+    var rectTexture: MaplyTexture? = nil
     func startWind() {
         guard windLayer == nil else { return }
         guard let tracker = tracker else { return }
@@ -241,13 +296,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
                                              tracker: tracker,
                                              viewC: adapter)
         if let windLayer = windLayer {
-            windLayer.baseColor = UIColor(white: 1.0, alpha: 0.5)
-            windLayer.enable = true
-            windLayer.enableTrails = false
-            windLayer.trailTexture = dotTexture
-//            windLayer.scaleResetFactor = 2
-            windLayer.trailPoints = 10000
-            windLayer.trailAdvanceRate = 9
+            setWindLayerStyle(windLayer as! TrrWindController,style: .WindyTribute)
             // Note: Set this to false to remove the velocity intensity display
             windLayer.enableVelocity = true
             
@@ -711,6 +760,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         // These textures are in the Assets and can be modified
         arrowTexture = adapter.addTexture(UIImage(named: "arrow")!, desc: nil, mode: .current)
         dotTexture = adapter.addTexture(UIImage(named: "dot")!, desc: nil, mode: .current)
+        rectTexture = adapter.addTexture(UIImage(named: "fadeRect")!, desc: nil, mode: .current)
 
         startTemperature()
     }

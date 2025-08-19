@@ -91,9 +91,12 @@ typedef struct TrrWindUniforms_t
 {
     float trailWidth;           // width of generated geometry
     float trailAdvance;         // length of geometry segments
+    float trailVelRate;         // Velocity effect on trail advance
+    float trailVelExp;          // Exponent of velocity factor
     float turnAngleLimit;       // Maximum turn to allow per segment
     float turnErrorLimit;       // Maximum sum of under-turn before stopping trail advance
     float minVelocity;          // Smallest magnitude to consider to have meaningful direction
+    float maxVelocity;          // Maximum velocity to use in calculations
     float resetStartTime;       // Start of reset period
     float resetEndTime;         // End of reset period
     float scaleResetFactor;     // Adjustment factor for automatic scale-change reset.

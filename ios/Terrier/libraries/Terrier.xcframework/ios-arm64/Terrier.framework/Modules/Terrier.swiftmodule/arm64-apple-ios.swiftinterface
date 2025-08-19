@@ -69,6 +69,8 @@ import _SwiftConcurrencyShims
   @objc var minTrailSize: Swift.Int { get set }
   @objc var trailWidth: Swift.Float { get set }
   @objc var trailAdvanceRate: Swift.Float { get set }
+  @objc var trailVelExp: Swift.Float { get set }
+  @objc var trailVelRate: Swift.Float { get set }
   @objc var turnAngleLimit: Swift.Float { get set }
   @objc var turnErrorLimit: Swift.Float { get set }
   @objc var texPeriod: Swift.Float { get set }
@@ -79,6 +81,7 @@ import _SwiftConcurrencyShims
   @objc var texOffsetX: Swift.Float { get set }
   @objc var texOffsetY: Swift.Float { get set }
   @objc var minVelocity: Swift.Float { get set }
+  @objc var maxVelocity: Swift.Float { get set }
   @objc var fadeIn: Foundation.TimeInterval { get set }
   @objc var fadeOut: Foundation.TimeInterval { get set }
   @objc var scaleResetFactor: Swift.Float { get set }
@@ -156,6 +159,14 @@ import _SwiftConcurrencyShims
     @objc get
     @objc set
   }
+  @objc public var trailVelExp: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var trailVelRate: Swift.Float {
+    @objc get
+    @objc set
+  }
   @objc public var turnAngleLimit: Swift.Float {
     @objc get
     @objc set
@@ -215,6 +226,10 @@ import _SwiftConcurrencyShims
     @objc set(v)
   }
   @objc public var minVelocity: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var maxVelocity: Swift.Float {
     @objc get
     @objc set
   }

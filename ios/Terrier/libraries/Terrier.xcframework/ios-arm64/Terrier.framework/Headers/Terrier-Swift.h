@@ -554,6 +554,10 @@ SWIFT_PROTOCOL("_TtP7Terrier18TrrIWindController_")
 @property (nonatomic) float trailWidth;
 /// Length of each trail cell in pixels.
 @property (nonatomic) float trailAdvanceRate;
+/// Exponent controlling the advance calculation
+@property (nonatomic) float trailVelExp;
+/// Base rate for advance calculation
+@property (nonatomic) float trailVelRate;
 /// Maximum turn to allow per point (radians)
 /// Only applies when more restrictive than the limit calculated from <code>atan(advance / width)</code>
 @property (nonatomic) float turnAngleLimit;
@@ -583,6 +587,8 @@ SWIFT_PROTOCOL("_TtP7Terrier18TrrIWindController_")
 @property (nonatomic) float texOffsetY;
 /// Smallest velocity to consider having a meaningful direction
 @property (nonatomic) float minVelocity;
+/// Maximum velocity used for scaling calculations
+@property (nonatomic) float maxVelocity;
 /// Fade-in time when a new trail is established, in seconds.
 @property (nonatomic) NSTimeInterval fadeIn;
 /// Fade-out time when a trail expires, in seconds.
@@ -900,6 +906,10 @@ SWIFT_CLASS("_TtC7Terrier17TrrWindController")
 @property (nonatomic) float trailWidth;
 /// Length of trail cells in pixels
 @property (nonatomic) float trailAdvanceRate;
+/// Exponent for advance calculation
+@property (nonatomic) float trailVelExp;
+/// Base rate for advance calculation
+@property (nonatomic) float trailVelRate;
 /// Maximum turn to allow per segment (radians)
 @property (nonatomic) float turnAngleLimit;
 /// Maximum cumulative under-turn before stopping trail advance (sum of dot-products)
@@ -929,6 +939,7 @@ SWIFT_CLASS("_TtC7Terrier17TrrWindController")
 @property (nonatomic, readonly) NSInteger maxMaxTrailCount;
 @property (nonatomic) NSInteger maxTrailCount;
 @property (nonatomic) float minVelocity;
+@property (nonatomic) float maxVelocity;
 @property (nonatomic) NSTimeInterval fadeIn;
 @property (nonatomic) NSTimeInterval fadeOut;
 @property (nonatomic) float scaleResetFactor;

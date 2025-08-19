@@ -42,6 +42,16 @@
 @property (nonatomic) float trailAdvanceRate;
 
 /**
+ Exponent controlling the advance calculation.
+ */
+@property (nonatomic) float trailVelExp;
+
+/**
+ Base factor controlling the advance calculation
+ */
+@property (nonatomic) float trailVelRate;
+
+/**
     Maximum turn to allow per segment
  */
 @property (nonatomic) float turnAngleLimit;
@@ -55,6 +65,11 @@
  Smallest magnitude to consider to have meaningful direction
  */
 @property (nonatomic) float minVelocity;
+
+/**
+ Maximum velocity used in some scaling calculations
+ */
+@property (nonatomic) float maxVelocity;
 
 /**
  Adjustment factor for automatic scale-change reset.

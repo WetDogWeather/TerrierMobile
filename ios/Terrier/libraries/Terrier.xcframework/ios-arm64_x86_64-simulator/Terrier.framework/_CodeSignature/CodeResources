@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Terrier-Swift.h</key>
 		<data>
-		eayBowyX6eRD8qEW72HLLeGbfqg=
+		vtwYBwofqHaLRNoqbfR/8xiFHuY=
 		</data>
 		<key>Headers/Terrier.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/TrrShader.h</key>
 		<data>
-		xqwzQN4azUpKNhfy33cgyUTv1p8=
+		7SzABPMD2ccLO1Qdli/3vgyzKE8=
 		</data>
 		<key>Headers/TrrVarFloatColorMapShader.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/TrrWindCalcShader.h</key>
 		<data>
-		pKEmkdUnjwM0mSVcKt+I5qK1oAs=
+		XNyU0Hu/AirCt+k8Ta6v/nH5ElU=
 		</data>
 		<key>Headers/TrrWindShader.h</key>
 		<data>
@@ -82,43 +82,43 @@
 		</data>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		QM3My8lX9NqAYancR6PTMWZXLWw=
+		aj4gwGccs/5+la9BB8iYKFh0isU=
 		</data>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		SaN/JUI6aAO8ghP4rvnm57ob8dg=
+		lH2cyjEHyFZwKJ40u5U1hVjf37o=
 		</data>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Lh+FLGkga9Y7C3hBrC92c6xN19g=
+		boRTRriwCiEIEYpJTZFh2v1rt5s=
 		</data>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		SaN/JUI6aAO8ghP4rvnm57ob8dg=
+		lH2cyjEHyFZwKJ40u5U1hVjf37o=
 		</data>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		AIs3qG3Kz51NKPmnLDWgI4B+YSw=
+		zyRrxxR55A038k44iKGOjEg1iDE=
 		</data>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		QM3My8lX9NqAYancR6PTMWZXLWw=
+		aj4gwGccs/5+la9BB8iYKFh0isU=
 		</data>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		OG64kg8/jegquXNMbchUE4D99yQ=
+		sCRYLsF803jf8Nsl55ktcysZeVQ=
 		</data>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Kr9UxsW0bqfcl5pstmxduNCmHLM=
+		ItSmyYG38+REL/0vSczn9IjfU8I=
 		</data>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		OG64kg8/jegquXNMbchUE4D99yQ=
+		sCRYLsF803jf8Nsl55ktcysZeVQ=
 		</data>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		EIQDWrC+dj549U4tvMB09y48ZY8=
+		CH8/vdiaxnjWd0H9aEnVEO0dAhs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -142,11 +142,11 @@
 		</data>
 		<key>PrivateHeaders/TrrWindShaderBase_private.h</key>
 		<data>
-		ThKSaVjAL+Frh0xokdC+1Ai3G90=
+		xzOZX3p86MUndNQTeQ46mUJh/Y0=
 		</data>
 		<key>default.metallib</key>
 		<data>
-		MWWhSfD739ZnZ22554M++0qFCJQ=
+		z8NL/WfDvzCTeKgGTSgPOEIk55A=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -155,7 +155,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZmOl9PdqWBKkTP+OMnC4F2W1seo0WmOzvvJoHrj71Qk=
+			BkvvMAaPAGw84vrliLb87ZyiKu1K1/Fa+nyCTKs4W4I=
 			</data>
 		</dict>
 		<key>Headers/Terrier.h</key>
@@ -204,7 +204,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cPa3CeFFtYNGVs6wRKQrCNM4MEp+wObqWm/FwQQ7ZRc=
+			CGuZ9bcFDq/GgCBbAqThgUJQ4XISk/QwbjHQx3lQ2YA=
 			</data>
 		</dict>
 		<key>Headers/TrrVarFloatColorMapShader.h</key>
@@ -253,7 +253,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ngMIGzqTYVSlNfmOa8BDsDgDtgOqhgkRX8RHVRKybmw=
+			q7704uEk+LvTnTiTXsxx+LScpEOeyp7wjRVIxmfG/yY=
 			</data>
 		</dict>
 		<key>Headers/TrrWindShader.h</key>
@@ -281,70 +281,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mluL/Vf4JyMhgwlqbpCzpigefrGin0HDgoqcHmYenvs=
+			Hkf0I9oiDfiUDETg1El4aliaOJdOMY9RvQ/epz8FRuI=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PTmgCPMdrPpiHbetk1bbxYXCe2MOYYb2DXcbwCtWIRs=
+			sD7s6RSXslZniNzgUm2+8mtddWy+OUfmWaCZBrQH4co=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y2UK/du3Alk13Fk4iZEXPmGmUbZok0nwlZ+k9zhNnY8=
+			Zh/tntAmWn9e4Fmqr0BcL0srblplB29/fsSn+eKlEVk=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PTmgCPMdrPpiHbetk1bbxYXCe2MOYYb2DXcbwCtWIRs=
+			sD7s6RSXslZniNzgUm2+8mtddWy+OUfmWaCZBrQH4co=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pR86yAeWcbQB1o+0cnrMw5WJk/n10maXvrVTmiYn37U=
+			P8hsEZ/vdqSlEEGr56XZJavYXSWVGyLqtjiWpdZk8Vg=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mluL/Vf4JyMhgwlqbpCzpigefrGin0HDgoqcHmYenvs=
+			Hkf0I9oiDfiUDETg1El4aliaOJdOMY9RvQ/epz8FRuI=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/vknyyWNZI1gdNHQJ1lmuuhEK/n4nC+vJ56Qf8vEaLs=
+			75vVZ3XCVLK/S1T/l5XVfBOd1BWTwkK+W5rGyGhAgHE=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iE45MkkPfdYBq6E3RWQDLI8aJzzxbjAoGqTzQNjkjZY=
+			OuipZF+dskWpLRSgJQiaD49I+xLGPuA7R6xIuAHNRwU=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/vknyyWNZI1gdNHQJ1lmuuhEK/n4nC+vJ56Qf8vEaLs=
+			75vVZ3XCVLK/S1T/l5XVfBOd1BWTwkK+W5rGyGhAgHE=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LETn2oOlO4XE2//pPOyqghPCUsCstbIPb8xorP+yD6Y=
+			C2aZm0k6I1S4Zu/tCi18u/rY5Y1rV6ofZF4yhj27ff0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -386,14 +386,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5fEIp8qTmol59j/Ymks5BFnPze21n8KykbVzfrry1Wg=
+			pQj0lnR7QG7hU/7H7PUbJTynv2vrVYNsbrIlPOilOhs=
 			</data>
 		</dict>
 		<key>default.metallib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wg7xH4g+w+GQ7DDprDGOmf0s+UuSF5FPWrqWO1gZs2w=
+			g5OKmEnUhUMtWMg7RfrnHWV/znFdEW8agQOjOBkSmr8=
 			</data>
 		</dict>
 	</dict>
