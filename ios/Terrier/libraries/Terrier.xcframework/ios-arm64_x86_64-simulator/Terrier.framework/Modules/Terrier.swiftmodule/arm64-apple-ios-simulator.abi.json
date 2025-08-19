@@ -9833,6 +9833,92 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "trailOpacity",
+            "printedName": "trailOpacity",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Terrier17TrrWindControllerC12trailOpacitySfvp",
+            "mangledName": "$s7Terrier17TrrWindControllerC12trailOpacitySfvp",
+            "moduleName": "Terrier",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier17TrrWindControllerC12trailOpacitySfvg",
+                "mangledName": "$s7Terrier17TrrWindControllerC12trailOpacitySfvg",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier17TrrWindControllerC12trailOpacitySfvs",
+                "mangledName": "$s7Terrier17TrrWindControllerC12trailOpacitySfvs",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier17TrrWindControllerC12trailOpacitySfvM",
+                "mangledName": "$s7Terrier17TrrWindControllerC12trailOpacitySfvM",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "resetTrails",
             "printedName": "resetTrails(overTime:)",
@@ -28777,6 +28863,43 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "merge",
+            "printedName": "merge(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrrSourceCadence",
+                "printedName": "Terrier.TrrSourceCadence",
+                "usr": "c:@M@Terrier@objc(cs)TrrSourceCadence"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Terrier.TrrSourceCadence?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrrSourceCadence",
+                    "printedName": "Terrier.TrrSourceCadence",
+                    "usr": "c:@M@Terrier@objc(cs)TrrSourceCadence"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Terrier@objc(cs)TrrSourceCadence(im)merge:",
+            "mangledName": "$s7Terrier16TrrSourceCadenceC5mergeyA2CSgF",
+            "moduleName": "Terrier",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(minTimeOffset:maxTimeOffset:maxTimeSlices:)",
@@ -35419,148 +35542,155 @@
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
+      "kind": "FloatLiteral",
+      "offset": 16331,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "BooleanLiteral",
-      "offset": 25699,
+      "offset": 25780,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26691,
+      "offset": 26772,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 26701,
+      "offset": 26782,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 26716,
+      "offset": 26797,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 26728,
+      "offset": 26809,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "Array",
-      "offset": 26749,
+      "offset": 26830,
       "length": 38,
       "value": "[0.0, 5, 10, 15, 20, 25, 30, 35, 40]"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26838,
+      "offset": 26919,
       "length": 8,
       "value": "0xAED5FF"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26880,
+      "offset": 26961,
       "length": 8,
       "value": "0x86B4E6"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26922,
+      "offset": 27003,
       "length": 8,
       "value": "0x66E2D6"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26964,
+      "offset": 27045,
       "length": 8,
       "value": "0x00CC05"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 27006,
+      "offset": 27087,
       "length": 8,
       "value": "0xECF006"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 27048,
+      "offset": 27129,
       "length": 8,
       "value": "0xFF6B00"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 27090,
+      "offset": 27171,
       "length": 8,
       "value": "0xE11511"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 27132,
+      "offset": 27213,
       "length": 8,
       "value": "0xE111C1"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 27174,
+      "offset": 27255,
       "length": 8,
       "value": "0xFFCEF7"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 27251,
+      "offset": 27332,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "Array",
-      "offset": 27262,
+      "offset": 27343,
       "length": 3,
       "value": "[0]"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 27289,
+      "offset": 27370,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 27301,
+      "offset": 27382,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 27312,
+      "offset": 27393,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 27324,
+      "offset": 27405,
       "length": 3,
       "value": "1.0"
     },
@@ -36386,189 +36516,189 @@
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 3605,
+      "offset": 4192,
       "length": 8,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 3623,
+      "offset": 4210,
       "length": 4,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 3878,
+      "offset": 4465,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 3883,
+      "offset": 4470,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 3955,
+      "offset": 4542,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 3960,
+      "offset": 4547,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 4032,
+      "offset": 4619,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 4037,
+      "offset": 4624,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 4109,
+      "offset": 4696,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 4114,
+      "offset": 4701,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 4186,
+      "offset": 4773,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 4191,
+      "offset": 4778,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 4263,
+      "offset": 4850,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 4268,
+      "offset": 4855,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 4340,
+      "offset": 4927,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 4345,
+      "offset": 4932,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 4417,
+      "offset": 5004,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 4422,
+      "offset": 5009,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 4494,
+      "offset": 5081,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 4499,
+      "offset": 5086,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 4571,
+      "offset": 5158,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 4576,
+      "offset": 5163,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 4648,
+      "offset": 5235,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 4653,
+      "offset": 5240,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 4726,
+      "offset": 5313,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 4731,
+      "offset": 5318,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "Array",
-      "offset": 9754,
+      "offset": 10341,
       "length": 2,
       "value": "[]"
     },

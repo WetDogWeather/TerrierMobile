@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
 // swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Terrier
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import CommonCrypto
 import Foundation
 import MapboxMaps
@@ -295,6 +295,10 @@ import _SwiftConcurrencyShims
   @objc public var opacity: Swift.Float {
     @objc get
     @objc set
+  }
+  public var trailOpacity: Swift.Float {
+    get
+    set
   }
   @objc public func resetTrails(overTime: Foundation.TimeInterval)
   @objc public static func create(region: [Swift.String], level: Swift.String, cadence: Terrier.TrrSourceCadence, service: Terrier.TrrService, tracker: any Terrier.TrrITimeTracker, viewC: any WhirlyGlobe.MaplyRenderControllerProtocol) -> (any Terrier.TrrIWindController)?
@@ -950,6 +954,7 @@ extension Swift.Sequence where Self.Element : Swift.AdditiveArithmetic {
   @objc final public let now: Foundation.TimeInterval
   @objc public func resolve() -> Terrier.TrrSourceCadence
   @objc public func clip(_ clip: Terrier.TrrSourceCadence?) -> Terrier.TrrSourceCadence
+  @objc public func merge(_ merge: Terrier.TrrSourceCadence?) -> Terrier.TrrSourceCadence
   @objc convenience public init(minTimeOffset: Foundation.TimeInterval, maxTimeOffset: Foundation.TimeInterval, maxTimeSlices: Swift.Int)
   convenience public init(_ src: Terrier.TrrSourceCadence)
   @objc override convenience dynamic public init()
