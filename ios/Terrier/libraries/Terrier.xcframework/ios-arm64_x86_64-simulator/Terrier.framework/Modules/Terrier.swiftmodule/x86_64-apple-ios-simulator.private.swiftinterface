@@ -70,7 +70,6 @@ import _SwiftConcurrencyShims
   @objc var trailWidth: Swift.Float { get set }
   @objc var trailAdvanceRate: Swift.Float { get set }
   @objc var trailVelExp: Swift.Float { get set }
-  @objc var trailVelRate: Swift.Float { get set }
   @objc var turnAngleLimit: Swift.Float { get set }
   @objc var turnErrorLimit: Swift.Float { get set }
   @objc var texPeriod: Swift.Float { get set }
@@ -113,6 +112,8 @@ import _SwiftConcurrencyShims
   @objc var centerSampling: Swift.Bool { get set }
   @objc func getCenterSample() -> [Swift.Float]
   @objc var offlineMode: Swift.Bool { get set }
+  @objc var useInteraction: Swift.Bool { get set }
+  @objc var continuousMode: Swift.Bool { get set }
 }
 @_hasMissingDesignatedInitializers @objc public class TrrWindController : Terrier.TrrBaseController, Terrier.TrrIWindController {
   @objc override public var label: Swift.String {
@@ -160,10 +161,6 @@ import _SwiftConcurrencyShims
     @objc set
   }
   @objc public var trailVelExp: Swift.Float {
-    @objc get
-    @objc set
-  }
-  @objc public var trailVelRate: Swift.Float {
     @objc get
     @objc set
   }
@@ -295,6 +292,14 @@ import _SwiftConcurrencyShims
     @objc set
   }
   @objc public var offlineMode: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var useInteraction: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var continuousMode: Swift.Bool {
     @objc get
     @objc set
   }

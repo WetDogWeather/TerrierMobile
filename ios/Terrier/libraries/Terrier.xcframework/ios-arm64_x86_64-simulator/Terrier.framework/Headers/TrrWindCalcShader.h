@@ -29,11 +29,6 @@
 @property (nonatomic) float trailVelExp;
 
 /**
-     Base rate controlling how fast we advance.
- */
-@property (nonatomic) float trailVelRate;
-
-/**
     Maximum turn to allow per segment
  */
 @property (nonatomic) float turnAngleLimit;
@@ -109,6 +104,10 @@
 @property (nonatomic) bool animArrows;
 
 @property (nonatomic) bool offlineMode;
+
+@property (nonatomic) bool useInteraction;
+
+@property (nonatomic) bool continuousMode;
 
 /**
  Initialize with a unique name.

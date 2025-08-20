@@ -556,8 +556,6 @@ SWIFT_PROTOCOL("_TtP7Terrier18TrrIWindController_")
 @property (nonatomic) float trailAdvanceRate;
 /// Exponent controlling the advance calculation
 @property (nonatomic) float trailVelExp;
-/// Base rate for advance calculation
-@property (nonatomic) float trailVelRate;
 /// Maximum turn to allow per point (radians)
 /// Only applies when more restrictive than the limit calculated from <code>atan(advance / width)</code>
 @property (nonatomic) float turnAngleLimit;
@@ -660,6 +658,10 @@ SWIFT_PROTOCOL("_TtP7Terrier18TrrIWindController_")
 - (NSArray<NSNumber *> * _Nonnull)getCenterSample SWIFT_WARN_UNUSED_RESULT;
 /// Offline rendering mode changes a little output math
 @property (nonatomic) BOOL offlineMode;
+/// If set we pay attention to the user moving around
+@property (nonatomic) BOOL useInteraction;
+/// If set we’ll continuously update particle paths
+@property (nonatomic) BOOL continuousMode;
 @end
 
 typedef SWIFT_ENUM(NSInteger, TrrInterpolationMode, open) {
@@ -908,8 +910,6 @@ SWIFT_CLASS("_TtC7Terrier17TrrWindController")
 @property (nonatomic) float trailAdvanceRate;
 /// Exponent for advance calculation
 @property (nonatomic) float trailVelExp;
-/// Base rate for advance calculation
-@property (nonatomic) float trailVelRate;
 /// Maximum turn to allow per segment (radians)
 @property (nonatomic) float turnAngleLimit;
 /// Maximum cumulative under-turn before stopping trail advance (sum of dot-products)
@@ -962,6 +962,10 @@ SWIFT_CLASS("_TtC7Terrier17TrrWindController")
 @property (nonatomic) float arrowWidth;
 /// Offline mode changes the output logic a little
 @property (nonatomic) BOOL offlineMode;
+/// Offline mode changes the output logic a little
+@property (nonatomic) BOOL useInteraction;
+/// Offline mode changes the output logic a little
+@property (nonatomic) BOOL continuousMode;
 @property (nonatomic, strong) TrrColorMap * _Nullable velocityColorMap;
 @property (nonatomic) BOOL scaleVelocityColorMap;
 - (void)setVelocityColorMap:(TrrColorMap * _Nullable)map scaleToRange:(BOOL)scaleToRange;

@@ -2250,85 +2250,6 @@
           },
           {
             "kind": "Var",
-            "name": "trailVelRate",
-            "printedName": "trailVelRate",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Float",
-                "printedName": "Swift.Float",
-                "usr": "s:Sf"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Terrier@objc(pl)TrrIWindController(py)trailVelRate",
-            "mangledName": "$s7Terrier18TrrIWindControllerP12trailVelRateSfvp",
-            "moduleName": "Terrier",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment",
-              "ObjC"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Terrier@objc(pl)TrrIWindController(im)trailVelRate",
-                "mangledName": "$s7Terrier18TrrIWindControllerP12trailVelRateSfvg",
-                "moduleName": "Terrier",
-                "genericSig": "<τ_0_0 where τ_0_0 : Terrier.TrrIWindController>",
-                "sugared_genericSig": "<Self where Self : Terrier.TrrIWindController>",
-                "protocolReq": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Terrier@objc(pl)TrrIWindController(im)setTrailVelRate:",
-                "mangledName": "$s7Terrier18TrrIWindControllerP12trailVelRateSfvs",
-                "moduleName": "Terrier",
-                "genericSig": "<τ_0_0 where τ_0_0 : Terrier.TrrIWindController>",
-                "sugared_genericSig": "<Self where Self : Terrier.TrrIWindController>",
-                "protocolReq": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "set"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "turnAngleLimit",
             "printedName": "turnAngleLimit",
             "children": [
@@ -5537,6 +5458,164 @@
                 "accessorKind": "set"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "useInteraction",
+            "printedName": "useInteraction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Terrier@objc(pl)TrrIWindController(py)useInteraction",
+            "mangledName": "$s7Terrier18TrrIWindControllerP14useInteractionSbvp",
+            "moduleName": "Terrier",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(pl)TrrIWindController(im)useInteraction",
+                "mangledName": "$s7Terrier18TrrIWindControllerP14useInteractionSbvg",
+                "moduleName": "Terrier",
+                "genericSig": "<τ_0_0 where τ_0_0 : Terrier.TrrIWindController>",
+                "sugared_genericSig": "<Self where Self : Terrier.TrrIWindController>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(pl)TrrIWindController(im)setUseInteraction:",
+                "mangledName": "$s7Terrier18TrrIWindControllerP14useInteractionSbvs",
+                "moduleName": "Terrier",
+                "genericSig": "<τ_0_0 where τ_0_0 : Terrier.TrrIWindController>",
+                "sugared_genericSig": "<Self where Self : Terrier.TrrIWindController>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "continuousMode",
+            "printedName": "continuousMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Terrier@objc(pl)TrrIWindController(py)continuousMode",
+            "mangledName": "$s7Terrier18TrrIWindControllerP14continuousModeSbvp",
+            "moduleName": "Terrier",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(pl)TrrIWindController(im)continuousMode",
+                "mangledName": "$s7Terrier18TrrIWindControllerP14continuousModeSbvg",
+                "moduleName": "Terrier",
+                "genericSig": "<τ_0_0 where τ_0_0 : Terrier.TrrIWindController>",
+                "sugared_genericSig": "<Self where Self : Terrier.TrrIWindController>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(pl)TrrIWindController(im)setContinuousMode:",
+                "mangledName": "$s7Terrier18TrrIWindControllerP14continuousModeSbvs",
+                "moduleName": "Terrier",
+                "genericSig": "<τ_0_0 where τ_0_0 : Terrier.TrrIWindController>",
+                "sugared_genericSig": "<Self where Self : Terrier.TrrIWindController>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              }
+            ]
           }
         ],
         "declKind": "Protocol",
@@ -6708,103 +6787,6 @@
                 "declKind": "Accessor",
                 "usr": "s:7Terrier17TrrWindControllerC11trailVelExpSfvM",
                 "mangledName": "$s7Terrier17TrrWindControllerC11trailVelExpSfvM",
-                "moduleName": "Terrier",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "trailVelRate",
-            "printedName": "trailVelRate",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Float",
-                "printedName": "Swift.Float",
-                "usr": "s:Sf"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Terrier@objc(cs)TrrWindController(py)trailVelRate",
-            "mangledName": "$s7Terrier17TrrWindControllerC12trailVelRateSfvp",
-            "moduleName": "Terrier",
-            "objc_name": "trailVelRate",
-            "declAttributes": [
-              "HasInitialValue",
-              "ObjC",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Terrier@objc(cs)TrrWindController(im)trailVelRate",
-                "mangledName": "$s7Terrier17TrrWindControllerC12trailVelRateSfvg",
-                "moduleName": "Terrier",
-                "implicit": true,
-                "objc_name": "trailVelRate",
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Terrier@objc(cs)TrrWindController(im)setTrailVelRate:",
-                "mangledName": "$s7Terrier17TrrWindControllerC12trailVelRateSfvs",
-                "moduleName": "Terrier",
-                "implicit": true,
-                "objc_name": "setTrailVelRate:",
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Terrier17TrrWindControllerC12trailVelRateSfvM",
-                "mangledName": "$s7Terrier17TrrWindControllerC12trailVelRateSfvM",
                 "moduleName": "Terrier",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -9999,6 +9981,200 @@
                 "declKind": "Accessor",
                 "usr": "s:7Terrier17TrrWindControllerC11offlineModeSbvM",
                 "mangledName": "$s7Terrier17TrrWindControllerC11offlineModeSbvM",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "useInteraction",
+            "printedName": "useInteraction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Terrier@objc(cs)TrrWindController(py)useInteraction",
+            "mangledName": "$s7Terrier17TrrWindControllerC14useInteractionSbvp",
+            "moduleName": "Terrier",
+            "objc_name": "useInteraction",
+            "declAttributes": [
+              "HasInitialValue",
+              "ObjC",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(cs)TrrWindController(im)useInteraction",
+                "mangledName": "$s7Terrier17TrrWindControllerC14useInteractionSbvg",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "objc_name": "useInteraction",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(cs)TrrWindController(im)setUseInteraction:",
+                "mangledName": "$s7Terrier17TrrWindControllerC14useInteractionSbvs",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "objc_name": "setUseInteraction:",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier17TrrWindControllerC14useInteractionSbvM",
+                "mangledName": "$s7Terrier17TrrWindControllerC14useInteractionSbvM",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "continuousMode",
+            "printedName": "continuousMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Terrier@objc(cs)TrrWindController(py)continuousMode",
+            "mangledName": "$s7Terrier17TrrWindControllerC14continuousModeSbvp",
+            "moduleName": "Terrier",
+            "objc_name": "continuousMode",
+            "declAttributes": [
+              "HasInitialValue",
+              "ObjC",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(cs)TrrWindController(im)continuousMode",
+                "mangledName": "$s7Terrier17TrrWindControllerC14continuousModeSbvg",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "objc_name": "continuousMode",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Terrier@objc(cs)TrrWindController(im)setContinuousMode:",
+                "mangledName": "$s7Terrier17TrrWindControllerC14continuousModeSbvs",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "objc_name": "setContinuousMode:",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier17TrrWindControllerC14continuousModeSbvM",
+                "mangledName": "$s7Terrier17TrrWindControllerC14continuousModeSbvM",
                 "moduleName": "Terrier",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -35942,427 +36118,434 @@
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9217,
+      "offset": 9520,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9592,
+      "offset": 9895,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10238,
+      "offset": 10541,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11151,
+      "offset": 11454,
       "length": 6,
       "value": "100000"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11232,
+      "offset": 11535,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11410,
+      "offset": 11713,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 11553,
+      "offset": 11856,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11690,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11839,
+      "offset": 12005,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11854,
+      "offset": 12020,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 12045,
+      "offset": 12211,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 12187,
+      "offset": 12353,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 12343,
+      "offset": 12509,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 12503,
+      "offset": 12669,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 12640,
+      "offset": 12806,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 12857,
+      "offset": 13023,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 13034,
+      "offset": 13200,
       "length": 5,
       "value": "0.025"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 13151,
+      "offset": 13317,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 13241,
+      "offset": 13407,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 13376,
+      "offset": 13542,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 13559,
+      "offset": 13725,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 13854,
+      "offset": 14020,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 14157,
+      "offset": 14323,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 14251,
+      "offset": 14417,
       "length": 4,
       "value": "40.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 14348,
+      "offset": 14514,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 14443,
+      "offset": 14609,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 14547,
+      "offset": 14713,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 14655,
+      "offset": 14821,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 14749,
+      "offset": 14915,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 14843,
+      "offset": 15009,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15150,
+      "offset": 15316,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15292,
+      "offset": 15458,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15703,
+      "offset": 15869,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 15940,
+      "offset": 16106,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 16074,
+      "offset": 16240,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 16201,
+      "offset": 16367,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "BooleanLiteral",
-      "offset": 16351,
+      "offset": 16517,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "BooleanLiteral",
-      "offset": 16581,
+      "offset": 16731,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16957,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 17245,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 16847,
+      "offset": 17511,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 16972,
+      "offset": 17636,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "BooleanLiteral",
-      "offset": 26558,
+      "offset": 27385,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 27550,
+      "offset": 28377,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 27560,
+      "offset": 28387,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 27575,
+      "offset": 28402,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 27587,
+      "offset": 28414,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "Array",
-      "offset": 27608,
+      "offset": 28435,
       "length": 38,
       "value": "[0.0, 5, 10, 15, 20, 25, 30, 35, 40]"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 27697,
+      "offset": 28524,
       "length": 8,
       "value": "0xAED5FF"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 27739,
+      "offset": 28566,
       "length": 8,
       "value": "0x86B4E6"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 27781,
+      "offset": 28608,
       "length": 8,
       "value": "0x66E2D6"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 27823,
+      "offset": 28650,
       "length": 8,
       "value": "0x00CC05"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 27865,
+      "offset": 28692,
       "length": 8,
       "value": "0xECF006"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 27907,
+      "offset": 28734,
       "length": 8,
       "value": "0xFF6B00"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 27949,
+      "offset": 28776,
       "length": 8,
       "value": "0xE11511"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 27991,
+      "offset": 28818,
       "length": 8,
       "value": "0xE111C1"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 28033,
+      "offset": 28860,
       "length": 8,
       "value": "0xFFCEF7"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "IntegerLiteral",
-      "offset": 28110,
+      "offset": 28937,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "Array",
-      "offset": 28121,
+      "offset": 28948,
       "length": 3,
       "value": "[0]"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 28148,
+      "offset": 28975,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 28160,
+      "offset": 28987,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 28171,
+      "offset": 28998,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrWindController.swift",
       "kind": "FloatLiteral",
-      "offset": 28183,
+      "offset": 29010,
       "length": 3,
       "value": "1.0"
     },

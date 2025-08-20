@@ -126,6 +126,12 @@
  */
 @property (nonatomic) float arrowWidth;
 
+/// Pay attention to the user moving around
+@property (nonatomic) bool useInteraction;
+
+/// Continuous rendering mode
+@property (nonatomic) bool continuousMode;
+
 /// If set we're writing to an offline texture, which tweaks things a bit
 @property (nonatomic) bool offlineMode;
 

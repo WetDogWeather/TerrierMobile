@@ -79,8 +79,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         if tracker.isPlaying() {
             tracker.pause()
             switch windLayerStyle {
-            case .WindyTribute:
-                windLayer?.trailTexture = dotTexture
+            case .Continuous:
                 break
             case .WindArrows:
                 break
@@ -90,7 +89,15 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
             }
         } else {
             tracker.play()
-            windLayer?.trailTexture = arrowTexture
+            switch windLayerStyle {
+            case .Continuous:
+                break
+            case .WindArrows:
+                break
+            case .LongSlowTrails:
+                windLayer?.trailTexture = arrowTexture
+                break
+            }
         }
         playUpdate()
     }
@@ -124,15 +131,30 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
     
     // When dragging the slider we switch how the wind particles look
     @IBAction func sliderDrag(_ sender: Any) {
-        windLayer?.isAnimatingTime = true
-        windLayer?.trailTexture = arrowTexture
+        switch windLayerStyle {
+        case .Continuous:
+            break
+        case .LongSlowTrails:
+            windLayer?.isAnimatingTime = true
+            windLayer?.trailTexture = arrowTexture
+            break
+        case .WindArrows:
+            break
+        }
     }
     
     // Done dragging, so put the wind back to normal
     @IBAction func sliderDragEnd(_ sender: Any) {
-        windLayer?.resetTrails(overTime: 0.5)
-        windLayer?.resetAnimatingTime()
-        windLayer?.trailTexture = dotTexture
+        switch windLayerStyle {
+        case .Continuous:
+            break
+        case .LongSlowTrails:
+            windLayer?.resetTrails(overTime: 0.5)
+            windLayer?.resetAnimatingTime()
+            windLayer?.trailTexture = dotTexture
+        case .WindArrows:
+            break
+        }
     }
     
     
@@ -229,27 +251,32 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
     
     enum WindLayerStyle {
     case LongSlowTrails
-    case WindyTribute
+    case Continuous
     case WindArrows
     }
     var windLayerStyle: WindLayerStyle = .LongSlowTrails
     
     // Change the wind layer to match the given style
     func setWindLayerStyle(_ windLayer: TrrWindController, style: WindLayerStyle) {
+        windLayerStyle = style
         windLayer.enableTrails = false
         windLayer.enable = true
         switch style {
         case WindLayerStyle.LongSlowTrails:
             windLayer.baseColor = UIColor(white: 1.0, alpha: 0.5)
             windLayer.trailTexture = dotTexture
+            windLayer.arrowTexture = arrowTexture
 //            windLayer.scaleResetFactor = 2
             windLayer.trailPoints = 10000
-            windLayer.trailAdvanceRate = 9
+            windLayer.trailAdvanceRate = 6
+            windLayer.trailVelExp = 0.0;
+            windLayer.animationArrows = true
+            windLayer.useInteraction = true
             break
-        case WindLayerStyle.WindyTribute:
+        case WindLayerStyle.Continuous:
             windLayer.baseColor = UIColor(white: 1.0, alpha: 0.5)
             windLayer.trailTexture = rectTexture
-            windLayer.scaleResetFactor = 4
+            windLayer.scaleResetFactor = 1
             windLayer.trailPoints = 50000
             windLayer.trailAdvanceRate = 40
             windLayer.trailVelExp = 1.0;
@@ -257,6 +284,9 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
             windLayer.texPeriod = 2
             windLayer.trailLifetimeMin = 2
             windLayer.trailLifetimeMax = 10
+            windLayer.animationArrows = false
+            windLayer.useInteraction = false
+            windLayer.continuousMode = true
             break
         case WindLayerStyle.WindArrows:
             windLayer.baseColor = UIColor(white: 1.0, alpha: 0.5)
@@ -267,6 +297,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
             windLayer.arrowLength = 40
             windLayer.arrowShowFrac = 1
             windLayer.isAnimatingTime = true
+            windLayer.useInteraction = true
             break
         }
     }
@@ -296,7 +327,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
                                              tracker: tracker,
                                              viewC: adapter)
         if let windLayer = windLayer {
-            setWindLayerStyle(windLayer as! TrrWindController,style: .WindyTribute)
+            setWindLayerStyle(windLayer as! TrrWindController,style: .Continuous)
             // Note: Set this to false to remove the velocity intensity display
             windLayer.enableVelocity = true
             

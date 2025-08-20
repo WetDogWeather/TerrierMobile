@@ -47,11 +47,6 @@
 @property (nonatomic) float trailVelExp;
 
 /**
- Base factor controlling the advance calculation
- */
-@property (nonatomic) float trailVelRate;
-
-/**
     Maximum turn to allow per segment
  */
 @property (nonatomic) float turnAngleLimit;
@@ -182,6 +177,10 @@
     Width of arrows (pixels)
  */
 @property (nonatomic) float arrowWidth;
+
+@property (nonatomic) bool useInteraction;
+
+@property (nonatomic) bool continuousMode;
 
 /**
     The texture to use for trails

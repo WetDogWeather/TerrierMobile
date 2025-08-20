@@ -91,7 +91,6 @@ typedef struct TrrWindUniforms_t
 {
     float trailWidth;           // width of generated geometry
     float trailAdvance;         // length of geometry segments
-    float trailVelRate;         // Velocity effect on trail advance
     float trailVelExp;          // Exponent of velocity factor
     float turnAngleLimit;       // Maximum turn to allow per segment
     float turnErrorLimit;       // Maximum sum of under-turn before stopping trail advance
@@ -127,6 +126,8 @@ typedef struct TrrWindUniforms_t
     float arrowShowFrac;        // The number of arrows to show as a fraction of the number of trails
     float arrowLength;
     float arrowWidth;
+    bool useInteraction;        // Set if we want to take user interaction into account
+    bool continuousMode;        // If set we're constantly recalculating the streamlines
     bool offlineMode;           // Set if we're rendering to an offline texture
 } TrrWindUniforms;
 
