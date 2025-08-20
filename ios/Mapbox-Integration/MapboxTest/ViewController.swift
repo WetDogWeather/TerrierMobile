@@ -684,6 +684,11 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
                                                        interval: nil,
                                                        sourceCadence: resPastCadence,
                                                        viewC: adapter)
+        
+        // We'll bump up the priority of the observed sources so they win out
+        for source in pastSources {
+            source.order = source.order + 1000
+        }
 
         // In the past we have a larger region including hawaii
         let futureSources = TrrDataSource.getStandardSources(service: service,
@@ -695,15 +700,21 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
                                                        interval: nil,
                                                        sourceCadence: resFutureCadence,
                                                        viewC: adapter)
+        
+        // Hold the future sources past the end of their valid range
+        for source in futureSources {
+            source.enableForRange = false
+        }
 
         aqiLayer = TrrSingleChannelController.create(cadence: resFullCadence,
-                                                       dataSources: pastSources + futureSources,
+                                                       dataSources: pastSources+futureSources,
                                                        service: service,
                                                        tracker: tracker,
                                                        viewC: adapter)
         if let aqiLayer = aqiLayer {
             aqiLayer.sourceCadence = resFullCadence
             aqiLayer.baseColor = .init(white: 1.0, alpha: 0.5)
+            aqiLayer.snapToFrame = true
             aqiLayer.colorMap = TrrColorMap(
                 values: [ 0.0,50.0,
                           50.0, 100.0,

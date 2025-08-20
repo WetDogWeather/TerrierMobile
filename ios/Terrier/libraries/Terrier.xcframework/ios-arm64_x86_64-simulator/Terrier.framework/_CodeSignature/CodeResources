@@ -82,43 +82,43 @@
 		</data>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		aj4gwGccs/5+la9BB8iYKFh0isU=
+		49yZhXYdNgjaL5mlmGRlmBjIAAc=
 		</data>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		lH2cyjEHyFZwKJ40u5U1hVjf37o=
+		PoIq6lscX0MbGYTygHDX6LiznNM=
 		</data>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		boRTRriwCiEIEYpJTZFh2v1rt5s=
+		WU3oOVUfIhanEO+KK3nl4yR0+Rk=
 		</data>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		lH2cyjEHyFZwKJ40u5U1hVjf37o=
+		PoIq6lscX0MbGYTygHDX6LiznNM=
 		</data>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zyRrxxR55A038k44iKGOjEg1iDE=
+		p5b/G9A7wjRDl6ot/OdT228V5L0=
 		</data>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		aj4gwGccs/5+la9BB8iYKFh0isU=
+		49yZhXYdNgjaL5mlmGRlmBjIAAc=
 		</data>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		sCRYLsF803jf8Nsl55ktcysZeVQ=
+		/8QYrbjx7FyDhgkNsCO5knNEo9s=
 		</data>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ItSmyYG38+REL/0vSczn9IjfU8I=
+		Z89i2D2JSwFRyiZpo2vWieLmYco=
 		</data>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		sCRYLsF803jf8Nsl55ktcysZeVQ=
+		/8QYrbjx7FyDhgkNsCO5knNEo9s=
 		</data>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		CH8/vdiaxnjWd0H9aEnVEO0dAhs=
+		r1ePgRKrAzS1Nf2jYIr+7drG9B8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -281,70 +281,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hkf0I9oiDfiUDETg1El4aliaOJdOMY9RvQ/epz8FRuI=
+			CwPaTYHkWYexQp9k9/bJwS2q3nFt837PZwddIN00dpU=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sD7s6RSXslZniNzgUm2+8mtddWy+OUfmWaCZBrQH4co=
+			+dqcu4EFAMJyR+1C4lITVQkwfrAdM2+rfqxsWLqZaPc=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zh/tntAmWn9e4Fmqr0BcL0srblplB29/fsSn+eKlEVk=
+			HeAL7oHNhcdY19Fe2JhxsvvB/lnCDmTF+LLjDgjSOew=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sD7s6RSXslZniNzgUm2+8mtddWy+OUfmWaCZBrQH4co=
+			+dqcu4EFAMJyR+1C4lITVQkwfrAdM2+rfqxsWLqZaPc=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			P8hsEZ/vdqSlEEGr56XZJavYXSWVGyLqtjiWpdZk8Vg=
+			LreWQnUmEM6TB2V9MwBd1LvBMenlp624pwz7zrM/+Vc=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hkf0I9oiDfiUDETg1El4aliaOJdOMY9RvQ/epz8FRuI=
+			CwPaTYHkWYexQp9k9/bJwS2q3nFt837PZwddIN00dpU=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			75vVZ3XCVLK/S1T/l5XVfBOd1BWTwkK+W5rGyGhAgHE=
+			tB3tOoaRWIq3AdR5vzou+OcZTbvhhbDVERZaK1g0g7s=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OuipZF+dskWpLRSgJQiaD49I+xLGPuA7R6xIuAHNRwU=
+			nhqoGtc9OlVAEjW3IhG+La+kfKOE62KR0hIi8F79Gqw=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			75vVZ3XCVLK/S1T/l5XVfBOd1BWTwkK+W5rGyGhAgHE=
+			tB3tOoaRWIq3AdR5vzou+OcZTbvhhbDVERZaK1g0g7s=
 			</data>
 		</dict>
 		<key>Modules/Terrier.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C2aZm0k6I1S4Zu/tCi18u/rY5Y1rV6ofZF4yhj27ff0=
+			9IsbHoaL8GQixVJyoUK/E4QFmHvu6Okv0zX2f8qitc4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

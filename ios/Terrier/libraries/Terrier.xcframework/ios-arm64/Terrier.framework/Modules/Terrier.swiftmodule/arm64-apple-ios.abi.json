@@ -30688,12 +30688,10 @@
             "mangledName": "$s7Terrier13TrrDataSourceC5orderSivp",
             "moduleName": "Terrier",
             "declAttributes": [
-              "Final",
               "HasStorage",
               "AccessControl",
               "RawDocComment"
             ],
-            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -30713,10 +30711,49 @@
                 "mangledName": "$s7Terrier13TrrDataSourceC5orderSivg",
                 "moduleName": "Terrier",
                 "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier13TrrDataSourceC5orderSivs",
+                "mangledName": "$s7Terrier13TrrDataSourceC5orderSivs",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier13TrrDataSourceC5orderSivM",
+                "mangledName": "$s7Terrier13TrrDataSourceC5orderSivM",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -31239,6 +31276,93 @@
                   "Final"
                 ],
                 "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "enableForRange",
+            "printedName": "enableForRange",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Terrier13TrrDataSourceC14enableForRangeSbvp",
+            "mangledName": "$s7Terrier13TrrDataSourceC14enableForRangeSbvp",
+            "moduleName": "Terrier",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier13TrrDataSourceC14enableForRangeSbvg",
+                "mangledName": "$s7Terrier13TrrDataSourceC14enableForRangeSbvg",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier13TrrDataSourceC14enableForRangeSbvs",
+                "mangledName": "$s7Terrier13TrrDataSourceC14enableForRangeSbvs",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier13TrrDataSourceC14enableForRangeSbvM",
+                "mangledName": "$s7Terrier13TrrDataSourceC14enableForRangeSbvM",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -36315,42 +36439,42 @@
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "IntegerLiteral",
-      "offset": 7373,
+      "offset": 7539,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8823,
+      "offset": 8989,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11653,
+      "offset": 11819,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "IntegerLiteral",
-      "offset": 12661,
+      "offset": 12827,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14728,
+      "offset": 14894,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrBaseController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15300,
+      "offset": 15466,
       "length": 5,
       "value": "false"
     },
@@ -36553,28 +36677,28 @@
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrVarSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 3924,
+      "offset": 3992,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrVarSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 17000,
+      "offset": 17068,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrVarSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 17248,
+      "offset": 17316,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrVarSource.swift",
       "kind": "FloatLiteral",
-      "offset": 17331,
+      "offset": 17399,
       "length": 3,
       "value": "0.0"
     },
@@ -37245,8 +37369,15 @@
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7317,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
       "kind": "Array",
-      "offset": 10341,
+      "offset": 10448,
       "length": 2,
       "value": "[]"
     },

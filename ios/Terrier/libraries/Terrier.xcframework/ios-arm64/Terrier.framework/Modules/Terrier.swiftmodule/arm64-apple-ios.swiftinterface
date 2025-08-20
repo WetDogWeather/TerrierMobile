@@ -1006,7 +1006,7 @@ public struct TrrSourceDataTypes : Swift.OptionSet {
 }
 @objc public class TrrDataSource : ObjectiveC.NSObject {
   final public let source: Swift.String
-  final public let order: Swift.Int
+  public var order: Swift.Int
   final public let region: Swift.String
   final public let variable: Swift.String
   final public let product: Swift.String
@@ -1017,6 +1017,7 @@ public struct TrrSourceDataTypes : Swift.OptionSet {
   final public let bits: Swift.Int
   final public let hasEmptyVals: Swift.Bool
   final public let global: Swift.Bool
+  public var enableForRange: Swift.Bool
   public init(_ source: Swift.String, _ order: Swift.Int, _ region: Swift.String, _ product: Swift.String, _ variable: Swift.String, _ level: Swift.String?, _ interval: Swift.String?, _ sourceType: Terrier.TrrDataTemporalType, _ dataTypes: Terrier.TrrSourceDataTypes, _ bits: Swift.Int, _ global: Swift.Bool, _ hasEmptyVals: Swift.Bool)
   public func getManifest(service: Terrier.TrrService, sourceCadence: Terrier.TrrSourceCadence, viewC: (any WhirlyGlobe.MaplyRenderControllerProtocol)?) -> Terrier.TrrVarManifest
   public static func getVariablesForStack(service: Terrier.TrrService) -> [Swift.String]
