@@ -45,6 +45,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         view.insertSubview(mapView, at: 0)
 
         // The Mapbox Adapter interfaces to Mapbox for rendering
+//        terrierAdapter = TerrierMapboxAdapter(service: service, mapView: mapView, wrap: true)
         terrierAdapter = TerrierMapboxAdapter(service: service, mapView: mapView)
         guard let terrierAdapter = terrierAdapter else { return }
         tracker = TrrTimeTracker(viewC: terrierAdapter)
@@ -215,7 +216,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         let resCadence = srcCadence.resolve()
 
         // Start temperature display
-        temperatureLayer = TrrTemperatureController.create(region: ["conus","global"],
+        temperatureLayer = TrrTemperatureController.create(region: ["conus", "global"],
                                                            level: "2m",
                                                            cadence: resCadence,
                                                             service: service,
@@ -277,10 +278,10 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
             windLayer.baseColor = UIColor(white: 1.0, alpha: 0.5)
             windLayer.trailTexture = rectTexture
             windLayer.scaleResetFactor = 1
-            windLayer.trailPoints = 50000
+            windLayer.trailPoints = 40000
             windLayer.trailAdvanceRate = 40
             windLayer.trailVelExp = 1.0;
-            windLayer.trailWidth = 6
+            windLayer.trailWidth = 8
             windLayer.texPeriod = 2
             windLayer.trailLifetimeMin = 2
             windLayer.trailLifetimeMax = 10
