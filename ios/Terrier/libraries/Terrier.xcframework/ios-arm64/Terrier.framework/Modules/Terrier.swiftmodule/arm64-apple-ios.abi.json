@@ -11286,6 +11286,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "SendableMetatype",
+                "printedName": "SendableMetatype",
+                "usr": "s:s16SendableMetatypeP",
+                "mangledName": "$ss16SendableMetatypeP"
               }
             ]
           }
@@ -14384,6 +14391,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "SendableMetatype",
+                "printedName": "SendableMetatype",
+                "usr": "s:s16SendableMetatypeP",
+                "mangledName": "$ss16SendableMetatypeP"
               }
             ]
           },
@@ -15185,6 +15199,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -25228,7 +25249,7 @@
           {
             "kind": "Function",
             "name": "create",
-            "printedName": "create(region:cadence:service:tracker:viewC:)",
+            "printedName": "create(region:cadence:radarOnly:service:tracker:viewC:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -25266,6 +25287,12 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "TrrService",
                 "printedName": "Terrier.TrrService",
                 "usr": "c:@M@Terrier@objc(cs)TrrService"
@@ -25284,8 +25311,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7Terrier18TrrRadarControllerC6create6region7cadence7service7tracker5viewCACSgSaySSG_AA0B13SourceCadenceCAA0B7ServiceCAA0B11TimeTrackerCSo011MaplyRenderD8Protocol_ptFZ",
-            "mangledName": "$s7Terrier18TrrRadarControllerC6create6region7cadence7service7tracker5viewCACSgSaySSG_AA0B13SourceCadenceCAA0B7ServiceCAA0B11TimeTrackerCSo011MaplyRenderD8Protocol_ptFZ",
+            "usr": "s:7Terrier18TrrRadarControllerC6create6region7cadence9radarOnly7service7tracker5viewCACSgSaySSG_AA0B13SourceCadenceCSbAA0B7ServiceCAA0B11TimeTrackerCSo011MaplyRenderD8Protocol_ptFZ",
+            "mangledName": "$s7Terrier18TrrRadarControllerC6create6region7cadence9radarOnly7service7tracker5viewCACSgSaySSG_AA0B13SourceCadenceCSbAA0B7ServiceCAA0B11TimeTrackerCSo011MaplyRenderD8Protocol_ptFZ",
             "moduleName": "Terrier",
             "static": true,
             "declAttributes": [
@@ -32349,6 +32376,52 @@
           {
             "kind": "Constructor",
             "name": "init",
+            "printedName": "init(size:viewWrap:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Terrier.TerrierMapboxAdapter?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TerrierMapboxAdapter",
+                    "printedName": "Terrier.TerrierMapboxAdapter",
+                    "usr": "c:@M@Terrier@objc(cs)TerrierMapboxAdapter"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Terrier@objc(cs)TerrierMapboxAdapter(im)initWithSize:viewWrap:",
+            "mangledName": "$s7Terrier0A13MapboxAdapterC4size8viewWrapACSgSo6CGSizeV_Sbtcfc",
+            "moduleName": "Terrier",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithSize:viewWrap:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
             "printedName": "init(size:mode:)",
             "children": [
               {
@@ -32873,6 +32946,7 @@
         "intro_tvOS": "9.0",
         "intro_watchOS": "2.0",
         "declAttributes": [
+          "AddressableForDependencies",
           "Frozen",
           "Available",
           "Available",
@@ -33235,6 +33309,13 @@
             ],
             "usr": "s:10Foundation12DataProtocolP",
             "mangledName": "$s10Foundation12DataProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -33616,6 +33697,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -34068,28 +34156,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "RegexComponent",
-            "printedName": "RegexComponent",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RegexOutput",
-                "printedName": "RegexOutput",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Substring",
-                    "printedName": "Swift.Substring",
-                    "usr": "s:Ss"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:17_StringProcessing14RegexComponentP",
-            "mangledName": "$s17_StringProcessing14RegexComponentP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Transferable",
             "printedName": "Transferable",
             "children": [
@@ -34116,6 +34182,28 @@
             ],
             "usr": "s:16CoreTransferable0B0P",
             "mangledName": "$s16CoreTransferable0B0P"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RegexComponent",
+            "printedName": "RegexComponent",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RegexOutput",
+                "printedName": "RegexOutput",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Substring",
+                    "printedName": "Swift.Substring",
+                    "usr": "s:Ss"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:17_StringProcessing14RegexComponentP",
+            "mangledName": "$s17_StringProcessing14RegexComponentP"
           },
           {
             "kind": "Conformance",
@@ -34209,6 +34297,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -34466,6 +34561,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -34904,6 +35006,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -35551,6 +35660,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -37217,14 +37333,14 @@
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10527,
+      "offset": 10978,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10821,
+      "offset": 11272,
       "length": 5,
       "value": "false"
     },

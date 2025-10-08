@@ -411,6 +411,9 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
     }
     
     var precipLayer: TrrRadarController? = nil
+    // For true we get radar and GFS background
+    // For false we'll get that plus HRRR
+    let radarOnly = true
     func startPrecip() {
         guard precipLayer == nil else { return }
         guard let tracker = tracker else { return }
@@ -419,13 +422,19 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         stopLayers()
 
         // Minus 4 hours to plus 24 hours
-        let srcCadence = TrrSourceCadence(minTimeOffset: -4 * 3600,
-                                          maxTimeOffset: 1 * 24 * 3600,
+        var startTime: Double = -4
+        var endTime: Double = 24
+        if (radarOnly) {
+            endTime = 0
+        }
+        let srcCadence = TrrSourceCadence(minTimeOffset: startTime * 3600,
+                                          maxTimeOffset: endTime * 3600,
                                           maxTimeSlices: 24+2)
         let resCadence = srcCadence.resolve()
 
         precipLayer = TrrRadarController.create(region: ["conus","global"],
                                                 cadence: resCadence,
+                                                radarOnly: radarOnly,
                                                 service: service,
                                                 tracker: tracker,
                                                 viewC: adapter)
