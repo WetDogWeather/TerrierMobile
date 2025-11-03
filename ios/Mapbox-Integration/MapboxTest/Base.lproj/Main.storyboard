@@ -52,7 +52,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SmX-7Y-Ld4" userLabel="Humidity">
                                         <rect key="frame" x="221.33333333333334" y="0.0" width="66.000000000000028" height="29.666666666666668"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Humid">
+                                        <buttonConfiguration key="configuration" style="filled" title="Smoke">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -72,7 +72,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="9zR-tp-K1Q" userLabel="TimeStack">
-                                <rect key="frame" x="16" y="717.66666666666652" width="351.66666666666669" height="34.333333333333371"/>
+                                <rect key="frame" x="16" y="717.66666666666663" width="351.66666666666669" height="34.333333333333371"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hL-vy-hVo" userLabel="Play">
                                         <rect key="frame" x="0.0" y="0.0" width="43" height="34.333333333333336"/>

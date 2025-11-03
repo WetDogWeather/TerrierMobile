@@ -187,6 +187,10 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
             humidLayer.stop()
             self.humidLayer = nil
         }
+        if let smokeLayer = smokeLayer {
+            smokeLayer.stop()
+            self.smokeLayer = nil
+        }
         if let dewPointLayer = dewPointLayer {
             dewPointLayer.stop()
             self.dewPointLayer = nil
@@ -585,6 +589,67 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         tracker.setEpochRange(newTime: resCadence.now, min: resCadence.minTime!, max: resCadence.maxTime!)
     }
 
+    var smokeLayer: TrrISingleChannelController? = nil
+    func startSmoke() {
+        guard smokeLayer == nil else { return }
+        guard let tracker = tracker else { return }
+        guard let adapter = terrierAdapter else { return }
+        
+        stopLayers()
+
+        // Plus and minus one day
+        let srcCadence = TrrSourceCadence(minTimeOffset: -24 * 3600,
+                                      maxTimeOffset: 24 * 3600,
+                                      maxTimeSlices: 48+2)
+        let resCadence = srcCadence.resolve()
+        
+        // Smoke doesn't have a convenience class, so we'll do the pieces ourselves
+        let sources = TrrDataSource.getStandardSources(service: service,
+                                                       varName: "column_integrated_smoke",
+                                                       source: ["rap"],
+                                                       region: ["rap_conus"],
+                                                       product: nil,
+                                                       level: nil,
+                                                       interval: nil,
+                                                       sourceCadence: resCadence,
+                                                       viewC: adapter)
+
+        smokeLayer = TrrSingleChannelController.create(cadence: resCadence,
+                                                       dataSources: sources,
+                                                       service: service,
+                                                       tracker: tracker,
+                                                       viewC: adapter)
+        if let smokeLayer = smokeLayer {
+            smokeLayer.sourceCadence = resCadence
+            smokeLayer.baseColor = .init(white: 1.0, alpha: 0.5)
+            smokeLayer.varInterpMode = .Bilinear
+            smokeLayer.colorMap = TrrColorMap(
+                values: [ 0.0, 1, 1, 4, 7, 11,  15, 20, 25, 30, 40, 50, 75, 150, 250, 500],
+                colors: [
+                    UIColor.fromHexRGB(0x000000).withAlphaComponent(0.0),
+                    UIColor.fromHexRGB(0x000000).withAlphaComponent(0.0),
+                    UIColor.fromHexRGB(0xd0e2f3).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0xd0e2f3).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0x94c4df).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0x4998c9).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0x1564ab).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0x108446).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0x55b45f).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0xa2d86a).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0xfff7b0).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0xfcab5f).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0xf7844e).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0xed5f3d).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0xc21d27).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0xa50026).withAlphaComponent(1.0)
+                ])
+
+            _ = smokeLayer.start()
+        }
+
+        tracker.setEpochRange(newTime: resCadence.now, min: resCadence.minTime!, max: resCadence.maxTime!)
+    }
+
     var precipTypeLayer: TrrISingleChannelController? = nil
     func startPrecipType() {
         guard precipTypeLayer == nil else { return }
@@ -792,7 +857,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
     }
 
     @IBAction func humidButtonAction(_ sender: Any) {
-        startHumidity()
+        startSmoke()
     }
 
     @IBAction func dewPointButtonAction(_ sender: Any) {
