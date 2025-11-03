@@ -623,6 +623,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
             smokeLayer.sourceCadence = resCadence
             smokeLayer.baseColor = .init(white: 1.0, alpha: 0.5)
             smokeLayer.varInterpMode = .Bilinear
+            smokeLayer.importanceFactor = 4.0
             smokeLayer.colorMap = TrrColorMap(
                 values: [ 0.0, 1, 1, 4, 7, 11,  15, 20, 25, 30, 40, 50, 75, 150, 250, 500],
                 colors: [
