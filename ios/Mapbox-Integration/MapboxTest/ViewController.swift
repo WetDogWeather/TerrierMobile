@@ -417,7 +417,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
     var precipLayer: TrrRadarController? = nil
     // For true we get radar and GFS background
     // For false we'll get that plus HRRR
-    let radarOnly = true
+    let radarOnly = false
     func startPrecip() {
         guard precipLayer == nil else { return }
         guard let tracker = tracker else { return }
@@ -426,7 +426,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         stopLayers()
 
         // Minus 4 hours to plus 24 hours
-        var startTime: Double = -4
+        var startTime: Double = -1
         var endTime: Double = 24
         if (radarOnly) {
             endTime = 0
@@ -868,6 +868,26 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
     @IBAction func aqiButtonAction(_ sender: Any) {
         startAQI()
     }
+    
+    var wwaLayer: TrrWWADisplay? = nil
+    
+    // Start displaying the warnings/watches/alert layer
+    func startWWALayer() {
+        guard wwaLayer == nil else { return }
+        guard let adapter = terrierAdapter else { return }
+
+        if let wwaLayer = TrrWWADisplay.create(service: service, viewC: adapter) {
+            self.wwaLayer = wwaLayer
+            wwaLayer.start()
+        }
+    }
+    
+    // Stop displaying the warnings/watches/alert layer
+    func stopWWALayer() {
+        guard let layer = wwaLayer else { return }
+        layer.stop()
+        self.wwaLayer = nil
+    }
 
     // Called when we have the contents for the Boxer Stack
     // Now we can construct weather layers
@@ -881,6 +901,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         rectTexture = adapter.addTexture(UIImage(named: "fadeRect")!, desc: nil, mode: .current)
 
         startTemperature()
+//        startWWALayer()
     }
     
     func serviceFailed() {
