@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
 // swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Terrier
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import CommonCrypto
 import Foundation
 import MapboxMaps
@@ -1057,6 +1057,16 @@ extension Swift.Sequence where Self.Element : Swift.AdditiveArithmetic {
   public init(dir: Swift.String, recentDelta: Foundation.TimeInterval = 2*24*3600.0, manifest: Terrier.TrrVarManifest)
   @objc public func start()
   @objc public func stop()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class TrrWWADisplay : ObjectiveC.NSObject {
+  public var service: Terrier.TrrService
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func create(service: Terrier.TrrService, viewC: any WhirlyGlobe.MaplyRenderControllerProtocol) -> Terrier.TrrWWADisplay?
+  #endif
+  public func start() -> Swift.Bool
+  public func stop()
+  public func addVectors(_ vecObj: WhirlyGlobe.MaplyVectorObject)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TrrSourceCadence : ObjectiveC.NSObject {

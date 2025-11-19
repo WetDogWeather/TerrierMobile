@@ -29184,6 +29184,313 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "TrrWWADisplay",
+        "printedName": "TrrWWADisplay",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "service",
+            "printedName": "service",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrrService",
+                "printedName": "Terrier.TrrService",
+                "usr": "c:@M@Terrier@objc(cs)TrrService"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Terrier13TrrWWADisplayC7serviceAA0B7ServiceCvp",
+            "mangledName": "$s7Terrier13TrrWWADisplayC7serviceAA0B7ServiceCvp",
+            "moduleName": "Terrier",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrrService",
+                    "printedName": "Terrier.TrrService",
+                    "usr": "c:@M@Terrier@objc(cs)TrrService"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier13TrrWWADisplayC7serviceAA0B7ServiceCvg",
+                "mangledName": "$s7Terrier13TrrWWADisplayC7serviceAA0B7ServiceCvg",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrrService",
+                    "printedName": "Terrier.TrrService",
+                    "usr": "c:@M@Terrier@objc(cs)TrrService"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier13TrrWWADisplayC7serviceAA0B7ServiceCvs",
+                "mangledName": "$s7Terrier13TrrWWADisplayC7serviceAA0B7ServiceCvs",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Terrier13TrrWWADisplayC7serviceAA0B7ServiceCvM",
+                "mangledName": "$s7Terrier13TrrWWADisplayC7serviceAA0B7ServiceCvM",
+                "moduleName": "Terrier",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "create",
+            "printedName": "create(service:viewC:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Terrier.TrrWWADisplay?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrrWWADisplay",
+                    "printedName": "Terrier.TrrWWADisplay",
+                    "usr": "c:@M@Terrier@objc(cs)TrrWWADisplay"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TrrService",
+                "printedName": "Terrier.TrrService",
+                "usr": "c:@M@Terrier@objc(cs)TrrService"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MaplyRenderControllerProtocol",
+                "printedName": "any WhirlyGlobe.MaplyRenderControllerProtocol",
+                "usr": "c:objc(pl)MaplyRenderControllerProtocol"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Terrier13TrrWWADisplayC6create7service5viewCACSgAA0B7ServiceC_So29MaplyRenderControllerProtocol_ptFZ",
+            "mangledName": "$s7Terrier13TrrWWADisplayC6create7service5viewCACSgAA0B7ServiceC_So29MaplyRenderControllerProtocol_ptFZ",
+            "moduleName": "Terrier",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Terrier13TrrWWADisplayC5startSbyF",
+            "mangledName": "$s7Terrier13TrrWWADisplayC5startSbyF",
+            "moduleName": "Terrier",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Terrier13TrrWWADisplayC4stopyyF",
+            "mangledName": "$s7Terrier13TrrWWADisplayC4stopyyF",
+            "moduleName": "Terrier",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addVectors",
+            "printedName": "addVectors(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MaplyVectorObject",
+                "printedName": "WhirlyGlobe.MaplyVectorObject",
+                "usr": "c:objc(cs)MaplyVectorObject"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Terrier13TrrWWADisplayC10addVectorsyySo17MaplyVectorObjectCF",
+            "mangledName": "$s7Terrier13TrrWWADisplayC10addVectorsyySo17MaplyVectorObjectCF",
+            "moduleName": "Terrier",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrrWWADisplay",
+                "printedName": "Terrier.TrrWWADisplay",
+                "usr": "c:@M@Terrier@objc(cs)TrrWWADisplay"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Terrier@objc(cs)TrrWWADisplay(im)init",
+            "mangledName": "$s7Terrier13TrrWWADisplayCACycfc",
+            "moduleName": "Terrier",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Terrier@objc(cs)TrrWWADisplay",
+        "mangledName": "$s7Terrier13TrrWWADisplayC",
+        "moduleName": "Terrier",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -37333,14 +37640,14 @@
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10978,
+      "offset": 11285,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/variables\/TrrRadarController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11272,
+      "offset": 11579,
       "length": 5,
       "value": "false"
     },
@@ -37483,6 +37790,4423 @@
       "offset": 965,
       "length": 6,
       "value": "3600.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 685,
+      "length": 97,
+      "value": "\"https:\/\/wetdogpublic.s3.us-west-2.amazonaws.com\/nws_alerts_20251107_225009_multipoly.geojson.gz\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 2201,
+      "length": 17,
+      "value": "\"Tornado Warning\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 2234,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2262,
+      "length": 8,
+      "value": "0xff0000"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 2291,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 2297,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2307,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 2313,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2324,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 2330,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 2339,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 2353,
+      "length": 29,
+      "value": "\"Severe Thunderstorm Warning\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 2398,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2426,
+      "length": 8,
+      "value": "0xfea500"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 2455,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 2461,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2471,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 2477,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2488,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 2494,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 2503,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 2517,
+      "length": 26,
+      "value": "\"Severe Weather Statement\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 2559,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2587,
+      "length": 8,
+      "value": "0x04feff"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 2616,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 2622,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2632,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 2638,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2649,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 2655,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 2664,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 2678,
+      "length": 15,
+      "value": "\"Tornado Watch\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 2709,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2737,
+      "length": 8,
+      "value": "0xffff07"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 2766,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 2772,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2782,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 2788,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2799,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 2805,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 2814,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 2828,
+      "length": 27,
+      "value": "\"Severe Thunderstorm Watch\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 2871,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2899,
+      "length": 8,
+      "value": "0xda7093"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 2928,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 2934,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2944,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 2950,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2961,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 2967,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 2976,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 2990,
+      "length": 27,
+      "value": "\"Special Weather Statement\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3033,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3061,
+      "length": 8,
+      "value": "0xffe4b5"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 3090,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3096,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3106,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3112,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3123,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3129,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 3138,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3183,
+      "length": 21,
+      "value": "\"Flash Flood Warning\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3220,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3248,
+      "length": 8,
+      "value": "0x8b0000"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 3277,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3283,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3293,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3299,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3310,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3316,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 3325,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3339,
+      "length": 19,
+      "value": "\"Flash Flood Watch\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3374,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3402,
+      "length": 8,
+      "value": "0x318a57"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 3431,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3437,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3447,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3453,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3464,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3470,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 3479,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3493,
+      "length": 23,
+      "value": "\"Flash Flood Statement\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3532,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3560,
+      "length": 8,
+      "value": "0x8b0000"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 3589,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3595,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3605,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3611,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3622,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3628,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 3637,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3651,
+      "length": 15,
+      "value": "\"Flood Warning\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3682,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3710,
+      "length": 8,
+      "value": "0x00ff00"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 3739,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3745,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3755,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3761,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3772,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3778,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 3787,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3801,
+      "length": 13,
+      "value": "\"Flood Watch\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3830,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3858,
+      "length": 8,
+      "value": "0x2d8b57"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 3887,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3893,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3903,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3909,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3920,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3926,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 3935,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3949,
+      "length": 17,
+      "value": "\"Flood Statement\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 3982,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4010,
+      "length": 8,
+      "value": "0x00ff00"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 4039,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4045,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4055,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4061,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4072,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4078,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 4087,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4101,
+      "length": 16,
+      "value": "\"Flood Advisory\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4133,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4161,
+      "length": 8,
+      "value": "0x00fe80"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 4190,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4196,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4206,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4212,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4223,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4229,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 4238,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4252,
+      "length": 22,
+      "value": "\"Hydrologic Statement\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4290,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4318,
+      "length": 8,
+      "value": "0x00fe80"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 4347,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4353,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4363,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4369,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4380,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4386,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 4395,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4409,
+      "length": 20,
+      "value": "\"Hydrologic Outlook\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4445,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4473,
+      "length": 8,
+      "value": "0x91ee91"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 4502,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4508,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4518,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4524,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4535,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4541,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 4550,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4599,
+      "length": 19,
+      "value": "\"High Wind Warning\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4634,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4662,
+      "length": 8,
+      "value": "0xdaa421"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 4691,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4697,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4707,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4713,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4724,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4730,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 4739,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4753,
+      "length": 17,
+      "value": "\"High Wind Watch\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4786,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4814,
+      "length": 8,
+      "value": "0xb9850d"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 4843,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4849,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4859,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4865,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4876,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4882,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 4891,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4905,
+      "length": 15,
+      "value": "\"Wind Advisory\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4936,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4964,
+      "length": 8,
+      "value": "0xd2b48c"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 4993,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 4999,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5009,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5015,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5026,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5032,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 5041,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5055,
+      "length": 24,
+      "value": "\"Excessive Heat Warning\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5095,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5123,
+      "length": 8,
+      "value": "0xc71584"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 5152,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5158,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5168,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5174,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5185,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5191,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 5200,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5214,
+      "length": 22,
+      "value": "\"Excessive Heat Watch\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5252,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5280,
+      "length": 8,
+      "value": "0x800001"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 5309,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5315,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5325,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5331,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5342,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5348,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 5357,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5371,
+      "length": 15,
+      "value": "\"Heat Advisory\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5402,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5430,
+      "length": 8,
+      "value": "0xff7f50"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 5459,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5465,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5475,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5481,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5492,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5498,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 5507,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5521,
+      "length": 16,
+      "value": "\"Freeze Warning\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5553,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5581,
+      "length": 8,
+      "value": "0x483e8c"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 5610,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5616,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5626,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5632,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5643,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5649,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 5658,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5672,
+      "length": 14,
+      "value": "\"Freeze Watch\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5702,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5730,
+      "length": 8,
+      "value": "0x04feff"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 5759,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5765,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5775,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5781,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5792,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5798,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 5807,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5821,
+      "length": 20,
+      "value": "\"Dense Fog Advisory\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5857,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5885,
+      "length": 8,
+      "value": "0x6f8191"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 5914,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5920,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5930,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5936,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5947,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5953,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 5962,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 5976,
+      "length": 22,
+      "value": "\"Dense Smoke Advisory\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6014,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6042,
+      "length": 8,
+      "value": "0xefe68c"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 6071,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6077,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6087,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6093,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6104,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6110,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 6119,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6133,
+      "length": 20,
+      "value": "\"Dust Storm Warning\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6169,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6197,
+      "length": 8,
+      "value": "0xfee4c4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 6226,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6232,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6242,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6248,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6259,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6265,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 6274,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6288,
+      "length": 23,
+      "value": "\"Blowing Dust Advisory\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6327,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6355,
+      "length": 8,
+      "value": "0xbdb76b"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 6384,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6390,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6400,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6406,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6417,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6423,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 6432,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6446,
+      "length": 25,
+      "value": "\"Air Stagnation Advisory\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6487,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6515,
+      "length": 8,
+      "value": "0x808080"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 6544,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6550,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6560,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6566,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6577,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6583,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 6592,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6633,
+      "length": 24,
+      "value": "\"Special Marine Warning\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6673,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6701,
+      "length": 8,
+      "value": "0xda7093"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 6730,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6736,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6746,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6752,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6763,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6769,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 6778,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6792,
+      "length": 26,
+      "value": "\"Marine Weather Statement\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6834,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6862,
+      "length": 8,
+      "value": "0xffdab9"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 6891,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6897,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6907,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6913,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6924,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6930,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 6939,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6953,
+      "length": 30,
+      "value": "\"Hurricane Force Wind Warning\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 6999,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7027,
+      "length": 8,
+      "value": "0xcc5c5c"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 7056,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7062,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7072,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7078,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7089,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7095,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 7104,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7118,
+      "length": 28,
+      "value": "\"Hurricane Force Wind Watch\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7162,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7190,
+      "length": 8,
+      "value": "0x9a32cb"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 7219,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7225,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7235,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7241,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7252,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7258,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 7267,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7281,
+      "length": 15,
+      "value": "\"Storm Warning\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7312,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7340,
+      "length": 8,
+      "value": "0x9300d2"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 7369,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7375,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7385,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7391,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7402,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7408,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 7417,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7431,
+      "length": 13,
+      "value": "\"Storm Watch\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7460,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7488,
+      "length": 8,
+      "value": "0xee82ed"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 7517,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7523,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7533,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7539,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7550,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7556,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 7565,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7579,
+      "length": 14,
+      "value": "\"Gale Warning\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7609,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7637,
+      "length": 8,
+      "value": "0xdda0dd"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 7666,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7672,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7682,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7688,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7699,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7705,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 7714,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7728,
+      "length": 12,
+      "value": "\"Gale Watch\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7756,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7784,
+      "length": 8,
+      "value": "0xffc0ca"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 7813,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7819,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7829,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7835,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7846,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7852,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 7861,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7875,
+      "length": 22,
+      "value": "\"Small Craft Advisory\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7913,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7941,
+      "length": 8,
+      "value": "0xd8bfd9"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 7970,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7976,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7986,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 7992,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8003,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8009,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 8018,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8032,
+      "length": 27,
+      "value": "\"Marine Dense Fog Advisory\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8075,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8103,
+      "length": 8,
+      "value": "0x6f8191"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 8132,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8138,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8148,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8154,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8165,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8171,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 8180,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8223,
+      "length": 19,
+      "value": "\"Hurricane Warning\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8258,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8286,
+      "length": 8,
+      "value": "0xdc153d"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 8315,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8321,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8331,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8337,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8348,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8354,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 8363,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8377,
+      "length": 17,
+      "value": "\"Hurricane Watch\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8410,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8438,
+      "length": 8,
+      "value": "0xff00ff"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 8467,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8473,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8483,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8489,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8500,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8506,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 8515,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8529,
+      "length": 24,
+      "value": "\"Tropical Storm Warning\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8569,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8597,
+      "length": 8,
+      "value": "0xb32322"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 8626,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8632,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8642,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8648,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8659,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8665,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 8674,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8688,
+      "length": 22,
+      "value": "\"Tropical Storm Watch\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8726,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8754,
+      "length": 8,
+      "value": "0xf08080"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 8783,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8789,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8799,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8805,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8816,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8822,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 8831,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8845,
+      "length": 22,
+      "value": "\"Extreme Wind Warning\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8883,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8911,
+      "length": 8,
+      "value": "0xff1292"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 8940,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8946,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8956,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8962,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8973,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 8979,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 8988,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9002,
+      "length": 21,
+      "value": "\"Hurricane Statement\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9039,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9067,
+      "length": 8,
+      "value": "0xffff07"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 9096,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9102,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9112,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9118,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9129,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9135,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 9144,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9194,
+      "length": 23,
+      "value": "\"Coastal Flood Warning\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9233,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9261,
+      "length": 8,
+      "value": "0x238b23"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 9290,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9296,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9306,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9312,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9323,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9329,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 9338,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9352,
+      "length": 21,
+      "value": "\"Coastal Flood Watch\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9389,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9417,
+      "length": 8,
+      "value": "0x67cca9"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 9446,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9452,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9462,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9468,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9479,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9485,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 9494,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9508,
+      "length": 24,
+      "value": "\"Coastal Flood Advisory\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9548,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9576,
+      "length": 8,
+      "value": "0x7bfc00"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 9605,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9611,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9621,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9627,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9638,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9644,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 9653,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9667,
+      "length": 25,
+      "value": "\"Coastal Flood Statement\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9708,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9736,
+      "length": 8,
+      "value": "0x698e25"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 9765,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9771,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9781,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9787,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9798,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9804,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 9813,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9827,
+      "length": 19,
+      "value": "\"High Surf Warning\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9862,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9890,
+      "length": 8,
+      "value": "0x228b23"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 9919,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9925,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9935,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9941,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9952,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9958,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 9967,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 9981,
+      "length": 20,
+      "value": "\"High Surf Advisory\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10017,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10045,
+      "length": 8,
+      "value": "0xba55d3"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 10074,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10080,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10090,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10096,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10107,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10113,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 10122,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10136,
+      "length": 23,
+      "value": "\"Rip Current Statement\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10175,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10203,
+      "length": 8,
+      "value": "0x41e0d0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 10232,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10238,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10248,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10254,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10265,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10271,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 10280,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10327,
+      "length": 18,
+      "value": "\"Red Flag Warning\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10361,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10389,
+      "length": 8,
+      "value": "0xff1292"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 10418,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10424,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10434,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10440,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10451,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10457,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 10466,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10480,
+      "length": 20,
+      "value": "\"Fire Weather Watch\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10516,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10544,
+      "length": 8,
+      "value": "0xffdeac"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 10573,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10579,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10589,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10595,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10606,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10612,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 10621,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10635,
+      "length": 23,
+      "value": "\"Fire Danger Statement\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10674,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10702,
+      "length": 8,
+      "value": "0xe99679"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 10731,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10737,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10747,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10753,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10764,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10770,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 10779,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10828,
+      "length": 22,
+      "value": "\"Extreme Cold Warning\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10866,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10894,
+      "length": 8,
+      "value": "0xb0c4df"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 10923,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10929,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10939,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10945,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10956,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10962,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 10971,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 10985,
+      "length": 20,
+      "value": "\"Extreme Cold Watch\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11021,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11049,
+      "length": 8,
+      "value": "0xb0c4df"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 11078,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11084,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11094,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11100,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11111,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11117,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 11126,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11140,
+      "length": 23,
+      "value": "\"Cold Weather Advisory\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11179,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11207,
+      "length": 8,
+      "value": "0xafeeef"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 11236,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11242,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11252,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11258,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11269,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11275,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 11284,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11298,
+      "length": 22,
+      "value": "\"Winter Storm Warning\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11336,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11364,
+      "length": 8,
+      "value": "0xff6ab5"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 11393,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11399,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11409,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11415,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11426,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11432,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 11441,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11455,
+      "length": 19,
+      "value": "\"Ice Storm Warning\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11490,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11518,
+      "length": 8,
+      "value": "0x8b018b"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 11547,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11553,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11563,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11569,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11580,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11586,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 11595,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11609,
+      "length": 20,
+      "value": "\"Winter Storm Watch\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11645,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11673,
+      "length": 8,
+      "value": "0x4582b4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 11702,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11708,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11718,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11724,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11735,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11741,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 11750,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11764,
+      "length": 25,
+      "value": "\"Winter Weather Advisory\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11805,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11833,
+      "length": 8,
+      "value": "0x7b69ee"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 11862,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11868,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11878,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11884,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11895,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11901,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 11910,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11924,
+      "length": 18,
+      "value": "\"Blizzard Warning\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 11958,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11986,
+      "length": 8,
+      "value": "0xff4500"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 12015,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 12021,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12031,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 12037,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12048,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 12054,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 12063,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 12077,
+      "length": 9,
+      "value": "\"unknown\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 12089,
+      "length": 7,
+      "value": "\"color\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 12131,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 12137,
+      "length": 8,
+      "value": "\"filled\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12147,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 12153,
+      "length": 9,
+      "value": "\"outline\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12164,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "StringLiteral",
+      "offset": 12170,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "FloatLiteral",
+      "offset": 12179,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
+      "kind": "Array",
+      "offset": 12231,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/util\/TrrDataSource.swift",
