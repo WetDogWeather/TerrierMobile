@@ -1065,8 +1065,13 @@ extension Swift.Sequence where Self.Element : Swift.AdditiveArithmetic {
   public static func create(service: Terrier.TrrService, viewC: any WhirlyGlobe.MaplyRenderControllerProtocol) -> Terrier.TrrWWADisplay?
   #endif
   public func start() -> Swift.Bool
+  public var CheckFetchTime: Swift.Double
   public func stop()
-  public func addVectors(_ vecObj: WhirlyGlobe.MaplyVectorObject)
+  public var defaultProps: [Swift.String : [Swift.String : Any]]
+  public func setDisplayProperties(_ props: [Swift.String : Swift.Dictionary<Swift.String, Any>])
+  public func clearSelection()
+  public func setSelection(_ features: [WhirlyGlobe.MaplyVectorObject])
+  public func featuresAtGeoPoint(_ coord: (lon: Swift.Double, lat: Swift.Double)) -> [WhirlyGlobe.MaplyVectorObject]
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TrrSourceCadence : ObjectiveC.NSObject {

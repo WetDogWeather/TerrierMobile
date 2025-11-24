@@ -1136,5 +1136,8 @@ typedef NS_ENUM(NSInteger, MaplyRenderType) {
 // Call this to check for scene changes
 - (bool)hasChanges;
 
+// Query for all the vectors that cover a point
+- (NSArray<MaplyVectorObject *> * __nonnull)findVectorsInPointLon:(double)lon lat:(double)lat;
+
 @end
 

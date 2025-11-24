@@ -35,6 +35,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         // Set up a simple map
         mapView = MapView(frame: view.bounds)
         guard let mapView = mapView else { return }
+
         try? mapView.mapboxMap.setProjection(StyleProjection(name: StyleProjectionName.mercator))
         let cameraOptions = CameraOptions(center:
             CLLocationCoordinate2D(latitude: 39.5, longitude: -98.0),
@@ -202,6 +203,10 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         if let aqiLayer = aqiLayer {
             aqiLayer.stop()
             self.aqiLayer = nil
+        }
+        if let wwaLayer = wwaLayer {
+            wwaLayer.stop()
+            self.wwaLayer = nil
         }
     }
     
@@ -869,16 +874,57 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         startAQI()
     }
     
+    @IBAction func wwaButtonAction(_ sender: Any) {
+        startWWALayer()
+    }
+    
     var wwaLayer: TrrWWADisplay? = nil
+    var wwaTapInteraction: TapInteraction? = nil
     
     // Start displaying the warnings/watches/alert layer
     func startWWALayer() {
         guard wwaLayer == nil else { return }
         guard let adapter = terrierAdapter else { return }
 
+        stopLayers()
+
         if let wwaLayer = TrrWWADisplay.create(service: service, viewC: adapter) {
             self.wwaLayer = wwaLayer
-            wwaLayer.start()
+            _ = wwaLayer.start()
+        }
+        
+        // Set up a TapInteraction gesture to query the WWA Layer
+        // Can't seem to remove these so we'll just add it once
+        if wwaTapInteraction == nil {
+            wwaTapInteraction = TapInteraction{ context in
+                // Can't remove the interaction, so we'll just check for the layer
+                guard let wwaLayer = self.wwaLayer else { return false }
+
+                wwaLayer.clearSelection()
+                print("Tapped at \(context.coordinate)")
+                
+                // Query for the features
+                // Note: If this is too slow, we could banish it to a background thread and add a delegate
+                // This returns a list of vector objects
+                let features = wwaLayer.featuresAtGeoPoint((context.coordinate.longitude, context.coordinate.latitude))
+
+                // Didn't find anything, so let Mapbox have the tap back
+                if features.count == 0 {
+                    return false
+                }
+                
+                // Print out the details on what was selected
+                // This includes the full messages from NWS in the "description"
+                for feature in features {
+                    print(feature.attributes)
+                }
+                
+                // We can make these selected with a visible outline
+                wwaLayer.setSelection(features)
+                
+                return true
+            }
+            mapView?.mapboxMap.addInteraction(wwaTapInteraction!)
         }
     }
     
@@ -901,7 +947,6 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
         rectTexture = adapter.addTexture(UIImage(named: "fadeRect")!, desc: nil, mode: .current)
 
         startTemperature()
-//        startWWALayer()
     }
     
     func serviceFailed() {
