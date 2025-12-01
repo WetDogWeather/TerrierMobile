@@ -15,7 +15,8 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
     
     // Sets up the service and kicks off the request for contents
     // We'll know it's ready when it calls the delegate
-    let service = TrrService(stackName: "dev")
+    // Note: Get your API key from Wet Dog Weather
+    let service = TrrService(stackName: "dev", apiKey:"xxxxxxxxxxx")
     
     // This keeps track of the visible time for the weather
     var tracker: TrrTimeTracker? = nil

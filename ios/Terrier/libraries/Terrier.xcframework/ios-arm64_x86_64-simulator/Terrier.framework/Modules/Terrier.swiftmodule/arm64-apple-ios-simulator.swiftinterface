@@ -19,6 +19,7 @@ import _SwiftConcurrencyShims
 }
 @objc open class TrrService : ObjectiveC.NSObject {
   @objc open var stackName: Swift.String
+  @objc open var apiKey: Swift.String
   @objc open var baseURL: Swift.String {
     @objc get
   }
@@ -38,7 +39,7 @@ import _SwiftConcurrencyShims
     @objc get
   }
   @objc open var delegate: (any Terrier.TrrServiceDelegate)?
-  @objc public init(stackName: Swift.String)
+  @objc public init(stackName: Swift.String, apiKey: Swift.String = "xxxxxxxxxxx")
   @objc public func start()
   @objc deinit
 }

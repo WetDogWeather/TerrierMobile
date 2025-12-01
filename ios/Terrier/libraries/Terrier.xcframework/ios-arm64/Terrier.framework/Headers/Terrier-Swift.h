@@ -747,6 +747,7 @@ SWIFT_CLASS("_TtC7Terrier18TrrRadarController")
 SWIFT_CLASS("_TtC7Terrier10TrrService")
 @interface TrrService : NSObject
 @property (nonatomic, copy) NSString * _Nonnull stackName;
+@property (nonatomic, copy) NSString * _Nonnull apiKey;
 @property (nonatomic, readonly, copy) NSString * _Nonnull baseURL;
 @property (nonatomic, readonly, copy) NSString * _Nonnull manifestURL;
 @property (nonatomic, readonly, copy) NSString * _Nonnull tileURL;
@@ -754,7 +755,7 @@ SWIFT_CLASS("_TtC7Terrier10TrrService")
 @property (nonatomic, readonly, copy) NSString * _Nonnull mapURL;
 @property (nonatomic, readonly) NSInteger apiVersion;
 @property (nonatomic, strong) id <TrrServiceDelegate> _Nullable delegate;
-- (nonnull instancetype)initWithStackName:(NSString * _Nonnull)stackName OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithStackName:(NSString * _Nonnull)stackName apiKey:(NSString * _Nonnull)apiKey OBJC_DESIGNATED_INITIALIZER;
 - (void)start;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
