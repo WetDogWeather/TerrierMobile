@@ -37,3 +37,6 @@ Without that your app will crash the first time it tries to use Terrier.
 Now you should be able to use Terrier directly.  Try adding an "import Terrier" directive to one of your source files to check.
 
 <img width="315" alt="Screenshot 2024-12-08 at 11 42 33 PM" src="https://github.com/user-attachments/assets/99d4dab9-d0d6-49a3-a49d-52ecd6859abf">
+
+## Service and API Key
+You'll see this in the example app, but you'll need to start the TrrService and it requires a stack name and API key.  You can use the dev stack to get started, but you'll want to sxwitch to your own stack ASAP.  We'll also provide you with an API key to pass into the Service.
