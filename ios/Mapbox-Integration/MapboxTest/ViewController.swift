@@ -16,7 +16,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
     // Sets up the service and kicks off the request for contents
     // We'll know it's ready when it calls the delegate
     // Note: Get your API key from Wet Dog Weather
-    let service = TrrService(stackName: "dev", apiKey:"xxxxxxxxxxx")
+    let service = TrrService(stackName: "dev", apiKey:"foo")
     
     // This keeps track of the visible time for the weather
     var tracker: TrrTimeTracker? = nil
@@ -365,6 +365,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
 //                ctrl.enable = ctrl.enable || srcValid
 //            }
             _ = windLayer.start()
+            windLayer.opacity = 0.9
         }
 
         tracker.setEpochRange(newTime: resCadence.now, min: resCadence.minTime!, max: resCadence.maxTime!)
@@ -881,6 +882,7 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
     
     var wwaLayer: TrrWWADisplay? = nil
     var wwaTapInteraction: TapInteraction? = nil
+    var wwaPressInteraction: LongPressInteraction? = nil
     
     // Start displaying the warnings/watches/alert layer
     func startWWALayer() {
@@ -917,15 +919,46 @@ class ViewController: UIViewController, TrrServiceDelegate, TrrTimeTrackerDelega
                 // Print out the details on what was selected
                 // This includes the full messages from NWS in the "description"
                 for feature in features {
-                    print(feature.attributes)
+                    print(feature.attributes!)
                 }
                 
                 // We can make these selected with a visible outline
-                wwaLayer.setSelection(features)
+                wwaLayer.setSelection(features,attrs: ["color": UIColor.white, "width": 20.0])
                 
                 return true
             }
             mapView?.mapboxMap.addInteraction(wwaTapInteraction!)
+        }
+        
+        if wwaPressInteraction == nil {
+            wwaPressInteraction = LongPressInteraction{ [self] context in
+                // Can't remove the interaction, so we'll just check for the layer
+                guard let wwaLayer = self.wwaLayer else { return false }
+                guard let mapbox = mapView?.mapboxMap else { return false }
+
+                // Get the bounding box from Mapbox
+                let geoBounds = mapbox.coordinateBounds(for: view.bounds)
+                
+                print("Area: \(geoBounds.west) \(geoBounds.south) \(geoBounds.east) \(geoBounds.north)")
+                
+                // Run this on a background queue as it can be slow
+                DispatchQueue.global(qos: .userInitiated).async {
+                    // Query for the features
+                    // This returns a list of vector objects
+                    let features = wwaLayer.featuresOverGeoArea((geoBounds.west, geoBounds.south, geoBounds.east, geoBounds.north))
+
+                    // Make a unique list of events (types)
+                    var events = Set<String>()
+                    for feature in features {
+                        events.insert(feature.attributes!["event"] as! String)
+                    }
+                    
+                    print(events)
+                }
+                                
+                return true
+            }
+            mapView?.mapboxMap.addInteraction(wwaPressInteraction!)
         }
     }
     

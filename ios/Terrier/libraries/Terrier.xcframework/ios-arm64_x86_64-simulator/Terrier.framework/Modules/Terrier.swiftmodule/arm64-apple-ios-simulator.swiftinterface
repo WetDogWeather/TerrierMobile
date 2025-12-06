@@ -1071,8 +1071,9 @@ extension Swift.Sequence where Self.Element : Swift.AdditiveArithmetic {
   public var defaultProps: [Swift.String : [Swift.String : Any]]
   public func setDisplayProperties(_ props: [Swift.String : Swift.Dictionary<Swift.String, Any>])
   public func clearSelection()
-  public func setSelection(_ features: [WhirlyGlobe.MaplyVectorObject])
+  public func setSelection(_ features: [WhirlyGlobe.MaplyVectorObject], attrs: [Swift.String : Any])
   public func featuresAtGeoPoint(_ coord: (lon: Swift.Double, lat: Swift.Double)) -> [WhirlyGlobe.MaplyVectorObject]
+  public func featuresOverGeoArea(_ bbox: (llx: Swift.Double, lly: Swift.Double, urx: Swift.Double, ury: Swift.Double)) -> [WhirlyGlobe.MaplyVectorObject]
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TrrSourceCadence : ObjectiveC.NSObject {

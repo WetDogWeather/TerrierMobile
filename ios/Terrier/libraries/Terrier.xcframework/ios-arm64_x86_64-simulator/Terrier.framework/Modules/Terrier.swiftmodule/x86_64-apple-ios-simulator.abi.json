@@ -29795,7 +29795,7 @@
           {
             "kind": "Function",
             "name": "setSelection",
-            "printedName": "setSelection(_:)",
+            "printedName": "setSelection(_:attrs:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -29815,11 +29815,30 @@
                   }
                 ],
                 "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7Terrier13TrrWWADisplayC12setSelectionyySaySo17MaplyVectorObjectCGF",
-            "mangledName": "$s7Terrier13TrrWWADisplayC12setSelectionyySaySo17MaplyVectorObjectCGF",
+            "usr": "s:7Terrier13TrrWWADisplayC12setSelection_5attrsySaySo17MaplyVectorObjectCG_SDySSypGtF",
+            "mangledName": "$s7Terrier13TrrWWADisplayC12setSelection_5attrsySaySo17MaplyVectorObjectCG_SDySSypGtF",
             "moduleName": "Terrier",
             "declAttributes": [
               "AccessControl",
@@ -29869,6 +29888,67 @@
             "declKind": "Func",
             "usr": "s:7Terrier13TrrWWADisplayC18featuresAtGeoPointySaySo17MaplyVectorObjectCGSd3lon_Sd3latt_tF",
             "mangledName": "$s7Terrier13TrrWWADisplayC18featuresAtGeoPointySaySo17MaplyVectorObjectCGSd3lon_Sd3latt_tF",
+            "moduleName": "Terrier",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "featuresOverGeoArea",
+            "printedName": "featuresOverGeoArea(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[WhirlyGlobe.MaplyVectorObject]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MaplyVectorObject",
+                    "printedName": "WhirlyGlobe.MaplyVectorObject",
+                    "usr": "c:objc(cs)MaplyVectorObject"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(llx: Swift.Double, lly: Swift.Double, urx: Swift.Double, ury: Swift.Double)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Terrier13TrrWWADisplayC19featuresOverGeoAreaySaySo17MaplyVectorObjectCGSd3llx_Sd3llySd3urxSd3uryt_tF",
+            "mangledName": "$s7Terrier13TrrWWADisplayC19featuresOverGeoAreaySaySo17MaplyVectorObjectCGSd3llx_Sd3llySd3urxSd3uryt_tF",
             "moduleName": "Terrier",
             "declAttributes": [
               "AccessControl",
@@ -42753,21 +42833,21 @@
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
       "kind": "Array",
-      "offset": 20433,
+      "offset": 20293,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
       "kind": "FloatLiteral",
-      "offset": 20493,
+      "offset": 20353,
       "length": 5,
       "value": "180.0"
     },
     {
       "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier\/Terrier\/Alerts\/wwa.swift",
       "kind": "FloatLiteral",
-      "offset": 20525,
+      "offset": 20385,
       "length": 5,
       "value": "180.0"
     },
