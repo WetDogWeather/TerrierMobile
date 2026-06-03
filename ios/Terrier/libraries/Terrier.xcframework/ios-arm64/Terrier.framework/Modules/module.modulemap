@@ -7,5 +7,4 @@ framework module Terrier {
 
 module Terrier.Swift {
   header "Terrier-Swift.h"
-  requires objc
 }

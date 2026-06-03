@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
-// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Terrier
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Terrier
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
 import CommonCrypto
 import Foundation
 import MapboxMaps
@@ -46,21 +46,15 @@ import _SwiftConcurrencyShims
 @objc public protocol TrrITemperatureController : Terrier.TrrISingleChannelController {
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TrrTemperatureController : Terrier.TrrSingleChannelController, Terrier.TrrITemperatureController {
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func create(region: [Swift.String], level: Swift.String, cadence: Terrier.TrrSourceCadence, service: Terrier.TrrService, tracker: Terrier.TrrTimeTracker, viewC: any WhirlyGlobe.MaplyRenderControllerProtocol) -> (any Terrier.TrrITemperatureController)?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   override public var defaultColorMap: Terrier.TrrColorMap? {
     get
   }
-  #endif
   @objc deinit
 }
 @objc public class TrrLoaderProgress : ObjectiveC.NSObject {
   public var imageView: UIKit.UIImageView
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(_ viewC: any WhirlyGlobe.MaplyRenderControllerProtocol, fetcher: Swift.String, parent: UIKit.UIView, _ sibling: UIKit.UIView? = nil, _ fetcherName: Swift.String? = nil)
-  #endif
   @objc public func start()
   @objc public func stop()
   @objc deinit
@@ -95,35 +89,23 @@ import _SwiftConcurrencyShims
   @objc var shapeParamP: Swift.Float { get set }
   @objc var shapeParamS: Swift.Float { get set }
   @objc var trailColor: UIKit.UIColor { get set }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var trailColorMap: Terrier.TrrColorMap? { get set }
-  #endif
   @objc var scaleTrailColorMap: Swift.Bool { get set }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc func setTrailColorMap(_: Terrier.TrrColorMap?, scaleToRange: Swift.Bool)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var trailTexture: WhirlyGlobe.MaplyTexture? { get set }
-  #endif
   @objc func resetTrails(overTime: Foundation.TimeInterval)
   @objc var animationSnap: Swift.Bool { get set }
   @objc var isAnimatingTime: Swift.Bool { get set }
   @objc func resetAnimatingTime()
   @objc var animationArrows: Swift.Bool { get set }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var arrowTexture: WhirlyGlobe.MaplyTexture? { get set }
-  #endif
   @objc var arrowShowFrac: Swift.Float { get set }
   @objc var arrowLength: Swift.Float { get set }
   @objc var arrowWidth: Swift.Float { get set }
   @objc var enableVelocity: Swift.Bool { get set }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var velocityColorMap: Terrier.TrrColorMap? { get set }
-  #endif
   @objc var scaleVelocityColorMap: Swift.Bool { get set }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc func setVelocityColorMap(_: Terrier.TrrColorMap?, scaleToRange: Swift.Bool)
-  #endif
   @objc var visualInterpMode: Terrier.TrrInterpolationMode { get set }
   @objc var visualInterpCustom: Swift.Bool { get set }
   @objc var varInterpMode: Terrier.TrrInterpolationMode { get set }
@@ -285,9 +267,7 @@ import _SwiftConcurrencyShims
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func setTrailColorMap(_ map: Terrier.TrrColorMap?, scaleToRange: Swift.Bool = false)
-  #endif
   @objc public var trailTexture: WhirlyGlobe.MaplyTexture? {
     @objc get
     @objc set
@@ -332,9 +312,7 @@ import _SwiftConcurrencyShims
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func setVelocityColorMap(_ map: Terrier.TrrColorMap?, scaleToRange: Swift.Bool)
-  #endif
   @objc public var opacity: Swift.Float {
     @objc get
     @objc set
@@ -344,13 +322,9 @@ import _SwiftConcurrencyShims
     set
   }
   @objc public func resetTrails(overTime: Foundation.TimeInterval)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func create(region: [Swift.String], level: Swift.String, cadence: Terrier.TrrSourceCadence, service: Terrier.TrrService, tracker: any Terrier.TrrITimeTracker, viewC: any WhirlyGlobe.MaplyRenderControllerProtocol) -> (any Terrier.TrrIWindController)?
-  #endif
   override open func getManifests() -> [Terrier.TrrVarManifest]
-  #if compiler(>=5.3) && $NonescapableTypes
   override open func makeControl() -> Terrier.TrrVarController?
-  #endif
   override open func setupSource(source: Terrier.TrrVarSource, index: Swift.Int)
   @objc override public func start() -> Swift.Bool
   @objc override public func stop()
@@ -439,9 +413,7 @@ import _SwiftConcurrencyShims
   open func getManifests() throws -> [Terrier.TrrVarManifest]
   @objc public func start() -> Swift.Bool
   open func setupSource(source: Terrier.TrrVarSource, index: Swift.Int)
-  #if compiler(>=5.3) && $NonescapableTypes
   open func makeControl() -> Terrier.TrrVarController?
-  #endif
   @objc public func stop()
   @objc public func addLoadedDelegate(_ delegate: @escaping Terrier.TrrBaseController.LoadedDelegate) -> Swift.Int
   @objc public func removeLoadedDelegate(_ key: Swift.Int)
@@ -452,12 +424,8 @@ import _SwiftConcurrencyShims
   @discardableResult
   @objc public func addAllLoadedDelegate(timeout: Foundation.TimeInterval = 0, _ delegate: @escaping Terrier.TrrBaseController.AllLoadedDelegate) -> Swift.Int
   @objc public func removeAllLoadedDelegate(_ key: Swift.Int) -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func anyCoverageSpan() -> Terrier.TrrMinMax?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func allCoverageSpan() -> Terrier.TrrMinMax?
-  #endif
   @objc public class TimeSliceInfo : ObjectiveC.NSObject {
     final public let manifest: Terrier.TrrVarManifest
     final public let slices: [Terrier.TrrVarManifest.TimeSlice]
@@ -472,12 +440,8 @@ import _SwiftConcurrencyShims
   @objc public func manifestDidLoad(manifest: Terrier.TrrVarManifest, success: Swift.Bool)
   public var startDelegate: (any Terrier.TrrBaseControllerDelegate)?
   open func setup(manifest: Terrier.TrrVarManifest) -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func linearGreyscaleColorMap() -> Terrier.TrrColorMap?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func greyscaleColorMap(_ base: Swift.Float, inv: Swift.Bool = false) -> Terrier.TrrColorMap?
-  #endif
   public enum TrrControllerError : Swift.Error {
     case missingManifests
     public static func == (a: Terrier.TrrBaseController.TrrControllerError, b: Terrier.TrrBaseController.TrrControllerError) -> Swift.Bool
@@ -499,9 +463,7 @@ import _SwiftConcurrencyShims
   case Nearest
   case Bilinear
   case Bicubic
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -577,9 +539,7 @@ import _SwiftConcurrencyShims
   public enum SourceDataType : Swift.String {
     case Float
     case Unsigned
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
-    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -605,9 +565,7 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @objc public protocol TrrISingleChannelController : Terrier.TrrIController {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var colorMap: Terrier.TrrColorMap? { get set }
-  #endif
 }
 @_hasMissingDesignatedInitializers @objc public class TrrSingleChannelController : Terrier.TrrBaseController, Terrier.TrrISingleChannelController, Terrier.TrrTimeTrackerDelegate {
   @objc public var colorMap: Terrier.TrrColorMap? {
@@ -630,24 +588,18 @@ import _SwiftConcurrencyShims
   @objc override public var label: Swift.String {
     @objc get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func create(cadence: Terrier.TrrSourceCadence, dataSources: [Terrier.TrrDataSource], service: Terrier.TrrService, tracker: Terrier.TrrTimeTracker, viewC: any WhirlyGlobe.MaplyRenderControllerProtocol) -> (any Terrier.TrrISingleChannelController)?
-  #endif
   @objc override public func start() -> Swift.Bool
   @objc override public func stop()
   override open func getManifests() -> [Terrier.TrrVarManifest]
   override open func setupSource(source: Terrier.TrrVarSource, index: Swift.Int)
-  #if compiler(>=5.3) && $NonescapableTypes
   override open func makeControl() -> Terrier.TrrVarController?
-  #endif
   public var clearVal: Swift.Float
   override open func setup(manifest: Terrier.TrrVarManifest) -> Swift.Bool
   @objc public func trackerUpdate(tracker: any Terrier.TrrITimeTracker, epoch: Foundation.TimeInterval)
-  #if compiler(>=5.3) && $NonescapableTypes
   public var defaultColorMap: Terrier.TrrColorMap? {
     get
   }
-  #endif
   public var renderShader: Terrier.TrrVarFloatColorMapShader?
   @objc deinit
 }
@@ -658,38 +610,20 @@ public func trrWarn(_ format: Swift.String, _ args: any Swift.CVarArg...)
 public func trrError(_ format: Swift.String, _ args: any Swift.CVarArg...)
 extension Foundation.Data {
   public init<T>(copyOf value: T)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func toCGImage(width: Swift.Int, height: Swift.Int, depth: Swift.Int, channels: Swift.Int, bigEnd: Swift.Bool, preMult: Swift.Bool) -> CoreGraphics.CGImage?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS, deprecated: 13.0, message: "Not cryptographically strong")
   public func md5() -> Foundation.Data?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func sha1() -> Foundation.Data?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func sha256() -> Foundation.Data?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func sha512() -> Foundation.Data?
-  #endif
   public func toHexString() -> Swift.String
 }
 extension Swift.String {
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS, deprecated: 13.0, message: "Not cryptographically strong")
   public func md5() -> Foundation.Data?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func sha1() -> Foundation.Data?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func sha256() -> Foundation.Data?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func sha512() -> Foundation.Data?
-  #endif
 }
 extension Foundation.Date {
   public func getFormattedDate(_ format: Swift.String, local: Swift.Bool) -> Swift.String
@@ -767,12 +701,8 @@ extension Swift.Sequence where Self.Element : Swift.AdditiveArithmetic {
   @objc func areAnySourcesLoaded() -> Swift.Bool
   @objc func areAllSourcesValid() -> Swift.Bool
   @objc func areAnySourcesValid() -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc func anyCoverageSpan() -> Terrier.TrrMinMax?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc func allCoverageSpan() -> Terrier.TrrMinMax?
-  #endif
   @objc func getCurrentSlices() -> [Terrier.TrrBaseController.TimeSliceInfo]
   @objc func start() -> Swift.Bool
   @objc func reload()
@@ -782,16 +712,12 @@ extension Swift.Sequence where Self.Element : Swift.AdditiveArithmetic {
   public var centerSampling: Swift.Bool
   @objc public func needSnapshot(_ now: Foundation.TimeInterval, viewC: WhirlyGlobe.MaplyBaseViewController) -> Swift.Bool
   @objc public func snapshot(_ snapshotData: Foundation.Data)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func renderTarget() -> WhirlyGlobe.MaplyRenderTarget?
-  #endif
   @objc public func snapshotRect() -> CoreFoundation.CGRect
   @objc deinit
 }
 @objc public protocol TrrIPrecipController : Terrier.TrrIController {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var colorMap: Terrier.TrrColorMap? { get set }
-  #endif
 }
 @_hasMissingDesignatedInitializers @objc public class TrrPrecipController : Terrier.TrrBaseController, Terrier.TrrIPrecipController, Terrier.TrrTimeTrackerDelegate {
   @objc override public var label: Swift.String {
@@ -813,16 +739,12 @@ extension Swift.Sequence where Self.Element : Swift.AdditiveArithmetic {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func create(region: [Swift.String], cadence: Terrier.TrrSourceCadence, service: Terrier.TrrService, tracker: Terrier.TrrTimeTracker, viewC: any WhirlyGlobe.MaplyRenderControllerProtocol) -> (any Terrier.TrrIPrecipController)?
-  #endif
   @objc override public func start() -> Swift.Bool
   @objc override public func stop()
   override open func getManifests() -> [Terrier.TrrVarManifest]
   override open func setupSource(source: Terrier.TrrVarSource, index: Swift.Int)
-  #if compiler(>=5.3) && $NonescapableTypes
   override open func makeControl() -> Terrier.TrrVarController?
-  #endif
   override open func setup(manifest: Terrier.TrrVarManifest) -> Swift.Bool
   @objc public func trackerUpdate(tracker: any Terrier.TrrITimeTracker, epoch: Foundation.TimeInterval)
   final public let defaultColorMap: Terrier.TrrColorMap?
@@ -884,12 +806,8 @@ extension Swift.Sequence where Self.Element : Swift.AdditiveArithmetic {
   @objc public func areAnySourcesLoaded() -> Swift.Bool
   @objc public func areAllSourcesValid() -> Swift.Bool
   @objc public func areAnySourcesValid() -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func anyCoverageSpan() -> Terrier.TrrMinMax?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func allCoverageSpan() -> Terrier.TrrMinMax?
-  #endif
   @objc public func getCurrentSlices() -> [Terrier.TrrBaseController.TimeSliceInfo]
   @objc public func reload()
   @objc public var label: Swift.String {
@@ -916,18 +834,14 @@ extension Swift.Sequence where Self.Element : Swift.AdditiveArithmetic {
     case CoolStratRain
     case TropicalStratRain
     case TropicalConvectRain
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int32)
-    #endif
     public typealias RawValue = Swift.Int32
     public var rawValue: Swift.Int32 {
       get
     }
   }
   public func setColorMap(_ colorMap: Terrier.TrrColorMap, precipType: Terrier.TrrRadarController.PrecipType)
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func create(region: [Swift.String], cadence: Terrier.TrrSourceCadence, radarOnly: Swift.Bool, service: Terrier.TrrService, tracker: Terrier.TrrTimeTracker, viewC: any WhirlyGlobe.MaplyRenderControllerProtocol) -> Terrier.TrrRadarController?
-  #endif
   @objc public func start() -> Swift.Bool
   @objc public func baseControllerDidStart()
   public func setup()
@@ -1033,18 +947,10 @@ extension Swift.Sequence where Self.Element : Swift.AdditiveArithmetic {
   public func start()
   public func stop()
   public func forceUpdate()
-  #if compiler(>=5.3) && $NonescapableTypes
   public func genCoordSystem() -> WhirlyGlobe.MaplyCoordinateSystem?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func asTileRemoteTileInfo(cacheDir: Swift.String?) -> [WhirlyGlobe.MaplyRemoteTileInfoNew]
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func AnyCoverageSpan(_ manifests: [Terrier.TrrVarManifest]) -> Terrier.TrrMinMax?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func AllCoverageSpan(_ manifests: [Terrier.TrrVarManifest]) -> Terrier.TrrMinMax?
-  #endif
   public func slicesAtTime(_ time: Foundation.TimeInterval) -> [Terrier.TrrVarManifest.TimeSlice]
   public static func SlicesAtTime(_ time: Foundation.TimeInterval, manifests: [Terrier.TrrVarManifest]) -> [Terrier.TrrVarManifest.TimeSlice]
   @objc deinit
@@ -1062,9 +968,7 @@ extension Swift.Sequence where Self.Element : Swift.AdditiveArithmetic {
 }
 @_hasMissingDesignatedInitializers @objc public class TrrWWADisplay : ObjectiveC.NSObject {
   public var service: Terrier.TrrService
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func create(service: Terrier.TrrService, viewC: any WhirlyGlobe.MaplyRenderControllerProtocol) -> Terrier.TrrWWADisplay?
-  #endif
   public func start() -> Swift.Bool
   public var CheckFetchTime: Swift.Double
   public func stop()
@@ -1084,12 +988,8 @@ extension Swift.Sequence where Self.Element : Swift.AdditiveArithmetic {
   final public let maxTime: Foundation.TimeInterval?
   @objc final public let now: Foundation.TimeInterval
   @objc public func resolve() -> Terrier.TrrSourceCadence
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func clip(_ clip: Terrier.TrrSourceCadence?) -> Terrier.TrrSourceCadence
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func merge(_ merge: Terrier.TrrSourceCadence?) -> Terrier.TrrSourceCadence
-  #endif
   @objc convenience public init(minTimeOffset: Foundation.TimeInterval, maxTimeOffset: Foundation.TimeInterval, maxTimeSlices: Swift.Int)
   convenience public init(_ src: Terrier.TrrSourceCadence)
   @objc override convenience dynamic public init()
@@ -1099,9 +999,7 @@ public enum TrrDataTemporalType : Swift.Int32 {
   case observed
   case forecast
   case both
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int32)
-  #endif
   public typealias RawValue = Swift.Int32
   public var rawValue: Swift.Int32 {
     get
@@ -1140,29 +1038,17 @@ public struct TrrSourceDataTypes : Swift.OptionSet {
   final public let hasEmptyVals: Swift.Bool
   final public let global: Swift.Bool
   public var enableForRange: Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(_ source: Swift.String, _ order: Swift.Int, _ region: Swift.String, _ product: Swift.String, _ variable: Swift.String, _ level: Swift.String?, _ interval: Swift.String?, _ sourceType: Terrier.TrrDataTemporalType, _ dataTypes: Terrier.TrrSourceDataTypes, _ bits: Swift.Int, _ global: Swift.Bool, _ hasEmptyVals: Swift.Bool)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getManifest(service: Terrier.TrrService, sourceCadence: Terrier.TrrSourceCadence, viewC: (any WhirlyGlobe.MaplyRenderControllerProtocol)?) -> Terrier.TrrVarManifest
-  #endif
   public static func getVariablesForStack(service: Terrier.TrrService) -> [Swift.String]
   public static func getSourcesForStack(service: Terrier.TrrService) -> [Swift.String]
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getSourcesForVariable(service: Terrier.TrrService, variableMatch: Any, sourceMatch: Any?, regionMatch: Any?, productMatch: Any?, levelMatch: Swift.String?, intervalMatch: Swift.String?) -> [Terrier.TrrDataSource]
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getStandardSources(service: Terrier.TrrService, varName: Swift.String, source: Any?, region: Any?, product: Any?, level: Swift.String?, interval: Swift.String?, sourceCadence: Terrier.TrrSourceCadence, viewC: (any WhirlyGlobe.MaplyRenderControllerProtocol)?) -> [Terrier.TrrDataSource]
-  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers final public class TerrierMapboxAdapter : WhirlyGlobe.MaplyRenderControllerOverlay, MapboxCoreMaps.CustomLayerHost {
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(service: Terrier.TrrService, mapView: MapboxMaps.MapView)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func setTracker(tracker: Terrier.TrrTimeTracker?)
-  #endif
   @objc final public func renderingWillStart(_ metalDevice: any Metal.MTLDevice, colorPixelFormat: Swift.UInt, depthStencilPixelFormat: Swift.UInt)
   @objc final public func render(_ parameters: MapboxCoreMaps.CustomLayerRenderParameters, mtlCommandBuffer: any Metal.MTLCommandBuffer, mtlRenderPassDescriptor: Metal.MTLRenderPassDescriptor)
   @objc final public func renderingWillEnd()
