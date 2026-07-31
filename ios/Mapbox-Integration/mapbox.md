@@ -1,7 +1,7 @@
 # Mapbox Mobile iOS  Integration with Terrier
 Mapbox's iOS toolkit is based on Metal.  So is Terrier and as a result, they can work together quite well.  The integration is taken care of in Terrier and is quite easy to use.
 
-<img width="451" alt="Screenshot 2024-12-08 at 10 33 07 PM" src="https://github.com/user-attachments/assets/b229f424-3b40-43e8-b50e-dbe93a2194d3">
+<img width="200" alt="Screenshot 2024-12-08 at 10 33 07 PM" src="https://github.com/user-attachments/assets/b229f424-3b40-43e8-b50e-dbe93a2194d3">
 
 The first step is to create a Mapbox example project like the one your looking at.  I'd recommend just creating their standard example, including their library and getting it running.  Your viewDidLoad will look something like this.
 
@@ -24,6 +24,7 @@ Once you've got the basic map going, you'll want to [add the Terrier](../../READ
 Now add the import to the top of your View Controller, where you're creating the Mapbox Map.
 
     import Terrier
+    import Terrier_Mapbox
 
 If that works, then you brought in Terrier correctly.  Nice!
 
