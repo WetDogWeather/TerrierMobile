@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TerrierMapboxAdapterObjC : NSObject
 
-- (void) renderControl:(MaplyRenderControllerOverlay *)renderControl cmdBuffer:(NSObject<MTLCommandBuffer> *)cmdBuffer renderPass:(MTLRenderPassDescriptor *)renderPassDesc size:(CGSize)size;
+- (void) renderControl:(MaplyRenderControllerOverlay *)renderControl cmdBuffer:(NSObject<MTLCommandBuffer> *)cmdBuffer renderPass:(MTLRenderPassDescriptor *)renderPassDesc alphaBlendOne:(bool)alphaBlendOne renderStage:(int)renderStage renderEncoder:(NSObject<MTLRenderCommandEncoder> * __nullable)renderEncoder size:(CGSize)size;
 
 @end
 

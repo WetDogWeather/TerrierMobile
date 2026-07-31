@@ -1,0 +1,998 @@
+//
+//  ViewController.swift
+//  MapLibre-Integration
+//
+//  Created by Steve Gifford on 7/9/26.
+//
+
+import UIKit
+import MapLibre
+import WhirlyGlobe
+import Terrier
+import Terrier_MapLibre
+
+class ViewController: UIViewController, MLNMapViewDelegate, TrrServiceDelegate, TrrTimeTrackerDelegate {
+    var mapView: MLNMapView!
+    
+    // Sets up the service and kicks off the request for contents
+    // We'll know it's ready when it calls the delegate
+    // Note: Get your API key from Wet Dog Weather
+    let service = TrrService(stackName: "dev", apiKey:"foo")
+    
+    // This keeps track of the visible time for the weather
+    var tracker: TrrTimeTracker? = nil
+
+    // Hooks Terrier into the Mapbox display
+    var terrierAdapter: TerrierMapLibreAdapter? = nil
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Initialize the Terrier connection to the backend, Boxer
+        // This will fetch the available metadata and once it calls you back
+        //  you can start some layers
+        service.delegate = self
+        service.start()
+
+        // Start MapLibre Native
+        let mapView = MLNMapView(frame: view.bounds)
+        mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        mapView.delegate = self
+        
+        // Set the map’s center coordinate and zoom level.
+        mapView.setCenter(CLLocationCoordinate2D(latitude: 41.8864, longitude: -87.7135), zoomLevel: 3, animated: false)
+        view.insertSubview(mapView, at: 0)
+    }
+
+    func mapView(_ mapView: MLNMapView, didFinishLoading style: MLNStyle) {
+        let source = MLNVectorTileSource(identifier: "demotiles", configurationURL: URL(string: "https://demotiles.maplibre.org/tiles-omt/tiles.json")!)
+        style.addSource(source)
+
+        // Need an adapter from Terrier to MapLibre
+        let mapOverlay = TerrierMapLibreAdapter(service: service, mapView: mapView)
+        terrierAdapter = mapOverlay
+        guard let terrierOvl = mapOverlay?.terrierOvl else { return }
+
+        // Time tracker lets us control and see the current time
+        tracker = TrrTimeTracker(viewC: terrierOvl)
+        terrierOvl.setTracker(tracker: tracker)
+        tracker?.addDelegate(delegate: self)
+        
+        let geolineLayer = style.layer(withIdentifier: "geolines")
+        if (geolineLayer != nil ) {
+            style.insertLayer(mapOverlay!, above: geolineLayer!)
+        } else {
+            style.layers.append(mapOverlay!)
+        }
+    }
+    
+    // This section handles the play button interaction and updates from the time
+    //  tracker to the label displaying the time
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var playButton: UIButton!
+    func playUpdate() {
+        guard let tracker = tracker else { return }
+        if tracker.isPlaying() {
+            playButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
+        } else {
+            playButton.setImage(UIImage(systemName: "play"), for: .normal)
+        }
+    }
+
+    // Called by the play button.  We'll treat it as a toggle.
+    @IBAction func playAction(_ sender: Any) {
+        guard let tracker = tracker else { return }
+        if tracker.isPlaying() {
+            tracker.pause()
+            switch windLayerStyle {
+            case .Continuous:
+                break
+            case .WindArrows:
+                break
+            case .LongSlowTrails:
+                windLayer?.trailTexture = rectTexture
+                break
+            }
+        } else {
+            tracker.play()
+            switch windLayerStyle {
+            case .Continuous:
+                break
+            case .WindArrows:
+                break
+            case .LongSlowTrails:
+                windLayer?.trailTexture = arrowTexture
+                break
+            }
+        }
+        playUpdate()
+    }
+    
+    // Update the time label
+    func updateTime() {
+        guard let tracker = tracker else { return }
+
+        let format = DateFormatter.forDateFormat("E HH:mm", local: false)
+        format.timeZone = TimeZone.current
+        
+        timeLabel.text = format.string(from: Date(timeIntervalSince1970: tracker.curEpoch))
+    }
+    
+    // Delegate for tracker update.  This means the time changed
+    @IBOutlet weak var slider: UISlider!
+    var sliderUpdateScheduled = false
+    var inTrackerUpdate = false
+    func trackerUpdate(tracker: any Terrier.TrrITimeTracker, epoch: TimeInterval) {
+        guard !sliderUpdateScheduled else { return }
+        sliderUpdateScheduled = true
+        // We delay the update so that we're not updating the slider at 60hz.
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.1) {
+            self.sliderUpdateScheduled = false
+            self.inTrackerUpdate = true
+            self.slider.setValue(Float(tracker.interpolateSimple(epoch: tracker.curEpoch)), animated: false)
+            self.inTrackerUpdate = false
+            self.updateTime()
+        }
+    }
+    
+    // When dragging the slider we switch how the wind particles look
+    @IBAction func sliderDrag(_ sender: Any) {
+        switch windLayerStyle {
+        case .Continuous:
+            break
+        case .LongSlowTrails:
+            windLayer?.isAnimatingTime = true
+            windLayer?.trailTexture = arrowTexture
+            break
+        case .WindArrows:
+            break
+        }
+    }
+    
+    // Done dragging, so put the wind back to normal
+    @IBAction func sliderDragEnd(_ sender: Any) {
+        switch windLayerStyle {
+        case .Continuous:
+            break
+        case .LongSlowTrails:
+            windLayer?.resetTrails(overTime: 0.5)
+            windLayer?.resetAnimatingTime()
+            windLayer?.trailTexture = dotTexture
+        case .WindArrows:
+            break
+        }
+    }
+    
+    
+    // User changed the time, or we did
+    // If we did, we don't want to propagate the change further
+    @IBAction func sliderChanged(_ sender: Any) {
+        guard !inTrackerUpdate else { return }
+        guard let tracker = tracker else { return }
+        tracker.curEpoch = tracker.interpolateEpoch(pos: Double(slider.value))
+        tracker.pause()
+        playUpdate()
+        updateTime()
+    }
+    
+    func stopLayers() {
+        if let temperatureLayer = temperatureLayer {
+            temperatureLayer.stop()
+            self.temperatureLayer = nil
+        }
+        if let windLayer = windLayer {
+            windLayer.stop()
+            self.windLayer = nil
+        }
+        if let precipLayer = precipLayer {
+            precipLayer.stop()
+            self.precipLayer = nil
+        }
+        if let humidLayer = humidLayer {
+            humidLayer.stop()
+            self.humidLayer = nil
+        }
+        if let smokeLayer = smokeLayer {
+            smokeLayer.stop()
+            self.smokeLayer = nil
+        }
+        if let dewPointLayer = dewPointLayer {
+            dewPointLayer.stop()
+            self.dewPointLayer = nil
+        }
+        if let precipTypeLayer = precipTypeLayer {
+            precipTypeLayer.stop()
+            self.precipTypeLayer = nil
+        }
+        if let aqiLayer = aqiLayer {
+            aqiLayer.stop()
+            self.aqiLayer = nil
+        }
+        if let wwaLayer = wwaLayer {
+            wwaLayer.stop()
+            self.wwaLayer = nil
+        }
+    }
+    
+    var temperatureLayer: TrrITemperatureController? = nil
+    func startTemperature() {
+        guard temperatureLayer == nil else { return }
+        guard let tracker = tracker else { return }
+        guard let terrierOvl = terrierAdapter?.terrierOvl else { return }
+
+        stopLayers()
+
+        // Plus and minus one day
+        let srcCadence = TrrSourceCadence(minTimeOffset: -24 * 3600,
+                                      maxTimeOffset: 24 * 3600,
+                                      maxTimeSlices: 48+2)
+        let resCadence = srcCadence.resolve()
+
+        // Start temperature display
+        temperatureLayer = TrrTemperatureController.create(region: ["conus", "global"],
+                                                           level: "2m",
+                                                           cadence: resCadence,
+                                                            service: service,
+                                                            tracker: tracker,
+                                                            viewC: terrierOvl)
+        if let temperatureLayer = temperatureLayer {
+            temperatureLayer.baseColor = UIColor(white: 1.0, alpha: 0.5)
+            temperatureLayer.importanceFactor = 4.0
+            temperatureLayer.varInterpMode = .Bilinear
+            // Temperature color map in Kelvin
+            temperatureLayer.colorMap = TrrColorMap(
+                values: [ 255.372, 260.928, 266.483, 272.039, 277.594, 283.15, 288.706, 294.261, 299.817, 305.372, 310.928, 316.483],
+                colors: [
+                    UIColor.fromHexRGB(0xFFBFFF),
+                    UIColor.fromHexRGB(0xD873DB),
+                    UIColor.fromHexRGB(0x913ABB),
+                    UIColor.fromHexRGB(0x372398),
+                    UIColor.fromHexRGB(0x00B6DC),
+                    UIColor.fromHexRGB(0x02D786),
+                    UIColor.fromHexRGB(0x40C604),
+                    UIColor.fromHexRGB(0xFFFF00),
+                    UIColor.fromHexRGB(0xFB7700),
+                    UIColor.fromHexRGB(0xD22402),
+                    UIColor.fromHexRGB(0xA20902),
+                    UIColor.fromHexRGB(0xEED9D8)
+                ])
+
+            _ = temperatureLayer.start()
+        }
+        
+        tracker.setEpochRange(newTime: resCadence.now, min: resCadence.minTime!, max: resCadence.maxTime!)
+    }
+    
+    enum WindLayerStyle {
+    case LongSlowTrails
+    case Continuous
+    case WindArrows
+    }
+    var windLayerStyle: WindLayerStyle = .LongSlowTrails
+    
+    // Change the wind layer to match the given style
+    func setWindLayerStyle(_ windLayer: TrrWindController, style: WindLayerStyle) {
+        windLayerStyle = style
+        windLayer.enableTrails = false
+        windLayer.enable = true
+        windLayer.renderScale = 1.0
+        switch style {
+        case WindLayerStyle.LongSlowTrails:
+            windLayer.baseColor = UIColor(white: 1.0, alpha: 0.5)
+            windLayer.trailTexture = dotTexture
+            windLayer.arrowTexture = arrowTexture
+//            windLayer.scaleResetFactor = 2
+            windLayer.trailPoints = 10000
+            windLayer.trailAdvanceRate = 6
+            windLayer.trailVelExp = 0.0;
+            windLayer.animationArrows = true
+            windLayer.useInteraction = true
+            break
+        case WindLayerStyle.Continuous:
+            windLayer.baseColor = UIColor(white: 1.0, alpha: 1.0)
+            windLayer.trailTexture = rectTexture
+            windLayer.scaleResetFactor = 1
+            windLayer.trailPoints = 40000
+            windLayer.trailAdvanceRate = 40
+            windLayer.trailVelExp = 1.0;
+            windLayer.trailWidth = 8
+            windLayer.texPeriod = 2
+            windLayer.trailLifetimeMin = 2
+            windLayer.trailLifetimeMax = 10
+            windLayer.animationArrows = false
+            windLayer.useInteraction = false
+            windLayer.continuousMode = true
+            break
+        case WindLayerStyle.WindArrows:
+            windLayer.baseColor = UIColor(white: 1.0, alpha: 0.5)
+            windLayer.trailPoints = 15000
+            windLayer.trailTexture = arrowTexture
+            windLayer.arrowTexture = arrowTexture
+            windLayer.arrowWidth = 10
+            windLayer.arrowLength = 40
+            windLayer.arrowShowFrac = 1
+            windLayer.isAnimatingTime = true
+            windLayer.useInteraction = true
+            break
+        }
+    }
+
+    var windLayer: TrrIWindController? = nil
+    var arrowTexture: MaplyTexture? = nil
+    var dotTexture: MaplyTexture? = nil
+    var rectTexture: MaplyTexture? = nil
+    func startWind() {
+        guard windLayer == nil else { return }
+        guard let tracker = tracker else { return }
+        guard let terrierOvl = terrierAdapter?.terrierOvl else { return }
+
+        stopLayers()
+        
+        // Plus and minus one day
+        let srcCadence = TrrSourceCadence(minTimeOffset: -24 * 3600,
+                                      maxTimeOffset: 24 * 3600,
+                                      maxTimeSlices: 48+2)
+        let resCadence = srcCadence.resolve()
+
+        // Start wind controller
+        windLayer = TrrWindController.create(region: ["global","conus"],
+                                             level: "10m",
+                                             cadence: resCadence,
+                                             service: service,
+                                             tracker: tracker,
+                                             viewC: terrierOvl)
+        if let windLayer = windLayer {
+            setWindLayerStyle(windLayer as! TrrWindController,style: .Continuous)
+            // Note: Set this to false to remove the velocity intensity display
+            windLayer.enableVelocity = true
+            
+            // Example trail color map, matches the default colors
+            // Keep in mind we mix in another alpha so the intensity layer is fainter
+//            windLayer.trailColorMap = TrrColorMap(
+//                values: [ 0.0, 5, 10, 15, 20, 25, 30, 35, 40 ],
+//                colors: [
+//                    UIColor.fromHexRGB(0xAED5FF),
+//                    UIColor.fromHexRGB(0x86B4E6),
+//                    UIColor.fromHexRGB(0x66E2D6),
+//                    UIColor.fromHexRGB(0x00CC05),
+//                    UIColor.fromHexRGB(0xECF006),
+//                    UIColor.fromHexRGB(0xFF6B00),
+//                    UIColor.fromHexRGB(0xE11511),
+//                    UIColor.fromHexRGB(0xE111C1),
+//                    UIColor.fromHexRGB(0xFFCEF7)
+//                ])
+
+            // Wind layer will start disabled, but we'll let it turn on in the monitor loading logic
+            startWindTrigger()
+            windLayer.addAllLoadedDelegate(timeout: 10) { ctrl in
+                let srcValid = ctrl.areAnySourcesValid()
+                ctrl.enable = ctrl.enable || srcValid
+            }
+            _ = windLayer.start()
+            windLayer.opacity = 1.0
+        }
+
+        tracker.setEpochRange(newTime: resCadence.now, min: resCadence.minTime!, max: resCadence.maxTime!)
+    }
+    
+    // Used to watch loading for the wind layer
+    var monitorTimer: Timer? = nil
+    var windLoadStarted = false
+    
+    // Waits for data to start loading and then waits until it's sufficiently loaded
+    func startWindTrigger() {
+        guard let terrierOvl = terrierAdapter?.terrierOvl else { return }
+
+        windLoadStarted = false
+        // Start clean with the loading stats
+        if let adapter = terrierAdapter,
+           let fetcher = terrierOvl.getTileFetcher(TrrConstants.RemoteFetcherName) {
+            fetcher.resetStats()
+        }
+
+        self.monitorTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { [weak self] _ in
+            guard let self = self else { return }
+            
+            guard let adapter = terrierAdapter,
+                  let fetcher = terrierOvl.getTileFetcher(TrrConstants.RemoteFetcherName),
+                  let windLayer = windLayer
+            else {
+                monitorTimer?.invalidate()
+                return
+            }
+            guard let stats = fetcher.getStats(false) else { return }
+            
+            if windLoadStarted {
+                // Now we're monitoring how much loading
+                var frac = 1.0
+                if stats.maxActiveRequests > 0 {
+                    frac = 1.0-Double(stats.activeRequests)/Double(stats.maxActiveRequests)
+                }
+                // We'll arbitrarily say we want to trigger at 50% loaded
+                // If the wind layer isn't already on, then we'll turn it on
+                if frac > 0.5 {
+                    if !windLayer.enableTrails {
+                        windLayer.enableTrails = true
+                    }
+                    // In any case we're done with the monitor
+                    monitorTimer?.invalidate()
+                    monitorTimer = nil
+                }
+            } else {
+                // We're looking for our first indication of loading
+                if stats.totalRequests > 0 {
+                    windLoadStarted = true
+                }
+            }
+        }
+    }
+    
+    var precipLayer: TrrRadarController? = nil
+    // For true we get radar and GFS background
+    // For false we'll get that plus HRRR
+    let radarOnly = false
+    func startPrecip() {
+        guard precipLayer == nil else { return }
+        guard let tracker = tracker else { return }
+        guard let terrierOvl = terrierAdapter?.terrierOvl else { return }
+
+        stopLayers()
+
+        // Minus 4 hours to plus 24 hours
+        var startTime: Double = -1
+        var endTime: Double = 24
+        if (radarOnly) {
+            endTime = 0
+        }
+        let srcCadence = TrrSourceCadence(minTimeOffset: startTime * 3600,
+                                          maxTimeOffset: endTime * 3600,
+                                          maxTimeSlices: 24+2)
+        let resCadence = srcCadence.resolve()
+
+        precipLayer = TrrRadarController.create(region: ["conus","global"],
+                                                cadence: resCadence,
+                                                radarOnly: radarOnly,
+                                                service: service,
+                                                tracker: tracker,
+                                                viewC: terrierOvl)
+        if let precipLayer = precipLayer {
+            precipLayer.sourceCadence = resCadence
+            precipLayer.renderScale = 1.0
+            precipLayer.importanceFactor = 4.0
+            precipLayer.snapToFrame = true
+            precipLayer.varInterpMode = .Bicubic
+            let emptyColorMap = TrrColorMap(
+                values: [ -30, 75],
+                colors: [
+                    UIColor.fromHexARGB(0x00000000),
+                    UIColor.fromHexARGB(0x00000000)
+                ])!
+            let snowColorMap = TrrColorMap(
+                values: [ -30, -25, -20, -15, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75],
+                colors: [
+                    UIColor.fromHexARGB(0x009C9A6B),
+                    UIColor.fromHexARGB(0x009C9A6B),
+                    UIColor.fromHexARGB(0x009C9A6B),
+                    UIColor.fromHexARGB(0x009C9A6B),
+                    UIColor.fromHexARGB(0x009C9A6B),
+                    UIColor.fromHexARGB(0x009C9A6B),
+                    UIColor.fromHexARGB(0x80676767),  // 0.0
+                    UIColor.fromHexARGB(0xFFE7E7E7),
+                    UIColor.fromHexARGB(0xFFF3F3F3),
+                    UIColor.fromHexARGB(0xFFF0F0F0),
+                    UIColor.fromHexARGB(0xFFFCFCFC),
+                    UIColor.fromHexARGB(0xFFC7C7C7),
+                    UIColor.fromHexARGB(0xFF8D8D8D),
+                    UIColor.fromHexARGB(0xFFF6F6F6),
+                    UIColor.fromHexARGB(0xFFE6E6E6),
+                    UIColor.fromHexARGB(0xFFF7F7F7),
+                    UIColor.fromHexARGB(0xFFFEFEFE),
+                    UIColor.fromHexARGB(0xFFD6D6D6),
+                    UIColor.fromHexARGB(0xFFBBBBBB),
+                    UIColor.fromHexARGB(0xFFF8F8F8),
+                    UIColor.fromHexARGB(0xFF9A9A9A),
+                    UIColor.fromHexARGB(0xFFFCFCFC)
+                ])!
+            let hailColorMap = TrrColorMap(
+                values: [ -30, 75],
+                colors: [
+                    UIColor.fromHexARGB(0xffa020f0),
+                    UIColor.fromHexARGB(0xffa020f0)
+                ])!
+            let warnColorMap = TrrColorMap(
+                values: [ -30, 75],
+                colors: [
+                    UIColor.fromHexARGB(0xffff0000),
+                    UIColor.fromHexARGB(0xffff0000)
+                ])!
+            let rainColorMap = TrrColorMap(
+                values: [ -30, -25, -20, -15, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75],
+                colors: [
+                    UIColor.fromHexARGB(0x00CBFCFD),
+                    UIColor.fromHexARGB(0x00D09CCB),
+                    UIColor.fromHexARGB(0x00976797),
+                    UIColor.fromHexARGB(0x00643363),
+                    UIColor.fromHexARGB(0x00CDCC9A),
+                    UIColor.fromHexARGB(0x009C9A6B),
+                    UIColor.fromHexARGB(0x80676467),  // 0.0
+                    UIColor.fromHexARGB(0xFF10E6E7),
+                    UIColor.fromHexARGB(0xFF069FF3),
+                    UIColor.fromHexARGB(0xFF0400F0),
+                    UIColor.fromHexARGB(0xFF01FC08),
+                    UIColor.fromHexARGB(0xFF02C701),
+                    UIColor.fromHexARGB(0xFF068D01),
+                    UIColor.fromHexARGB(0xFFF6F602),
+                    UIColor.fromHexARGB(0xFFE6BA03),
+                    UIColor.fromHexARGB(0xFFF79505),
+                    UIColor.fromHexARGB(0xFFFE0002),
+                    UIColor.fromHexARGB(0xFFD60401),
+                    UIColor.fromHexARGB(0xFFBB0200),
+                    UIColor.fromHexARGB(0xFFF807F6),
+                    UIColor.fromHexARGB(0xFF9A52C8),
+                    UIColor.fromHexARGB(0xFFFCFBFA)
+                ])!
+            precipLayer.setColorMap(rainColorMap,
+                                    precipType: TrrRadarController.PrecipType.None)
+            precipLayer.setColorMap(snowColorMap,
+                                    precipType: TrrRadarController.PrecipType.Snow)
+            precipLayer.setColorMap(hailColorMap,
+                                    precipType: TrrRadarController.PrecipType.Hail)
+            precipLayer.setColorMap(warnColorMap,
+                                    precipType: TrrRadarController.PrecipType.Convect)
+            precipLayer.setColorMap(rainColorMap,
+                                    precipType: TrrRadarController.PrecipType.WarmStratRain)
+            precipLayer.setColorMap(rainColorMap,
+                                    precipType: TrrRadarController.PrecipType.CoolStratRain)
+            precipLayer.setColorMap(rainColorMap,
+                                    precipType: TrrRadarController.PrecipType.TropicalStratRain)
+            precipLayer.setColorMap(warnColorMap,
+                                    precipType: TrrRadarController.PrecipType.TropicalConvectRain)
+
+            precipLayer.baseColor = .init(white: 1.0, alpha: 0.5)
+            _ = precipLayer.start()
+        }
+
+        tracker.setEpochRange(newTime: resCadence.now, min: resCadence.minTime!, max: resCadence.maxTime!)
+    }
+    
+    var humidLayer: TrrISingleChannelController? = nil
+    func startHumidity() {
+        guard humidLayer == nil else { return }
+        guard let tracker = tracker else { return }
+        guard let terrierOvl = terrierAdapter?.terrierOvl else { return }
+
+        stopLayers()
+
+        // Plus and minus one day
+        let srcCadence = TrrSourceCadence(minTimeOffset: -24 * 3600,
+                                      maxTimeOffset: 24 * 3600,
+                                      maxTimeSlices: 48+2)
+        let resCadence = srcCadence.resolve()
+        
+        // Relative humidity doesn't have a convenience class, so we'll do the pieces ourselves
+        let sources = TrrDataSource.getStandardSources(service: service,
+                                                       varName: "relative_humidity",
+                                                       source: ["gfs","hrrr"],
+                                                       region: ["conus","global"],
+                                                       product: nil,
+                                                       level: nil,
+                                                       interval: nil,
+                                                       sourceCadence: resCadence,
+                                                       viewC: terrierOvl)
+
+        humidLayer = TrrSingleChannelController.create(cadence: resCadence,
+                                                       dataSources: sources,
+                                                       service: service,
+                                                       tracker: tracker,
+                                                       viewC: terrierOvl)
+        if let humidLayer = humidLayer {
+            humidLayer.sourceCadence = resCadence
+            humidLayer.baseColor = .init(white: 1.0, alpha: 0.5)
+            humidLayer.varInterpMode = .Bilinear
+            humidLayer.colorMap = TrrColorMap(
+                values: [ -1.0, 100.0],
+                colors: [
+                    UIColor.fromHexRGB(0xFF0000).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0x00FF00).withAlphaComponent(1.0),
+                ])
+
+            _ = humidLayer.start()
+        }
+
+        tracker.setEpochRange(newTime: resCadence.now, min: resCadence.minTime!, max: resCadence.maxTime!)
+    }
+
+    var smokeLayer: TrrISingleChannelController? = nil
+    func startSmoke() {
+        guard smokeLayer == nil else { return }
+        guard let tracker = tracker else { return }
+        guard let terrierOvl = terrierAdapter?.terrierOvl else { return }
+
+        stopLayers()
+
+        // Plus and minus one day
+        let srcCadence = TrrSourceCadence(minTimeOffset: -24 * 3600,
+                                      maxTimeOffset: 24 * 3600,
+                                      maxTimeSlices: 48+2)
+        let resCadence = srcCadence.resolve()
+        
+        // Smoke doesn't have a convenience class, so we'll do the pieces ourselves
+        let sources = TrrDataSource.getStandardSources(service: service,
+                                                       varName: "column_integrated_smoke",
+                                                       source: ["rap"],
+                                                       region: ["rap_conus"],
+                                                       product: nil,
+                                                       level: nil,
+                                                       interval: nil,
+                                                       sourceCadence: resCadence,
+                                                       viewC: terrierOvl)
+
+        smokeLayer = TrrSingleChannelController.create(cadence: resCadence,
+                                                       dataSources: sources,
+                                                       service: service,
+                                                       tracker: tracker,
+                                                       viewC: terrierOvl)
+        if let smokeLayer = smokeLayer {
+            smokeLayer.sourceCadence = resCadence
+            smokeLayer.baseColor = .init(white: 1.0, alpha: 0.5)
+            smokeLayer.varInterpMode = .Bilinear
+            smokeLayer.importanceFactor = 4.0
+            smokeLayer.colorMap = TrrColorMap(
+                values: [ 0.0, 1, 1, 4, 7, 11,  15, 20, 25, 30, 40, 50, 75, 150, 250, 500],
+                colors: [
+                    UIColor.fromHexRGB(0x000000).withAlphaComponent(0.0),
+                    UIColor.fromHexRGB(0x000000).withAlphaComponent(0.0),
+                    UIColor.fromHexRGB(0xd0e2f3).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0xd0e2f3).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0x94c4df).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0x4998c9).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0x1564ab).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0x108446).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0x55b45f).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0xa2d86a).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0xfff7b0).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0xfcab5f).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0xf7844e).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0xed5f3d).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0xc21d27).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0xa50026).withAlphaComponent(1.0)
+                ])
+
+            _ = smokeLayer.start()
+        }
+
+        tracker.setEpochRange(newTime: resCadence.now, min: resCadence.minTime!, max: resCadence.maxTime!)
+    }
+
+    var precipTypeLayer: TrrISingleChannelController? = nil
+    func startPrecipType() {
+        guard precipTypeLayer == nil else { return }
+        guard let tracker = tracker else { return }
+        guard let terrierOvl = terrierAdapter?.terrierOvl else { return }
+
+        stopLayers()
+
+        // Plus and minus one day
+        let srcCadence = TrrSourceCadence(minTimeOffset: -24 * 3600,
+                                          maxTimeOffset: 0.0,
+                                      maxTimeSlices: 24+2)
+        let resCadence = srcCadence.resolve()
+        
+        let sources = TrrDataSource.getStandardSources(service: service,
+                                                       varName: "precipitation_type",
+                                                       source: ["mrms"],
+                                                       region: ["conus","global"],
+                                                       product: nil,
+                                                       level: nil,
+                                                       interval: nil,
+                                                       sourceCadence: resCadence,
+                                                       viewC: terrierOvl)
+
+        precipTypeLayer = TrrSingleChannelController.create(cadence: resCadence,
+                                                       dataSources: sources,
+                                                       service: service,
+                                                       tracker: tracker,
+                                                       viewC: terrierOvl)
+        if let precipTypeLayer = precipTypeLayer {
+            precipTypeLayer.sourceCadence = resCadence
+            precipTypeLayer.baseColor = .init(white: 1.0, alpha: 0.5)
+            precipTypeLayer.varInterpMode = .Nearest
+            precipTypeLayer.colorMap = TrrColorMap(
+                values: [0, 1, 2, 3, 4, 5, 6, 7],
+                colors: [
+                    UIColor.fromHexRGB(0x000000).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0xffffff).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0x960096).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0xff3332).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0x0350a5).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0x6effff).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0x00ff00).withAlphaComponent(1.0),
+                    UIColor.fromHexRGB(0x00ff00).withAlphaComponent(1.0),
+                ])
+
+            _ = precipTypeLayer.start()
+        }
+
+        tracker.setEpochRange(newTime: resCadence.now, min: resCadence.minTime!, max: resCadence.maxTime!)
+    }
+
+    var dewPointLayer: TrrISingleChannelController? = nil
+    func startDewPoint() {
+        guard dewPointLayer == nil else { return }
+        guard let tracker = tracker else { return }
+        guard let terrierOvl = terrierAdapter?.terrierOvl else { return }
+
+        stopLayers()
+
+        // Plus and minus one day
+        let srcCadence = TrrSourceCadence(minTimeOffset: -24 * 3600,
+                                      maxTimeOffset: 24 * 3600,
+                                      maxTimeSlices: 48+2)
+        let resCadence = srcCadence.resolve()
+        
+        // Relative dew point doesn't have a convenience class, so we'll do the pieces ourselves
+        let sources = TrrDataSource.getStandardSources(service: service,
+                                                       varName: "dew_point",
+                                                       source: ["gfs","hrrr"],
+                                                       region: ["conus","global"],
+                                                       product: nil,
+                                                       level: "2m",
+                                                       interval: nil,
+                                                       sourceCadence: resCadence,
+                                                       viewC: terrierOvl)
+
+        dewPointLayer = TrrSingleChannelController.create(cadence: resCadence,
+                                                       dataSources: sources,
+                                                       service: service,
+                                                       tracker: tracker,
+                                                       viewC: terrierOvl)
+        if let dewPointLayer = dewPointLayer {
+            dewPointLayer.sourceCadence = resCadence
+            dewPointLayer.baseColor = .init(white: 1.0, alpha: 0.5)
+            dewPointLayer.colorMap = TrrColorMap(
+                values: [ 255.372, 260.928, 266.483, 272.039, 277.594, 283.15, 288.706, 294.261, 299.817, 305.372, 310.928, 316.483],
+                colors: [
+                    UIColor.fromHexRGB(0xFFBFFF),
+                    UIColor.fromHexRGB(0xD873DB),
+                    UIColor.fromHexRGB(0x913ABB),
+                    UIColor.fromHexRGB(0x372398),
+                    UIColor.fromHexRGB(0x00B6DC),
+                    UIColor.fromHexRGB(0x02D786),
+                    UIColor.fromHexRGB(0x40C604),
+                    UIColor.fromHexRGB(0xFFFF00),
+                    UIColor.fromHexRGB(0xFB7700),
+                    UIColor.fromHexRGB(0xD22402),
+                    UIColor.fromHexRGB(0xA20902),
+                    UIColor.fromHexRGB(0xEED9D8)
+                ])
+
+            _ = dewPointLayer.start()
+        }
+
+        tracker.setEpochRange(newTime: resCadence.now, min: resCadence.minTime!, max: resCadence.maxTime!)
+    }
+    
+    var aqiLayer: TrrISingleChannelController? = nil
+    func startAQI() {
+        guard aqiLayer == nil else { return }
+        guard let tracker = tracker else { return }
+        guard let terrierOvl = terrierAdapter?.terrierOvl else { return }
+
+        stopLayers()
+
+        // 3 days in the past
+        let pastCadence = TrrSourceCadence(minTimeOffset: -72 * 3600,
+                                      maxTimeOffset: 0,
+                                      maxTimeSlices: 10)
+        let resPastCadence = pastCadence.resolve()
+
+        // 1 day in the future
+        let futureCadence = TrrSourceCadence(minTimeOffset: 0,
+                                      maxTimeOffset: 24*3600,
+                                      maxTimeSlices: 10)
+        let resFutureCadence = futureCadence.resolve()
+        
+        let resFullCadence = pastCadence.merge(futureCadence).resolve()
+
+        // In the past we have a larger region including hawaii
+        let pastSources = TrrDataSource.getStandardSources(service: service,
+                                                       varName: "air_quality_index",
+                                                       source: "airnow",
+                                                       region: "conus_hawaii_aqi_forecast",
+                                                       product: "aqi",
+                                                       level: nil,
+                                                       interval: nil,
+                                                       sourceCadence: resPastCadence,
+                                                       viewC: terrierOvl)
+        
+        // We'll bump up the priority of the observed sources so they win out
+        for source in pastSources {
+            source.order = source.order + 1000
+        }
+
+        // In the past we have a larger region including hawaii
+        let futureSources = TrrDataSource.getStandardSources(service: service,
+                                                       varName: "air_quality_index",
+                                                       source: "airnow",
+                                                       region: "conus_aqi_forecast",
+                                                       product: "aqi",
+                                                       level: nil,
+                                                       interval: nil,
+                                                       sourceCadence: resFutureCadence,
+                                                       viewC: terrierOvl)
+        
+        // Hold the future sources past the end of their valid range
+        for source in futureSources {
+            source.enableForRange = false
+        }
+
+        aqiLayer = TrrSingleChannelController.create(cadence: resFullCadence,
+                                                       dataSources: pastSources+futureSources,
+                                                       service: service,
+                                                       tracker: tracker,
+                                                       viewC: terrierOvl)
+        if let aqiLayer = aqiLayer {
+            aqiLayer.sourceCadence = resFullCadence
+            aqiLayer.baseColor = .init(white: 1.0, alpha: 0.5)
+            aqiLayer.snapToFrame = true
+            aqiLayer.colorMap = TrrColorMap(
+                values: [ 0.0,50.0,
+                          50.0, 100.0,
+                          100.0, 150.0,
+                          150.0, 200.0,
+                          200.0, 300.0,
+                          300.0, 500.0],
+                colors: [
+                    UIColor.fromHexRGB(0x05e300), UIColor.fromHexRGB(0x05e300),
+                    UIColor.fromHexRGB(0xffff00), UIColor.fromHexRGB(0xffff00),
+                    UIColor.fromHexRGB(0xff7e00), UIColor.fromHexRGB(0xff7e00),
+                    UIColor.fromHexRGB(0xff0100), UIColor.fromHexRGB(0xff0100),
+                    UIColor.fromHexRGB(0x8f3f97), UIColor.fromHexRGB(0x8f3f97),
+                    UIColor.fromHexRGB(0x7e0123), UIColor.fromHexRGB(0x7e0123),
+                ])
+
+            _ = aqiLayer.start()
+        }
+
+        tracker.setEpochRange(newTime: resFullCadence.now, min: resFullCadence.minTime!, max: resFullCadence.maxTime!)
+    }
+
+    
+    @IBAction func tempButtonAction(_ sender: Any) {
+        startTemperature()
+    }
+    
+    @IBAction func windButtonAction(_ sender: Any) {
+        startWind()
+    }
+    
+    @IBAction func precipButtonAction(_ sender: Any) {
+        startPrecip()
+    }
+
+    @IBAction func humidButtonAction(_ sender: Any) {
+        startSmoke()
+    }
+
+    @IBAction func dewPointButtonAction(_ sender: Any) {
+        startDewPoint()
+    }
+
+    @IBAction func aqiButtonAction(_ sender: Any) {
+        startAQI()
+    }
+    
+    @IBAction func wwaButtonAction(_ sender: Any) {
+        startWWALayer()
+    }
+    
+    var wwaLayer: TrrWWADisplay? = nil
+//    var wwaTapInteraction: TapInteraction? = nil
+//    var wwaPressInteraction: LongPressInteraction? = nil
+    
+    // Start displaying the warnings/watches/alert layer
+    func startWWALayer() {
+        guard wwaLayer == nil else { return }
+        guard let terrierOvl = terrierAdapter?.terrierOvl else { return }
+
+        stopLayers()
+
+        if let wwaLayer = TrrWWADisplay.create(service: service, viewC: terrierOvl) {
+            self.wwaLayer = wwaLayer
+            _ = wwaLayer.start()
+        }
+        
+        // Set up a TapInteraction gesture to query the WWA Layer
+        // Can't seem to remove these so we'll just add it once
+//        if wwaTapInteraction == nil {
+//            wwaTapInteraction = TapInteraction{ context in
+//                // Can't remove the interaction, so we'll just check for the layer
+//                guard let wwaLayer = self.wwaLayer else { return false }
+//
+//                wwaLayer.clearSelection()
+//                print("Tapped at \(context.coordinate)")
+//                
+//                // Query for the features
+//                // Note: If this is too slow, we could banish it to a background thread and add a delegate
+//                // This returns a list of vector objects
+//                let features = wwaLayer.featuresAtGeoPoint((context.coordinate.longitude, context.coordinate.latitude))
+//
+//                // Didn't find anything, so let Mapbox have the tap back
+//                if features.count == 0 {
+//                    return false
+//                }
+//                
+//                // Print out the details on what was selected
+//                // This includes the full messages from NWS in the "description"
+//                for feature in features {
+//                    print(feature.attributes!)
+//                }
+//                
+//                // We can make these selected with a visible outline
+//                wwaLayer.setSelection(features,attrs: ["color": UIColor.white, "width": 20.0])
+//                
+//                return true
+//            }
+//            mapView?.mapboxMap.addInteraction(wwaTapInteraction!)
+//        }
+        
+//        if wwaPressInteraction == nil {
+//            wwaPressInteraction = LongPressInteraction{ [self] context in
+//                // Can't remove the interaction, so we'll just check for the layer
+//                guard let wwaLayer = self.wwaLayer else { return false }
+//                guard let mapbox = mapView?.mapboxMap else { return false }
+//
+//                // Get the bounding box from Mapbox
+//                let geoBounds = mapbox.coordinateBounds(for: view.bounds)
+//                
+//                print("Area: \(geoBounds.west) \(geoBounds.south) \(geoBounds.east) \(geoBounds.north)")
+//                
+//                // Run this on a background queue as it can be slow
+//                DispatchQueue.global(qos: .userInitiated).async {
+//                    // Query for the features
+//                    // This returns a list of vector objects
+//                    let features = wwaLayer.featuresOverGeoArea((geoBounds.west, geoBounds.south, geoBounds.east, geoBounds.north))
+//
+//                    // Make a unique list of events (types)
+//                    var events = Set<String>()
+//                    for feature in features {
+//                        events.insert(feature.attributes!["event"] as! String)
+//                    }
+//                    
+//                    print(events)
+//                }
+//                                
+//                return true
+//            }
+//            mapView?.mapboxMap.addInteraction(wwaPressInteraction!)
+//        }
+    }
+    
+    // Stop displaying the warnings/watches/alert layer
+    func stopWWALayer() {
+        guard let layer = wwaLayer else { return }
+        layer.stop()
+        self.wwaLayer = nil
+    }
+
+    // Called when we have the contents for the Boxer Stack
+    // Now we can construct weather layers
+    func serviceReady(service: Terrier.TrrService) {
+        guard let terrierOvl = terrierAdapter?.terrierOvl else { return }
+
+        // Set up the wind textures for later use
+        // These textures are in the Assets and can be modified
+        arrowTexture = terrierOvl.addTexture(UIImage(named: "arrow")!, desc: nil, mode: .current)
+        dotTexture = terrierOvl.addTexture(UIImage(named: "dot")!, desc: nil, mode: .current)
+        rectTexture = terrierOvl.addTexture(UIImage(named: "fadeRect")!, desc: nil, mode: .current)
+
+        startTemperature()
+    }
+    
+    func serviceFailed() {
+        print("Failed to contact Boxer.  Nothing will be displayed.")
+    }
+
+
+}
+

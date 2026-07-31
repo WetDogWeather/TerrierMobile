@@ -1,0 +1,625 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "Terrier_Mapbox",
+    "printedName": "Terrier_Mapbox",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Terrier_Mapbox",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MetalKit",
+        "printedName": "MetalKit",
+        "declKind": "Import",
+        "moduleName": "Terrier_Mapbox"
+      },
+      {
+        "kind": "Import",
+        "name": "WhirlyGlobe",
+        "printedName": "WhirlyGlobe",
+        "declKind": "Import",
+        "moduleName": "Terrier_Mapbox"
+      },
+      {
+        "kind": "Import",
+        "name": "Terrier",
+        "printedName": "Terrier",
+        "declKind": "Import",
+        "moduleName": "Terrier_Mapbox"
+      },
+      {
+        "kind": "Import",
+        "name": "MapboxMaps",
+        "printedName": "MapboxMaps",
+        "declKind": "Import",
+        "moduleName": "Terrier_Mapbox"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TerrierMapboxAdapter",
+        "printedName": "TerrierMapboxAdapter",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(service:mapView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Terrier_Mapbox.TerrierMapboxAdapter?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TerrierMapboxAdapter",
+                    "printedName": "Terrier_Mapbox.TerrierMapboxAdapter",
+                    "usr": "c:@M@Terrier_Mapbox@objc(cs)TerrierMapboxAdapter"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TrrService",
+                "printedName": "Terrier.TrrService",
+                "usr": "c:@M@Terrier@objc(cs)TrrService"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MapView",
+                "printedName": "MapboxMaps.MapView",
+                "usr": "c:@M@MapboxMaps@objc(cs)MapView"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14Terrier_Mapbox0aB7AdapterC7service7mapViewACSg0A010TrrServiceC_0B4Maps03MapF0Ctcfc",
+            "mangledName": "$s14Terrier_Mapbox0aB7AdapterC7service7mapViewACSg0A010TrrServiceC_0B4Maps03MapF0Ctcfc",
+            "moduleName": "Terrier_Mapbox",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setTracker",
+            "printedName": "setTracker(tracker:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Terrier.TrrTimeTracker?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrrTimeTracker",
+                    "printedName": "Terrier.TrrTimeTracker",
+                    "usr": "c:@M@Terrier@objc(cs)TrrTimeTracker"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14Terrier_Mapbox0aB7AdapterC10setTracker7trackery0A007TrrTimeE0CSg_tF",
+            "mangledName": "$s14Terrier_Mapbox0aB7AdapterC10setTracker7trackery0A007TrrTimeE0CSg_tF",
+            "moduleName": "Terrier_Mapbox",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "renderingWillStart",
+            "printedName": "renderingWillStart(_:colorPixelFormat:depthStencilPixelFormat:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MTLDevice",
+                "printedName": "any Metal.MTLDevice",
+                "usr": "c:objc(pl)MTLDevice"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Terrier_Mapbox@objc(cs)TerrierMapboxAdapter(im)renderingWillStart:colorPixelFormat:depthStencilPixelFormat:",
+            "mangledName": "$s14Terrier_Mapbox0aB7AdapterC18renderingWillStart_16colorPixelFormat012depthStencilhI0ySo9MTLDevice_p_S2utF",
+            "moduleName": "Terrier_Mapbox",
+            "objc_name": "renderingWillStart:colorPixelFormat:depthStencilPixelFormat:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "render",
+            "printedName": "render(_:mtlCommandBuffer:mtlRenderPassDescriptor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CustomLayerRenderParameters",
+                "printedName": "MapboxCoreMaps.CustomLayerRenderParameters",
+                "usr": "c:objc(cs)MBMCustomLayerRenderParameters"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MTLCommandBuffer",
+                "printedName": "any Metal.MTLCommandBuffer",
+                "usr": "c:objc(pl)MTLCommandBuffer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MTLRenderPassDescriptor",
+                "printedName": "Metal.MTLRenderPassDescriptor",
+                "usr": "c:objc(cs)MTLRenderPassDescriptor"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Terrier_Mapbox@objc(cs)TerrierMapboxAdapter(im)render:mtlCommandBuffer:mtlRenderPassDescriptor:",
+            "mangledName": "$s14Terrier_Mapbox0aB7AdapterC6render_16mtlCommandBuffer0E20RenderPassDescriptorySo014MBMCustomLayerH10ParametersC_So010MTLCommandG0_pSo09MTLRenderiJ0CtF",
+            "moduleName": "Terrier_Mapbox",
+            "objc_name": "render:mtlCommandBuffer:mtlRenderPassDescriptor:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "renderingWillEnd",
+            "printedName": "renderingWillEnd()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Terrier_Mapbox@objc(cs)TerrierMapboxAdapter(im)renderingWillEnd",
+            "mangledName": "$s14Terrier_Mapbox0aB7AdapterC16renderingWillEndyyF",
+            "moduleName": "Terrier_Mapbox",
+            "objc_name": "renderingWillEnd",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(size:viewWrap:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Terrier_Mapbox.TerrierMapboxAdapter?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TerrierMapboxAdapter",
+                    "printedName": "Terrier_Mapbox.TerrierMapboxAdapter",
+                    "usr": "c:@M@Terrier_Mapbox@objc(cs)TerrierMapboxAdapter"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Terrier_Mapbox@objc(cs)TerrierMapboxAdapter(im)initWithSize:viewWrap:",
+            "mangledName": "$s14Terrier_Mapbox0aB7AdapterC4size8viewWrapACSgSo6CGSizeV_Sbtcfc",
+            "moduleName": "Terrier_Mapbox",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithSize:viewWrap:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(size:mode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Terrier_Mapbox.TerrierMapboxAdapter?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TerrierMapboxAdapter",
+                    "printedName": "Terrier_Mapbox.TerrierMapboxAdapter",
+                    "usr": "c:@M@Terrier_Mapbox@objc(cs)TerrierMapboxAdapter"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MaplyRenderType",
+                "printedName": "WhirlyGlobe.MaplyRenderType",
+                "usr": "c:@E@MaplyRenderType"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Terrier_Mapbox@objc(cs)TerrierMapboxAdapter(im)initWithSize:mode:",
+            "mangledName": "$s14Terrier_Mapbox0aB7AdapterC4size4modeACSgSo6CGSizeV_So15MaplyRenderTypeVtcfc",
+            "moduleName": "Terrier_Mapbox",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithSize:mode:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(size:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Terrier_Mapbox.TerrierMapboxAdapter?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TerrierMapboxAdapter",
+                    "printedName": "Terrier_Mapbox.TerrierMapboxAdapter",
+                    "usr": "c:@M@Terrier_Mapbox@objc(cs)TerrierMapboxAdapter"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Terrier_Mapbox@objc(cs)TerrierMapboxAdapter(im)initWithSize:",
+            "mangledName": "$s14Terrier_Mapbox0aB7AdapterC4sizeACSgSo6CGSizeV_tcfc",
+            "moduleName": "Terrier_Mapbox",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithSize:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(size:mode:mapView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Terrier_Mapbox.TerrierMapboxAdapter?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TerrierMapboxAdapter",
+                    "printedName": "Terrier_Mapbox.TerrierMapboxAdapter",
+                    "usr": "c:@M@Terrier_Mapbox@objc(cs)TerrierMapboxAdapter"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MaplyRenderType",
+                "printedName": "WhirlyGlobe.MaplyRenderType",
+                "usr": "c:@E@MaplyRenderType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Terrier_Mapbox@objc(cs)TerrierMapboxAdapter(im)initWithSize:mode:mapView:",
+            "mangledName": "$s14Terrier_Mapbox0aB7AdapterC4size4mode7mapViewACSgSo6CGSizeV_So15MaplyRenderTypeVs5Int32Vtcfc",
+            "moduleName": "Terrier_Mapbox",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithSize:mode:mapView:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(size:mode:trackingMode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Terrier_Mapbox.TerrierMapboxAdapter?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TerrierMapboxAdapter",
+                    "printedName": "Terrier_Mapbox.TerrierMapboxAdapter",
+                    "usr": "c:@M@Terrier_Mapbox@objc(cs)TerrierMapboxAdapter"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MaplyRenderType",
+                "printedName": "WhirlyGlobe.MaplyRenderType",
+                "usr": "c:@E@MaplyRenderType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Terrier_Mapbox@objc(cs)TerrierMapboxAdapter(im)initWithSize:mode:trackingMode:",
+            "mangledName": "$s14Terrier_Mapbox0aB7AdapterC4size4mode12trackingModeACSgSo6CGSizeV_So15MaplyRenderTypeVSbtcfc",
+            "moduleName": "Terrier_Mapbox",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithSize:mode:trackingMode:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Terrier_Mapbox@objc(cs)TerrierMapboxAdapter",
+        "mangledName": "$s14Terrier_Mapbox0aB7AdapterC",
+        "moduleName": "Terrier_Mapbox",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)MaplyRenderControllerOverlay",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "WhirlyGlobe.MaplyRenderControllerOverlay",
+          "WhirlyGlobe.MaplyRenderController",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier-Mapbox\/Terrier-Mapbox\/Terrier_Mapbox.swift",
+      "kind": "Array",
+      "offset": 639,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier-Mapbox\/Terrier-Mapbox\/Terrier_Mapbox.swift",
+      "kind": "FloatLiteral",
+      "offset": 669,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier-Mapbox\/Terrier-Mapbox\/Terrier_Mapbox.swift",
+      "kind": "FloatLiteral",
+      "offset": 744,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier-Mapbox\/Terrier-Mapbox\/Terrier_Mapbox.swift",
+      "kind": "FloatLiteral",
+      "offset": 775,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier-Mapbox\/Terrier-Mapbox\/Terrier_Mapbox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1404,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier-Mapbox\/Terrier-Mapbox\/Terrier_Mapbox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1443,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier-Mapbox\/Terrier-Mapbox\/Terrier_Mapbox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1481,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier-Mapbox\/Terrier-Mapbox\/Terrier_Mapbox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1522,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier-Mapbox\/Terrier-Mapbox\/Terrier_Mapbox.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1561,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier-Mapbox\/Terrier-Mapbox\/Terrier_Mapbox.swift",
+      "kind": "FloatLiteral",
+      "offset": 1602,
+      "length": 3,
+      "value": "0.5"
+    }
+  ]
+}

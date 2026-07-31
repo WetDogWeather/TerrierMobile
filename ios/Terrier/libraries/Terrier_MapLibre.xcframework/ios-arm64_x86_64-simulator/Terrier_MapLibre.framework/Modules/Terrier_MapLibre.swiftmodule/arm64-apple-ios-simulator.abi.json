@@ -1,0 +1,1052 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "Terrier_MapLibre",
+    "printedName": "Terrier_MapLibre",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "MapLibre",
+        "printedName": "MapLibre",
+        "declKind": "Import",
+        "moduleName": "Terrier_MapLibre"
+      },
+      {
+        "kind": "Import",
+        "name": "Terrier",
+        "printedName": "Terrier",
+        "declKind": "Import",
+        "moduleName": "Terrier_MapLibre"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TerrierMapLibreAdapter",
+        "printedName": "TerrierMapLibreAdapter",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "terrierOvl",
+            "printedName": "terrierOvl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Terrier_MapLibre.TerrierMapLibreAdapter.TerrierOverlay?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TerrierOverlay",
+                    "printedName": "Terrier_MapLibre.TerrierMapLibreAdapter.TerrierOverlay",
+                    "usr": "s:16Terrier_MapLibre0abC7AdapterC0A7OverlayC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16Terrier_MapLibre0abC7AdapterC10terrierOvlAC0A7OverlayCSgvp",
+            "mangledName": "$s16Terrier_MapLibre0abC7AdapterC10terrierOvlAC0A7OverlayCSgvp",
+            "moduleName": "Terrier_MapLibre",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Terrier_MapLibre.TerrierMapLibreAdapter.TerrierOverlay?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TerrierOverlay",
+                        "printedName": "Terrier_MapLibre.TerrierMapLibreAdapter.TerrierOverlay",
+                        "usr": "s:16Terrier_MapLibre0abC7AdapterC0A7OverlayC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16Terrier_MapLibre0abC7AdapterC10terrierOvlAC0A7OverlayCSgvg",
+                "mangledName": "$s16Terrier_MapLibre0abC7AdapterC10terrierOvlAC0A7OverlayCSgvg",
+                "moduleName": "Terrier_MapLibre",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Terrier_MapLibre.TerrierMapLibreAdapter.TerrierOverlay?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TerrierOverlay",
+                        "printedName": "Terrier_MapLibre.TerrierMapLibreAdapter.TerrierOverlay",
+                        "usr": "s:16Terrier_MapLibre0abC7AdapterC0A7OverlayC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16Terrier_MapLibre0abC7AdapterC10terrierOvlAC0A7OverlayCSgvs",
+                "mangledName": "$s16Terrier_MapLibre0abC7AdapterC10terrierOvlAC0A7OverlayCSgvs",
+                "moduleName": "Terrier_MapLibre",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16Terrier_MapLibre0abC7AdapterC10terrierOvlAC0A7OverlayCSgvM",
+                "mangledName": "$s16Terrier_MapLibre0abC7AdapterC10terrierOvlAC0A7OverlayCSgvM",
+                "moduleName": "Terrier_MapLibre",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "TerrierOverlay",
+            "printedName": "TerrierOverlay",
+            "children": [
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(service:mapView:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Terrier_MapLibre.TerrierMapLibreAdapter.TerrierOverlay?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TerrierOverlay",
+                        "printedName": "Terrier_MapLibre.TerrierMapLibreAdapter.TerrierOverlay",
+                        "usr": "s:16Terrier_MapLibre0abC7AdapterC0A7OverlayC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrrService",
+                    "printedName": "Terrier.TrrService",
+                    "usr": "c:@M@Terrier@objc(cs)TrrService"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:16Terrier_MapLibre0abC7AdapterC0A7OverlayC7service7mapViewAESg0A010TrrServiceC_So6UIViewCtcfc",
+                "mangledName": "$s16Terrier_MapLibre0abC7AdapterC0A7OverlayC7service7mapViewAESg0A010TrrServiceC_So6UIViewCtcfc",
+                "moduleName": "Terrier_MapLibre",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "setTracker",
+                "printedName": "setTracker(tracker:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Terrier.TrrTimeTracker?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrrTimeTracker",
+                        "printedName": "Terrier.TrrTimeTracker",
+                        "usr": "c:@M@Terrier@objc(cs)TrrTimeTracker"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16Terrier_MapLibre0abC7AdapterC0A7OverlayC10setTracker7trackery0A007TrrTimeG0CSg_tF",
+                "mangledName": "$s16Terrier_MapLibre0abC7AdapterC0A7OverlayC10setTracker7trackery0A007TrrTimeG0CSg_tF",
+                "moduleName": "Terrier_MapLibre",
+                "declAttributes": [
+                  "Final",
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "updateFlags",
+                "printedName": "updateFlags(newMatrix:newZoom:newLoc:newBearing:newTilt:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(isMoving: Swift.Bool, hasMoved: Swift.Bool, isZooming: Swift.Bool, hasZoomed: Swift.Bool, isPanning: Swift.Bool, hasPanned: Swift.Bool, isRotating: Swift.Bool, hasRotated: Swift.Bool, isTilting: Swift.Bool, hasTilted: Swift.Bool)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Double, Swift.Double)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16Terrier_MapLibre0abC7AdapterC0A7OverlayC11updateFlags9newMatrix0H4Zoom0H3Loc0H7Bearing0H4TiltSb8isMoving_Sb8hasMovedSb0N7ZoomingSb0P6ZoomedSb0N7PanningSb0P6PannedSb0N8RotatingSb0P7RotatedSb0N7TiltingSb0P6TiltedtSaySdG_S2d_SdtS2dtF",
+                "mangledName": "$s16Terrier_MapLibre0abC7AdapterC0A7OverlayC11updateFlags9newMatrix0H4Zoom0H3Loc0H7Bearing0H4TiltSb8isMoving_Sb8hasMovedSb0N7ZoomingSb0P6ZoomedSb0N7PanningSb0P6PannedSb0N8RotatingSb0P7RotatedSb0N7TiltingSb0P6TiltedtSaySdG_S2d_SdtS2dtF",
+                "moduleName": "Terrier_MapLibre",
+                "declAttributes": [
+                  "Final",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(size:viewWrap:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Terrier_MapLibre.TerrierMapLibreAdapter.TerrierOverlay?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TerrierOverlay",
+                        "printedName": "Terrier_MapLibre.TerrierMapLibreAdapter.TerrierOverlay",
+                        "usr": "s:16Terrier_MapLibre0abC7AdapterC0A7OverlayC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGSize",
+                    "printedName": "CoreFoundation.CGSize",
+                    "usr": "c:@S@CGSize"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:16Terrier_MapLibre0abC7AdapterC0A7OverlayC4size8viewWrapAESgSo6CGSizeV_Sbtcfc",
+                "mangledName": "$s16Terrier_MapLibre0abC7AdapterC0A7OverlayC4size8viewWrapAESgSo6CGSizeV_Sbtcfc",
+                "moduleName": "Terrier_MapLibre",
+                "overriding": true,
+                "implicit": true,
+                "objc_name": "initWithSize:viewWrap:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "Override"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(size:mode:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Terrier_MapLibre.TerrierMapLibreAdapter.TerrierOverlay?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TerrierOverlay",
+                        "printedName": "Terrier_MapLibre.TerrierMapLibreAdapter.TerrierOverlay",
+                        "usr": "s:16Terrier_MapLibre0abC7AdapterC0A7OverlayC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGSize",
+                    "printedName": "CoreFoundation.CGSize",
+                    "usr": "c:@S@CGSize"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MaplyRenderType",
+                    "printedName": "WhirlyGlobe.MaplyRenderType",
+                    "usr": "c:@E@MaplyRenderType"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:16Terrier_MapLibre0abC7AdapterC0A7OverlayC4size4modeAESgSo6CGSizeV_So15MaplyRenderTypeVtcfc",
+                "mangledName": "$s16Terrier_MapLibre0abC7AdapterC0A7OverlayC4size4modeAESgSo6CGSizeV_So15MaplyRenderTypeVtcfc",
+                "moduleName": "Terrier_MapLibre",
+                "overriding": true,
+                "implicit": true,
+                "objc_name": "initWithSize:mode:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "Override"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(size:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Terrier_MapLibre.TerrierMapLibreAdapter.TerrierOverlay?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TerrierOverlay",
+                        "printedName": "Terrier_MapLibre.TerrierMapLibreAdapter.TerrierOverlay",
+                        "usr": "s:16Terrier_MapLibre0abC7AdapterC0A7OverlayC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGSize",
+                    "printedName": "CoreFoundation.CGSize",
+                    "usr": "c:@S@CGSize"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:16Terrier_MapLibre0abC7AdapterC0A7OverlayC4sizeAESgSo6CGSizeV_tcfc",
+                "mangledName": "$s16Terrier_MapLibre0abC7AdapterC0A7OverlayC4sizeAESgSo6CGSizeV_tcfc",
+                "moduleName": "Terrier_MapLibre",
+                "overriding": true,
+                "implicit": true,
+                "objc_name": "initWithSize:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "Override"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(size:mode:mapView:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Terrier_MapLibre.TerrierMapLibreAdapter.TerrierOverlay?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TerrierOverlay",
+                        "printedName": "Terrier_MapLibre.TerrierMapLibreAdapter.TerrierOverlay",
+                        "usr": "s:16Terrier_MapLibre0abC7AdapterC0A7OverlayC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGSize",
+                    "printedName": "CoreFoundation.CGSize",
+                    "usr": "c:@S@CGSize"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MaplyRenderType",
+                    "printedName": "WhirlyGlobe.MaplyRenderType",
+                    "usr": "c:@E@MaplyRenderType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:16Terrier_MapLibre0abC7AdapterC0A7OverlayC4size4mode7mapViewAESgSo6CGSizeV_So15MaplyRenderTypeVs5Int32Vtcfc",
+                "mangledName": "$s16Terrier_MapLibre0abC7AdapterC0A7OverlayC4size4mode7mapViewAESgSo6CGSizeV_So15MaplyRenderTypeVs5Int32Vtcfc",
+                "moduleName": "Terrier_MapLibre",
+                "overriding": true,
+                "implicit": true,
+                "objc_name": "initWithSize:mode:mapView:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "Override"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(size:mode:trackingMode:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Terrier_MapLibre.TerrierMapLibreAdapter.TerrierOverlay?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TerrierOverlay",
+                        "printedName": "Terrier_MapLibre.TerrierMapLibreAdapter.TerrierOverlay",
+                        "usr": "s:16Terrier_MapLibre0abC7AdapterC0A7OverlayC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGSize",
+                    "printedName": "CoreFoundation.CGSize",
+                    "usr": "c:@S@CGSize"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MaplyRenderType",
+                    "printedName": "WhirlyGlobe.MaplyRenderType",
+                    "usr": "c:@E@MaplyRenderType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:16Terrier_MapLibre0abC7AdapterC0A7OverlayC4size4mode12trackingModeAESgSo6CGSizeV_So15MaplyRenderTypeVSbtcfc",
+                "mangledName": "$s16Terrier_MapLibre0abC7AdapterC0A7OverlayC4size4mode12trackingModeAESgSo6CGSizeV_So15MaplyRenderTypeVSbtcfc",
+                "moduleName": "Terrier_MapLibre",
+                "overriding": true,
+                "implicit": true,
+                "objc_name": "initWithSize:mode:trackingMode:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "Override"
+                ],
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:16Terrier_MapLibre0abC7AdapterC0A7OverlayC",
+            "mangledName": "$s16Terrier_MapLibre0abC7AdapterC0A7OverlayC",
+            "moduleName": "Terrier_MapLibre",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "superclassUsr": "c:objc(cs)MaplyRenderControllerOverlay",
+            "hasMissingDesignatedInitializers": true,
+            "superclassNames": [
+              "WhirlyGlobe.MaplyRenderControllerOverlay",
+              "WhirlyGlobe.MaplyRenderController",
+              "ObjectiveC.NSObject"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "_KeyValueCodingAndObserving",
+                "printedName": "_KeyValueCodingAndObserving",
+                "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+                "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "_KeyValueCodingAndObservingPublishing",
+                "printedName": "_KeyValueCodingAndObservingPublishing",
+                "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+                "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CVarArg",
+                "printedName": "CVarArg",
+                "usr": "s:s7CVarArgP",
+                "mangledName": "$ss7CVarArgP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomDebugStringConvertible",
+                "printedName": "CustomDebugStringConvertible",
+                "usr": "s:s28CustomDebugStringConvertibleP",
+                "mangledName": "$ss28CustomDebugStringConvertibleP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomStringConvertible",
+                "printedName": "CustomStringConvertible",
+                "usr": "s:s23CustomStringConvertibleP",
+                "mangledName": "$ss23CustomStringConvertibleP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(service:mapView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Terrier_MapLibre.TerrierMapLibreAdapter?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TerrierMapLibreAdapter",
+                    "printedName": "Terrier_MapLibre.TerrierMapLibreAdapter",
+                    "usr": "c:@M@Terrier_MapLibre@objc(cs)TerrierMapLibreAdapter"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TrrService",
+                "printedName": "Terrier.TrrService",
+                "usr": "c:@M@Terrier@objc(cs)TrrService"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MLNMapView",
+                "printedName": "MapLibre.MLNMapView",
+                "usr": "c:objc(cs)MLNMapView"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16Terrier_MapLibre0abC7AdapterC7service7mapViewACSg0A010TrrServiceC_So06MLNMapG0Ctcfc",
+            "mangledName": "$s16Terrier_MapLibre0abC7AdapterC7service7mapViewACSg0A010TrrServiceC_So06MLNMapG0Ctcfc",
+            "moduleName": "Terrier_MapLibre",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "didMove",
+            "printedName": "didMove(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MLNMapView",
+                "printedName": "MapLibre.MLNMapView",
+                "usr": "c:objc(cs)MLNMapView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Terrier_MapLibre@objc(cs)TerrierMapLibreAdapter(im)didMoveToMapView:",
+            "mangledName": "$s16Terrier_MapLibre0abC7AdapterC7didMove2toySo10MLNMapViewC_tF",
+            "moduleName": "Terrier_MapLibre",
+            "overriding": true,
+            "objc_name": "didMoveToMapView:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "willMove",
+            "printedName": "willMove(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MLNMapView",
+                "printedName": "MapLibre.MLNMapView",
+                "usr": "c:objc(cs)MLNMapView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Terrier_MapLibre@objc(cs)TerrierMapLibreAdapter(im)willMoveFromMapView:",
+            "mangledName": "$s16Terrier_MapLibre0abC7AdapterC8willMove4fromySo10MLNMapViewC_tF",
+            "moduleName": "Terrier_MapLibre",
+            "overriding": true,
+            "objc_name": "willMoveFromMapView:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "preDraw",
+            "printedName": "preDraw(in:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MLNMapView",
+                "printedName": "MapLibre.MLNMapView",
+                "usr": "c:objc(cs)MLNMapView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MLNStyleLayerDrawingContext",
+                "printedName": "MapLibre.MLNStyleLayerDrawingContext",
+                "usr": "c:@S@MLNStyleLayerDrawingContext"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Terrier_MapLibre@objc(cs)TerrierMapLibreAdapter(im)preDrawInMapView:withContext:",
+            "mangledName": "$s16Terrier_MapLibre0abC7AdapterC7preDraw2in4withySo10MLNMapViewC_So27MLNStyleLayerDrawingContextVtF",
+            "moduleName": "Terrier_MapLibre",
+            "overriding": true,
+            "objc_name": "preDrawInMapView:withContext:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "draw",
+            "printedName": "draw(in:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MLNMapView",
+                "printedName": "MapLibre.MLNMapView",
+                "usr": "c:objc(cs)MLNMapView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MLNStyleLayerDrawingContext",
+                "printedName": "MapLibre.MLNStyleLayerDrawingContext",
+                "usr": "c:@S@MLNStyleLayerDrawingContext"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Terrier_MapLibre@objc(cs)TerrierMapLibreAdapter(im)drawInMapView:withContext:",
+            "mangledName": "$s16Terrier_MapLibre0abC7AdapterC4draw2in4withySo10MLNMapViewC_So27MLNStyleLayerDrawingContextVtF",
+            "moduleName": "Terrier_MapLibre",
+            "overriding": true,
+            "objc_name": "drawInMapView:withContext:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(identifier:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TerrierMapLibreAdapter",
+                "printedName": "Terrier_MapLibre.TerrierMapLibreAdapter",
+                "usr": "c:@M@Terrier_MapLibre@objc(cs)TerrierMapLibreAdapter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Terrier_MapLibre@objc(cs)TerrierMapLibreAdapter(im)initWithIdentifier:",
+            "mangledName": "$s16Terrier_MapLibre0abC7AdapterC10identifierACSS_tcfc",
+            "moduleName": "Terrier_MapLibre",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithIdentifier:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Terrier_MapLibre@objc(cs)TerrierMapLibreAdapter",
+        "mangledName": "$s16Terrier_MapLibre0abC7AdapterC",
+        "moduleName": "Terrier_MapLibre",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)MLNCustomStyleLayer",
+        "superclassNames": [
+          "MapLibre.MLNCustomStyleLayer",
+          "MapLibre.MLNStyleLayer",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier-MapLibre\/Terrier-MapLibre\/Terrier_MapLibre.swift",
+      "kind": "Array",
+      "offset": 652,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier-MapLibre\/Terrier-MapLibre\/Terrier_MapLibre.swift",
+      "kind": "FloatLiteral",
+      "offset": 686,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier-MapLibre\/Terrier-MapLibre\/Terrier_MapLibre.swift",
+      "kind": "FloatLiteral",
+      "offset": 769,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier-MapLibre\/Terrier-MapLibre\/Terrier_MapLibre.swift",
+      "kind": "FloatLiteral",
+      "offset": 804,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier-MapLibre\/Terrier-MapLibre\/Terrier_MapLibre.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1484,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier-MapLibre\/Terrier-MapLibre\/Terrier_MapLibre.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1527,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier-MapLibre\/Terrier-MapLibre\/Terrier_MapLibre.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1569,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier-MapLibre\/Terrier-MapLibre\/Terrier_MapLibre.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1614,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier-MapLibre\/Terrier-MapLibre\/Terrier_MapLibre.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1657,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sjg\/dev\/WetDogWeather\/Terrier-Repo\/Terrier-MapLibre\/Terrier-MapLibre\/Terrier_MapLibre.swift",
+      "kind": "FloatLiteral",
+      "offset": 1702,
+      "length": 3,
+      "value": "0.5"
+    }
+  ]
+}

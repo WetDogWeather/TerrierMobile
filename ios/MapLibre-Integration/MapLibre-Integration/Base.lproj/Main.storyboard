@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapLibre_Integration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p3Y-uO-otx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EGi-vx-p4Q" userLabel="ButtonStack">
+                                <rect key="frame" x="16" y="150" width="361" height="29.666666666666657"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTK-ys-7bU" userLabel="Temp">
+                                        <rect key="frame" x="0.0" y="0.0" width="65.666666666666671" height="29.666666666666668"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Temp">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="tempButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="786-zp-POg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91h-Vv-6dJ" userLabel="Wind">
+                                        <rect key="frame" x="73.666666666666671" y="0.0" width="66.000000000000014" height="29.666666666666668"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Wind">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="windButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IiF-Vv-t2S"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WD-Ap-31u" userLabel="Precip">
+                                        <rect key="frame" x="147.66666666666666" y="0.0" width="65.666666666666657" height="29.666666666666668"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Precip">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="precipButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="go2-nc-JuW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nd0-5s-rlK" userLabel="Humidity">
+                                        <rect key="frame" x="221.33333333333334" y="0.0" width="66.000000000000028" height="29.666666666666668"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Smoke">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="humidButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9hG-Ft-iNl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0q-50-lQu">
+                                        <rect key="frame" x="295.33333333333331" y="0.0" width="65.666666666666686" height="29.666666666666668"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="WWA">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="wwaButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YRQ-F8-rb2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="kIK-oe-qYa" userLabel="TimeStack">
+                                <rect key="frame" x="16" y="717.66666666666663" width="351.66666666666669" height="34.333333333333371"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ll-hy-Ebh" userLabel="Play">
+                                        <rect key="frame" x="0.0" y="0.0" width="43" height="34.333333333333336"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="43" id="4XP-vp-dDh"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="play" catalog="system"/>
+                                        <connections>
+                                            <action selector="playAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vP4-u0-aZX"/>
+                                        </connections>
+                                    </button>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0p0-6h-0CO">
+                                        <rect key="frame" x="45" y="0.0" width="306.66666666666669" height="34.333333333333336"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="vmq-cI-8ve"/>
+                                            <action selector="sliderDrag:" destination="BYZ-38-t0r" eventType="touchCancel" id="FdL-lu-usB"/>
+                                            <action selector="sliderDrag:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="O85-oA-dA4"/>
+                                            <action selector="sliderDrag:" destination="BYZ-38-t0r" eventType="touchDragInside" id="qoW-SM-peV"/>
+                                            <action selector="sliderDragEnd:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="oHZ-gK-g0P"/>
+                                            <action selector="sliderDragEnd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rAI-jK-RAn"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WU-7d-Rmp" userLabel="TimeLabel">
+                                <rect key="frame" x="152.66666666666666" y="688.66666666666663" width="88" height="20.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="PFL-6J-amc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="a0n-Fw-Qxg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kIK-oe-qYa" firstAttribute="trailing" secondItem="a0n-Fw-Qxg" secondAttribute="trailing" constant="-25.333333333333314" id="CG8-Fu-Z8P"/>
+                            <constraint firstItem="kIK-oe-qYa" firstAttribute="leading" secondItem="EGi-vx-p4Q" secondAttribute="leading" id="FDD-M2-hjV"/>
+                            <constraint firstItem="EGi-vx-p4Q" firstAttribute="centerX" secondItem="a0n-Fw-Qxg" secondAttribute="centerX" id="XIY-Al-St7"/>
+                            <constraint firstItem="kIK-oe-qYa" firstAttribute="top" secondItem="4WU-7d-Rmp" secondAttribute="bottom" constant="8.6666666666666288" id="eEQ-54-mrg"/>
+                            <constraint firstItem="EGi-vx-p4Q" firstAttribute="top" secondItem="a0n-Fw-Qxg" secondAttribute="top" constant="32" id="hgv-7E-ayG"/>
+                            <constraint firstItem="4WU-7d-Rmp" firstAttribute="centerX" secondItem="a0n-Fw-Qxg" secondAttribute="centerX" id="mxa-XX-KhC"/>
+                            <constraint firstItem="EGi-vx-p4Q" firstAttribute="trailing" secondItem="a0n-Fw-Qxg" secondAttribute="trailing" constant="-16" id="oX4-0J-JKi"/>
+                            <constraint firstItem="EGi-vx-p4Q" firstAttribute="leading" secondItem="a0n-Fw-Qxg" secondAttribute="leading" constant="16" id="zfS-hT-j2D"/>
+                            <constraint firstItem="4WU-7d-Rmp" firstAttribute="bottom" secondItem="a0n-Fw-Qxg" secondAttribute="bottom" constant="-75" id="ztp-7P-NxC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playButton" destination="1ll-hy-Ebh" id="CN5-EC-Q3a"/>
+                        <outlet property="slider" destination="0p0-6h-0CO" id="3pG-4Z-5U1"/>
+                        <outlet property="timeLabel" destination="4WU-7d-Rmp" id="ce6-WE-siD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-202" y="116"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="play" catalog="system" width="120" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
