@@ -1,27 +1,27 @@
-# Mapbox Mobile iOS  Integration with Terrier
+# MapLibre Mobile iOS  Integration with Terrier
 MapLibre's iOS toolkit is based on Metal.  So is Terrier and as a result, they can work together quite well.  The integration is taken care of in Terrier and is quite easy to use.
+
+<img height="512" alt="IMG_6784" src="https://github.com/user-attachments/assets/99770932-8306-4df2-8b97-bd6459805dc7" />
 
 The first step is to create a MapLibre example project like the one your looking at.  I'd recommend just creating their standard example, including their library and getting it running.  Your viewDidLoad will look something like this.
 
-        // Set up a simple map
-        mapView = MapView(frame: view.bounds)
-        guard let mapView = mapView else { return }
-        try? mapView.mapboxMap.setProjection(StyleProjection(name: StyleProjectionName.mercator))
-        let cameraOptions = CameraOptions(center:
-            CLLocationCoordinate2D(latitude: 39.5, longitude: -98.0),
-            zoom: 2, bearing: 0, pitch: 0)
-        mapView.mapboxMap.setCamera(to: cameraOptions)
+        // Start MapLibre Native
+        let mapView = MLNMapView(frame: view.bounds)
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        mapView.delegate = self
+        
+        // Set the map’s center coordinate and zoom level.
+        mapView.setCenter(CLLocationCoordinate2D(latitude: 41.8864, longitude: -87.7135), zoomLevel: 3, animated: false)
+        view.insertSubview(mapView, at: 0)
 
-        view.addSubview(mapView)
-
-That gets you a map, in spherical mercator, suitable to add Terrier.  I'm afraid we can only do spherical mercator.  Well, *we* can do all sorts of map projections, but they only allow custom layers for spherical mercator, so that's what we'll use.
+That gets you a map, in spherical mercator, suitable to add Terrier.  I'm afraid we can only do spherical mercator.  Well, *we* can do all sorts of map projections, but they only do spherical mercator.
 
 Once you've got the basic map going, you'll want to [add the Terrier](../../README.md) library to your project.  Go do that and come back.  We'll wait.
 
-Now add the import to the top of your View Controller, where you're creating the Mapbox Map.
+Now add the import to the top of your View Controller, where you're creating the MapLibre Map.
 
     import Terrier
+    import Terrier_MapLibre
 
 If that works, then you brought in Terrier correctly.  Nice!
 
@@ -29,7 +29,7 @@ Now let's hook Terrier in to do its thing.  We need to start by adding some memb
 
     // Sets up the service and kicks off the request for contents
     // We'll know it's ready when it calls the delegate
-    let service = TrrService(stackName: "dev")
+    let service = TrrService(stackName: "dev", apiKey:"foo")
 
 Substitute your own stack name for "dev" there.  We gave you one when you signed up with us.  If it's not ready, sure, you can use dev for now.  But "dev" is our development stack and we are constantly messing with it.  Best to use yours.  Onward.
 
@@ -40,10 +40,10 @@ This is a Time Tracker, which is used to manage and distribute the current displ
 
 Terrier is very concerned with time, propagating it all the way down to our shaders.  It's one of the big differences between the way Terrier works and most everything else.
 
-Next up is the Adapter, which will hook Terrier into Mapbox.  Declare that like so.
+Next up is the Adapter, which will hook Terrier into MapLibre.  Declare that like so.
 
-    // Hooks Terrier into the Mapbox display
-    var terrierAdapter: TerrierMapboxAdapter? = nil
+    // Hooks Terrier into the MapLibre display
+    var terrierAdapter: TerrierMapLibreAdapter? = nil
 
 Now we need to set all this up.  We like to do it in the viewDidLoad() method of a View Controller.  You do you, but do it in the same order.  First up, is initializing the TrrService.
 
@@ -57,28 +57,27 @@ There are two key bits here.  First is we want to know when the service is ready
 
 Next, we want to kick off the service with the start() method.  That will go out to Boxer and get a list of contents from your stack.  We'll use those in setting up layers.
 
-Now we want to hook Terrer into Mapbox and we do thusly.  Oh, and we set up the Time Tracker right then because we needed the adapter.
+Now we want to hook Terrer into MapLibre and we do thusly.  Oh, and we set up the Time Tracker right then because we needed the adapter.
 
-        // The Mapbox Adapter interfaces to Mapbox for rendering
-        terrierAdapter = TerrierMapboxAdapter(service: service, mapView: mapView)
-        guard let terrierAdapter = terrierAdapter else { return }
+        // Need an adapter from Terrier to MapLibre
+        let mapOverlay = TerrierMapLibreAdapter(service: service, mapView: mapView)
+        terrierAdapter = mapOverlay
+        guard let terrierOvl = mapOverlay?.terrierOvl else { return }
+
         tracker = TrrTimeTracker(viewC: terrierAdapter)
         terrierAdapter.setTracker(tracker: tracker)
 
-After this, Terrier is ready to render in the middle of a Mapbox map.  But Mapbox isn't ready yet.  That's what we're doing here.
+After this, Terrier is ready to render in the middle of a MapLibre map.  But MapLibre isn't ready yet.  That's what we're doing here.
 
-        // Set the projection to flat and wire in our adapter as a layer
-        mapView.mapboxMap.setMapStyleContent {
-            CustomLayer(id: "terrier-layer", renderer: terrierAdapter)
+        // Find the proper layer and put us right after it, if it's there
+        let geolineLayer = style.layer(withIdentifier: "geolines")
+        if (geolineLayer != nil ) {
+            style.insertLayer(mapOverlay!, above: geolineLayer!)
+        } else {
+            style.layers.append(mapOverlay!)
         }
 
-Once the map style is loaded, Mapbox will call the code we're passing in there.  It's pretty normal to put your own logic in here for when the map is ready, so you can just tack our CustomLayer setup to your own.  Or if you have another way of knowing the map is loaded, that's fine too.
-
-CustomLayer is a Mapbox construct that lets us wire in a renderer, our terrierAdapter, way down deep at the Metal level.  It's quite nifty, but it seems to be marked experimental.  Thus we had to modify our import call for Mapbox up top.
-
-        @_spi(Experimental) import MapboxMaps
-
-Not super clean on why, but that's what their documentation said and it does seem to work.
+Once the map style is loaded, MapLibre will call the code we're passing in there.  It's pretty normal to put your own logic in here for when the map is ready, so you can just tack our Adapter setup to your own.  Or if you have another way of knowing the map is loaded, that's fine too.
 
 Now we're ready to render, but what are we rendering?  That's where the serviceReady() delegate method comes in and ours looks a little like this.
 
